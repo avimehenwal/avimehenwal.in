@@ -1,5 +1,5 @@
 import datetime #<- will be used to set default dates on models
-from pyramid_blogr.models.meta import Base  #<- we need to import our sqlalchemy metadata from which model classes will inherit
+from blogavicom.models.meta import Base  #<- we need to import our sqlalchemy metadata from which model classes will inherit
 from sqlalchemy import (
     Column,
     Integer,
