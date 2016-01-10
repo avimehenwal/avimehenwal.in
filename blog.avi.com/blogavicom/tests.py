@@ -3,7 +3,7 @@ import transaction
 
 from pyramid import testing
 
-from .models import DBSession
+from .models.meta import DBSession
 
 
 class TestMyViewSuccessCondition(unittest.TestCase):
