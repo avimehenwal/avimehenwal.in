@@ -1,0 +1,5 @@
+      [paste.app_factory]
+      main = blogavicom:main
+      [console_scripts]
+      initialize_blog.avi.com_db = blogavicom.scripts.initializedb:main
+      
