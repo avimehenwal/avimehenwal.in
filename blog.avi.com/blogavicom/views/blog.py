@@ -1,10 +1,18 @@
 from pyramid.view import view_config
+from pyramid.httpexceptions import HTTPNotFound, HTTPFound
+from ..models.meta import DBSession
+from ..models.blog_record import BlogRecord
+from ..models.services.blog_record import BlogRecordService
 
 
 @view_config(route_name='blog',
-             renderer='blog.avi.com:templates/view_blog.jinja2')
+             renderer='pyramid_blogr:templates/view_blog.jinja2')
 def blog_view(request):
-    return {}
+    blog_id = int(request.matchdict.get('id', -1))
+    entry = BlogRecordService.by_id(blog_id)
+    if not entry:
+        return HTTPNotFound()
+    return {'entry': entry}
 
 @view_config(route_name='blog_action', match_param='action=create',
              renderer='pyramid_blogr:templates/edit_blog.jinja2')
@@ -15,5 +23,3 @@ def blog_create(request):
              renderer='pyramid_blogr:templates/edit_blog.jinja2')
 def blog_update(request):
     return {}
-
-

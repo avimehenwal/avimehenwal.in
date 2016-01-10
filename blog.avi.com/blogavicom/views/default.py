@@ -1,4 +1,5 @@
 from pyramid.view import view_config
+from ..models.services.blog_record import BlogRecordService
 
 
 @view_config(route_name='home',
