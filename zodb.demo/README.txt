@@ -1,1 +1,0 @@
-zodb.demo README
