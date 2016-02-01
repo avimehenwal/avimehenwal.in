@@ -38,5 +38,7 @@ def main(argv=sys.argv):
     Base.metadata.create_all(engine)
     with transaction.manager:
         # name and value are columns in table MyModel
-        model = MyModel(name='one', value=1)
+        model  = MyModel(name='one', value=1)
+        model2 = BlogRecord(title='sample', body='body')
         DBSession.add(model)
+        DBSession.add(model2)
