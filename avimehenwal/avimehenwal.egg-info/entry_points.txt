@@ -1,5 +1,0 @@
-      [paste.app_factory]
-      main = avimehenwal:main
-      [console_scripts]
-      initialize_avimehenwal_db = avimehenwal.scripts.initializedb:main
-      
