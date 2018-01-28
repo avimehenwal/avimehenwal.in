@@ -21,7 +21,7 @@ canonifyurls        = true                          # Turns relative urls into a
     dateForm        = "Jan 2, 2006"
     dateFormFull    = "Mon Jan 2 2006 15:04:05 EST"
     cacheBuster     = false                         # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
-    description     = "Website Description"         # Max 160 characters show in search results
+    description     = "avimehenwal avi mehenwal freelance engineer"         # Max 160 characters show in search results
     faviconFile     = "img/fav.ico"
     highlightjs     = true                          # Syntax highlighting
     footerText      = ""                            # Text to show in footer (overrides default text)
@@ -38,7 +38,7 @@ canonifyurls        = true                          # Turns relative urls into a
     # Share buttons
     shareTwitter        = true
     shareFacebook       = true
-    sharePinterest      = false
+    sharePinterest      = true
     shareGooglePlus     = true
 
 # Social icons appear in introduction and contact section. Add as many more as you like.
