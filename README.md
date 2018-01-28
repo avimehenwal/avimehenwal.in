@@ -1,8 +1,8 @@
 # Avi Mehenwal
 
-[Link to avimehenwal](https://avimehenwal.github.io)
+[Link to avimehenwal website](https://avimehenwal.github.io)
 
-
+```
 hugo new site ./ --force			# When the current folder is not empty
 hugo new about.md
 hugo new contact.md
@@ -10,3 +10,4 @@ hugo new contact.md
 hugo serve -t introduction
 hugo new blog/your-post-title.md
 hugo new projects/your-project-name.md
+```
