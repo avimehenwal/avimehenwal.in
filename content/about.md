@@ -3,14 +3,13 @@ title: "About"
 date: 2017-03-09T13:19:25+08:00
 ---
 
-This is **Introduction,** a minimal scrolling website theme made for [Hugo](https://gohugo.io).
+__Software Automation profession__ who treats automation as a software development project and believes thoroughly tested products is not a choice but a mandate. Testing is an activity, not a team. New challenging tasks involving Research and Development have always fascinated me.
 
-### Features
+Professional started working as a network automation engineer, Application Developer and Software Automation Engineer and currently freelancing on testing, DevOps projects.
 
-* Responsive display on any size screen
-* Smooth fade-in on load with CSS3
-* Smooth scrolling to page sections from navigation
-* Light and Dark themes
-* _Projects_ section with any number of projects: configurable as a photo gallery, popup with details, or external links
-* _Blog_ section with optionally included _Latest Post_, on the main page or as a separate section
-* Styled Markdown throughout with support for HighlightJS
+* __Working environments__ Scrum, Agile, CI/CD, continuous delivery 
+* __Specialties__ Linux, Automation, Python, lua, shell, TDD, pen testing
+* __Domains Interested__ Distributed Systems and Operations, Cloud Computing, System Architecture, OS Virtualization, Machine Learning and Secutities
+
+Please contact via LinkedIn for work realted queries and my rates.
+Get in the loop :)

@@ -11,13 +11,13 @@ canonifyurls        = true                          # Turns relative urls into a
 [params]
     blogHead        = "Blog"                        # Full name shows on blog post pages
     firstName       = "Avi Mehenwal"                # First name shows in introduction on main page
-    tagLine         = "I'm a freelancer & engineer"       # Appears after the introduction
+    tagLine         = "software engineer and freelancer"
     introHeight     = "large"                       # Input either 'medium' or 'large' or 'fullheight'
-    themeStyle      = "light"                        # Choose 'light' or 'dark'
+    themeStyle      = "light"                       # Choose 'light' or 'dark'
     avatar          = "img/profile.jpg"             # Path to image in static folder eg. img/avatar.png, or comment out to remove
     email           = "youremail@email.com"         # Shows in contact section, or leave blank to omit
     localTime       = true                          # Show your current local time in contact section
-    timeZone        = "America/Los_Angeles"         # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+    timeZone        = "Asia/Kolkata"                # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
     dateForm        = "Jan 2, 2006"
     dateFormFull    = "Mon Jan 2 2006 15:04:05 EST"
     cacheBuster     = false                         # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
@@ -44,14 +44,19 @@ canonifyurls        = true                          # Turns relative urls into a
 # Social icons appear in introduction and contact section. Add as many more as you like.
 # Find icon names here: http://fontawesome.io/cheatsheet/
 
+
 [[params.social]]
-    url = "https://twitter.com/"
+    url = "https://github.com/avimehenwal"
+    icon = "github"
+
+[[params.social]]
+    url = "https://twitter.com/avimehenwal"
     icon = "twitter"
 
 [[params.social]]
-    url = "https://facebook.com/"
-    icon = "facebook"
+    url = "https://www.quora.com/profile/Avi-Mehenwal"
+    icon = "quora"
 
 [[params.social]]
-    url = "https://linkedin.com/"
+    url = "https://www.linkedin.com/in/avimehenwal/"
     icon = "linkedin"
