@@ -1,14 +1,16 @@
-## Deploy and Run
+# Avi Mehenwal
+
+[Link to avimehenwal website](https://avimehenwal.github.io)
 
 ```
-pip install -e .
-initialize_pyramid_blogr_db development.ini
-pserve development.ini
+hugo new site ./ --force			# When the current folder is not empty
+hugo new about.md
+hugo new contact.md
+
+hugo serve -t introduction
+hugo new blog/your-post-title.md
+hugo new projects/your-project-name.md
 ```
 
-### Features
-1. Description and Social Connect links
-2. Blog (Internet links, articles, Learnings)
-3. Connect Me Details
-4. Projects/ Work Portfolio
 
+git submodule add -b master git@github.com:<USERNAME>/<USERNAME>.github.io.git public
