@@ -1,12 +1,11 @@
 # Avi Mehenwal
 
-Installing hugo from precompiled binaries
+### Installing hugo from precompiled binaries
 
-[![asciicast](https://asciinema.org/a/159660.png)](https://asciinema.org/a/159660)
+[![asciicast](https://asciinema.org/a/159660.png)](https://asciinema.org/a/159660?speed=1.5)
 
-<a href="https://asciinema.org/a/159793" target="_blank"><img src="https://asciinema.org/a/159793.png" /></a>
 
-[Link to avimehenwal website](https://avimehenwal.github.io)
+## Useful commands
 
 ```
 hugo new site ./ --force			# When the current folder is not empty
@@ -16,7 +15,8 @@ hugo new contact.md
 hugo serve -t introduction
 hugo new blog/your-post-title.md
 hugo new projects/your-project-name.md
-```
-
 
 git submodule add -b master git@github.com:<USERNAME>/<USERNAME>.github.io.git public
+```
+
+[Link to avimehenwal website](https://avimehenwal.github.io)
