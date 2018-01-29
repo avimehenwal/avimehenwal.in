@@ -1,5 +1,7 @@
 # Avi Mehenwal
 
+[![asciicast](https://asciinema.org/a/159660.png)](https://asciinema.org/a/159660)
+
 [Link to avimehenwal website](https://avimehenwal.github.io)
 
 ```
