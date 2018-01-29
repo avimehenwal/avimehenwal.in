@@ -1,6 +1,10 @@
 # Avi Mehenwal
 
+Installing hugo from precompiled binaries
+
 [![asciicast](https://asciinema.org/a/159660.png)](https://asciinema.org/a/159660)
+
+<a href="https://asciinema.org/a/159793" target="_blank"><img src="https://asciinema.org/a/159793.png" /></a>
 
 [Link to avimehenwal website](https://avimehenwal.github.io)
 
