@@ -20,3 +20,8 @@ git submodule add -b master git@github.com:<USERNAME>/<USERNAME>.github.io.git p
 ```
 
 [Link to avimehenwal website](https://avimehenwal.github.io)
+
+## Manual Deploy
+```
+cp -vr public/* ../avimehenwal.github.io
+```
