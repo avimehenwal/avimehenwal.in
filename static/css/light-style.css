@@ -5618,6 +5618,10 @@ img{
     font-size:0.8em;
     vertical-align:baseline
 }
+p#footer-text {
+    margin-top: 40%;
+    position: relative;
+}
 .tags-list{
     width:70%;
     margin:0 auto;
@@ -5770,4 +5774,7 @@ img{
 .hidden{
     display:none
 }
- 
+#footer img {
+     border: none;
+     box-shadow: none;
+ }
