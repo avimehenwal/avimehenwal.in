@@ -2,6 +2,7 @@ baseurl             = "https://avimehenwal.github.io/"   # Your domain name. Mus
 languageCode        = "en-us"
 title               = "avimehenwal"
 theme               = "introduction"
+publishDir          = "docs"
 enforce_ssl         = false
 builddrafts         = false                         # Include pages with draft status of true
 canonifyurls        = true                          # Turns relative urls into absolute urls
