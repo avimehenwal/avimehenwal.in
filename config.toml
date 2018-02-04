@@ -1,4 +1,4 @@
-baseurl             = "https://avimehenwal.github.io/"   # Your domain name. Must end with "/"
+baseurl             = "http://avimehenwal.github.io/blog.avimehenwal.com/"   # Your domain name. Must end with "/"
 languageCode        = "en-us"
 title               = "avimehenwal"
 theme               = "introduction"
