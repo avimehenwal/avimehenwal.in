@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on avimehenwal</title>
-    <link>https://avimehenwal.github.io/projects/</link>
+    <link>http://avimehenwal.github.io/blog.avimehenwal.com/projects/</link>
     <description>Recent content in Projects on avimehenwal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Nov 2017 12:21:21 -0500</lastBuildDate>
     
-	<atom:link href="https://avimehenwal.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://avimehenwal.github.io/blog.avimehenwal.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>cPingProbe perl tool</title>
-      <link>https://avimehenwal.github.io/projects/cpingprobe/</link>
+      <link>http://avimehenwal.github.io/blog.avimehenwal.com/projects/cpingprobe/</link>
       <pubDate>Mon, 13 Nov 2017 12:21:21 -0500</pubDate>
       
-      <guid>https://avimehenwal.github.io/projects/cpingprobe/</guid>
+      <guid>http://avimehenwal.github.io/blog.avimehenwal.com/projects/cpingprobe/</guid>
       <description>cPingProbe perl tool Summary cPingProbe is a multiplatform (Windows, Linux, mac OS, Solaris) multi host pinging tool that would continuously record your RTT from pinging machine and would notify on any discrepancy from normal trend. Its a great resource friendly tool that would do it task without starving other application of system resources. Currently it supports 3 protocol methods to test host round trip time. TCP(default) , ICMP(standard) and UDP(generally not recommended for long term analysis).</description>
     </item>
     
     <item>
       <title>Addabol webapp</title>
-      <link>https://avimehenwal.github.io/projects/addabol/</link>
+      <link>http://avimehenwal.github.io/blog.avimehenwal.com/projects/addabol/</link>
       <pubDate>Mon, 13 Nov 2017 12:21:11 -0500</pubDate>
       
-      <guid>https://avimehenwal.github.io/projects/addabol/</guid>
+      <guid>http://avimehenwal.github.io/blog.avimehenwal.com/projects/addabol/</guid>
       <description>Addabol Backend developer and Release engineer
 Server side programmer for webApp name addabol (later renamed to planito). WebApp is now deprecated.
  writing web services on pyramid and database APIs deploying the application on AWS infrastructure data and web scraping for user data  AWS, pyramid, Facebook Graph API, Bitbucket, Gevent
@@ -34,10 +34,10 @@ Facebook | on Amazon | Google+</description>
     
     <item>
       <title>Dockerised Python Webapp</title>
-      <link>https://avimehenwal.github.io/projects/dockerised-python-webapp/</link>
+      <link>http://avimehenwal.github.io/blog.avimehenwal.com/projects/dockerised-python-webapp/</link>
       <pubDate>Mon, 29 Jan 2018 16:25:09 +0530</pubDate>
       
-      <guid>https://avimehenwal.github.io/projects/dockerised-python-webapp/</guid>
+      <guid>http://avimehenwal.github.io/blog.avimehenwal.com/projects/dockerised-python-webapp/</guid>
       <description>Dockerised python webapp A dockerised python webapplication build to demonstrate the ease of deployment within containers and speeding up release process.
 https://github.com/avimehenwal/cherrypy-app</description>
     </item>

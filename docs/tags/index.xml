@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on avimehenwal</title>
-    <link>https://avimehenwal.github.io/tags/</link>
+    <link>http://avimehenwal.github.io/blog.avimehenwal.com/tags/</link>
     <description>Recent content in Tags on avimehenwal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://avimehenwal.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://avimehenwal.github.io/blog.avimehenwal.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
