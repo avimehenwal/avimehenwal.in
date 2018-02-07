@@ -7,7 +7,7 @@ enforce_ssl         = false
 builddrafts         = false                         # Include pages with draft status of true
 canonifyurls        = true                          # Turns relative urls into absolute urls
 # disqusshortname   = "xxx"                         # Enable Disqus for comments
-# googleAnalytics   = "xxx"
+googleAnalytics   = "UA-113741959-1"
 
 [params]
     blogHead        = "Blog"                        # Full name shows on blog post pages
