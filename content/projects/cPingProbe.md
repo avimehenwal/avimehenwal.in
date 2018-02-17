@@ -3,7 +3,7 @@ title: "cPingProbe perl tool"
 date: 2017-11-13T12:21:21-05:00
 image: "img/cPingProbe.PNG"
 external_link: ""
-weight: 1
+weight: 3
 ---
 
 ## [cPingProbe perl tool](https://github.com/avimehenwal/cPingProbe)
