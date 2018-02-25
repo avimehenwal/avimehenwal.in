@@ -25,3 +25,8 @@ git submodule add -b master git@github.com:<USERNAME>/<USERNAME>.github.io.git p
 ```
 cp -vr public/* ../avimehenwal.github.io
 ```
+
+Build in under docs/
+```
+hugo -d docs  # --destination string
+```
