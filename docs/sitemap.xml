@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://avimehenwal.in/projects/cpingprobe/</loc>
-    <lastmod>2017-11-13T12:21:21-05:00</lastmod>
+    <loc>https://avimehenwal.in/projects/visuallydefine/</loc>
+    <lastmod>2018-02-17T21:15:33+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://avimehenwal.in/projects/addabol/</loc>
     <lastmod>2017-11-13T12:21:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://avimehenwal.in/projects/cpingprobe/</loc>
+    <lastmod>2017-11-13T12:21:21-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://avimehenwal.in/blog/automated-vs-manual-testing/</loc>
+    <lastmod>2018-02-17T21:15:40+05:30</lastmod>
   </url>
   
   <url>
@@ -28,13 +38,19 @@
   </url>
   
   <url>
+    <loc>https://avimehenwal.in/blog/</loc>
+    <lastmod>2018-02-17T21:15:40+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://avimehenwal.in/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://avimehenwal.in/projects/</loc>
-    <lastmod>2017-11-13T12:21:21-05:00</lastmod>
+    <lastmod>2018-02-17T21:15:33+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -45,7 +61,7 @@
   
   <url>
     <loc>https://avimehenwal.in/</loc>
-    <lastmod>2017-11-13T12:21:21-05:00</lastmod>
+    <lastmod>2018-02-17T21:15:33+05:30</lastmod>
     <priority>0</priority>
   </url>
   

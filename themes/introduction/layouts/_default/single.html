@@ -7,8 +7,7 @@
     <div class="container hero {{ if .Site.Params.fadeIn }} fade-in one {{ end }}">
         <!-- Begin Title -->
         <h1 class="bold-title is-1">{{ .Title }}</h1>
-    </div>
-    <!-- End Title -->
+    </div> <!-- End Title -->
 
     <!-- Everything below fades in two! -->
     <div class="section {{ if .Site.Params.fadeIn }} fade-in two {{ end }}">
@@ -16,20 +15,18 @@
         <div class="container">
             <!-- Begin Nav bar -->
             {{ partial "nav-single.html" . }}
-        </div>
-        <!-- End Nav bar -->
+        </div> <!-- End Nav bar -->
 
         <div class="container markdown {{ if .Site.Params.fadeIn }} fade-in two {{ end }} top-pad">
             <!-- Begin blog post content -->
             {{ if .Params.image }}
             <div class="has-text-centered">
-            <img src="{{ .Params.image }}" class="img-responsive"> 
+            <img src="{{ .Params.image }}" class="img-responsive">
             </div>
-            {{ end }} 
-            
+            {{ end }}
+
             {{ .Content }}
-        </div>
-        <!-- End blog post content -->
+        </div> <!-- End blog post content -->
 
         <div class="disqus">
             {{ template "_internal/disqus.html" . }}
@@ -44,10 +41,8 @@
         </div>
 
         {{ partial "footer.html" . }}
-    </div>
-    <!-- End fade in two -->
-</div>
-<!-- End parent section -->
+    </div> <!-- End fade in two -->
+</div> <!-- End parent section -->
 
 <!-- Bitty scrolling links script -->
 <script>

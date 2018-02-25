@@ -6,18 +6,19 @@
     <description>Recent content in Projects on avimehenwal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Nov 2017 12:21:21 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 17 Feb 2018 21:15:33 +0530</lastBuildDate>
     
 	<atom:link href="https://avimehenwal.in/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>cPingProbe perl tool</title>
-      <link>https://avimehenwal.in/projects/cpingprobe/</link>
-      <pubDate>Mon, 13 Nov 2017 12:21:21 -0500</pubDate>
+      <title>Visuallydefine</title>
+      <link>https://avimehenwal.in/projects/visuallydefine/</link>
+      <pubDate>Sat, 17 Feb 2018 21:15:33 +0530</pubDate>
       
-      <guid>https://avimehenwal.in/projects/cpingprobe/</guid>
-      <description>cPingProbe perl tool Summary cPingProbe is a multiplatform (Windows, Linux, mac OS, Solaris) multi host pinging tool that would continuously record your RTT from pinging machine and would notify on any discrepancy from normal trend. Its a great resource friendly tool that would do it task without starving other application of system resources. Currently it supports 3 protocol methods to test host round trip time. TCP(default) , ICMP(standard) and UDP(generally not recommended for long term analysis).</description>
+      <guid>https://avimehenwal.in/projects/visuallydefine/</guid>
+      <description>Visuallydefine An educational website which share various education topics in a organised and presentable way.
+Get in the loop!</description>
     </item>
     
     <item>
@@ -30,6 +31,15 @@
 Server side programmer for webApp name addabol (later renamed to planito). WebApp is now deprecated.
  writing web services on pyramid and database APIs deploying the application on AWS infrastructure data and web scraping for user data  AWS, pyramid, Facebook Graph API, Bitbucket, Gevent
 Facebook | on Amazon | Google+</description>
+    </item>
+    
+    <item>
+      <title>cPingProbe perl tool</title>
+      <link>https://avimehenwal.in/projects/cpingprobe/</link>
+      <pubDate>Mon, 13 Nov 2017 12:21:21 -0500</pubDate>
+      
+      <guid>https://avimehenwal.in/projects/cpingprobe/</guid>
+      <description>cPingProbe perl tool Summary cPingProbe is a multiplatform (Windows, Linux, mac OS, Solaris) multi host pinging tool that would continuously record your RTT from pinging machine and would notify on any discrepancy from normal trend. Its a great resource friendly tool that would do it task without starving other application of system resources. Currently it supports 3 protocol methods to test host round trip time. TCP(default) , ICMP(standard) and UDP(generally not recommended for long term analysis).</description>
     </item>
     
     <item>

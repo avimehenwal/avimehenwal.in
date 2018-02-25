@@ -26,15 +26,18 @@
         <div class="container">
             <!-- Begin Blog container -->
             <ul>
-                <!-- Ranges through content/post/*.md -->
-                {{ range .Data.Pages.ByPublishDate }} {{ if not (eq .Section "blog") }}
+            <!-- Ranges through content/post/*.md -->
+            {{ range .Data.Pages.ByPublishDate }}
+              {{ if not (eq .Section "blog") }}
                 <li>
-                    <a href="{{.Permalink}}">{{.Date.Format .Site.Params.dateForm }} | {{.Title}}</a>
+                    <a href="{{.Permalink}}">
+                      {{.Date.Format .Site.Params.dateForm }} | {{.Title}}
+                    </a>
                 </li>
-                {{ end }} {{ end }}
+              {{ end }}
+            {{ end }}
             </ul>
-        </div>
-        <!-- End Blog container -->
+        </div> <!-- End Blog container -->
 
         <div class="container has-text-centered top-pad">
             <hr>
@@ -45,10 +48,8 @@
         </div>
 
         {{ partial "footer.html" . }}
-    </div>
-    <!-- End fade in two -->
-</div>
-<!-- End parent section -->
+    </div> <!-- End fade in two -->
+</div> <!-- End parent section -->
 
 <!-- Bitty scrolling links script -->
 <script>

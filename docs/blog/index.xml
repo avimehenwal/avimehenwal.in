@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on avimehenwal</title>
+    <link>https://avimehenwal.in/blog/</link>
+    <description>Recent content in Blogs on avimehenwal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Feb 2018 21:15:40 +0530</lastBuildDate>
+    
+	<atom:link href="https://avimehenwal.in/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automated vs Manual Testing</title>
+      <link>https://avimehenwal.in/blog/automated-vs-manual-testing/</link>
+      <pubDate>Sat, 17 Feb 2018 21:15:40 +0530</pubDate>
+      
+      <guid>https://avimehenwal.in/blog/automated-vs-manual-testing/</guid>
+      <description>Automated vs Manual Testing With increase in the number of webapp and new technologies knocking our doors and pressure to release ideas early in the market is of major importance. And hence we can say the devOps methodologies and Agile approach has boosted the popularity of automation tesating over manual testing. Although there are some parts which are still best manual (like Usability, security testing etc.) but around 70% of the regression testing could be automated.</description>
+    </item>
+    
+  </channel>
+</rss>

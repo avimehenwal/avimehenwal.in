@@ -15,8 +15,7 @@
         <div class="container">
             <!-- Begin Nav bar -->
             {{ partial "nav-list.html" . }}
-        </div>
-        <!-- End Nav bar -->
+        </div> <!-- End Nav bar -->
         <article>
             <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
             {{ .Content }}
@@ -26,15 +25,16 @@
         <div class="container">
             <!-- Begin Blog container -->
             <ul>
-                <!-- Ranges through content/post/*.md -->
-                {{ range .Data.Pages.ByPublishDate }}
-                <li>
-                    <a href="{{.Permalink}}">{{.Date.Format .Site.Params.dateForm }} | {{.Title}}</a>
-                </li>
-                {{ end }}
+            <!-- Ranges through content/post/*.md -->
+            {{ range .Data.Pages.ByPublishDate }}
+              <li>
+                  <a href="{{.Permalink}}">
+                    {{.Date.Format .Site.Params.dateForm }} | {{.Title}}
+                  </a>
+              </li>
+            {{ end }}
             </ul>
-        </div>
-        <!-- End Blog container -->
+        </div> <!-- End Blog container -->
 
         <div class="container has-text-centered top-pad">
             <hr>
@@ -45,10 +45,8 @@
         </div>
 
         {{ partial "footer.html" . }}
-    </div>
-    <!-- End fade in two -->
-</div>
-<!-- End parent section -->
+    </div> <!-- End fade in two -->
+</div> <!-- End parent section -->
 
 <!-- Bitty scrolling links script -->
 <script>
