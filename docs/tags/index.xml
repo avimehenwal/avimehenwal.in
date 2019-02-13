@@ -6,9 +6,55 @@
     <description>Recent content in Tags on avimehenwal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 13 Feb 2019 22:34:51 +0100</lastBuildDate>
     
 	<atom:link href="https://avimehenwal.in/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Internet</title>
+      <link>https://avimehenwal.in/tags/internet/</link>
+      <pubDate>Wed, 13 Feb 2019 22:34:51 +0100</pubDate>
+      
+      <guid>https://avimehenwal.in/tags/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning</title>
+      <link>https://avimehenwal.in/tags/learning/</link>
+      <pubDate>Wed, 13 Feb 2019 22:34:51 +0100</pubDate>
+      
+      <guid>https://avimehenwal.in/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pim</title>
+      <link>https://avimehenwal.in/tags/pim/</link>
+      <pubDate>Wed, 13 Feb 2019 22:34:51 +0100</pubDate>
+      
+      <guid>https://avimehenwal.in/tags/pim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://avimehenwal.in/tags/programming/</link>
+      <pubDate>Sat, 17 Feb 2018 21:15:40 +0530</pubDate>
+      
+      <guid>https://avimehenwal.in/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://avimehenwal.in/tags/testing/</link>
+      <pubDate>Sat, 17 Feb 2018 21:15:40 +0530</pubDate>
+      
+      <guid>https://avimehenwal.in/tags/testing/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://avimehenwal.in/blog/how-to-be-immortal/</loc>
+    <lastmod>2019-02-13T22:34:51+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://avimehenwal.in/blog/automated-vs-manual-testing/</loc>
     <lastmod>2018-02-17T21:15:40+05:30</lastmod>
   </url>
@@ -39,12 +44,42 @@
   
   <url>
     <loc>https://avimehenwal.in/blog/</loc>
-    <lastmod>2018-02-17T21:15:40+05:30</lastmod>
+    <lastmod>2019-02-13T22:34:51+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://avimehenwal.in/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://avimehenwal.in/tags/internet/</loc>
+    <lastmod>2019-02-13T22:34:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://avimehenwal.in/tags/learning/</loc>
+    <lastmod>2019-02-13T22:34:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://avimehenwal.in/tags/pim/</loc>
+    <lastmod>2019-02-13T22:34:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://avimehenwal.in/tags/programming/</loc>
+    <lastmod>2018-02-17T21:15:40+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://avimehenwal.in/categories/programming/</loc>
+    <lastmod>2018-02-17T21:15:40+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -56,6 +91,13 @@
   
   <url>
     <loc>https://avimehenwal.in/tags/</loc>
+    <lastmod>2019-02-13T22:34:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://avimehenwal.in/tags/testing/</loc>
+    <lastmod>2018-02-17T21:15:40+05:30</lastmod>
     <priority>0</priority>
   </url>
   

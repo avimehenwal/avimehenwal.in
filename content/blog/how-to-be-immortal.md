@@ -1,7 +1,7 @@
 ---
 title         : "Guide to being immortal in this age"
 date          : 2019-02-13T22:34:51+01:00
-draft         : true
+draft         : false
 image         : "img/blog-post-structure.jpg"
 external_link : ""
 weight        : 5
