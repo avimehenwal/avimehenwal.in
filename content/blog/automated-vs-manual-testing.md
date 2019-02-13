@@ -4,6 +4,8 @@ date: 2018-02-17T21:15:40+05:30
 image: "img/unicode-secret.png"
 external_link: ""
 weight: 5
+categories    : [programming]
+tags          : [testing, programming]
 ---
 
 # Automated vs Manual Testing

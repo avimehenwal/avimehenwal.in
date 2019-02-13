@@ -55,6 +55,7 @@
                 </div>
             {{ end }}
 
+    {{ partial "tags.html" .}}
     </div><!-- End blog title container -->
 
     <div class="container markdown {{ if .Site.Params.fadeIn }} fade-in two {{ end }} top-pad"><!-- Begin blog post content -->
