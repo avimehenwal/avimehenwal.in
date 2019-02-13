@@ -16,7 +16,7 @@ googleAnalytics   = "UA-113741959-1"
 [params]
     blogHead        = "Blog"                        # Full name shows on blog post pages
     firstName       = "Avi Mehenwal"                # First name shows in introduction on main page
-    tagLine         = "wannabe computer engineer"
+    tagLine         = "a wannabe computer engineer"
     introHeight     = "medium"                       # Input either 'medium' or 'large' or 'fullheight'
     themeStyle      = "light"                       # Choose 'light' or 'dark'
     avatar          = "img/profile.jpg"             # Path to image in static folder eg. img/avatar.png, or comment out to remove
