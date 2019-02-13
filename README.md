@@ -1,5 +1,7 @@
 # Avi Mehenwal
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a00db104-562e-4c21-a7e2-321c0c84998b/deploy-status)](https://app.netlify.com/sites/aviportfolio/deploys)
+
 ### Installing hugo from precompiled binaries
 
 [![asciicast](https://asciinema.org/a/159660.png)](https://asciinema.org/a/159660?speed=1.5)
