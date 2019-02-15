@@ -1,7 +1,6 @@
 baseurl             = "https://avimehenwal.in/"     # Your domain name. Must end with "/"
 languageCode        = "en-us"
 title               = "avimehenwal"
-theme               = "introduction"
 publishDir          = "docs"
 enforce_ssl         = true
 builddrafts         = false                         # Include pages with draft status of true
@@ -12,6 +11,7 @@ googleAnalytics   = "UA-113741959-1"
 [taxonomies]
    tag = "tags"
    category = "categories"
+   versions = "version"
 
 [params]
     blogHead        = "Blog"                        # Full name shows on blog post pages
