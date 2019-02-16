@@ -1,65 +1,34 @@
-{{ define "body" }}
-<main class="w3-container">
-  {{ .Page.Kind }}
-dsfdsfsd
+{{ define "body"}}
+<main>
+  <div class="w3-container w3-myfont2">
+    {{ dateFormat "Monday,Jan 2, 2006" .Lastmod }}
+  </div>
+    <article class="w3-panel">
+      <div class="w3-card">
+        <header class="w3-container w3-teal w3-nodeco">
+          <a href="{{ .URL }}">
+            <h1>{{ .Section }}</h1>
+          </a>
+        </header>
+
+        <div class="w3-white w3-container w3-myfont2">
+          {{ .Content }}
+        </div>
+
+        <footer class="w3-container w3-amber">
+          <div class="w3-bar w3-amber">
+            <a href="{{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}" class="w3-bar-item w3-button w3-hover-red">Previous Section</a>
+            <a href="{{if .PrevPage}}{{.PrevPage.Permalink}}{{end}}" class="w3-bar-item w3-button w3-hover-blue">Previous Page</a>
+            <a href="{{if .NextPage}}{{.NextPage.Permalink}}{{end}}" class="w3-bar-item w3-button w3-hover-green">Next Page</a>
+            <a href="{{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}" class="w3-bar-item w3-button w3-hover-teal">Next Section</a>
+          </div>
+        </footer>
+      </div>
+    </article>
 </main>
-{{ end }}
 
-
-
-<div class="section" id="top">
-    <!-- Parent section -->
-
-    <div class="container hero {{ if .Site.Params.fadeIn }} fade-in one {{ end }}">
-        <!-- Begin Title -->
-        <h1 class="bold-title is-1">{{ .Title }}</h1>
-    </div> <!-- End Title -->
-
-    <!-- Everything below fades in two! -->
-    <div class="section {{ if .Site.Params.fadeIn }} fade-in two {{ end }}">
-
-        <div class="container">
-            <!-- Begin Nav bar -->
-            {{ partial "nav-single.html" . }}
-        </div> <!-- End Nav bar -->
-
-        <div class="container markdown {{ if .Site.Params.fadeIn }} fade-in two {{ end }} top-pad">
-            <!-- Begin blog post content -->
-            {{ if .Params.image }}
-            <div class="has-text-centered">
-            <img src="{{ .Params.image }}" class="img-responsive">
-            </div>
-            {{ end }}
-
-            {{ .Content }}
-        </div> <!-- End blog post content -->
-
-        <div class="disqus">
-            {{ template "_internal/disqus.html" . }}
-        </div>
-
-        <div class="container has-text-centered top-pad">
-            <hr>
-            <a href="{{ .Permalink }}#top">
-                <i class="fa fa-arrow-up"></i>
-            </a>
-            <hr>
-        </div>
-
-        {{ partial "footer.html" . }}
-    </div> <!-- End fade in two -->
-</div> <!-- End parent section -->
-
-<!-- Bitty scrolling links script -->
 <script>
-    $('a[href^="{{ .Permalink }}#"]').click(function (e) {
-        e.preventDefault();
-        var target = this.hash;
-        $('html, body').animate({
-            scrollTop: $(target).offset().top
-        }, 500);
-        return false;
-    })
+  document.body.style.backgroundColor = "lightgrey";
 </script>
 
-</body>
+{{ end }}

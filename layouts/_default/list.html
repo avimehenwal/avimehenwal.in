@@ -1,63 +1,34 @@
 {{ define "body"}}
+<main>
+  <header class="w3-container">
+   <h2>{{ .Title }}<h2>
+  </header>
 
-
-        <h1 class="bold-title is-1">{{ .Title }}</h1>
+  {{ range .Pages.ByDate }}
+    <div class="w3-container w3-myfont2">
+      {{ dateFormat "Monday,Jan 2, 2006" .Lastmod }}
     </div>
-    <!-- End Title -->
-
-    <!-- Everything below fades in two! -->
-    <div class="section no-padding {{ if .Site.Params.fadeIn }} fade-in two {{ end }}">
-
-        <div class="container">
-            <!-- Begin Nav bar -->
-            {{ partial "nav-list.html" . }}
+    <article class="w3-panel">
+      <a href="{{ .URL }}" style="text-decoration: none;">
+      <div class="w3-card">
+        <header class="w3-container w3-green w3-hover-indigo">
+            <h3>{{ .Title }}</h3>
+        </header>
+        <div class="w3-white w3-padding">
+          {{ .Summary }}
         </div>
-        <!-- End Nav bar -->
-        <article>
-            <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-            {{ .Content }}
-        </article>
+      </a>
+        <footer class="w3-container w3-right">
+          <a href="{{ .URL }}">
+            <button class="w3-button w3-ripple w3-amber">Read full Article >></button>
+          </a>
+        </footer>
+      </div>
+    </article>
+  {{ end }}
+</main>
 
-
-        <div class="container">
-            <!-- Begin Blog container -->
-            <ul>
-            <!-- Ranges through content/post/*.md -->
-            {{ range .Data.Pages.ByPublishDate }}
-              {{ if not (eq .Section "blog") }}
-                <li>
-                    <a href="{{.Permalink}}">
-                      {{.Date.Format .Site.Params.dateForm }} | {{.Title}}
-                    </a>
-                </li>
-              {{ end }}
-            {{ end }}
-            </ul>
-        </div> <!-- End Blog container -->
-
-        <div class="container has-text-centered top-pad">
-            <hr>
-            <a href="{{ .Permalink }}#top">
-                <i class="fa fa-arrow-up"></i>
-            </a>
-            <hr>
-        </div>
-
-        {{ partial "footer.html" . }}
-    </div> <!-- End fade in two -->
-</div> <!-- End parent section -->
-
-<!-- Bitty scrolling links script -->
 <script>
-    $('a[href^="{{ .Permalink }}#"]').click(function (e) {
-        e.preventDefault();
-        var target = this.hash;
-        $('html, body').animate({
-            scrollTop: $(target).offset().top
-        }, 500);
-        return false;
-    })
+  document.body.style.backgroundColor = "lightgrey";
 </script>
-
-</body>
 {{ end }}
