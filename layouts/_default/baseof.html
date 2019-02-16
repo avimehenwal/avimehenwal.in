@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
   {{partial "header.html" . }}
-  {{ block "body" .   }} {{ end }}
+  <body class="bg-yellow">
+    {{ block "body" .   }} {{ end }}
+    {{ partial "footer.html" . }}
+  </body>
 </html>

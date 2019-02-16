@@ -1,18 +1,6 @@
-<footer class="no-padding phabs-up has-text-centered">
-  <hr />
-  <div id="footer">
-    <div class="columns">
-      <div class="column is-one-third" id="footer1">
-        <img src="/img/day1.png">
-      </div>
-      <div class="column is-one-third very-center">
-        <p id="footer-text">
-           avi mehenwal 2018
-          <br />
-          with &#10084;, &#9749;, and GitHub Pages
-        </p>
-      </div>
-      <div class="column is-one-third" id="footer2">
-        <img src="/img/day2.png">
-      </div>
-    </div>
+<footer class="w3-center w3-bottom w3-black">
+  <div class="w3-panel">
+    {{ partial "social.html" . }}
+      <a href="{{ .Site.BaseURL }}">@avimehenwal</a>
+  </div>
+</footer>
