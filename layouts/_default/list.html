@@ -1,10 +1,6 @@
-{{ partial "header.html" . }}
-<body>
+{{ define "body"}}
 
-<div class="section" id="top">
-    <!-- Parent section -->
-    <div class="container hero {{ if .Site.Params.fadeIn }} fade-in one {{ end }}">
-        <!-- Begin Title -->
+
         <h1 class="bold-title is-1">{{ .Title }}</h1>
     </div>
     <!-- End Title -->
@@ -64,3 +60,4 @@
 </script>
 
 </body>
+{{ end }}

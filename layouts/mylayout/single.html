@@ -1,0 +1,33 @@
+{{ define "body"}}
+  <main>
+    {{ range .Site.Sections }}
+      <article class="w3-panel">
+        <div class="w3-card">
+          <header class="w3-container w3-blue">
+            <h1>{{ .Section }}</h1>
+          </header>
+
+          <div class="w3-container w3-grey">
+            <ul class="w3-ul w3-hoverable">
+              {{ range .Pages }}
+                <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+
+          <footer class="w3-container w3-green">
+            <h6 class="w3-right">
+              <a href=""> More >></a>
+            </h6>
+          </footer>
+        </div>
+      </article>
+
+    {{ end }}
+  </main>
+<!--
+<script>
+  document.body.style.backgroundColor = "red";
+</script> -->
+
+{{ end }}
