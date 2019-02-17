@@ -5,7 +5,7 @@
   /* margin-top: 10%; */
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1100px) {
   main {
     margin-left: 15%;
     margin-right: 15%;
@@ -33,4 +33,32 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+/* Animation Call-2-Action element */
+.c2a:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+/* Responsive iFrame */
+.iframe-container {
+  overflow: hidden;
+  padding-top: 60%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
 }
