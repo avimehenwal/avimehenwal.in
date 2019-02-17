@@ -1,7 +1,6 @@
 ---
 title         : "Guide to being immortal in this age"
 date          : 2019-02-13T22:34:51+01:00
-draft         : false
 image         : "img/blog-post-structure.jpg"
 external_link : ""
 weight        : 5
@@ -31,4 +30,3 @@ MoBo - Mobile blogging
 who would I be, if I don't try to make it better!
 
 Literate programming is a programming paradigm introduced by Donald Knuth in which a program is given as an explanation of the program logic in a natural language, such as English, interspersed with snippets of macros and traditional source code, from which a compilable source code can be generated.[1]
-

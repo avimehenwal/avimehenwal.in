@@ -10,11 +10,9 @@
 ## Useful commands
 
 ```
-hugo new site ./ --force			# When the current folder is not empty
-hugo new about.md
-hugo new contact.md
+hugo new site ./ --force			  # When the current folder is not empty
 
-hugo serve -t introduction
+hugo serve -t introduction -D   # run server with a theme and build all drafts
 hugo new blog/your-post-title.md
 hugo new projects/your-project-name.md
 

@@ -1,0 +1,56 @@
+{{ define "body"}}
+<main>
+  <header class="w3-container">
+   <h3>From {{ .Section }}<h3>
+  </header>
+
+  <div class="w3-container">
+    {{ dateFormat "Monday,Jan 2, 2006" .Lastmod }}
+  </div>
+
+  <article class="w3-panel">
+    <div class="w3-container w3-white w3-round-large">
+      <header class="w3-container w3-text-deep-orange">
+        <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
+      </header>
+
+      <div class="w3-white w3-container">
+        {{ .Content }}
+      </div>
+      <hr>
+      <footer class="w3-container w3-text-theme">
+        <div class="w3-bar">
+          <strong>
+            <div class="w3-row">
+              <div class="w3-quarter	 w3-container">
+                <a href="{{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}" class="w3-bar-item w3-button w3-hover-red">
+                    <!-- <i class="material-icons">first_page</i> -->
+                    Prev. Section
+                </a>
+              </div>
+              <div class="w3-quarter	 w3-container">
+              <a href="{{if .PrevPage}}{{.PrevPage.Permalink}}{{end}}" class="w3-bar-item w3-button w3-hover-blue">
+                <!-- <i class="large material-icons">chevron_left</i> -->
+                Prev. Page
+              </a>
+              </div>
+              <div class="w3-quarter	 w3-container">
+              <a href="{{if .NextPage}}{{.NextPage.Permalink}}{{end}}" class="w3-bar-item w3-button w3-hover-green">
+                <!-- <i class="large material-icons">chevron_right</i> -->
+                Next Page
+              </a>
+              </div>
+              <div class="w3-quarter	 w3-container">
+              <a href="{{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}" class="w3-bar-item w3-button w3-hover-yellow">
+                <!-- <i class="large material-icons">last_page</i> -->
+                Next Section
+              </a>
+              </div>
+            </div>
+          <strong>
+        </div>
+      </footer>
+    </div>
+  </article>
+</main>
+{{ end }}

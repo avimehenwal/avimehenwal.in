@@ -1,0 +1,31 @@
+{{ define "body"}}
+<main class="">
+  <header class="w3-container">
+   <h3>All {{ .Title }}<h3>
+  </header>
+
+  {{ range .Pages.ByDate }}
+    <div class="w3-container">
+      {{ dateFormat "Monday,Jan 2, 2006" .Lastmod }}
+    </div>
+    <article class="w3-panel">
+      <a href="{{ .URL }}" style="text-decoration: none;">
+      <div class="w3-container w3-white w3-round">
+        <header class="w3-container w3-text-deep-orange">
+            <h2>{{ .Title }}</h2>
+        </header>
+        <div class="w3-white w3-padding">
+          {{ .Summary }}
+        </div>
+      </a>
+        <footer class="w3-container">
+          <h6 class="w3-text-theme">
+            <strong>
+              <a href="{{ .URL }}" style="text-decoration: none"> READ ARTICLE ></a>
+            </strong>
+          </h6>
+        </footer>
+    </article>
+  {{ end }}
+</main>
+{{ end }}

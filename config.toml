@@ -1,9 +1,7 @@
 baseurl             = "https://avimehenwal.in/"     # Your domain name. Must end with "/"
 languageCode        = "en-us"
-title               = "avimehenwal"
-theme               = "introduction"
+title               = "Home"
 publishDir          = "docs"
-enforce_ssl         = true
 builddrafts         = false                         # Include pages with draft status of true
 canonifyurls        = true                          # Turns relative urls into absolute urls
 # disqusshortname   = "xxx"                         # Enable Disqus for comments
@@ -12,8 +10,11 @@ googleAnalytics   = "UA-113741959-1"
 [taxonomies]
    tag = "tags"
    category = "categories"
+   versions = "version"
 
 [params]
+    colorTheme      = "w3-theme-deep-purple"        # material design color theme name
+    hover           = "w3-hover-deep-orange"
     blogHead        = "Blog"                        # Full name shows on blog post pages
     firstName       = "Avi Mehenwal"                # First name shows in introduction on main page
     tagLine         = "a wannabe computer engineer"

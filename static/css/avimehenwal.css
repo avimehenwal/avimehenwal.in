@@ -1,0 +1,36 @@
+.w3-myfont1 {
+  font-family: 'Permanent Marker', sans-serif;
+  /* text-align: center; */
+  /* font-size: 10vw; */
+  /* margin-top: 10%; */
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+.w3-myfont2 {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+i.material-icons {
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

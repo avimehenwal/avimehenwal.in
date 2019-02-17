@@ -1,0 +1,34 @@
+<!--SEO Information  -->
+<head>
+  <title>{{if .Page.Title}}{{.Page.Title}}{{else}}{{ .Site.Title}}{{end}}</title>
+{{ if .Page.Description }}
+  <meta name="keywords"    content="{{.Page.Description}}">
+  <meta name="description" content="{{.Page.Description}}">
+{{else}}
+  <meta name="keywords"    content="{{.Site.Params.description}}">
+  <meta name="description" content="{{.Site.Params.description}}">
+{{ end }}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <meta name="author" content="{{.Site.Params.author}}">
+  {{ .Hugo.Generator }}  <!-- <meta name="generator" content="Hugo 0.18" /> -->
+  <base href="{{ .Site.BaseURL }}">
+  <!--External resources -order matters for css overrides -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/{{ with $.Site.Params.ColorTheme }}{{ . }}{{ end }}.css">
+  <link rel="stylesheet" href="css/avimehenwal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" type='image/x-icon' {{ if .Site.Params.faviconFile }} href="{{ .Site.Params.faviconFile }}" {{ else }} href="img/favicon.ico" {{ end }}>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Permanent Marker fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+  <!-- Google Analytics -->
+  {{ template "_internal/google_analytics_async.html" . }}
+</head>
