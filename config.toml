@@ -16,6 +16,7 @@ googleAnalytics   = "UA-113741959-1"
     colorTheme      = "w3-theme-deep-purple"        # material design color theme name
     hover           = "w3-hover-deep-orange"
     blogHead        = "Blog"                        # Full name shows on blog post pages
+    contactMe       = "https://goo.gl/forms/KvT1FxyMqS8g8Rs43"
     firstName       = "Avi Mehenwal"                # First name shows in introduction on main page
     tagLine         = "a wannabe computer engineer"
     introHeight     = "medium"                       # Input either 'medium' or 'large' or 'fullheight'
