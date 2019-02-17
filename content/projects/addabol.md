@@ -6,7 +6,6 @@ external_link: ""
 weight: 2
 ---
 
-## Addabol
 _Backend developer and Release engineer_
 
 Server side programmer for webApp name addabol (later renamed to planito). WebApp is now deprecated.

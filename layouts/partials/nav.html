@@ -1,0 +1,43 @@
+<!-- Sidebar Contents -->
+<div class="w3-sidebar w3-bar-block w3-animate-left w3-theme" style="display:none;z-index:5" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hover-deep-orange" onclick="w3_close()">Close &times;</button>
+  <a href="{{ .Site.BaseURL }}" class="w3-bar-item w3-button  w3-hover-deep-orange">Home</a>
+  {{ range .Site.Sections }}
+    <a href="{{ .URL }}" class="w3-bar-item w3-button w3-hover-deep-orange">{{ .Title }}</a>
+  {{ end }}
+</div>
+
+<!-- Page Content -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+</div>
+
+<div class="w3-container w3-padding-small w3-theme-d3">
+  <div class="w3-right">
+    <i class="fa fa-volume-up"></i>
+    <!-- <i class="fa fa-wifi"></i> -->
+    <!-- <i class="fa fa-code"></i> -->
+    <!-- <i class="far fa-folder-open"></i> -->
+  </div>
+</div>
+
+<div class="w3-bar w3-white w3-xlarge w3-text-theme">
+  <button class="w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></button>
+  <span class="w3-bar-item">
+    <strong><a href="{{.Site.BaseURL}}" > Avi Mehenwal </a></strong>
+  </span>
+  <a class="w3-bar-item w3-button w3-right" href="#"><i class="fa fa-search"></i></a>
+</div>
+
+{{ partial "breadcrumb.html" . }}
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>

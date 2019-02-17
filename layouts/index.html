@@ -1,25 +1,32 @@
-{{ define "body" }}
-<main class="w3-container">
-  <section class="w3-container">
-    <div class="w3-myfont2 w3-center">
-      <h4>
-        <p>Hi, folks! I'm Avi.</p>
-        <p>I live and study in Germany.</p>
-        <p>
-          <strong>
-            <u>
-              <a href="/overview">
-                <h3>Here</h3> are some
-              </a>
-            </u>
-          </strong> stuff I have made.
-        </p>
-      </h4>
-    </div>
-  </section>
-</main>
+{{ define "body"}}
+  <main>
+    {{ range .Site.Sections.ByDate }}
+      <article class="w3-panel">
+        <div class="w3-container w3-white w3-round-large">
+          <header class="w3-container w3-white">
+            <a href="{{ .URL }}">
+              <h1 class="w3-text-deep-orange">{{ .Title }}</h1>
+            </a>
+          </header>
 
-<script>
-  document.body.style.backgroundColor = "yellow";
-</script>
+          <div class="">
+            <ul class="w3-ul w3-hoverable">
+              {{ range first 5 .Pages.ByDate }}
+                <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+
+          <footer class="w3-container">
+            <h6 class="w3-text-theme">
+              <strong>
+                <a href="{{ .URL }}">CHECK ALL {{.Title | upper}} ></a>
+              </strong>
+            </h6>
+          </footer>
+        </div>
+      </article>
+
+    {{ end }}
+  </main>
 {{ end }}
