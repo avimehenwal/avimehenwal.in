@@ -1,0 +1,7 @@
+{{ with .Params.tags }}
+{{ range . }}
+  <a href="/tags/{{.}}">
+    <span class="w3-tag w3-theme-l2 w3-round">{{.}}</span>
+  </a>
+{{end}}
+{{end}}

@@ -9,13 +9,30 @@
             </a>
           </header>
 
-          <div class="">
-            <ul class="w3-ul w3-hoverable">
-              {{ range first 5 .Pages.ByDate }}
-                <li><a href="{{ .URL }}">{{ .Title }}</a></li>
-              {{ end }}
-            </ul>
-          </div>
+          <!-- Main content -->
+          <ul class="w3-ul w3-card-4">
+            <!--loop on Pages  -->
+            {{ range first 5 .Pages.ByDate }}
+            <a href="{{ .URL }}">
+              <li class="w3-bar w3-hover-theme">
+                {{ with .Resources.Match "hero*"}}
+                  {{ range . }}
+                    {{ with .Resize "400x" }}
+                      <img src="{{.RelPermalink }}" class="w3-bar-item w3-hide-small" style="width:85px">
+                    {{end}}
+                  {{ end }}
+                {{ else }}
+                  <img src="/img/workday.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                {{ end }}
+                <div class="w3-bar-item">
+                  <span class="">{{ .Title }}</span><br>
+                  {{ partial "labels.html" . }}
+                </div>
+              </li>
+            </a>
+            {{ end }}
+          </ul>
+
 
           <footer class="w3-container">
             <h6 class="w3-text-theme">

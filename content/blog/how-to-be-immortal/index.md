@@ -8,9 +8,6 @@ categories    : []
 tags          : [pim, learning, internet]
 ---
 
-
-![Example image](img/blog-post-structure.jpg)
-
 learning revision marker on page, page last read, keep on improving content on every iteration, add an image, improve language, use new words which you learnt, add/make videos. Its for you! unless its for others
 
 include the tools to learn the content fast, MNENOMICS, visuals, mindmaps and self tests. Journey method, mind palace, method of Loci
