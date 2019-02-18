@@ -2,6 +2,7 @@
 <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme" style="display:none;z-index:5" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large w3-hover-deep-orange" onclick="w3_close()">Close &times;</button>
   <a href="{{ .Site.BaseURL }}" class="w3-bar-item w3-button  w3-hover-deep-orange">Home</a>
+  <a href="/contact" class="w3-bar-item w3-button  w3-hover-deep-orange">Write Me</a>
   {{ range .Site.Sections }}
     <a href="{{ .URL }}" class="w3-bar-item w3-button w3-hover-deep-orange">{{ .Title }}</a>
   {{ end }}
