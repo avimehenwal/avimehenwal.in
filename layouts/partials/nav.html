@@ -26,10 +26,13 @@
   <span class="w3-bar-item">
     <strong><a href="{{.Site.BaseURL}}" > Avi Mehenwal </a></strong>
   </span>
-  <a class="w3-bar-item w3-button w3-right c2a" href="/contact/">
-    <i class="fa fa-pencil"></i>
-    <!-- <i class="fa fa-search"></i> -->
-  </a>
+    {{ if and .Site.Params.showRSSButton .Site.RSSLink }}
+      <a class="w3-bar-item w3-button w3-right c2a" href="{{ .Site.RSSLink }}"><i class="fa fa-rss"></i>
+    {{ end }}
+    <a class="w3-bar-item w3-button w3-right c2a" href="/contact/">
+      <i class="fa fa-pencil"></i>
+      <!-- <i class="fa fa-search"></i> -->
+    </a>
 </div>
 
 {{ partial "breadcrumb.html" . }}

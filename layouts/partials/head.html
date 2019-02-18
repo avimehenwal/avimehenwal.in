@@ -31,4 +31,8 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
   <!-- Google Analytics -->
   {{ template "_internal/google_analytics_async.html" . }}
+  <!-- RSS Information -->
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
 </head>
