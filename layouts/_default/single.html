@@ -80,7 +80,9 @@
   <!-- </div> <!-- w3-row-padding --> -->
   {{end}}
 
-
+  {{ if .Params.asciinema }}
+      <script src="{{ .Site.BaseURL }}js/asciinema-player.js"></script>
+  {{ end }}
 
 </main>
 {{ end }}
