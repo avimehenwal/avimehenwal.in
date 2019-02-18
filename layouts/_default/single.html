@@ -1,7 +1,7 @@
 {{ define "body"}}
 <main>
   <header class="w3-container">
-   <h3>From {{ .Section }}<h3>
+   <h3>{{ .Title }}<h3>
   </header>
 
   <div class="w3-container">
@@ -9,10 +9,19 @@
   </div>
 
   <article class="w3-panel">
-    <div class="w3-container w3-white w3-round-large">
+    <div class="w3-white w3-round-large">
       <header class="w3-container w3-text-deep-orange">
         <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
       </header>
+
+      {{ $images := .Page.Resources.Match "hero*" }}
+      {{ range $images }}
+        {{ with .Resize "400x" }}
+          <!-- <figure> -->
+            <img src="{{.RelPermalink }}" style="width:100%" alt="{{.Title}}">
+          <!-- </figure> -->
+        {{end}}
+      {{ end }}
 
       <div class="w3-white w3-container">
         {{ .Content }}
@@ -50,7 +59,28 @@
           <strong>
         </div>
       </footer>
-    </div>
+    </div> <!-- article > div -->
   </article>
+
+  <!-- Photo Gallery from Resources -->
+  {{ if .Resources }}
+  <!-- <div class="w3-row-padding w3-margin-top"> -->
+    {{ range .Resources.ByType "image" }}
+      <!-- <div class="w3-half"> -->
+        <div class="w3-card">
+          {{ with .Resize "500x" }}
+            <img src="{{.RelPermalink }}"  style="width:100%">
+            <div class="w3-container">
+              <h5>{{.Name}}</h5>
+            </div>
+          {{end}}
+        </div>
+      <!-- </div> -->
+    {{ end }}
+  <!-- </div> <!-- w3-row-padding --> -->
+  {{end}}
+
+
+
 </main>
 {{ end }}
