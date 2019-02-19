@@ -2,7 +2,7 @@
 <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme" style="display:none;z-index:5" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large w3-hover-deep-orange" onclick="w3_close()">Close &times;</button>
   <a href="{{ .Site.BaseURL }}" class="w3-bar-item w3-button  w3-hover-deep-orange">Home</a>
-  <a href="/contact" class="w3-bar-item w3-button  w3-hover-deep-orange">Write Me</a>
+  <a href="/contact" class="w3-bar-item w3-button  w3-hover-deep-orange">Write To Me</a>
   {{ range .Site.Sections }}
     <a href="{{ .URL }}" class="w3-bar-item w3-button w3-hover-deep-orange">{{ .Title }}</a>
   {{ end }}
@@ -21,21 +21,53 @@
   </div>
 </div>
 
-<div class="w3-bar w3-white w3-xlarge w3-text-theme">
-  <button class="w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></button>
-  <span class="w3-bar-item">
-    <strong><a href="{{.Site.BaseURL}}" > Avi Mehenwal </a></strong>
-  </span>
-    {{ if and .Site.Params.showRSSButton .Site.RSSLink }}
-      <a class="w3-bar-item w3-button w3-right c2a" href="{{ .Site.RSSLink }}"><i class="fa fa-rss"></i>
-    {{ end }}
-    <a class="w3-bar-item w3-button w3-right c2a" href="/contact/">
-      <i class="fa fa-pencil"></i>
-      <!-- <i class="fa fa-search"></i> -->
-    </a>
+<!-- Title Bar -->
+<div class="w3-white w3-text-theme w3-center w3-bar">
+  <h2>
+    <strong><a href="/" class="no-deco"> Avi Mehenwal </a></strong>
+  </h2>
 </div>
 
-{{ partial "breadcrumb.html" . }}
+  <!-- breadcrumb.html -->
+    <nav class="w3-bar w3-text-theme w3-white" id="navbar">
+      <button class="w3-bar-item w3-button w3-bottombar w3-border-theme" onclick="w3_open()">
+        <i class="fa fa-bars"></i><i class="material-icons" style="">chevron_right</i>
+      </button>
+      <div>
+        {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+      </div>
+      {{ define "breadcrumbnav" }}
+        {{ if .p1.Parent }}
+          {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+          {{ else if not .p1.IsHome }}
+          {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+        {{ end }}
+        <a href="{{ .p1.Permalink }}" class="w3-bar-item w3-button w3-bottombar w3-border-theme">
+          {{ .p1.Title }}<i class="material-icons" style="">chevron_right</i></a>
+        {{ end }}
+        {{ if and .Site.Params.showRSSButton .Site.RSSLink }}
+          <a class="w3-bar-item w3-button w3-right c2a" href="{{ .Site.RSSLink }}"><i class="fa fa-rss"></i>
+        {{ end }}
+        <a class="w3-bar-item w3-button w3-right c2a" href="/contact/">
+          <i class="fa fa-pencil"></i>
+          <!-- <i class="fa fa-search"></i> -->
+        </a>
+    </nav>
+
+    <script>
+      window.onscroll = function() {myFunction()};
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  <!-- End breadbrumbs  -->
 
 <script>
 function w3_open() {

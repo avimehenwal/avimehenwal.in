@@ -10,13 +10,17 @@
 
   <article class="w3-panel">
     <div class="w3-white w3-round-large">
-      <header class="w3-container w3-text-deep-orange">
-        <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
+      {{ with .Params.external_link}}
+        <a href="{{.}}" class="no-deco"><header class="w3-container w3-text-deep-orange w3-hover-theme">
+      {{else}}
+        <a href="" class="no-deco"><header class="w3-container w3-text-deep-orange">
+      {{end}}
+        <h1>{{ .Title }}</a></h1>
       </header>
 
       {{ $images := .Page.Resources.Match "hero*" }}
       {{ range $images }}
-        {{ with .Resize "400x" }}
+        {{ with .Resize "800x" }}
           <!-- <figure> -->
             <img src="{{.RelPermalink }}" style="width:100%" alt="{{.Title}}">
           <!-- </figure> -->
@@ -64,23 +68,7 @@
     </div> <!-- article > div -->
   </article>
 
-  <!-- Photo Gallery from Resources -->
-  {{ if .Resources }}
-  <!-- <div class="w3-row-padding w3-margin-top"> -->
-    {{ range .Resources.ByType "image" }}
-      <!-- <div class="w3-half"> -->
-        <div class="w3-card">
-          {{ with .Resize "500x" }}
-            <img src="{{.RelPermalink }}"  style="width:100%">
-            <div class="w3-container">
-              <h5>{{.Name}}</h5>
-            </div>
-          {{end}}
-        </div>
-      <!-- </div> -->
-    {{ end }}
-  <!-- </div> <!-- w3-row-padding --> -->
-  {{end}}
+{{ partial "tabbed-image-gallery" . }}
 
   {{ if .Params.asciinema }}
       <script src="{{ .Site.BaseURL }}js/asciinema-player.js"></script>

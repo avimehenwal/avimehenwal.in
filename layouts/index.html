@@ -4,8 +4,8 @@
       <article class="w3-panel">
         <div class="w3-container w3-white w3-round-large">
           <header class="w3-container w3-white">
-            <a href="{{ .URL }}">
-              <h1 class="w3-text-deep-orange">{{ .Title }}</h1>
+            <a href="{{ .URL }}" class="no-deco">
+              <h1 class="w3-text-deep-orange">My {{ .Title }}</h1>
             </a>
           </header>
 
@@ -13,7 +13,7 @@
           <ul class="w3-ul w3-card-4">
             <!--loop on Pages  -->
             {{ range first 5 .Pages.ByDate }}
-            <a href="{{ .URL }}">
+            <a href="{{ .URL }}" class="no-deco">
               <li class="w3-bar w3-hover-theme">
                 {{ with .Resources.Match "hero*"}}
                   {{ range . }}
@@ -37,7 +37,7 @@
           <footer class="w3-container">
             <h6 class="w3-text-theme">
               <strong>
-                <a href="{{ .URL }}">CHECK ALL {{.Title | upper}} ></a>
+                <a href="{{ .URL }}" class="no-deco">CHECK ALL {{.Title | upper}} ></a>
               </strong>
             </h6>
           </footer>

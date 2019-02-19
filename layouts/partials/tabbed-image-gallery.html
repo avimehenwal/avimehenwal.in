@@ -1,0 +1,40 @@
+<!-- Photo Gallery from Resources -->
+{{ if .Resources }}
+  <div class="w3-row-padding">
+    {{ range .Resources.ByType "image" }}
+      {{ with .Resize "200x" }}
+        <div class="w3-col s3 w3-container">
+          <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('{{.Name}}');">
+            <img src="{{.RelPermalink }}" alt="{{.Name}}" style="width:100%">
+          </a>
+        </div>
+      {{end}}
+    {{ end }}
+  </div>
+{{end}}
+
+<br>
+{{ if .Resources }}
+  {{ range .Resources.ByType "image" }}
+  {{ with .Resize "600x" }}
+    <!-- Description -->
+    <div id="{{.Name}}" class="picture w3-display-container" style="display:none">
+      <img src="{{.RelPermalink }}" alt="{{.Name}}" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'"
+      class="w3-display-topright w3-button w3-transparent w3-text-theme">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-theme">{{.Title}}</div>
+    </div>
+  {{end}}
+  {{end}}
+{{end}}
+
+<script>
+function openImg(imgName) {
+  var i, x;
+  x = document.getElementsByClassName("picture");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(imgName).style.display = "block";
+}
+</script>

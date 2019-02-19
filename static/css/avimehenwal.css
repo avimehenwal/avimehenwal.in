@@ -20,7 +20,7 @@ i.material-icons {
   position: absolute;
 }
 
-a {
+a.no-deco {
   text-decoration: none;
 }
 
