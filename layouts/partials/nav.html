@@ -6,6 +6,11 @@
   {{ range .Site.Sections }}
     <a href="{{ .URL }}" class="w3-bar-item w3-button w3-hover-deep-orange">{{ .Title }}</a>
   {{ end }}
+  <hr>
+  {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
+    <a href="/{{$taxonomy_term}}" class="w3-bar-item w3-button w3-hover-deep-orange">{{ $taxonomy_term | humanize}}</a>
+  {{ end }}
+  <hr>
 </div>
 
 <!-- Page Content -->

@@ -10,7 +10,7 @@ googleAnalytics   = "UA-113741959-1"
 [taxonomies]
    tag = "tags"
    category = "categories"
-   versions = "version"
+   version = "versions"
 
 [params]
     colorTheme      = "w3-theme-deep-purple"        # material design color theme name

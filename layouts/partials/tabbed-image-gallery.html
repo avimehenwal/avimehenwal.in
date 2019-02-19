@@ -1,6 +1,7 @@
 <!-- Photo Gallery from Resources -->
 {{ if .Resources }}
   <div class="w3-row-padding">
+    <h4>Image Gallery</h4>
     {{ range .Resources.ByType "image" }}
       {{ with .Resize "200x" }}
         <div class="w3-col s3 w3-container">

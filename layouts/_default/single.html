@@ -32,6 +32,7 @@
         {{ partial "labels.html" . }}
         {{ .Content }}
       </div>
+      {{ partial "tabbed-image-gallery" . }}
       <hr>
       <footer class="w3-container w3-text-theme">
         <div class="w3-bar">
@@ -68,7 +69,6 @@
     </div> <!-- article > div -->
   </article>
 
-{{ partial "tabbed-image-gallery" . }}
 
   {{ if .Params.asciinema }}
       <script src="{{ .Site.BaseURL }}js/asciinema-player.js"></script>
