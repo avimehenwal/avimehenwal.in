@@ -1,0 +1,10 @@
+<header class="w3-container">
+  <h3>
+    {{ if .IsPage }}
+      {{ .Title }}
+    {{else}}
+      All {{ .Title }}
+      <span class="w3-badge w3-theme-d3">{{ len .Pages }}</span>
+    {{end}}
+  <h3>
+</header>

@@ -1,8 +1,6 @@
 {{ define "body"}}
 <main>
-  <header class="w3-container">
-   <h3>{{ .Title }}<h3>
-  </header>
+  {{ partial "main-title.html" . }}
 
   <div class="w3-container">
     {{ dateFormat "Monday,Jan 2, 2006" .Lastmod }}
@@ -68,7 +66,6 @@
       </footer>
     </div> <!-- article > div -->
   </article>
-
 
   {{ if .Params.asciinema }}
       <script src="{{ .Site.BaseURL }}js/asciinema-player.js"></script>
