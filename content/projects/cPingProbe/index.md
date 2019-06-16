@@ -27,4 +27,4 @@ _cPingProbe_ is a multiplatform (Windows, Linux, mac OS, Solaris) monitoring pin
   </a>
 </div>
 
-[Get in the loop!]({{< relref "contact.md" >}})
+[Get in the loop!]({{< ref "contact.md" >}})

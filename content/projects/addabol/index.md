@@ -23,4 +23,4 @@ AWS, pyramid, Facebook Graph API, Bitbucket, Gevent
 
 #### Still Interested
 
-[Let me know what do you think about this and how can I improve]({{< relref "contact.md" >}})
+[Let me know what do you think about this and how can I improve]({{< ref "contact.md" >}})

@@ -4,7 +4,7 @@
   <a href="{{ .Site.BaseURL }}" class="w3-bar-item w3-button  w3-hover-deep-orange">Home</a>
   <a href="/contact" class="w3-bar-item w3-button  w3-hover-deep-orange">Write To Me</a>
   {{ range .Site.Sections }}
-    <a href="{{ .URL }}" class="w3-bar-item w3-button w3-hover-deep-orange">{{ .Title }}</a>
+    <a href="{{ .RelPermalink }}" class="w3-bar-item w3-button w3-hover-deep-orange">{{ .Title }}</a>
   {{ end }}
   <hr>
   {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}

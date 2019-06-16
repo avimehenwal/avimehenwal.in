@@ -8,7 +8,7 @@
     </div>
 
     <article class="w3-panel">
-      <a href="{{ .URL }}" class="no-deco">
+      <a href="{{ .RelPermalink }}" class="no-deco">
         <div class="w3-white w3-cell-row">
           <div class="w3-cell w3-hide-small">
             {{ with .Resources.Match "hero*"}}
@@ -32,7 +32,7 @@
           <footer class="w3-container">
             <h6 class="w3-text-theme">
               <strong>
-                <a href="{{ .URL }}" style="text-decoration: none"> READ ARTICLE ></a>
+                <a href="{{ .RelPermalink }}" style="text-decoration: none"> READ ARTICLE ></a>
               </strong>
             </h6>
           </footer>
