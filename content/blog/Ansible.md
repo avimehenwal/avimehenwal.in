@@ -118,3 +118,4 @@ ansible-galaxy init vivekrole
 * Importing playbooks is possible
   - `import_playbook: webservers.yml`
 * Ansible uses **Jinja2** templating to enable dynamic expressions and access to variables
+* Working with conditions, **when**
