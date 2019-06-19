@@ -8,16 +8,21 @@ categories    : [Programming]
 tags          : [DevOps]
 ---
 
+> Configuration Management
+
+* How to install / remove / Update packages
+* Ansible, puppet, chef, salt
+
+> Orchestration Tool
+
+* How to deploy a OS / vm image onto infrastructure
+* Terraform, OpenStack
+
 
 ### How to get vagrant image with ansible provision?
 
 The Vagrant Ansible provisioner allows you to provision the guest using Ansible playbooks by executing ansible-playbook from the Vagrant host. Ansible should be installed on host
 
-Vagrant File sections
-1. section
-2. provider
-3. provision
-   1. Ansible
 
 # Ansible
 
