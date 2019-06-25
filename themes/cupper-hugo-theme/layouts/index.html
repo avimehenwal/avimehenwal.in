@@ -2,5 +2,15 @@
   <main id="main">
     <h1>{{ .Title }}</h1>
     {{ .Content }}
+    
+    <p>
+    {{/* Show a count of pages by different types */}}
+      There are <strong>{{ len .Site.RegularPages }} pages </strong> currently on this site.
+      {{ range .Site.Sections.ByDate }}
+        {{ $type := .Type }}
+        <strong>{{ len (where .Site.RegularPages "Section" "=" $type) }}</strong>
+        <a href="{{.URL}}">{{.Title}}</a>,
+      {{ end }}
+    </p>
   </main>
 {{ end }}

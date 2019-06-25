@@ -1,7 +1,7 @@
 baseURL                = "https://avimehenwal.in/"     # Your domain name. Must end with "/"
 languageCode           = "en-us"
 defaultContentLanguage = "en"
-title                  = "Avi Mehenwal @avimehenwal"
+title                  = "@avimehenwal"
 theme                  = "cupper-hugo-theme"
 googleAnalytics        = "UA-113741959-1"
 disqusShortname        = "yourdiscussshortname"
