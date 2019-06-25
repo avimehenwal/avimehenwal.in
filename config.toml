@@ -58,6 +58,29 @@ enableGitInfo          = true
     url = "/about/"
     weight = 7
   [[menu.nav]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 8
+  [[menu.nav]]
     name = "RSS"
     url = "/index.xml"
-    weight = 8
+    weight = 9
+
+
+# Social icons appear in introduction and contact section. Add as many more as you like.
+# Find icon names here: http://fontawesome.io/cheatsheet/
+[[params.social]]
+    url = "https://github.com/avimehenwal"
+    icon = "github"
+
+[[params.social]]
+    url = "https://twitter.com/avimehenwal"
+    icon = "twitter"
+
+[[params.social]]
+    url = "https://www.quora.com/profile/Avi-Mehenwal"
+    icon = "quora"
+
+[[params.social]]
+    url = "https://www.linkedin.com/in/avimehenwal/"
+    icon = "linkedin"
