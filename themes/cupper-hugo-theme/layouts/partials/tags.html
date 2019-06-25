@@ -1,0 +1,26 @@
+<!--Add Category to post -->
+{{ with .Params.categories }}
+   {{ range . }}
+   <span class="patterns">
+    <a href="{{ "categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+    </span>
+  {{ end }}
+ {{ end }}
+
+<!-- Add series to posts -->
+{{ with .Params.series }}
+  {{ range . }}
+    <span class="patterns">
+      <a href="{{ "series/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+    </span>
+ {{ end }}
+{{ end }}
+
+<!-- Add tags to post -->
+{{ with .Params.tags }}
+   {{ range . }}
+     <span class="patterns">
+       <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+     </span>
+  {{ end }}
+ {{ end }}

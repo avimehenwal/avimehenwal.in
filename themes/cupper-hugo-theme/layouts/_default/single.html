@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <main id="main">
+    <h1>{{ .Title }}</h1>
+    <!-- {{ .Date }} -->
+    {{ partial "tags.html" . }}
+    {{ .Content }}
+  </main>
+  {{ partial "revision-progress-bar.html" . }}
+{{ end }}
