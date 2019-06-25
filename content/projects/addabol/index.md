@@ -17,7 +17,11 @@ Server side programmer for webApp name addabol (later renamed to planito). WebAp
 
 AWS, pyramid, Facebook Graph API, Bitbucket, Gevent
 
-{{< img "addabol*" "addabol grafik" >}}
+{{< figure
+img="addabol.png" 
+caption="Addabol Logo" 
+command="Resize" 
+options="700x" >}}
 
 [Facebook](https://www.facebook.com/addabol/) | [on Amazon](https://www.amazon.com/AddaBol/dp/B00K1BX8IO) | [Google+](https://plus.google.com/118081514446163970791)
 

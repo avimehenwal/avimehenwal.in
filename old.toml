@@ -1,0 +1,70 @@
+baseurl             = "https://avimehenwal.in/"     # Your domain name. Must end with "/"
+languageCode        = "en-us"
+title               = "Home"
+publishDir          = "docs"
+builddrafts         = false                         # Include pages with draft status of true
+canonifyurls        = true                          # Turns relative urls into absolute urls
+# disqusshortname   = "xxx"                         # Enable Disqus for comments
+googleAnalytics   = "UA-113741959-1"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+   version = "versions"
+
+[params]
+    colorTheme      = "w3-theme-deep-purple"        # material design color theme name
+    hover           = "w3-hover-deep-orange"
+    blogHead        = "Blog"                        # Full name shows on blog post pages
+    contactMe       = "https://goo.gl/forms/KvT1FxyMqS8g8Rs43"
+    showRSSButton   = true                          # Show rss button in navigation
+    firstName       = "Avi Mehenwal"                # First name shows in introduction on main page
+    tagLine         = "a wannabe computer engineer"
+    introHeight     = "medium"                       # Input either 'medium' or 'large' or 'fullheight'
+    themeStyle      = "light"                       # Choose 'light' or 'dark'
+    avatar          = "img/profile.jpg"             # Path to image in static folder eg. img/avatar.png, or comment out to remove
+    email           = "avi.mehanwal@gmail.com"         # Shows in contact section, or leave blank to omit
+    localTime       = true                          # Show your current local time in contact section
+    timeZone        = "Asia/Kolkata"                # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+    dateForm        = "Jan 2, 2006"
+    dateFormFull    = "Mon Jan 2 2006 15:04:05 EST"
+    cacheBuster     = false                         # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
+    description     = "avimehenwal avi mehenwal freelance engineer"         # Max 160 characters show in search results
+    faviconFile     = "img/fav.ico"
+    highlightjs     = true                          # Syntax highlighting
+    footerText      = ""                            # Text to show in footer (overrides default text)
+    fadeIn          = true                          # Turn on/off the fade-in effect
+
+    showBlog            = true                      # Show Blog section on home page
+    showProjects        = true                      # Show Projects section on home page
+    projectColumns      = "3"                       # Choose "2" or "3" columns for projects section
+    placeHolderimg      = "/img/workday.jpg"        # For Projects without image
+    showAllPosts        = false                     # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
+    showLatest          = true                      # Show latest blog post summary
+    shareButtons        = true                      # On post pages, show share this social buttons
+
+    # Share buttons
+    shareTwitter        = true
+    shareFacebook       = true
+    sharePinterest      = true
+    shareGooglePlus     = true
+
+# Social icons appear in introduction and contact section. Add as many more as you like.
+# Find icon names here: http://fontawesome.io/cheatsheet/
+
+
+[[params.social]]
+    url = "https://github.com/avimehenwal"
+    icon = "github"
+
+[[params.social]]
+    url = "https://twitter.com/avimehenwal"
+    icon = "twitter"
+
+[[params.social]]
+    url = "https://www.quora.com/profile/Avi-Mehenwal"
+    icon = "quora"
+
+[[params.social]]
+    url = "https://www.linkedin.com/in/avimehenwal/"
+    icon = "linkedin"

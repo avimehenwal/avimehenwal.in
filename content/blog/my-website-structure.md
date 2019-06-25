@@ -65,7 +65,9 @@ tags          : []
 
 > Google form to let visitor contact you
 
+[Favivon Generator][1]
 
+[1]: https://realfavicongenerator.net/ "realfavicongenerator"
 
 
 ## Footnotes
