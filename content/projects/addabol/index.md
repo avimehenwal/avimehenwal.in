@@ -1,10 +1,14 @@
 ---
 title: "Addabol webapp"
 date: 2017-11-13T12:21:11-05:00
+series     : [companyProject]
+categories : [project]
+tags          : [pyramid, mongodb, python]
+
+revision   : 0
 image: "img/addabol_full.png"
 external_link: "https://www.facebook.com/addabol/"
 weight: 2
-tags          : [pyramid, mongodb, python]
 ---
 
 _Backend developer and Release engineer_

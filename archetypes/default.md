@@ -1,11 +1,18 @@
 ---
-title         : "{{ replace .TranslationBaseName "-" " " | title }}"
-date          : {{ .Date }}
-image         : "img/unicode-secret.png"
-external_link : ""
-weight        : 5
-categories    : []
-tags          : []
+title      : "{{ replace .TranslationBaseName "-" " " | title }}"
+date       : {{ .Date }}
+series     : [ myLearning,
+    personalProject,
+    companyProject,
+    test
+]
+categories : [Programming, design, deployment, development]
+tags       : []
+revision   : 0
+# automatically get a table of contents when two or more subheadings (<h2>s)
+# toc        : false
+
+weight     : 5
 ---
 
 
@@ -15,11 +22,8 @@ tags          : []
 
 
 
-
-## Footnotes
+[bibliography]
+### Footnotes
 
 [^1]: 
 [^2]: 
-[^3]: 
-[^4]: 
-[^5]: 

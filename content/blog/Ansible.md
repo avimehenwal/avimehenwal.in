@@ -1,11 +1,13 @@
 ---
 title         : "Ansible"
 date          : 2019-06-17T12:57:27+02:00
-image         : "img/unicode-secret.png"
-external_link : "https://docs.ansible.com/ansible/latest/index.html"
-weight        : 5
+series     : [myLearning]
 categories    : [Programming]
 tags          : [DevOps]
+
+revision   : 0
+weight        : 5
+external_link : "https://docs.ansible.com/ansible/latest/index.html"
 ---
 
 > Configuration Management

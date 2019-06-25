@@ -1,11 +1,12 @@
 ---
 title         : "Awesome Git Commit Message"
 date          : 2019-06-24T22:30:58+02:00
-image         : "img/unicode-secret.png"
-external_link : ""
-weight        : 5
+series     : [myLearning]
 categories    : [Programming]
 tags          : [git]
+
+revision   : 0
+weight        : 5
 ---
 
 > Why care about commit message anyways? What's the need?

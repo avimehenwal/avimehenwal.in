@@ -1,11 +1,13 @@
 ---
 title         : "Ventriloquist"
 date          : 2019-06-16T13:14:27+02:00
-image         : "JeffDunham.jpeg"
-external_link : "https://en.wikipedia.org/wiki/Ventriloquism"
-weight        : 3
+series     : [myLearning]
 categories    : [hobbies]
 tags          : [voice]
+
+revision   : 0
+weight        : 3
+external_link : "https://en.wikipedia.org/wiki/Ventriloquism"
 ---
 
 a person, especially an entertainer, who can make their voice appear to come from somewhere else, typically a dummy of a person or animal.
