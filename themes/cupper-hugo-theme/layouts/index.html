@@ -17,7 +17,7 @@
           {{ $type := .Type }}
           <tr>
             <th>
-              <a href="{{.URL}}">{{.Title}}</a>
+              <a href="{{.RelPermalink}}">{{.Title}}</a>
             </th>
             <th>
               <strong>{{ len (where .Site.RegularPages "Section" "=" $type) }}</strong>
