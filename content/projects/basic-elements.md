@@ -239,7 +239,7 @@ Press <kbd>X</kbd> to win. Or press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>F</
 
 ## Images
 
-![alternate text](https://sourceforge.net/images/icon_linux.gif)
+![alternate text](https://picsum.photos/200/300)
 
 ## Videos
 

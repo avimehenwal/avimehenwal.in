@@ -25,7 +25,7 @@ enableGitInfo          = true
   footer           = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat       = "Jan 2, 2006"
-  codePenUser      = "someUser"
+  codePenUser      = "avimehenwal"
   katex            = true
 
 [menu]
