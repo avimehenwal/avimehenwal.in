@@ -5,6 +5,15 @@
       <span aria-hidden="true"></span>
     </label>
   </div>
+  {{ with .Site.Sections}}
+    {{ range .}}
+    <span class="note">
+      <a href="{{.RelPermalink}}">{{ .Title }}</a>
+    </span>
+    {{ end }}
+  {{ end }}
+</br>
+</br>
   {{ with .Site.Params.footer }}
     {{ . | markdownify }}
   {{ end }}

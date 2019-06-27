@@ -20,7 +20,7 @@ enableGitInfo          = true
   quality = 99
 
 [params]
-  description      = "Personal website and blog of Avi Mehenwal - the self proclaimed Engineer"
+  description      = "My website, bog, personal dropbox or trash Korb whatever you call it. Learning should be free and so is this website"
   homeMetaContent  = "An accessibility-friendly Hugo theme, ported from the original Cupper project."
   footer           = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
   # For more date formats see https://gohugo.io/functions/format/

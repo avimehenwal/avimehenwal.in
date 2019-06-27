@@ -12,3 +12,8 @@ Welcome to my website:
 * Toggleable dark theme
 * Toggleable table of contents per blog post
 {{% /ticks %}}
+
+
+- [ ] Migrate visually-define to this domain
+- [ ] Migrate greenseers
+- [ ] PWA
