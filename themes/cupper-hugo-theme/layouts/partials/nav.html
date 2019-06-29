@@ -7,6 +7,7 @@
     Menu
   </button>
   {{ $current := . }}
+  {{ $sec := humanize .Section }}
   <ul id="patterns-list">
   {{ range .Site.Menus.nav }}
     <li class="pattern">
@@ -14,7 +15,7 @@
       {{ $active = or $active (eq .Name $current.Title) }}
       {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
       {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
-      <a href="{{ .URL }}" {{ if $active }}aria-current="page"{{ end }}>
+      <a href="{{ .URL }}" {{ if $active }}aria-current="page"{{ end }} {{if eq .Name $sec}}aria-current="page"{{end}}>
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>

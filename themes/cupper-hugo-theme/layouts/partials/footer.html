@@ -1,17 +1,12 @@
-<footer role="contentinfo">
+<footer role="contentinfo">  
+  {{ partial "prev_next.html" . }}
+  {{ partial "breadcrumb.html" . }}  
   <div>
     <label for="themer">
       dark theme: <input type="checkbox" id="themer" class="vh">
       <span aria-hidden="true"></span>
     </label>
   </div>
-  {{ with .Site.Sections}}
-    {{ range .}}
-    <span class="note">
-      <a href="{{.RelPermalink}}">{{ .Title }}</a>
-    </span>
-    {{ end }}
-  {{ end }}
 </br>
 </br>
   {{ with .Site.Params.footer }}
