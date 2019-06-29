@@ -1,0 +1,36 @@
+{{ $sec := .Section }}
+
+{{ if or .PrevInSection .NextInSection }}
+<nav id="patterns-nav" class="patterns gallery" role="navigation" style="width: 100%">
+    <span>
+    {{ if .PrevInSection }}
+        <span class="tags">
+            <a href="{{ .PrevInSection.Permalink }}" class="">
+                << {{ .PrevInSection.Title }}
+            </a>
+        </span>
+        {{ end }}
+        
+          
+        {{ if .NextInSection }}
+        <span class="tags">
+            <a href="{{ .NextInSection.Permalink }}" class="">
+                    {{ .NextInSection.Title }} >>
+            </a>
+        </span>
+        {{ end }}
+    </span>
+</nav>
+</br>
+{{ with .Site.Sections}}
+    {{ range .}}
+        <span class="tags">
+        <a href="{{.RelPermalink}}" {{if eq .Section $sec}}class="active"{{end}}>
+            {{ .Title }}
+        </a>
+        </span>
+    {{ end }}
+{{ end }}
+                
+<!-- could use some JS -->
+{{ end }}

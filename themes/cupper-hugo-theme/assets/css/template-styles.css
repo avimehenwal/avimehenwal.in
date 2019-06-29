@@ -77,7 +77,12 @@ figure p img {
 a {
   outline-offset: 2px;
 }
-
+.active {
+    background-color: #111;
+    color: #fefefe;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+  }
 /* Katex math typesetting */
 .katex * {
     margin-top: 0;
@@ -403,7 +408,7 @@ caption {
 }
 
 /* After */
-.pattern [aria-current] {
+.pattern [aria-current], {
   background-color: #111;
   clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
   color: #fefefe;
@@ -474,6 +479,8 @@ caption {
 .tags * {
     display: inline;
     margin: 0;
+    border-width: 0.15rem;
+
 }
 .tags strong {
     margin-right: 0.25rem;
