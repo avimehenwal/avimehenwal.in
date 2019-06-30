@@ -76,6 +76,19 @@ CSS propoertie will work on SVG provided in code and NOT on svg imported from `i
 </svg> 
 ``` 
 
+How to embed svg onto html
+
+feature                    |`<img>`	      | `<object>`	      | Inline SVG
+---------------------------|:------------:|:-----------------:|:----------
+Browser support	           |  Good	      | Good	          |  Good
+Alt and title attribute	   | Yes	      | None	          |  Title only
+Browser caching	           | Yes	      | Yes	              |  None
+GZip compression	       | Yes	      | Yes	              |  None
+Interactivity	           | None	      | Yes	              |  Very good
+Search engine indexing	   | Yes	      | Through fallback  |	 None
+Workflow	               | Streamlined  |	Medium	          |  Convoluted
+Loading speed	           | Fast	      | Slower	          |  Very fast
+
 shape to path vs stroke to path
 object to path 
 

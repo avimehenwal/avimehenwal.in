@@ -1,6 +1,8 @@
 ---
 title      : "{{ replace .TranslationBaseName "-" " " | title }}"
 date       : {{ .Date }}
+slug       : ""
+draft      : true
 series     : [ myLearning,
     personalProject,
     companyProject,
@@ -15,7 +17,8 @@ revision   : 0
 weight     : 5
 ---
 
-
+tl;dr
+<!-- more -->
 
 
 
