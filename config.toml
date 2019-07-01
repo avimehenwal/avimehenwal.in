@@ -88,3 +88,6 @@ enableGitInfo          = true
 [[params.social]]
     url = "https://www.linkedin.com/in/avimehenwal/"
     icon = "linkedin"
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
