@@ -1031,3 +1031,7 @@ h1 svg {
       background: none;
   }
 }
+
+.svg {
+    background-size: 100px 100px;
+}

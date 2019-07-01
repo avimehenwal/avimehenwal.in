@@ -1,0 +1,30 @@
+<!-- * Images used to open the lightbox -->
+{{ if .Resources }}
+  {{ $images := .Resources.ByType "image" }}
+  {{ $imageCount := len $images }}
+<h3>IMAGE GALLERY ({{$imageCount}})</h3>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js">
+</script>
+
+  <div class="gallery">
+  {{ with .Resources.ByType "image" }}
+    {{ $count := 0 }}
+    {{ range . }}
+      {{ $ext := path.Ext . }} {{/* $ext */}}
+        {{ if ne $ext ".svg)" }}
+          {{ $small := .Resize "200x" }}
+          {{ $large := .Resize "900x" }}
+          <a data-fancybox="gallery" href="{{ $large.RelPermalink }}">
+            <img src="{{ $small.RelPermalink }}">
+          </a>
+        {{ else }}
+          <a data-fancybox="gallery" href="{{ .RelPermalink }}">
+            <img src="{{ .RelPermalink }}" class="svg">
+          </a>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}
