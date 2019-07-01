@@ -1,15 +1,13 @@
 <footer role="contentinfo">  
   {{ partial "prev_next.html" . }}
-  {{ partial "breadcrumb.html" . }}  
   <div>
     <label for="themer">
       dark theme: <input type="checkbox" id="themer" class="vh">
       <span aria-hidden="true"></span>
     </label>
   </div>
-</br>
-</br>
+  {{ partial "socialshare.html" . }}
   {{ with .Site.Params.footer }}
-    {{ . | markdownify }}
+  {{ . | markdownify }}
   {{ end }}
 </footer>

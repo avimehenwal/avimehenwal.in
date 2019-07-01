@@ -1,36 +1,30 @@
 {{ $sec := .Section }}
-
 {{ if or .PrevInSection .NextInSection }}
-<nav id="patterns-nav" class="patterns gallery" role="navigation" style="width: 100%">
-    <span>
-    {{ if .PrevInSection }}
-        <span class="tags">
-            <a href="{{ .PrevInSection.Permalink }}" class="">
-                << {{ .PrevInSection.Title }}
-            </a>
-        </span>
-        {{ end }}
-        
-          
-        {{ if .NextInSection }}
-        <span class="tags">
-            <a href="{{ .NextInSection.Permalink }}" class="">
-                    {{ .NextInSection.Title }} >>
-            </a>
-        </span>
-        {{ end }}
-    </span>
-</nav>
-</br>
-{{ with .Site.Sections}}
-    {{ range .}}
-        <span class="tags">
-        <a href="{{.RelPermalink}}" {{if eq .Section $sec}}class="active"{{end}}>
-            {{ .Title }}
-        </a>
-        </span>
+<nav id="patterns-nav" class="date" role="navigation" style="width: 100%">
+  <div>
+  {{ if .PrevInSection }}
+      <a href="{{ .PrevInSection.Permalink }}" class="" style="float:left">
+        << {{ .PrevInSection.Title }}
+      </a>
     {{ end }}
-{{ end }}
+        
+    {{ if .NextInSection }}
+      <a href="{{ .NextInSection.Permalink }}" class="" style="float:right">
+        {{ .NextInSection.Title }} >>
+      </a>
+    {{ end }}
+  </div>
+</br>
+  {{ with .Site.Sections}}
+  <div>
+    {{ range .}}
+    <a href="{{.RelPermalink}}" {{if eq .Section $sec}}class="active"{{end}} style="text-align: center">
+      {{ .Title }}
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+</nav>
                 
 <!-- could use some JS -->
 {{ end }}
