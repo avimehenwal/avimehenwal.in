@@ -27,6 +27,7 @@ enableGitInfo          = true
   dateFormat       = "Jan 2, 2006"
   codePenUser      = "avimehenwal"
   katex            = true
+  socialshare      = true
 
 [menu]
   [[menu.nav]]
@@ -71,23 +72,40 @@ enableGitInfo          = true
     weight = 10
 
 
-# Social icons appear in introduction and contact section. Add as many more as you like.
-# Find icon names here: http://fontawesome.io/cheatsheet/
-[[params.social]]
-    url = "https://github.com/avimehenwal"
-    icon = "github"
+# # Social icons appear in introduction and contact section. Add as many more as you like.
+# # Find icon names here: http://fontawesome.io/cheatsheet/
+# [[params.social]]
+#     url = "https://github.com/avimehenwal"
+#     icon = "github"
 
-[[params.social]]
-    url = "https://twitter.com/avimehenwal"
-    icon = "twitter"
+# [[params.social]]
+#     url = "https://twitter.com/avimehenwal"
+#     icon = "twitter"
 
-[[params.social]]
-    url = "https://www.quora.com/profile/Avi-Mehenwal"
-    icon = "quora"
+# [[params.social]]
+#     url = "https://www.quora.com/profile/Avi-Mehenwal"
+#     icon = "quora"
 
-[[params.social]]
-    url = "https://www.linkedin.com/in/avimehenwal/"
-    icon = "linkedin"
+# [[params.social]]
+#     url = "https://www.linkedin.com/in/avimehenwal/"
+#     icon = "linkedin"
+
+[params.social]  # Set your social account here, if you don't have some accounts just comment them
+    a-envelope = "mailto:your@email.com"
+    b-stack-overflow ="https://stackoverflow.com/users/12345678/john-doe"
+    c-twitter = "https://twitter.com/johndoe"
+    d-facebook = "https://www.facebook.com/johndoe"
+    e-github = "https://github.com/johndoe"
+    f-youtube = "https://www.youtube.com/channel/12345678"
+    g-linkedin = "https://www.linkedin.com/johndoe"
+    h-google = "https://plus.google.com/12345678"
+    i-github = "https://github.com/johndoe"
+    j-weibo = "https://weibo.com"
+    k-weixin = "http://localhost:1313"
+    l-tumblr = "https://www.tumblr.com/blog/johndoe"
+    m-instagram = "https://instagram.com/johndoe"
+    n-gitlab = "https://gitlab.com/johndoe"
+    o-pinterest = "https://www.pinterest.com/johndoe/"
 
 [outputs]
     home = ["HTML", "RSS", "JSON"]

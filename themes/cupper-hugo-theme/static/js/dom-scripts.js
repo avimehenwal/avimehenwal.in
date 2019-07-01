@@ -131,3 +131,93 @@
     }
   });
 }());
+
+/* social share css */
+
+.w3-tooltip:hover .w3-text{z-index: 1;display:inline-block}
+
+  @media screen and (min-width: 1025px)
+  {
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    left:0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  }
+  
+  }
+  @media screen and (max-width: 1024px) {
+  .icon-bar {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right:auto;
+    
+  }
+
+  .icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+   .bookmark {
+  
+  border-radius: 36px   0px 0px 36px!important ;
+}
+
+ .linkedin {
+  
+  border-radius: 0px  36px 36px 0px!important;
+  }
+
+  }
+
+  
+
+  .icon-bar a:hover {
+  background-color: #000;
+  }
+
+  .bookmark {
+  background: #bb0000;
+  color: white;
+  border-radius: 36px 36px 0px 0px;
+}
+
+
+  .facebook {
+  background: #3B5998;
+  color: white;
+  }
+
+  .twitter {
+  background: #55ACEE;
+  color: white;
+  }
+
+  .google {
+  background: #dd4b39;
+  color: white;
+  }
+
+  .linkedin {
+  background: #007bb5;
+  color: white;
+  border-radius: 0px 0px 36px 36px;
+  }

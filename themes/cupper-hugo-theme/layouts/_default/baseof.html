@@ -9,6 +9,10 @@
       <div class="main-and-footer">
         <div>
           {{ block "main" . }}{{ end }}
+          {{ if .Site.Params.socialshare }}
+            {{ partial "socialshare.html" . }}
+            SOCIAL SHARE
+          {{ end }}
           {{ partial "footer.html" . }}
         </div>
       </div>
