@@ -7,8 +7,7 @@
       <span aria-hidden="true"></span>
     </label>
   </div>
-</br>
-</br>
+  {{ partial "socialshare.html" . }}
   {{ with .Site.Params.footer }}
     {{ . | markdownify }}
   {{ end }}
