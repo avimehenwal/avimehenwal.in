@@ -43,27 +43,6 @@
     
     {{ .Content }}
     
-    <!-- * Images used to open the lightbox -->
-    {{ if .Resources }}
-    <h3>IMAGE GALLERY</h3>
-    <div class="row">
-      {{ with .Resources.ByType "image" }}
-        {{ $count := 0 }}
-        {{ range . }}
-          {{ $count = add $count 1}}
-          {{ $count }}
-          <div class="column">
-            <img src="{{ .RelPermalink }}" onclick="openModal();currentSlide($count)" class="hover-shadow">
-          </div>
-        {{ end }}
-          {{ $total := $count}}
-      {{ end }}
-    </div>
-    {{ end }}
-    
-<!-- todo The Modal/Lightbox -->
-<!-- END -->
-
+    {{ partial "gallery.html" . }}
   </main>
-  {{ partial "disqus.html" . }}
 {{ end }}

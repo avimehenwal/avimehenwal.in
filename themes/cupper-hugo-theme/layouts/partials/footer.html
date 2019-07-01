@@ -6,6 +6,7 @@
       <span aria-hidden="true"></span>
     </label>
   </div>
+  {{ partial "disqus.html" . }}
   {{ partial "socialshare.html" . }}
   {{ with .Site.Params.footer }}
   {{ . | markdownify }}

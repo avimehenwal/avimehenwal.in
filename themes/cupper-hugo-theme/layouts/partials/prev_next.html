@@ -1,30 +1,34 @@
 {{ $sec := .Section }}
 {{ if or .PrevInSection .NextInSection }}
 <nav id="patterns-nav" class="date" role="navigation" style="width: 100%">
-  <div>
-  {{ if .PrevInSection }}
-      <a href="{{ .PrevInSection.Permalink }}" class="" style="float:left">
-        << {{ .PrevInSection.Title }}
+  <span>
+    {{ if .PrevInSection }}
+      <a href="{{ .PrevInSection.Permalink }}" style="float:left">
+        <i class="fa fa-arrow-circle-left"></i>
+        {{ .PrevInSection.Title }}
       </a>
     {{ end }}
-        
+  </span>
+  <span>
     {{ if .NextInSection }}
-      <a href="{{ .NextInSection.Permalink }}" class="" style="float:right">
-        {{ .NextInSection.Title }} >>
-      </a>
-    {{ end }}
-  </div>
-</br>
-  {{ with .Site.Sections}}
-  <div>
-    {{ range .}}
-    <a href="{{.RelPermalink}}" {{if eq .Section $sec}}class="active"{{end}} style="text-align: center">
-      {{ .Title }}
+    <a href="{{ .NextInSection.Permalink }}" style="float:right">
+        {{ .NextInSection.Title }}
+        <i class="fa fa-arrow-circle-right"></i>
     </a>
     {{ end }}
-  </div>
+  </span>
   {{ end }}
+
+  <div>
+    <span>
+      {{ with .Site.Sections}}
+      {{ range .}}
+      <a href="{{.RelPermalink}}" {{if eq .Section $sec}}class="active"{{end}}>
+        {{ .Title }}
+      </a>
+      {{ end }}
+      {{ end }}
+    </span>
+  </div>
 </nav>
-                
 <!-- could use some JS -->
-{{ end }}
