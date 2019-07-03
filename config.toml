@@ -86,4 +86,5 @@ enableGitInfo          = true
     icon = "linkedin"
 
 [outputs]
-    home = ["HTML", "RSS", "JSON"]
+    # home = ["HTML", "RSS", "JSON"]
+     section = ["JSON", "HTML"]
