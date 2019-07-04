@@ -16,6 +16,12 @@ tl;dr
 LVDS
 :  Low Voltage Differential Signaling
 
+Differential Signaling
+: The technique sends the same electrical signal as a differential
+pair of signals, each in its own conductor.
+The receiving circuit responds to the electrical difference between
+the two signals, rather than the difference between a single wire and ground
+
 transceiver
 : a device that can both transmit and receive communications, in particular a combined radio transmitter and receiver.
 
@@ -125,15 +131,30 @@ stty -a | grep -i istrip
 chance to learn react
 [NEtlifyCMS](https://www.netlifycms.org/docs/start-with-a-template/)
 [tailwindcss - css framework](https://tailwindcss.com/)
-
-
-#### The plan
-
+The plan
 
 ## Questions
 How to create and add mindmaps to html blogs?
     svg export from freeplanes is not good enough for dense and large MM
 https://www.w3schools.com/howto/howto_css_timeline.asp
+
+
+### Gatsby test drive
+
+Babel
+: Babel is a JavaScript compiler
+Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Here are the main things Babel can do for you: Transform syntax.
+
++ npm install too many modules, I dont know how many. Takes a while for the first time
++ SPA - server sends all logic code to frontend, bare bones and all rendering happens at client side. like in react.
+
+SSR
+: server side rendering
+
+writing html inside js files
+partials ~ react components
+
+
 
 ### Footnotes
 
