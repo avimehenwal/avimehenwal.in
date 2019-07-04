@@ -16,6 +16,12 @@ tl;dr
 LVDS
 :  Low Voltage Differential Signaling
 
+Differential Signaling
+: The technique sends the same electrical signal as a differential
+pair of signals, each in its own conductor.
+The receiving circuit responds to the electrical difference between
+the two signals, rather than the difference between a single wire and ground
+
 transceiver
 : a device that can both transmit and receive communications, in particular a combined radio transmitter and receiver.
 
