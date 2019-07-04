@@ -1,16 +1,16 @@
 ---
-title: "Soemthing about Coffee"
-date: 2019-05-08T23:48:59+02:00
-lastmod: 2019-05-08T23:48:59+02:00
-type:  "post"
 categories:
 - foods
 - resources
+comments: false
+date: "2019-05-08T23:48:59+02:00"
+lastmod: "2019-05-08T23:48:59+02:00"
 tags:
 - techniques
-w3codecolor: true
-comments: false
 thumbnail: https://vignette.wikia.nocookie.net/coffee/images/8/85/Coffee_Bean_Structure.png/revision/latest?cb=20070203215647
+title: Soemthing about Coffee
+type: post
+w3codecolor: true
 ---
 
 {{<quote>}}

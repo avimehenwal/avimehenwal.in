@@ -1,20 +1,20 @@
 ---
-title: "Processed Meat"
-date: 2019-03-29T22:39:08+01:00
-lastmod: 2019-03-29T22:39:08+01:00
-type:  "post"
 categories:
 - foods
 - nutrition
 - facts
 - anatomy
 - resources
+comments: false
+date: "2019-03-29T22:39:08+01:00"
+draft: false
+lastmod: "2019-03-29T22:39:08+01:00"
 tags:
 - plant based
-w3codecolor: true
-draft: false
-comments: false
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/3/30/Grocery_store_in_Rome.jpg
+title: Processed Meat
+type: post
+w3codecolor: true
 ---
 
 Processed meat is

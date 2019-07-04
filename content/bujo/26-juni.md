@@ -1,11 +1,14 @@
 ---
-title      : "26 Juni"
-date       : 2019-06-26T15:01:23+02:00
-series     : [ myLearning ]
-categories : [design]
-tags       : [http]
-revision   : 0
-weight     : 5
+categories:
+- design
+date: "2019-06-26T15:01:23+02:00"
+revision: 0
+series:
+- myLearning
+tags:
+- http
+title: 26 Juni
+weight: 5
 ---
 
 Hugo + PWA + Netlify = Awesomeness[^1]

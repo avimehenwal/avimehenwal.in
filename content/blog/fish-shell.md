@@ -1,13 +1,13 @@
 ---
-title         : "Fish Shell"
-date          : 2019-06-24T23:00:50+02:00
-series     : [myLearning]
-categories    : [Programming]
-tags          : [shell, fish]
-tags       : []
-
-revision   : 0
-weight        : 5
+categories:
+- Programming
+date: "2019-06-24T23:00:50+02:00"
+revision: 0
+series:
+- myLearning
+tags: []
+title: Fish Shell
+weight: 5
 ---
 
 ### How to test if a variable (env) is set or not [^1]

@@ -1,11 +1,14 @@
 ---
-title         : "Guide to being immortal in this age"
-date          : 2019-02-13T22:34:51+01:00
-image         : "img/blog-post-structure.jpg"
-external_link : ""
-weight        : 5
-categories    : []
-tags          : [pim, learning, internet]
+categories: []
+date: "2019-02-13T22:34:51+01:00"
+external_link: ""
+image: img/blog-post-structure.jpg
+tags:
+- pim
+- learning
+- internet
+title: Guide to being immortal in this age
+weight: 5
 ---
 
 learning revision marker on page, page last read, keep on improving content on every iteration, add an image, improve language, use new words which you learnt, add/make videos. Its for you! unless its for others

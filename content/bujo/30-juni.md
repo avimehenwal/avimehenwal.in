@@ -1,16 +1,14 @@
 ---
-title      : "30 Juni"
-date       : 2019-06-30T11:27:05+02:00
-slug       : ""
-draft      : true
-series     : [DailyLogs]
-categories : []
-tags       : []
-revision   : 0
-# automatically get a table of contents when two or more subheadings (<h2>s)
-# toc        : false
-
-weight     : 5
+categories: []
+date: "2019-06-30T11:27:05+02:00"
+draft: true
+revision: 0
+series:
+- DailyLogs
+slug: ""
+tags: []
+title: 30 Juni
+weight: 5
 ---
 
 Minify and fingerprint assets

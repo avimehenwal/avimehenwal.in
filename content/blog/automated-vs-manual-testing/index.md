@@ -1,11 +1,14 @@
 ---
-title: "Automated vs Manual Testing"
-date: 2018-02-17T21:15:40+05:30
-image: "img/unicode-secret.png"
+categories:
+- programming
+date: "2018-02-17T21:15:40+05:30"
 external_link: ""
+image: img/unicode-secret.png
+tags:
+- testing
+- programming
+title: Automated vs Manual Testing
 weight: 5
-categories    : [programming]
-tags          : [testing, programming]
 ---
 
 # Automated vs Manual Testing

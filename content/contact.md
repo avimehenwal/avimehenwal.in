@@ -1,6 +1,6 @@
 ---
-title: "Explore Opportunities"
-date: 2017-03-09T13:23:28+08:00
+date: "2017-03-09T13:23:28+08:00"
+title: Explore Opportunities
 ---
 
 I welcome the opportunity to collaborate on _process automation_, _devops_ . Don't hesitate to get in touch regarding custom requirements or other opportunities. Lets make things better one thing at a time :)

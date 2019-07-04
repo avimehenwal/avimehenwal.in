@@ -1,12 +1,13 @@
 ---
-title      : "29 Juni"
-date       : 2019-06-29T12:16:45+02:00
-series     : [ DailyLogs]
-categories : []
-tags       : []
-revision   : 0
-draft      : true
-weight     : 5
+categories: []
+date: "2019-06-29T12:16:45+02:00"
+draft: true
+revision: 0
+series:
+- DailyLogs
+tags: []
+title: 29 Juni
+weight: 5
 ---
 
 $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$

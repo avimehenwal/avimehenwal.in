@@ -1,11 +1,16 @@
 ---
-title       : "Learning Sass Preprocessor"
-date        : 2019-04-01T13:13:45+02:00
-video       : ""
-categories  : [design]
-series      : [edublog]
-tags        : ["css", "preprocessor", "scss"]
-revision    : 0
+categories:
+- design
+date: "2019-04-01T13:13:45+02:00"
+revision: 0
+series:
+- edublog
+tags:
+- css
+- preprocessor
+- scss
+title: Learning Sass Preprocessor
+video: ""
 ---
 :icons: font
 

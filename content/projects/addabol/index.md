@@ -1,13 +1,17 @@
 ---
-title: "Addabol webapp"
-date: 2017-11-13T12:21:11-05:00
-series     : [companyProject]
-categories : [project]
-tags          : [pyramid, mongodb, python]
-
-revision   : 0
-image: "img/addabol_full.png"
-external_link: "https://www.facebook.com/addabol/"
+categories:
+- project
+date: "2017-11-13T12:21:11-05:00"
+external_link: https://www.facebook.com/addabol/
+image: img/addabol_full.png
+revision: 0
+series:
+- companyProject
+tags:
+- pyramid
+- mongodb
+- python
+title: Addabol webapp
 weight: 2
 ---
 

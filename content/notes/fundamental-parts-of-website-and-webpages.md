@@ -1,11 +1,14 @@
 ---
-title       : "Fundamental Parts of a Webpage"
-date        : 2019-03-29T14:20:22+01:00
-video       : ""
-categories  : [development]
-series      : [edublog]
-tags        : ["static web"]
-revision    : 0
+categories:
+- development
+date: "2019-03-29T14:20:22+01:00"
+revision: 0
+series:
+- edublog
+tags:
+- static web
+title: Fundamental Parts of a Webpage
+video: ""
 ---
 :icons: font
 

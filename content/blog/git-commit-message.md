@@ -1,12 +1,14 @@
 ---
-title         : "Awesome Git Commit Message"
-date          : 2019-06-24T22:30:58+02:00
-series     : [myLearning]
-categories    : [Programming]
-tags          : [git]
-
-revision   : 0
-weight        : 5
+categories:
+- Programming
+date: "2019-06-24T22:30:58+02:00"
+revision: 0
+series:
+- myLearning
+tags:
+- git
+title: Awesome Git Commit Message
+weight: 5
 ---
 
 > Why care about commit message anyways? What's the need?

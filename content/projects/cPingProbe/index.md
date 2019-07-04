@@ -1,13 +1,15 @@
 ---
-title: "cPingProbe perl tool"
-date: 2017-11-13T12:21:21-05:00
-series     : [companyProject]
-categories : [project]
-tags       : [perl]
-
-revision   : 0
-image: "img/cPingProbe.PNG"
-external_link: "https://github.com/avimehenwal/cPingProbe"
+categories:
+- project
+date: "2017-11-13T12:21:21-05:00"
+external_link: https://github.com/avimehenwal/cPingProbe
+image: img/cPingProbe.PNG
+revision: 0
+series:
+- companyProject
+tags:
+- perl
+title: cPingProbe perl tool
 weight: 3
 ---
 

@@ -1,11 +1,17 @@
 ---
-title       : "How to configure Netlify for hugo projects using asciidoctor as external format parser"
-date        : 2019-03-31T18:22:26+02:00
-video       : ""
-categories  : [deployment]
-series      : [edublog]
-tags        : ["netlify", "hugo", "asciidoctor"]
-revision    : 0
+categories:
+- deployment
+date: "2019-03-31T18:22:26+02:00"
+revision: 0
+series:
+- edublog
+tags:
+- netlify
+- hugo
+- asciidoctor
+title: How to configure Netlify for hugo projects using asciidoctor as external format
+  parser
+video: ""
 ---
 :icons: font
 

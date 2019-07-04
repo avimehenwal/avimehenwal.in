@@ -1,6 +1,6 @@
 ---
-title: "About"
-date: 2017-03-09T13:19:25+08:00
+date: "2017-03-09T13:19:25+08:00"
+title: About
 ---
 
 __Software Automation profession__ who treats automation as a software development project and believes thoroughly tested products is not a choice but a mandate. Testing is an activity, not a team. New challenging tasks involving Research and Development have always fascinated me.

@@ -1,11 +1,14 @@
 ---
-title       : "Awk"
-date        : 2019-06-23T17:18:11+02:00
-video       : ""
-categories  : [development]
-series      : [edublog]
-tags        : ["shell"]
-revision    : 0
+categories:
+- development
+date: "2019-06-23T17:18:11+02:00"
+revision: 0
+series:
+- edublog
+tags:
+- shell
+title: Awk
+video: ""
 ---
 
 1. Variable which defines values which can be changed such as field separator and record separator.

@@ -1,17 +1,17 @@
 ---
-title: "Longetivity"
-date: 2019-05-12T17:20:18+02:00
-lastmod: 2019-05-12T17:20:18+02:00
-type:  "post"
 categories:
 - foods
 - nutrition
 - facts
+comments: false
+date: "2019-05-12T17:20:18+02:00"
+lastmod: "2019-05-12T17:20:18+02:00"
 tags:
 - plant based
-w3codecolor: true
-comments: false
 thumbnail: http://www.unity.org/sites/unity.org/files/images/UMag/Articles/2017/09/longevity600x400.jpg
+title: Longetivity
+type: post
+w3codecolor: true
 ---
 
 {{<quote>}}

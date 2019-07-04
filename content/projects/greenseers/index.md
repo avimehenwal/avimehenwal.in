@@ -1,14 +1,18 @@
 ---
-title         : "Greenseers foodblog"
-date          : 2019-03-30T01:41:23+01:00
-series     : [personalProject]
-categories : [project]
-tags          : [hugo, css, html]
-
-revision   : 0
-image         : "img/unicode-secret.png"
-external_link : "https://peaceful-ptolemy-defc79.netlify.com/"
-weight        : 3
+categories:
+- project
+date: "2019-03-30T01:41:23+01:00"
+external_link: https://peaceful-ptolemy-defc79.netlify.com/
+image: img/unicode-secret.png
+revision: 0
+series:
+- personalProject
+tags:
+- hugo
+- css
+- html
+title: Greenseers foodblog
+weight: 3
 ---
 
 Project **Greenseers** is a project targeting on spreading scientific information about food and nutrition and and demystifying common misconceptions and myths.

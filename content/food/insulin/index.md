@@ -1,18 +1,18 @@
 ---
-title: "Insulin and FAT loss"
-date: 2019-05-30T18:14:09+02:00
-lastmod: 2019-05-30T18:14:09+02:00
-type:  "post"
 categories:
 - foods
 - nutrition
 - facts
 - anatomy
+comments: false
+date: "2019-05-30T18:14:09+02:00"
+lastmod: "2019-05-30T18:14:09+02:00"
 tags:
 - plant based
-w3codecolor: true
-comments: false
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/InsulinHexamer.jpg/250px-InsulinHexamer.jpg
+title: Insulin and FAT loss
+type: post
+w3codecolor: true
 ---
 
 Losing weight is unnatural for body. Weight is a survival mechanism
