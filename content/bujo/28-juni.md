@@ -158,6 +158,9 @@ On the slave, run:
     RX | FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  | ................................
 ```
 
+> spi mode = Clock polarity (CPOL) X Clock Phase (CPHS)
+
+
 On the master (another device, another SPI port, or an SPI analyzer) send a similar message "MASTER_HELLO_TO_SLAVE".
 Note that it must send the exact number of bytes the slave expects.
 If the master is another Linux device or port, you can use the spidev_test application as well:
@@ -256,5 +259,5 @@ It is possible to tell canplayer to play messages recorded on one interface back
 
 ### Footnotes
 
-[^1]: 
+[^1]: [spi tutorial](https://www.corelis.com/education/tutorials/spi-tutorial/)
 [^2]: 
