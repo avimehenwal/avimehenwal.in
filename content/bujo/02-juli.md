@@ -1,12 +1,13 @@
 ---
-title      : "02 Juli"
-date       : 2019-07-02T13:42:05+02:00
-slug       : ""
-draft      : true
-series     : [DailyLogs]
-categories : []
-tags       : []
-revision   : 0
+categories: []
+date: "2019-07-02T13:42:05+02:00"
+draft: true
+revision: 0
+series:
+- DailyLogs
+slug: ""
+tags: []
+title: 02 Juli
 ---
 
 tl;dr

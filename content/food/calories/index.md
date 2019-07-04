@@ -1,19 +1,19 @@
 ---
-title: "Calories"
-date: 2019-05-30T22:58:06+02:00
-lastmod: 2019-05-30T22:58:06+02:00
-type:  "post"
 categories:
 - foods
 - nutrition
 - facts
 - anatomy
 - resources
+comments: false
+date: "2019-05-30T22:58:06+02:00"
+lastmod: "2019-05-30T22:58:06+02:00"
 tags:
 - plant based
-w3codecolor: true
-comments: false
 thumbnail: https://www.bbcgoodfood.com/sites/default/files/editor_files/2017/11/plant-based-diet-guide-main-image-700-350.jpg
+title: Calories
+type: post
+w3codecolor: true
 ---
 
 ## what are calories?

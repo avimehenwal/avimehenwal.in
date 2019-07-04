@@ -1,11 +1,15 @@
 ---
-title       : "How to set up DNS for Netlify on Godaddy"
-date        : 2019-02-15T00:37:02+01:00
-video       : ""
-categories  : [deployment]
-series      : [edublog]
-tags        : ["dns", "godaddy"]
-revision    : 0
+categories:
+- deployment
+date: "2019-02-15T00:37:02+01:00"
+revision: 0
+series:
+- edublog
+tags:
+- dns
+- godaddy
+title: How to set up DNS for Netlify on Godaddy
+video: ""
 ---
 
 Easy way to setup and configure DNS on godaddy to be used by netlify for custome domain

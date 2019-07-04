@@ -1,17 +1,17 @@
 ---
-title: "Air Fryer vs traditional baking"
-date: 2019-05-12T22:01:57+02:00
-lastmod: 2019-05-12T22:01:57+02:00
-type:  "post"
 categories:
 - foods
 - nutrition
 - facts
+comments: false
+date: "2019-05-12T22:01:57+02:00"
+lastmod: "2019-05-12T22:01:57+02:00"
 tags:
 - plant based
-w3codecolor: true
-comments: false
 thumbnail: https://i.ytimg.com/vi/hU3QxDZ889M/maxresdefault.jpg
+title: Air Fryer vs traditional baking
+type: post
+w3codecolor: true
 ---
 
 # Air Frying

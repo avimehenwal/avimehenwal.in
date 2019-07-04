@@ -1,15 +1,15 @@
 ---
 author: admin
-date: 2018-11-09T07:26:15+13:00
+categories:
+- Website Programming
+date: "2018-11-09T07:26:15+13:00"
 draft: false
+tags:
+- hugo
 title: Hugo W3 Simple Theme Shortcodes Demo
 type: post
 url: /w3-simple-shortcodes-demo/
 w3codecolor: true
-categories:
-- Website Programming
-tags:
-- hugo
 ---
 
 

@@ -1,18 +1,18 @@
 ---
-title: "Cooking Methods"
-date: 2019-05-12T22:30:10+02:00
-lastmod: 2019-05-12T22:30:10+02:00
-type:  "post"
 categories:
 - foods
 - nutrition
 - facts
 - resources
+comments: false
+date: "2019-05-12T22:30:10+02:00"
+lastmod: "2019-05-12T22:30:10+02:00"
 tags:
 - plant based
-w3codecolor: true
-comments: false
 thumbnail: https://i2.wp.com/www.shiveshskitchen.com/wp-content/uploads/2013/05/Cooking-Methods.jpg?resize=500%2C300&ssl=1
+title: Cooking Methods
+type: post
+w3codecolor: true
 ---
 
 

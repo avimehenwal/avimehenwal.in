@@ -1,15 +1,15 @@
 ---
-title: "Antioxidants in lentils"
-date: 2019-04-07T19:54:13+02:00
-lastmod: 2019-04-07T19:54:13+02:00
-type:  "post"
 categories:
 - foods
+comments: false
+date: "2019-04-07T19:54:13+02:00"
+draft: false
+lastmod: "2019-04-07T19:54:13+02:00"
 tags:
 - plant based
+title: Antioxidants in lentils
+type: post
 w3codecolor: true
-draft: false
-comments: false
 ---
 
 ## What are Antioxidants?

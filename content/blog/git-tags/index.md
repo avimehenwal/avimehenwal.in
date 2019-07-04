@@ -1,11 +1,16 @@
 ---
-title       : "What Are Git Tags and Github Releases?"
-date        : 2019-02-15T12:54:50+01:00
-video       : ""
-categories  : [development]
-series      : [edublog]
-tags        : ["git", "release", "tags"]
-revision    : 0
+categories:
+- development
+date: "2019-02-15T12:54:50+01:00"
+revision: 0
+series:
+- edublog
+tags:
+- git
+- release
+- tags
+title: What Are Git Tags and Github Releases?
+video: ""
 ---
 
 ![Git tags](git-tags.png)

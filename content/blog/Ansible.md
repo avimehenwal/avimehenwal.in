@@ -1,13 +1,15 @@
 ---
-title         : "Ansible"
-date          : 2019-06-17T12:57:27+02:00
-series     : [myLearning]
-categories    : [Programming]
-tags          : [DevOps]
-
-revision   : 0
-weight        : 5
-external_link : "https://docs.ansible.com/ansible/latest/index.html"
+categories:
+- Programming
+date: "2019-06-17T12:57:27+02:00"
+external_link: https://docs.ansible.com/ansible/latest/index.html
+revision: 0
+series:
+- myLearning
+tags:
+- DevOps
+title: Ansible
+weight: 5
 ---
 
 > Configuration Management

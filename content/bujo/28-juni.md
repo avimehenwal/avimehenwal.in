@@ -1,11 +1,14 @@
 ---
-title      : "28 Juni"
-date       : 2019-06-28T09:53:10+02:00
-series     : [ yLearning]
-categories : [programming]
-tags       : [fish]
-revision   : 0
-weight     : 5
+categories:
+- programming
+date: "2019-06-28T09:53:10+02:00"
+revision: 0
+series:
+- yLearning
+tags:
+- fish
+title: 28 Juni
+weight: 5
 ---
 
 #### Test files and directories in fish shell

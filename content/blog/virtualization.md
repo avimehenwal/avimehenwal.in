@@ -1,11 +1,15 @@
 ---
-title       : "Virtualization"
-date        : 2019-06-19T18:26:00+02:00
-video       : ""
-categories  : [deployment]
-series      : [edublog]
-tags        : ["vagrant", "virtualization"]
-revision    : 0
+categories:
+- deployment
+date: "2019-06-19T18:26:00+02:00"
+revision: 0
+series:
+- edublog
+tags:
+- vagrant
+- virtualization
+title: Virtualization
+video: ""
 ---
 
 > Sharing a common development environment with everyone on your team

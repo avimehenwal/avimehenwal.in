@@ -1,12 +1,13 @@
 ---
-title      : "04 Juli"
-date       : 2019-07-04T09:45:15+02:00
-slug       : ""
-draft      : true
-series     : [DailyLogs]
-categories : []
-tags       : []
-revision   : 0
+categories: []
+date: "2019-07-04T09:45:15+02:00"
+draft: true
+revision: 0
+series:
+- DailyLogs
+slug: ""
+tags: []
+title: 04 Juli
 ---
 
 tl;dr
@@ -14,6 +15,12 @@ tl;dr
 
 LVDS
 :  Low Voltage Differential Signaling
+
+Differential Signaling
+: The technique sends the same electrical signal as a differential
+pair of signals, each in its own conductor.
+The receiving circuit responds to the electrical difference between
+the two signals, rather than the difference between a single wire and ground
 
 transceiver
 : a device that can both transmit and receive communications, in particular a combined radio transmitter and receiver.
@@ -113,10 +120,26 @@ GPIO expanders for GPIO pins to connect multiple i2c devices when the number of 
 stty
 : set tty
 
+```
+stty istrip
+stty -a | grep -i istrip
+stty -istrip
+stty -a | grep -i istrip
+```
+
+## Migrate from hugo --> gatsby
+chance to learn react
+[NEtlifyCMS](https://www.netlifycms.org/docs/start-with-a-template/)
+[tailwindcss - css framework](https://tailwindcss.com/)
+
+
+#### The plan
+
 
 ## Questions
 How to create and add mindmaps to html blogs?
     svg export from freeplanes is not good enough for dense and large MM
+https://www.w3schools.com/howto/howto_css_timeline.asp
 
 ### Footnotes
 
@@ -124,3 +147,4 @@ How to create and add mindmaps to html blogs?
 [^2]: [stackoverflow, spi on beaglebone back](https://stackoverflow.com/search?q=%5Bbeagleboneblack%5D+spi)
 [^3]: [youtube, How to use SPI, basic electronics](https://youtu.be/fvOAbDMzoks)
 [^4]: [BBB gpio pins numbering](https://vadl.github.io/beagleboneblack/2016/07/29/setting-up-bbb-gpio)
+[^5]: [w3schools, howto css_timeline](https://www.w3schools.com/howto/howto_css_timeline.asp)

@@ -1,11 +1,15 @@
 ---
-title       : "How to Make Responsive Designs"
-date        : 2019-02-15T19:04:56+01:00
-video       : ""
-categories  : [design]
-series      : [edublog]
-tags        : ["css", "responsive"]
-revision    : 0
+categories:
+- design
+date: "2019-02-15T19:04:56+01:00"
+revision: 0
+series:
+- edublog
+tags:
+- css
+- responsive
+title: How to Make Responsive Designs
+video: ""
 ---
 
 ## Why care about responsive and mobile first design at all?

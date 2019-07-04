@@ -1,11 +1,16 @@
 ---
-title       : "Markdown using Blackfriday Go Parser"
-date        : 2019-02-18T10:12:02+01:00
-video       : ""
-categories  : [development]
-series      : [edublog]
-tags        : ["markdown", "asciidoctor", "hugo"]
-revision    : 0
+categories:
+- development
+date: "2019-02-18T10:12:02+01:00"
+revision: 0
+series:
+- edublog
+tags:
+- markdown
+- asciidoctor
+- hugo
+title: Markdown using Blackfriday Go Parser
+video: ""
 ---
 
 :icons: font

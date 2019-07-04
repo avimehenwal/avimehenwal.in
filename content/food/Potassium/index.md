@@ -1,19 +1,19 @@
 ---
-title: "Potassium K+"
-date: 2019-05-30T18:48:17+02:00
-lastmod: 2019-05-30T18:48:17+02:00
-type:  "post"
 categories:
 - foods
 - nutrition
 - facts
 - anatomy
 - resources
+comments: false
+date: "2019-05-30T18:48:17+02:00"
+lastmod: "2019-05-30T18:48:17+02:00"
 tags:
 - plant based
-w3codecolor: true
-comments: false
 thumbnail: https://cdn1.medicalnewstoday.com/content/images/articles/287/287212/potassium-element.jpg
+title: Potassium K+
+type: post
+w3codecolor: true
 ---
 
 # Electrolytes

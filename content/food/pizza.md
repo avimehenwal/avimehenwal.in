@@ -1,17 +1,17 @@
 ---
-title: "Pizza"
-date: 2019-05-21T18:37:29+02:00
-lastmod: 2019-05-21T18:37:29+02:00
-type:  "post"
 categories:
 - foods
 - nutrition
 - recipy
+comments: false
+date: "2019-05-21T18:37:29+02:00"
+lastmod: "2019-05-21T18:37:29+02:00"
 tags:
 - plant based
-w3codecolor: true
-comments: false
 thumbnail: https://www.bbcgoodfood.com/sites/default/files/editor_files/2017/11/plant-based-diet-guide-main-image-700-350.jpg
+title: Pizza
+type: post
+w3codecolor: true
 ---
 
 1. 500g flour + salt

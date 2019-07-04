@@ -1,19 +1,19 @@
 ---
-title: "Nutrition Facts"
-date: 2019-05-10T18:50:36+02:00
-lastmod: 2019-05-10T18:50:36+02:00
-type:  "post"
 categories:
 - foods
 - nutrition
 - facts
 - anatomy
 - resources
+comments: false
+date: "2019-05-10T18:50:36+02:00"
+lastmod: "2019-05-10T18:50:36+02:00"
 tags:
 - plant based
-w3codecolor: true
-comments: false
 thumbnail: https://www.bbcgoodfood.com/sites/default/files/editor_files/2017/11/plant-based-diet-guide-main-image-700-350.jpg
+title: Nutrition Facts
+type: post
+w3codecolor: true
 ---
 
 Science is providing experimentation for **cause & effect**

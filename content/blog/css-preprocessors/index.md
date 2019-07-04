@@ -1,11 +1,15 @@
 ---
-title       : "Css preprocessors"
-date        : 2019-04-01T12:01:06+02:00
-video       : ""
-categories  : [design]
-series      : [edublog]
-tags        : ["css", "preprocessor"]
-revision    : 0
+categories:
+- design
+date: "2019-04-01T12:01:06+02:00"
+revision: 0
+series:
+- edublog
+tags:
+- css
+- preprocessor
+title: Css preprocessors
+video: ""
 ---
 :icons: font
 

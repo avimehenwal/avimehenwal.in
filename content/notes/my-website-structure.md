@@ -1,12 +1,12 @@
 ---
-title         : "My Website Structure"
-date          : 2019-06-25T14:19:27+02:00
-series     : [myLearning]
-categories : []
-tags       : []
-
-revision   : 0
-weight        : 5
+categories: []
+date: "2019-06-25T14:19:27+02:00"
+revision: 0
+series:
+- myLearning
+tags: []
+title: My Website Structure
+weight: 5
 ---
 
 

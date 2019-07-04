@@ -65,6 +65,10 @@ enableGitInfo          = true
   [[menu.nav]]
     name = "Notes"
     url = "/notes/"
+    weight = 8
+  [[menu.nav]]
+    name = "Bullet journal"
+    url = "/bujo/"
     weight = 9
 
 # Social icons appear in introduction and contact section. Add as many more as you like.

@@ -1,13 +1,16 @@
 ---
-title: "Dockerised Python Webapp"
-date: 2018-01-29T16:25:09+05:30
-series     : [personalProject]
-categories : [project]
-tags       : [docker, python]
-
-revision   : 0
-image: "img/unicode-secret.png"
-external_link: "https://asciinema.org/a/159797"
+categories:
+- project
+date: "2018-01-29T16:25:09+05:30"
+external_link: https://asciinema.org/a/159797
+image: img/unicode-secret.png
+revision: 0
+series:
+- personalProject
+tags:
+- docker
+- python
+title: Dockerised Python Webapp
 weight: 5
 ---
 

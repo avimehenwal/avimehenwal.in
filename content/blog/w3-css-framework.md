@@ -1,11 +1,15 @@
 ---
-title       : "w3-css Framework in 2 minutes or less"
-date        : 2019-02-14T21:08:15+01:00
-video       : ""
-categories  : [design]
-series      : [edublog]
-tags        : ["frontend", "css"]
-revision    : 1
+categories:
+- design
+date: "2019-02-14T21:08:15+01:00"
+revision: 1
+series:
+- edublog
+tags:
+- frontend
+- css
+title: w3-css Framework in 2 minutes or less
+video: ""
 ---
 
 * **The w3-container** good for all HTML container elements like `<div>, <article>, <section>, <header>, <footer>, <form>, and more.` adds 16px left and right padding to any HTML element.

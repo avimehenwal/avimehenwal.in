@@ -1,12 +1,16 @@
 ---
-title: "visuallydefine.com"
-date: 2018-02-17T21:15:33+05:30
-series     : [personalProject]
-categories : [project]
-tags          : [html, css, hugo]
-
-revision   : 0
-external_link : "https://visuallydefine.com/"
+categories:
+- project
+date: "2018-02-17T21:15:33+05:30"
+external_link: https://visuallydefine.com/
+revision: 0
+series:
+- personalProject
+tags:
+- html
+- css
+- hugo
+title: visuallydefine.com
 weight: 1
 ---
 
