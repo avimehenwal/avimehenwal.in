@@ -1,7 +1,6 @@
 ---
 categories: []
 date: "2019-07-04T09:45:15+02:00"
-draft: true
 revision: 0
 series:
 - DailyLogs
@@ -50,7 +49,7 @@ Where:
 ```
 
 
-## SPA
+## SPI
 
 SPI Mode |	CPOL   | CPHA	| Clock Polarity in Idle State | Clock Phase Used to Sample and/or Shift the Data
 ----------|--------|--------|------------------------------|-----------------------------------------------------------

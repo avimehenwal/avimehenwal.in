@@ -1,7 +1,6 @@
 ---
 categories: []
 date: "2019-06-29T12:16:45+02:00"
-draft: true
 revision: 0
 series:
 - DailyLogs
