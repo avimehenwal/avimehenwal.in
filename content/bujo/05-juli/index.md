@@ -67,6 +67,14 @@ Client side rendering components
 - templating
 - JS syntax (like JSX)
 
+All markdown files are compiled into Vue components and processed by webpack, therefore you can and should prefer referencing any asset using relative URLs:
+
+Pages API is called after graphQL
+
+Learning by examples.
+- git@github.com:mazipan/gridsome-blog.git
+- 
+
 ## Mender
 
 Press <kbd>space</kbd> to interrupt bootloader
@@ -80,9 +88,32 @@ Press <kbd>space</kbd> to interrupt bootloader
 
 ## Questions ?
 
-1. How to have automatic cross-links and references in my documentaion and website?
+1. How to have automatic cross-links and references in my documentaion and website? sphinx has it
 2. 
 
+## PWA - progressive web app[^7]
+
+1. A redirect from HTTP to HTTPS should be offered.
+1. A serviceworker.js must be present.
+1. A manifest.json must exist.
+
+Dont have to write your own low level service worker APIs instead use something like
+workbox[^8]
+
+{{< code numbered="true" >}}
+<div [[[role="dialog"]]] [[[aria-labelledby="dialog-heading"]]]>
+  <button [[[aria-label="close"]]]>x</button>
+  <h2 [[[id="dialog-heading"]]]>Confirmation</h2>
+  <p>Press Okay to confirm or Cancel</p>
+  <button>Okay</button>
+  <button>Cancel</button>
+</div>
+{{< /code >}}
+
+1. The dialog is only announced as a dialog if it takes the `dialog` ARIA role
+2. The `aria-labelledby` relationship attribute makes the element carrying the `id` it points to its label
+3. The close button uses `aria-label` to provide the text label "close", overriding the text content
+4. The heading is used as the dialog's label. The `aria-labelledby` attribute points to its `id`
 
 
 ### Footnotes
@@ -93,3 +124,5 @@ Press <kbd>space</kbd> to interrupt bootloader
 [^4]: [What nobody tells you about documentation](https://www.divio.com/blog/documentation/)
 [^5]: [gridsome](https://gridsome.org/)
 [^6]: [vuepress](https://vuepress.vuejs.org/)
+[^7]: [turn a webapp into PWA in 10 mins](https://youtu.be/E8BeSSdIUW4)
+[^8]: [google workbox](https://developers.google.com/web/tools/workbox/)
