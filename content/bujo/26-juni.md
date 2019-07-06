@@ -27,6 +27,9 @@ cache-control
 SPA
 : single page application
 
+API - Application programming interface
+: methods and functions (functionality) we can import in our code once we import the library
+
 ##  Some explaineation
 
 developer experience

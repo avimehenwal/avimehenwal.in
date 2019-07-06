@@ -66,7 +66,15 @@ SPA
 * v-once interpolation that do not change
 * 
 
+## Gridsome
 
+1. Uses GraphQL layer to get data from different sources in order to dynamically generate pages from it
+2. External Data --> GraphQL system --> Queries in application
+   1. Plugin: faker to automatically generate data
+   2. Grab data from external API
+      1. Axios - Promise based HTTP client for the browser and node.js
+      2. JSONPlaceholder to get some dummy data
+3. Insert your own data into graphQL using Data Source API
 
 
 
