@@ -1,0 +1,27 @@
+---
+label: bujo
+hide_body: false
+fields:
+- type: list
+  name: categories
+  label: categories
+- type: datetime
+  name: date
+  label: date
+- type: number
+  name: revision
+  label: revision
+- type: list
+  name: series
+  label: series
+- type: text
+  name: slug
+  label: slug
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: title
+  label: title
+pages:
+- content/bujo/08-july-2019-monday.md

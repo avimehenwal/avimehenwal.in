@@ -1,14 +1,14 @@
 ---
-title      : "06 Juli"
-date       : 2019-07-06T21:18:00+02:00
-slug       : ""
-draft      : true
-series     : [DailyLogs]
-categories : []
-tags       : []
-revision   : 0
----
+title: 06 Juli
+date: 2019-07-06T19:18:00.000+00:00
+slug: ''
+series:
+- DailyLogs
+categories: []
+tags: []
+revision: "0"
 
+---
 SitCom
 : Situation Comedy
 
@@ -64,4 +64,4 @@ WEBpack
 ### Footnotes
 
 [^1]: 
-[^2]: 
+[^2]:
