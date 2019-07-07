@@ -62,5 +62,5 @@ Why use it? out-of-box advantages
 
 ### Footnotes
 
-[^1]: 
+[^1]: [gh, close issue from PR or commit message](https://help.github.com/en/articles/closing-issues-using-keywords)
 [^2]: 

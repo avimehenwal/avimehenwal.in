@@ -89,6 +89,16 @@ enableGitInfo          = true
     url = "https://www.linkedin.com/in/avimehenwal/"
     icon = "linkedin"
 
+# Algolia search #4
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]
+
 [outputs]
-    # home = ["HTML", "RSS", "JSON"]
-     section = ["JSON", "HTML"]
+home = ["HTML", "RSS", "Algolia"]

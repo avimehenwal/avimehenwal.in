@@ -3,3 +3,6 @@ blog/*
 
 *.swp
 resources
+
+# node modules
+node_modules/*
