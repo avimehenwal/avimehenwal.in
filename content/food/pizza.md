@@ -67,3 +67,6 @@ Turn the dough onto your work surface.
 
 Knead by gently but firmly pushing the dough down and away from you with the heels of your hands for 2 to 3 minutes, adding flour as needed.
 
+## References
+
+[^1]: [yt, Ultimate Vegan Pizza [From Scratch] | The Buddhist Chef](https://youtu.be/pkCdrnzUWvI)
