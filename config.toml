@@ -28,6 +28,7 @@ enableGitInfo          = true
   codePenUser      = "avimehenwal"
   katex            = true
   socialshare      = true
+  duckduckgo       = true
 
 [menu]
   [[menu.nav]]
