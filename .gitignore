@@ -1,8 +1,8 @@
-
-blog/*
-
 *.swp
 resources
 
 # node modules
 node_modules/*
+
+# public folder
+public/*
