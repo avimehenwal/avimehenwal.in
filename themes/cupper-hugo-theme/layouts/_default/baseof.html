@@ -8,9 +8,9 @@
       {{ partial "header.html" . }}
       <div class="main-and-footer">
         <div>
-          {{ if eq $.Site.Params.duckduckgo true }} {{ partial "search.html" . }} {{ end -}}
           {{ block "main" . }}{{ end }}
           {{ partial "footer.html" . }}
+          {{ if eq .Site.Params.lazySearch true }} {{ partial "search.html" . }} {{ end -}}
         </div>
       </div>
     </div>
