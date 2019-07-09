@@ -1,17 +1,18 @@
 ---
-categories:
-- Programming
+title: Awesome Git Commit Message
 date: "2019-06-24T22:30:58+02:00"
-revision: 0
+weight: 5
+revision: 1
 series:
 - myLearning
+categories:
+- Programming
 tags:
 - git
-title: Awesome Git Commit Message
-weight: 5
 ---
 
 > Why care about commit message anyways? What's the need?
+
 
 We write commit message to get a glance of development activity. Hence writing Awesome commit message might mean people scouring through git logs would be able to undestand development activity better and faster.
 
@@ -22,8 +23,10 @@ Here are some tips to write awesome git commit messages.
 * 50 characters or less for the first line of your commit
 * Use of emoji is free[^1]
 
+{{% note %}}
+  [Use git commit message to close PRs and issues on github's Automated kanban project board](https://help.github.com/en/articles/closing-issues-using-keywords)
+{{% /note %}}
 
 ## Footnotes
 
-[^1]: https://www.webfx.com/tools/emoji-cheat-sheet/
-[^2]: 
+[^1]: [use emoji on github](https://www.webfx.com/tools/emoji-cheat-sheet/)

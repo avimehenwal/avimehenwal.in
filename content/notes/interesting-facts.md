@@ -1,33 +1,17 @@
 ---
-categories:
-- Programming
-- design
-- deployment
-- development
+title: Interesting Facts
 date: "2019-07-09T01:15:09+02:00"
 draft: true
+weight: 5
 revision: 0
 series:
-- myLearning
-- personalProject
-- companyProject
-- test
-slug: ""
-tags: []
-title: Interesting Facts
-weight: 5
+- Test
+categories:
+- random
+tags:
+- fact
 ---
-
-tl;dr
-<!-- more -->
 
 occipital lobe (aka the memory store) works in 100 ms bursts
 
-
-
-
-[bibliography]
-### Footnotes
-
-[^1]: 
-[^2]: 
+[yt, How to Stop A Bully - dominance behaviour](https://youtu.be/7oKjW1OIjuw)

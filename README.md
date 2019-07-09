@@ -34,4 +34,5 @@ hugo -d docs  # --destination string
 ## conventions to follow
 
 1. [In english, there is no space before punctuation](https://english.stackexchange.com/questions/4645/is-it-ever-correct-to-have-a-space-before-a-question-or-exclamation-mark)
-2. `h4` for questions
+2. Blockquotes for questions
+3. 
