@@ -7,7 +7,7 @@
     </label>
   </div>
   {{ partial "disqus.html" . }}
-  {{ partial "socialshare.html" . }}
+  {{ if eq $.Site.Params.socialshare true }} {{ partial "socialshare.html" . }} {{ end }} 
   {{ with .Site.Params.footer }}
   {{ . | markdownify }}
   {{ end }}

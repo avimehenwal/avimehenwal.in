@@ -1,4 +1,6 @@
 {
     "restructuredtext.confPath": "/home/avi/mySoftwares/EXP/linux/Documentation/admin-guide",
-    "emmet.triggerExpansionOnTab": true
+    "emmet.triggerExpansionOnTab": true,
+    "editor.snippetSuggestions": "top",
+    "editor.tabCompletion": "on"
 }

@@ -1,14 +1,15 @@
 ---
-title      : "Website Features"
-date       : 2019-07-06T21:08:11+02:00
-draft      : true
-series     :
-- myLearning
-categories : 
+categories:
 - design
-tags       : [website]
-revision   : 0
-weight     : 5
+date: "2019-07-06T21:08:11+02:00"
+draft: true
+revision: 0
+series:
+- myLearning
+tags:
+- website
+title: Website Features
+weight: 5
 ---
 
 tl;dr

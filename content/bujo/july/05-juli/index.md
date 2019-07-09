@@ -1,12 +1,20 @@
 ---
-title      : "05 Juli Friday"
-date       : 2019-07-05T11:00:20+02:00
-slug       : ""
-series     : [DailyLogs]
-categories : []
-tags       : []
-revision   : 0
+title: 05 Juli Friday
+date: "2019-07-05T11:00:20+02:00"
+revision: 1
+series:
+- DailyLogs
+categories:
+- embedded
+- frontend
+tags:
+- mender
+- vue
+- open-source
+- pwa
 ---
+
+## Mender
 
 * over-the-air software updates
 * update manager supports both
@@ -15,7 +23,7 @@ revision   : 0
 
 <!-- more -->
 
-meta-mender[^1] - 
+meta-mender[^1]
 : is a yocto layer that can deploy image updates
 * automatic roll-back
 * remote management
@@ -33,6 +41,18 @@ udev - userspace /dev
 Gyroscopes
 : measure orientation and angular velocity
 
+Press <kbd>space</kbd> to interrupt bootloader
+
+* clock is important
+* bootloader choice
+* powerloss at update, may make device unusable
+* printenv, setenv, reset, boot
+* watch where env var is written /etc/uboot something
+
+---
+
+## Open source projects business model
+
 Business models for open-source software[^3]
 : whose source code is publicly available under an open-source license to study, change, and improve its design.
 * Examples Mozilla Firefox, Google Chromium, Android, LibreOffice and the VLC media player.
@@ -40,7 +60,7 @@ Business models for open-source software[^3]
 * For example, most contributors to GCC or to the Linux kernel are professionals (and contributing about full time and paid for that). These projects are too complex to be worked on as a hobby.
 * Bounty hunting programs[^2]
 
-What do one need for testing?
+#### What do one need for testing?
 
 1. test scripts, instructions
 2. data and
@@ -48,7 +68,9 @@ What do one need for testing?
 
 ![What nobody tells you about documentation](documentation.png)[^4]
 
-## VUE vs React and Angular
+---
+
+## VUE | React | Angular
 
 + vue has shorter learning curve than react
 + Dont have to deal with JSX transpilers
@@ -73,29 +95,16 @@ Pages API is called after graphQL
 
 Learning by examples.
 - git@github.com:mazipan/gridsome-blog.git
-- 
 
-## Mender
+#### How to have automatic cross-links and references in my documentaion and website?
 
-Press <kbd>space</kbd> to interrupt bootloader
-
-* clock is important
-* bootloader choice
-* powerloss at update, may make device unusable
-* printenv, setenv, reset, boot
-* watch where env var is written /etc/uboot something
-* 
-
-## Questions ?
-
-1. How to have automatic cross-links and references in my documentaion and website? sphinx has it
-2. 
+sphinx has it
 
 ## PWA - progressive web app[^7]
 
 1. A redirect from HTTP to HTTPS should be offered.
-1. A serviceworker.js must be present.
-1. A manifest.json must exist.
+2. A serviceworker.js must be present.
+3. A manifest.json must exist.
 
 Dont have to write your own low level service worker APIs instead use something like
 workbox[^8]
@@ -116,13 +125,14 @@ workbox[^8]
 4. The heading is used as the dialog's label. The `aria-labelledby` attribute points to its `id`
 
 
+- [gridsome](https://gridsome.org/)
+- [vuepress](https://vuepress.vuejs.org/)
+
 ### Footnotes
 
 [^1]: [building a mender yocto project image](https://docs.mender.io/2.0/artifacts/yocto-project/building)
 [^2]: [issuehunt, get paid to solve open-source project issues](https://issuehunt.io/)
-[^3]: https://en.wikipedia.org/wiki/Business_models_for_open-source_software
+[^3]: [Business_models_for_open-source_software](https://en.wikipedia.org/wiki/Business_models_for_open-source_software)
 [^4]: [What nobody tells you about documentation](https://www.divio.com/blog/documentation/)
-[^5]: [gridsome](https://gridsome.org/)
-[^6]: [vuepress](https://vuepress.vuejs.org/)
 [^7]: [turn a webapp into PWA in 10 mins](https://youtu.be/E8BeSSdIUW4)
 [^8]: [google workbox](https://developers.google.com/web/tools/workbox/)

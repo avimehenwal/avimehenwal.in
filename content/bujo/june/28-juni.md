@@ -1,19 +1,20 @@
 ---
 categories:
-- programming
+- embedded
 date: "2019-06-28T09:53:10+02:00"
-revision: 0
+revision: 1
 series:
-- yLearning
+- myLearning
 tags:
 - fish
+- system-bus
 title: 28 Juni
 weight: 5
 ---
 
-#### Test files and directories in fish shell
+#### How to test files and directories in fish shell?
 
-use `test`
+use fish `test` operator
 
 ```
 if test -e /path/filename
@@ -26,36 +27,39 @@ end
 
 ```
 
-#### how to set environment variables in fish shell
+#### how to set environment variables in fish shell?
 
 ```
 set --[global|local|universal] --export/x <variable_name>
 ```
 
-## Bus Protocols
+# Bus Protocols
 
 Buses provides a communication path between peripheral devices and enable data transfer.
 
-### I2C - Inter Integrated Circuit
+## I2C - Inter Integrated Circuit
 
 I2C is a bidirections, two-wired, serial bus that is suitable for applications requiring
-occasional communication over a short distance between many devices.
+occasional communication over a *short distance* between many devices.
 The I2C bus supports 7-bit and 10-bit address space device and has 2 signal lines
 
-* **SDA** - Serial Data Line, driven either by master or peripheral device
-* **SCL** - Serial Clock Line, driven by master
+SDA
+: Serial Data Line, driven either by master or peripheral device
+
+SCL
+: Serial Clock Line, driven by master
 
 slaves
 : are other peripheral devices such as ADC (Analog to Digital Conversion), EEPROM, DAC (Digital to Analog converter)
 wherein each slave consists of a unique address
 
-Data transfer speed
+### Data transfer speed
 
 1. standard 0Hz to 100Hz
 2. fast-mode 0Hz to 400 KHz and
 3. high-speed-mode 10 KHz to 100KHz.
 
-#### Testing i2c bus using on device
+### Testing i2c bus using on device
 
 I2C Basic Commands Sequence
 
@@ -65,20 +69,15 @@ I2C Basic Commands Sequence
 
 i2c-tool Command	Description
 
-+---------------------------+-------------------------+
 | i2c-tool command          | Description             |
-+===========================+=========================+
+|--------------------------:|:------------------------|
 | i2cdetect                 | bus scanning            |
-+---------------------------+-------------------------+
 | i2cdump                   | examine I2C registers   |
-+---------------------------+-------------------------+
 | i2cget                    | Device register reading |
-+---------------------------+-------------------------+
 | i2cset                    | set I2C registers       |
-+---------------------------+-------------------------+
 
 
-##### List i2c buses available on device
+#### How to list all i2c buses available on device?
 
 Lists all the available buses configured on device
 
@@ -105,10 +104,12 @@ Detect devices connected to i2c bus
     70:                                                 
 ```
 
-.. tip:: the ones showing **UU** denote this address is currently in use by a driver,
+{{% note %}}
+the ones showing **UU** denote this address is currently in use by a driver,
 while devices without a registered driver show the address (in the example 0x60).
+{{% /note %}}
 
-##### Reading from slave registers
+#### How to reading from slave registers?
 
 Read and dump everythig from slave registers to stdout
 
@@ -134,21 +135,22 @@ Read and dump everythig from slave registers to stdout
     f0: 2e 00 00 fc ca 81 10 ff 00 00 00 82 00 00 00 06    ...????....?...?
 ```
 
-#### Modifying data
+#### How to set and read from individual slave register
 
-To set and read from individual slave register
+```sh
+i2cset
+i2cget
+```
 
-.. figure:: img/i2c-get-set.png
+## SPI - Serial Peripheral Interface[^1]
+
+* Beagle bone hase 2 SPI buses available.
+* Has better range than i2c
+
+**SPI-0** is configured and available on device along with **spidev_test** utility.
 
 
-### SPI - Serial Peripheral Interface
-
-Beagle bone hase 2 SPI buses available
-
-.. note:: **SPI-0** is configured and available on device along with **spidev_test** utility.
-
-
-#### Testing SPI using spidev_test utility
+#### How to testing SPI using spidev_test utility?
 
 On the slave, run:
 
@@ -179,51 +181,50 @@ If the master is another Linux device or port, you can use the spidev_test appli
 ```
 
 
-### CAN - Controller Area Network
+## CAN - Controller Area Network
 
 can is a serial connection protocol which allows communication without a host computer.
 BeagleBoneBlack has two internal CAN-Bus controller which are called **DCAN0** and **DCAN1**
 
-.. note:: **can0** is configured on device alongwith canutils
+**can0** is configured on device alongwith **canutils**
 
 The pins of the DCAN0-interface are multiplexed to the connector as per table below
 
 
-#### Testing CAN using canutils
+#### How to testing CAN using canutils?
 
 **Cansend** is used to transmit individual frames directly onto the CANbus and **candump** to read the frames.
 
-.. code-block:: shell
+```
+$ cansend can0 5A1#11.22.33.44.55.66.77.88
+$ cansend can0 -i 0x123 0xaa 0xbb 0xcc 0xdd
+$ cat /proc/net/can/stats 
 
-    $ cansend can0 5A1#11.22.33.44.55.66.77.88
-    $ cansend can0 -i 0x123 0xaa 0xbb 0xcc 0xdd
-    $ cat /proc/net/can/stats 
+    2 transmitted frames (TXF)
+    2 received frames (RXF)
+    0 matched frames (RXMF)
 
-        2 transmitted frames (TXF)
-        2 received frames (RXF)
-        0 matched frames (RXMF)
+    0 % total match ratio (RXMR)
+    0 frames/s total tx rate (TXR)
+    0 frames/s total rx rate (RXR)
 
-        0 % total match ratio (RXMR)
-        0 frames/s total tx rate (TXR)
-        0 frames/s total rx rate (RXR)
+    0 % current match ratio (CRXMR)
+    0 frames/s current tx rate (CTXR)
+    0 frames/s current rx rate (CRXR)
 
-        0 % current match ratio (CRXMR)
-        0 frames/s current tx rate (CTXR)
-        0 frames/s current rx rate (CRXR)
+    0 % max match ratio (MRXMR)
+    1 frames/s max tx rate (MTXR)
+    2 frames/s max rx rate (MRXR)
 
-        0 % max match ratio (MRXMR)
-        1 frames/s max tx rate (MTXR)
-        2 frames/s max rx rate (MRXR)
+    0 current receive list entries (CRCV)
+    1 maximum receive list entries (MRCV)
 
-        0 current receive list entries (CRCV)
-        1 maximum receive list entries (MRCV)
-
-        1 statistic resets (STR)
+    1 statistic resets (STR)
 
 
-    $ candump can0
-    can0 5A1 [8] 11 22 33 44 55 66 77 88
-
+$ candump can0
+can0 5A1 [8] 11 22 33 44 55 66 77 88
+```
 
 By default **canplayer** will replay a logfile back onto the interface recorded in the log file.
 
@@ -263,4 +264,3 @@ It is possible to tell canplayer to play messages recorded on one interface back
 ### Footnotes
 
 [^1]: [spi tutorial](https://www.corelis.com/education/tutorials/spi-tutorial/)
-[^2]: 

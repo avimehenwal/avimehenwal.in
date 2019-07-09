@@ -1,16 +1,17 @@
 ---
-categories: []
+categories:
+- embedded
+- frontend
 date: "2019-07-04T09:45:15+02:00"
-revision: 0
+revision: 1
 series:
 - DailyLogs
 slug: ""
-tags: []
+tags:
+- gatsby
+- svg
 title: 04 Juli
 ---
-
-tl;dr
-<!-- more -->
 
 LVDS
 :  Low Voltage Differential Signaling
@@ -38,16 +39,28 @@ For arduino its not restricted to `D10`, we can configure any pin on board as sa
 Bitrate
 : In digital telecommunication, the bit rate is the number of bits that pass a given point in a telecommunication network in a given amount of time, usually a second. Kbps
 
-```
-BR = D / T
 
+$$ Bit Rate = \frac{Data}{Time} $$
+
+```
 Where:
     BR = Bit Rate
     D = Amount of Data
     T = Time (usually seconds)
-
 ```
 
+GPIO expanders
+: for GPIO pins to connect multiple i2c devices when the number of available on board pins are less
+
+stty
+: set tty
+
+```
+stty istrip
+stty -a | grep -i istrip
+stty -istrip
+stty -a | grep -i istrip
+```
 
 ## SPI
 
@@ -77,14 +90,15 @@ SPI Mode |	CPOL   | CPHA	| Clock Polarity in Idle State | Clock Phase Used to Sa
 -  One chip select CS line for each slave device. Could not use for as many as with i2c due to this limitation
 -  High speed like writing to SD card
 
+### SPI application
 
-• Semiconductor Test Equipment
-• Data Acquisition
-• Lab Instrumentation
-• Ultrasound Scanner
-• CT Scanner
-• Protection Relay
-• Terminal Unit
+* Semiconductor Test Equipment
+* Data Acquisition
+* Lab Instrumentation
+* Ultrasound Scanner
+* CT Scanner
+* Protection Relay
+* Terminal Unit
 
 ## CAN
 
@@ -92,56 +106,53 @@ SPI Mode |	CPOL   | CPHA	| Clock Polarity in Idle State | Clock Phase Used to Sa
 - developed by Bosch starting in 1983
 - Multi master network
 - Bit rate upto 1 Mbits/sec
-- Network length upto 5Km
+- Network length upto **5Km**
 - serial communication protocol
-- 
 
-CAN Frames
+### CAN Frames
 
-```
-# hoe to set can bitrate
-ip link set can0 type can bitrate 12500
-```
+#### How to set CAN bitrate?
+
+{{% cmd %}}
+  ip link set can0 type can bitrate 12500
+{{% /cmd %}}
 
 ## GPIO -  General Purpose Input Output
 
 * They are General Purpose Input Output and are pins on various processors that aren’t dedicated to anything.
 
-As a recap, each gpio pin on the BBB has three different numbering schemes associated with it!
+As a recap, each gpio pin on the BBB has <mark>three different numbering</mark> schemes associated with it!
 
-The physical pin location, in the form of PX_Y (P8_28)
-The gpio name, in the form of GPIOX_Y (GPIO2_24)
-The gpio number, in the form of 32*X + Y (88)
+1. The physical pin location, in the form of PX_Y (P8_28)
+2. The gpio name, in the form of GPIOX_Y (GPIO2_24)
+3. The gpio number, in the form of 32*X + Y (88)
+
+{{% warning %}}
 Only the last scheme, the gpio number, is used in software!
+{{% /warning %}}
 
-GPIO expanders for GPIO pins to connect multiple i2c devices when the number of available on board pins are less
 
-stty
-: set tty
+## Migrate :: hugo --> gatsby
 
-```
-stty istrip
-stty -a | grep -i istrip
-stty -istrip
-stty -a | grep -i istrip
-```
+* chance to learn react
+* [NEtlifyCMS](https://www.netlifycms.org/docs/start-with-a-template/)
+* [tailwindcss - css framework](https://tailwindcss.com/)
+* The plan
 
-## Migrate from hugo --> gatsby
-chance to learn react
-[NEtlifyCMS](https://www.netlifycms.org/docs/start-with-a-template/)
-[tailwindcss - css framework](https://tailwindcss.com/)
-The plan
+#### How to create and add mindmaps to html blogs?
 
-## Questions
-How to create and add mindmaps to html blogs?
-    svg export from freeplanes is not good enough for dense and large MM
+svg export from freeplanes is not good enough for dense and large MM
 https://www.w3schools.com/howto/howto_css_timeline.asp
 
+SVG
+: XML based vector image format, open standard by W3C.
+* Lets you write images using code
 
-### Gatsby test drive
+## Gatsby test drive
 
-Babel
-: Babel is a JavaScript compiler
+### Babel
+
+Babel is a JavaScript compiler.
 Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Here are the main things Babel can do for you: Transform syntax.
 
 + npm install too many modules, I dont know how many. Takes a while for the first time
@@ -150,15 +161,16 @@ Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a
 SSR
 : server side rendering
 
+FSR
+: front side rendering
+
 writing html inside js files
 partials ~ react components
 
-
-
 ### Footnotes
 
-[^1]: [SPI architecture user guide, TI](http://www.ti.com/lit/ug/sprugp2a/sprugp2a.pdf)
-[^2]: [stackoverflow, spi on beaglebone back](https://stackoverflow.com/search?q=%5Bbeagleboneblack%5D+spi)
-[^3]: [youtube, How to use SPI, basic electronics](https://youtu.be/fvOAbDMzoks)
-[^4]: [BBB gpio pins numbering](https://vadl.github.io/beagleboneblack/2016/07/29/setting-up-bbb-gpio)
-[^5]: [w3schools, howto css_timeline](https://www.w3schools.com/howto/howto_css_timeline.asp)
+- [SPI architecture user guide, TI](http://www.ti.com/lit/ug/sprugp2a/sprugp2a.pdf)
+- [stackoverflow, spi on beaglebone back](https://stackoverflow.com/search?q=%5Bbeagleboneblack%5D+spi)
+- [youtube, How to use SPI, basic electronics](https://youtu.be/fvOAbDMzoks)
+- [BBB gpio pins numbering](https://vadl.github.io/beagleboneblack/2016/07/29/setting-up-bbb-gpio)
+- [w3schools, howto css_timeline](https://www.w3schools.com/howto/howto_css_timeline.asp)

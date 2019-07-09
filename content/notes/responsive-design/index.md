@@ -1,15 +1,16 @@
 ---
-title      : "Responsive Design"
-date       : 2019-07-06T00:22:51+02:00
-slug       : ""
-draft      : true
-series     :
-- myLearning
-categories : 
+categories:
 - design
-tags       : [css]
-revision   : 0
-weight     : 5
+date: "2019-07-06T00:22:51+02:00"
+draft: true
+revision: 0
+series:
+- myLearning
+slug: ""
+tags:
+- css
+title: Responsive Design
+weight: 5
 ---
 
 tl;dr
