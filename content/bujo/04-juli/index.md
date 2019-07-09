@@ -137,6 +137,9 @@ How to create and add mindmaps to html blogs?
     svg export from freeplanes is not good enough for dense and large MM
 https://www.w3schools.com/howto/howto_css_timeline.asp
 
+SVG
+: XML based vector image format, open standard by W3C.
+* Lets you write images using code
 
 ### Gatsby test drive
 

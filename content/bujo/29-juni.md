@@ -101,3 +101,4 @@ object to path
 [^2]: [French Revolution Timeline](http://www.historyhome.co.uk/c-eight/france/frevchro.htm)
 [^3]: [svg_path w3tutorials](https://www.w3schools.com/graphics/svg_path.asp)
 [^4]: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths
+[^5]: [css, codrops](https://github.com/codrops)
