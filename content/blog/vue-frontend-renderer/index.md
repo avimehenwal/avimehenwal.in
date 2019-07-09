@@ -2,7 +2,6 @@
 categories:
 - design
 date: "2019-07-06T10:41:30+02:00"
-draft: true
 revision: 0
 series:
 - myLearning

@@ -2,7 +2,6 @@
 categories:
 - design
 date: "2019-07-06T00:22:51+02:00"
-draft: true
 revision: 0
 series:
 - myLearning
@@ -25,7 +24,6 @@ with css grids, content is attached to grids and writing media queries is very s
 
 
 
-[bibliography]
 ### Footnotes
 
 [^1]: [CSS Grids](https://youtu.be/7kVeCqQCxlk)

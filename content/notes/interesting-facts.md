@@ -1,7 +1,6 @@
 ---
 title: Interesting Facts
 date: "2019-07-09T01:15:09+02:00"
-draft: true
 weight: 5
 revision: 0
 series:
