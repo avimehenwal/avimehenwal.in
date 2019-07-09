@@ -2,22 +2,20 @@
 title      : "{{ replace .TranslationBaseName "-" " " | title }}"
 date       : {{ .Date }}
 slug       : ""
+weight     : 5
+revision   : 0
 draft      : true
-series     :
+series:
 - myLearning
 - personalProject
 - companyProject
 - test
-categories : 
+categories: 
 - Programming
 - design
 - deployment
 - development
-tags       : []
-revision   : 0
-# automatically get a table of contents when two or more subheadings (<h2>s)
-# toc        : false
-weight     : 5
+tags:
 ---
 
 tl;dr
@@ -25,10 +23,6 @@ tl;dr
 
 
 
-
-
-
-[bibliography]
 ### Footnotes
 
 [^1]: 
