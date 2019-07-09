@@ -1,17 +1,16 @@
 ---
 title      : "{{ replace .TranslationBaseName "-" " " | title }}"
 date       : {{ .Date }}
-slug       : ""
 draft      : true
-series     : [DailyLogs]
-categories : []
-tags       : []
 revision   : 0
+weight: 5
+series:
+- DailyLogs
+categories:
+- frontend
+- history
+tags:
 ---
-
-tl;dr
-<!-- more -->
-
 
 
 
