@@ -20,7 +20,6 @@ tl;dr
 <!-- more -->
 
 
-
 ### Footnotes
 
 [^1]: 
