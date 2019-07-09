@@ -13,6 +13,7 @@ tl;dr
 <!-- more -->
 
 #### SPA at scale
+
 * new ESX import syntax
 * js didnt have import/export for a long time
 * to future proof your js code
@@ -22,13 +23,20 @@ tl;dr
   * webpagetest
   * lighthouse chrome tool
 * DOcumentation - typescript in code documentation
-* 
+
+##### Vue and Firebase application
+
+* add plugins to vue
+* make firebase config object
+* establish a connection using config object
+* w3css works with vue
 
 ## To try
 1. 100 days of code series
 2. vue + firebase application
    1. firebase provides dynamic backend data store for web, android and ios
-   2. 
+      1. database, authentication, storage (user images), hosting, functions and ML
+3. 
 
 
 
