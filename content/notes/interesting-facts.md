@@ -1,23 +1,21 @@
 ---
-title      : "Interesting Facts"
-date       : 2019-07-09T01:15:09+02:00
-slug       : ""
-draft      : true
-series     :
-- myLearning
-- personalProject
-- companyProject
-- test
-categories : 
+categories:
 - Programming
 - design
 - deployment
 - development
-tags       : []
-revision   : 0
-# automatically get a table of contents when two or more subheadings (<h2>s)
-# toc        : false
-weight     : 5
+date: "2019-07-09T01:15:09+02:00"
+draft: true
+revision: 0
+series:
+- myLearning
+- personalProject
+- companyProject
+- test
+slug: ""
+tags: []
+title: Interesting Facts
+weight: 5
 ---
 
 tl;dr

@@ -1,15 +1,16 @@
 ---
-title      : "Front end rendering - VUE"
-date       : 2019-07-06T10:41:30+02:00
-slug       : ""
-draft      : true
-series     :
-- myLearning
-categories : 
+categories:
 - design
-tags       : [vue]
-revision   : 0
-weight     : 5
+date: "2019-07-06T10:41:30+02:00"
+draft: true
+revision: 0
+series:
+- myLearning
+slug: ""
+tags:
+- vue
+title: Front end rendering - VUE
+weight: 5
 ---
 
 tl;dr

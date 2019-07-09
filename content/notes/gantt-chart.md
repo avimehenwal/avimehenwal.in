@@ -1,15 +1,16 @@
 ---
-title      : "Gantt Chart"
-date       : 2019-07-06T19:03:28+02:00
-slug       : ""
-draft      : true
-series     :
-- myLearning
-categories : 
+categories:
 - design
-tags       : [visualiation]
-revision   : 0
-weight     : 5
+date: "2019-07-06T19:03:28+02:00"
+draft: true
+revision: 0
+series:
+- myLearning
+slug: ""
+tags:
+- visualiation
+title: Gantt Chart
+weight: 5
 ---
 
 tl;dr
