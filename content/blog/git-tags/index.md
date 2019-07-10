@@ -38,8 +38,6 @@ labelling the **commits of interest**
 Versions in Github are based on Git tags
 
 
-
-
 ### How to we tag out git commit tree?
 
 A good and standard approach is to follow the **Version Semantics scheme**[^2]

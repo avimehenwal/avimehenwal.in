@@ -1,15 +1,15 @@
 ---
-categories:
-- design
+title: Front end rendering - VUE
 date: "2019-07-06T10:41:30+02:00"
 revision: 0
+weight: 5
 series:
 - myLearning
+categories:
+- design
 slug: ""
 tags:
 - vue
-title: Front end rendering - VUE
-weight: 5
 ---
 
 tl;dr
@@ -65,6 +65,57 @@ SPA
   * Combined with the reactivity system, Vue is able to intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulations when the app state changes.
 * v-once interpolation that do not change
 * 
+
+class binding
+object binding
+we can bind array of classes too
+computed properties vs data property
+componenet accepts a name and an object ~ Vue object
+component template is in backticks
+
+logic to code premium customer - newer options like free shipping for premium customers
+change product image on mouseover colours
+diable BUY button and in-stock if a product is out of stock
+Make a componet scope global - add it to main Vue object, like cart
+HTML can call components using props, how about when component need to update html DOM?
+  * component can $emit event and we attach a event handler as html attribute
+  * when event is captured DOM can trigger a method
+* v-bind - one way data binding
+* v-model - 2 way data binding
+* Nested components
+* reset- values after we submit the form
+* save submitted form data into review object and send it to server only on checkout
+* Form validations
+* mounted is a lifecycle hook
+* vue bus to transport objects from one part to another
+*   
+
+1. Vue Instance
+2. Attribute binding
+3. Conditional rendering
+4. List rendering
+5. Event handling
+6. class and style binding
+7. computed properties
+8. Components
+9. Communication events
+10. Forms
+11. Tabs
+
+ESlint - change single quotes to double quotes, remove/add simicolons
+
+Managing states in a mullti componenet applicaion could be difficult
+
+Vuex
+: State management pattern + Library
+
+states
+: data on whichi data depends
+
+Wihout vuex pattern - communicating *events* up and *props* down to share data
+vuex uses *reactive approach* when one component updates the state,
+other components using the data are notified.
+
 
 ## Gridsome
 

@@ -1,9 +1,9 @@
 ---
 title      : "{{ replace .TranslationBaseName "-" " " | title }}"
 date       : {{ .Date }}
+comments: false
 weight     : 5
 revision   : 0
-draft      : true
 series:
 - myLearning
 - Test

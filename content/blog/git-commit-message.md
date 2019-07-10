@@ -6,7 +6,7 @@ revision: 1
 series:
 - myLearning
 categories:
-- Programming
+- development
 tags:
 - git
 ---
