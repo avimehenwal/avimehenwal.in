@@ -1,25 +1,27 @@
 ---
-categories:
-- development
 date: "2019-02-15T12:54:50+01:00"
+title: What Are Git Tags and Github Releases?
 revision: 0
 series:
 - edublog
+categories:
+- development
 tags:
 - git
 - release
 - tags
-title: What Are Git Tags and Github Releases?
+- stash
 video: ""
 ---
 
 ![Git tags](git-tags.png)
 
+## Software Release
 
 Before getting deeper in to git tags, lets first understand the
 basics information provided by a software package to its users.
 
-#### Components of a release
+### Components of a release[^1]
 
 * release notes and
 * a packaged software bundle or binaries
@@ -40,19 +42,22 @@ Versions in Github are based on Git tags
 
 ### How to we tag out git commit tree?
 
-A good and standard approach is to follow the **Version Semantics scheme**
-```
-MAJOR.MINOR.PATCH
-```
-where,
+A good and standard approach is to follow the **Version Semantics scheme**[^2]
 
-> MAJOR version when you make incompatible API changes,
+{{% note %}}    
+$$ MAJOR.MINOR.PATCH $$
 
-> MINOR version when you add functionality in a backwards-compatible manner, and
+MAJOR
+: version when you make incompatible API changes,
 
-> PATCH version when you make backwards-compatible bug fixes.
+MINOR
+: version when you add functionality in a backwards-compatible manner, and
 
-> Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+PATCH
+: version when you make backwards-compatible bug fixes.
+
+Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+{{% /note %}}
 
 ### How to add tags to repositories?
 
@@ -99,8 +104,6 @@ git ls-remote --tags
 
 # Delete a remote tag
 git push --delete origin <tagname>
-
-
 ```
 
 #### How to rename a tag or edit its message
@@ -114,6 +117,32 @@ git tag <tagname> -m "new message" -f
 git push --tags -f
 ```
 
+## Git stash
+
+cleaning up worspace until your last commit.
+
++ Useful when you made changes in wrong branch
+  + simply stash
+  + checkout to right branch
+  + stash pop from stach your changes to current branch
+
+### Removing stashes when not required
+
+We can view the changes which stash will bring before applying it using `show -p`
+
+```git
+    git stash
+    git stash list
+    git stash show -p <stash-number>
+    
+    git stash pop
+    git stash apply <stash-number>
+
+    git stash drop <stash-number>
+```
+
+![git stash drop](git-stash-drop.png)
+
 ## References
-> * [Github creating releases](https://help.github.com/articles/creating-releases/)
-* [Semantic Versioning 2.0.0](https://semver.org/)
+* [^1]: [Github creating releases](https://help.github.com/articles/creating-releases/)
+* [^2]: [Semantic Versioning 2.0.0](https://semver.org/)
