@@ -116,7 +116,31 @@ Wihout vuex pattern - communicating *events* up and *props* down to share data
 vuex uses *reactive approach* when one component updates the state,
 other components using the data are notified.
 
+## Vue ROuter
 
+if we do not want to use `#` in URLs
+```js
+router {
+  mode: 'history';
+}
+```
+
+* Install router
+* add it to the application
+* how to set up routes
+* how to load these routes
+* change model to have nicer URLs
+
++ `<router-link>` is handeled by js and not sent to server
+  + doesnt sents a fresh request
++ URL parameters
++ Routes links to other navigation buttons and options, internal routing from code
+
+## VueX - stage management store
+
+* calling mutations dorectory is for synchronous events
+* should you need asynchronous functionality use **actions**
+* 
 ## Gridsome
 
 1. Uses GraphQL layer to get data from different sources in order to dynamically generate pages from it

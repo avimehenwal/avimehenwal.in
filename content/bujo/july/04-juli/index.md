@@ -150,11 +150,6 @@ SVG
 
 ## Gatsby test drive
 
-### Babel
-
-Babel is a JavaScript compiler.
-Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Here are the main things Babel can do for you: Transform syntax.
-
 + npm install too many modules, I dont know how many. Takes a while for the first time
 + SPA - server sends all logic code to frontend, bare bones and all rendering happens at client side. like in react.
 
