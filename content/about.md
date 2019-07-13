@@ -9,7 +9,7 @@ Professional started working as a network automation engineer, Application Devel
 
 * __Working environments__ Scrum, Agile, CI/CD, continuous delivery 
 * __Specialties__ Linux, Automation, Python, lua, shell, TDD, pen testing
-* __Domains Interested__ Distributed Systems and Operations, Cloud Computing, System Architecture, OS Virtualization, Machine Learning and Secutities
+* __Domains Interested__ Distributed Systems and Operations, Cloud Computing, System Architecture, OS Virtualization, Machine Learning and Securities
 
-Please contact via LinkedIn for work realted queries and my rates.
+Please contact via Linked-In for work related queries and my rates.
 Get in the loop :)
