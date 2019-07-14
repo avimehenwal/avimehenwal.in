@@ -11,6 +11,7 @@ categories:
 - Linux
 tags:
 - apropos
+- tee
 ---
 
 Linux system seek self-help even when you are offline.
@@ -32,6 +33,15 @@ apropos spell
 
 ```
 aspell check content/about.md
+```
+
+## tee command
+
+Write to a file as well as print output on *stdout*
+
+```
+date | tee --append myLog.log
+date | tee /dev/tty | rev
 ```
 
 ### Footnotes

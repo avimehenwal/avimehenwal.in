@@ -105,6 +105,12 @@ Reuse your hooks in every project
     git config --global core.hooksPath /path/to/global/hooks
 {{% /cmd %}}
 
+## git hooks usecases
+
+1. Lynting - Check the quality of the code before committing
+2. Auto generate documentation as changes are uploaded
+3. Spell checks
+
 
 ### Footnotes
 
