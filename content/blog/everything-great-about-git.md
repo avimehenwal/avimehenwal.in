@@ -129,7 +129,6 @@ Reuse your hooks in every project
   * cheaper
   * shared objects and config
 * 
-
 ### Related work
 
 * [python, pre-commit.com](https://pre-commit.com/)
