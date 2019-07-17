@@ -111,6 +111,28 @@ Reuse your hooks in every project
 2. Auto generate documentation as changes are uploaded
 3. Spell checks
 
+### pre-commit hook checklist
+
+- are relevant files added
+- are unrelevant files removed from staging
+- Review untracked files
+- Would you like to lynt
+- Would you like to spellcheck
+
+### Work on multiple branches?
+
+{{% cmd %}}
+    git worktree
+{{% /cmd %}}
+
+* seperate checkout in a different directory
+  * cheaper
+  * shared objects and config
+* 
+### Related work
+
+* [python, pre-commit.com](https://pre-commit.com/)
+* [enforce cmt-message standards](https://github.com/Krakakanok/Conventional-Commits-Git-Hook/blob/master/commit-msg)
 
 ### Footnotes
 

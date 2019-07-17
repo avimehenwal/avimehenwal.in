@@ -69,9 +69,117 @@ use `eval`
 * tee /dev/tty
 * `and` and `or` operator in if conditions using `begin-end` syntax
 
+## What happen when you start the shell
+
+1. loads configuration
+   1. system wide `/etc/fish/config.fish`
+   2. user specific `$HOME/.config/config.fish`
+2. prepares and makes available all Environment variabls. *unlike other shells* no subshells[^3]
+3. useful command-line parameters for fish, aka **subshell** in other shells
+   1. `--inint-command=USR_CMD`
+   2. `--command=USR_CMD`
+4. shell function to [fish escape characters](https://fishshell.com/docs/current/index.html#escapes) `bind`
+   1. there are special bind functions available
+   2. `fish_key_reader` to studt input recieved by terminal
+
+```
+# sane navigation
+echo $dirprev; echo $dirnext;
+prevd --list <index>
+
+fish_key_reader --continuous
+bind \e prevd
+bind \c] nextd
+
+# list of all bind functions
+bind --function-names 
+```
+
+Keybinding | fish escape sequence
+:---------:|------------------
+<kbd>ALT</kbd> + <kbd>w</kbd> | \ew
+<kbd>CTRL</kbd> + <kbd>x</kbd> | \cx
+
+{{% note %}}
+    Note that Alt-based key bindings are case sensitive and Control-based
+    key bindings are not. This is a constraint of text-based terminals,
+    not fish.<br>
+
+    Every program on your computer can be used as a command in fish
+{{% /note %}}
+
+### the default keybinding
+
+{{% cmd %}}
+   bind '' self-insert
+{{% /cmd %}}
+
+> reading user inputs and then check then with switch structure
+
+```
+read line1
+read --prompt-str='Enter line2 : ' line2
+echo $line1 then $line2
+```
+
+### Completion and shell suggestions
+
+avoid running dangerous commands
+dont have to look at man pages or help again and again,
+all at the ease of <kbd>TAB</kbd> key
+
+- [git complition](https://github.com/junchunx/myfish/blob/master/.config/fish/completions/git.fish)
+- Look for fish completion search path from `fish_complete_path` variable
+
+{{% note %}}
+    fish can autogenerate completion commands from man pages (if provided)
+    `$HOME/.local/share/fish/generated_completions`
+{{% /note %}}
+
+> How to write personal man page and install it on any linux system?
+
+- [linux-unix-creating-a-manpage](https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/)
+- ToDo - add completion for [bat](https://github.com/sharkdp/bat)
+
+command substitution
+: The output of a series of commands can be used as the parameters to another command
+
+piping
+: stdout of a program is used as stdin for other
+
+brace expansion
+: mv *.{c,h} src/
+echo {good,bad}" apples"
+
+process expansion
+: echo %self
+
+Command substitutions
+Variable expansions
+Bracket expansion
+Pid expansion
+Wildcard expansion
+
+### Variable expansion
+
+however, an important difference in how variables are expanded when quoted and when unquoted. An unquoted variable expansion will result in a variable number of arguments. For example, if the variable $foo has zero elements or is undefined, the argument $foo will expand to zero elements. If the variable $foo is an array of five elements, the argument $foo will expand to five elements. When quoted, like "$foo", a variable expansion will always result in exactly one argument. 
+
+## Debugging
+
+- `breakpoint`
+- 
+
+set -l foo
+begin
+    set -l foo
+end
+will create a second version of $foo inside that block, and return to the other once the block ends.
+
+So, what you need to do is to define it outside of the block and then just change it inside:
+
+
 ## Footnotes
 
 [^1]: https://stackoverflow.com/questions/47743015/fish-shell-how-to-check-if-a-variable-is-set-empty
 [^2]: http://fishshell.com/docs/current/commands.html#test
-[^4]: 
-[^5]: 
+[^3]: [wiki, friendly interactive shell](https://en.wikipedia.org/wiki/Friendly_interactive_shell)

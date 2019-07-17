@@ -33,6 +33,9 @@ apropos spell
 
 ```
 aspell check content/about.md
+
+# list all configs
+aspell dump config
 ```
 
 ## tee command
