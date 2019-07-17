@@ -32,8 +32,8 @@ enableGitInfo          = true
 
 [menu]
   [[menu.nav]]
-    name = "Home"
-    url = "/"
+    name = "Search"
+    url = "https://cse.google.com/cse?cx=010181463350939928324:jbo_i9sqixm"
     weight = 1
   [[menu.nav]]
     name = "Blog"
