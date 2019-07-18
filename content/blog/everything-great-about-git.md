@@ -1,16 +1,16 @@
 ---
-title      : "Everything Great About Git"
-date       : 2019-07-10T09:59:47+02:00
-weight     : 5
-revision   : 0
+title: Everything Great About Git
+date: 2019-07-10T07:59:47.000+00:00
+weight: "5"
+revision: "0"
 series:
 - myLearning
-categories: 
+categories:
 - development
 tags:
 - git
----
 
+---
 ## Git Hooks
 
 Allows us to run custom scripts whenever certain important events occour in the Git

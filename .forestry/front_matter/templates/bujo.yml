@@ -23,5 +23,3 @@ fields:
 - type: text
   name: title
   label: title
-pages:
-- content/bujo/08-july-2019-monday.md
