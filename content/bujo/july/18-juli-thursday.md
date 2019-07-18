@@ -45,12 +45,13 @@ yocto
 
 ### Questions
 
-> How to change partitions sizes? Extend partitions
-> 
+> How to change partitions sizes? Extend partitions?
+> fdisk
+>
 
 
 
 ### Footnotes
 
-[1]: https://www.kernel.org/doc/Documentation/filesystems/ramfs-rootfs-initramfs.txt 
-[^2]: 
+[1]: https://www.kernel.org/doc/Documentation/filesystems/ramfs-rootfs-initramfs.txt
+[^2]:

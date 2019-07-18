@@ -7,7 +7,7 @@ revision   : 0
 draft      : true
 series:
 - Test
-categories: 
+categories:
 - random
 tags:
 - idea
@@ -16,7 +16,10 @@ tags:
 
 ## Questions
 
-1. How to add keyboard shortcuts to terminal commands?
+How to add keyboard shortcuts to terminal commands?
+: use `bind` command. grep in `~/.conf` dir for samples
+
+1. What I learnt today journal? maybe a website
 
 ## Ideas
 

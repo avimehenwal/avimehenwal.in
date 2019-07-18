@@ -24,11 +24,6 @@ crontab -l
 
 [Limit memory usage for a single Linux process](https://unix.stackexchange.com/questions/44985/limit-memory-usage-for-a-single-linux-process)
 
-tmux
-: terminal multiplexer to quickly switch to app
-
-tmux-session for applications
-
 ## How to update terminal text without repainting? How to overwrite a line
 
 * repaint terminal
@@ -51,11 +46,11 @@ TUI APplication
 * zenity
 
 * Terminals offer control sequences to control color, font, cursor position and more
-* Terminal interprets escape sequences 
+* Terminal interprets escape sequences
 
 ```
-echo -n first 
-sleep 1 
+echo -n first
+sleep 1
 echo -ne "\rsecond"
 echo
 
@@ -84,4 +79,4 @@ ls (zenity --file-selection --directory)
 ### Footnotes
 
 [^1]: [Create a Terminal Program with Vue.js and blessed-vue](https://alligator.io/vuejs/blessed-vue-terminal/)
-[^2]: 
+[^2]:

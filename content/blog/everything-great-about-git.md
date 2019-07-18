@@ -5,14 +5,59 @@ weight     : 5
 revision   : 0
 series:
 - myLearning
-categories: 
+categories:
 - development
 tags:
 - git
 - merge
 - rebase
 - bisect
+- diff
 ---
+
+## How to read git diff output?
+
+{{< code numbered="true" >}}
+diff --git [[[a/content/blog/everything-great-about-git.md]]] [[[b/content/blog/everything-great-about-git.md]]]
+index 18123c7..00c8696 [[[100644]]]
+--- a/content/blog/everything-great-about-git.md
+[[[+++]]] b/content/blog/everything-great-about-git.md
+@@ [[[-7]]],3 +7,[[[3]]] @@ series:
+- myLearning
+[[[-]]]categories:
+[[[+]]]categories:
+ - development
+[[[@@ -14,4 +14,25 @@]]] tags:
+ - bisect
++- diff
+ ---
+{{< /code >}}
+
+1. Old/original file
+2. new file version being diffed to
+3. `100644` means that it is ordinary file and not e.g. symlink, and that it doesn't have executable permission bit
+4. Symbols used for both files
+5. the original file, starting on line 7
+6. has 3 lines before this diff was applied.
+7. `+` A line was added here to the first file.
+8. `-` A line was removed here from the first file.
+8. start of new **hunk** `@@ -start,count +start,count @@`
+
+
+`git diff myfile.txt`
+: If you want to see what you haven't git added yet:
+
+`git diff --cached myfile.txt`
+: or if you want to see already added changes
+
+Another exciting use-case is to check for leading and trailing whitespaces in your file
+`git diff --check`
+
+Check whitespaces only on python files
+```
+$ git diff --name-only HEAD~1 HEAD | grep \.py$ | \
+$ xargs git diff --check HEAD~1 HEAD --
+```
 
 ## git bisect - debugging code for culprit commit
 
@@ -29,7 +74,7 @@ git bisect next (y)
 git bisect good <commit-id>
 git bisect log
 git bisect visualize
-git bisect reset 
+git bisect reset
 ```
 
 ## git merge vs git rebase[^3]
@@ -105,18 +150,18 @@ Reuse your hooks in every project
     git config --global core.hooksPath /path/to/global/hooks
 {{% /cmd %}}
 
-## git hooks usecases
+## git hooks use-cases
 
-1. Lynting - Check the quality of the code before committing
+1. Linting - Check the quality of the code before committing
 2. Auto generate documentation as changes are uploaded
 3. Spell checks
 
 ### pre-commit hook checklist
 
 - are relevant files added
-- are unrelevant files removed from staging
+- are irrelevant files removed from staging
 - Review untracked files
-- Would you like to lynt
+- Would you like to lint
 - Would you like to spellcheck
 
 ### Work on multiple branches?
@@ -125,10 +170,10 @@ Reuse your hooks in every project
     git worktree
 {{% /cmd %}}
 
-* seperate checkout in a different directory
+* separate checkout in a different directory
   * cheaper
   * shared objects and config
-* 
+*
 ### Related work
 
 * [python, pre-commit.com](https://pre-commit.com/)
