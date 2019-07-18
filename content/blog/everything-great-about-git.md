@@ -1,14 +1,15 @@
 ---
-title      : "Everything Great About Git"
-date       : 2019-07-10T09:59:47+02:00
-weight     : 5
-revision   : 0
+title: Everything Great About Git
+date: 2019-07-10T07:59:47.000+00:00
+weight: "5"
+revision: "0"
 series:
 - myLearning
 categories:
 - development
 tags:
 - git
+<<<<<<< HEAD
 - merge
 - rebase
 - bisect
@@ -101,6 +102,10 @@ git rebase master -i
 ```
 
 
+=======
+
+---
+>>>>>>> 37344af... Update from Forestry.io
 ## Git Hooks
 
 Allows us to run custom scripts whenever certain important events occur in the Git
@@ -182,6 +187,10 @@ Reuse your hooks in every project
 ### Footnotes
 
 [^1]: [Git hooks, practical uses](https://www.tygertec.com/git-hooks-practical-uses-windows/)
+<<<<<<< HEAD
 [^2]: [atlassian git-hook tutorial](https://www.atlassian.com/git/tutorials/git-hooks)
 [^3]: [git merge | git rebase](https://hackernoon.com/git-merge-vs-rebase-whats-the-diff-76413c117333)
 [^4]: [What is git rebase](https://gist.github.com/leesmith/8441773)
+=======
+[^2]: [atlassian git-hook tutorial](https://www.atlassian.com/git/tutorials/git-hooks)
+>>>>>>> 37344af... Update from Forestry.io
