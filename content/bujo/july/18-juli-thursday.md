@@ -43,10 +43,22 @@ yocto
 * create a nodejs enabled linux image for raspberrypi
 * [wiki-yocto How_do_I](https://wiki.yoctoproject.org/wiki/How_do_I)
 
+iPXE
+: is the leading open source network boot firmware.
+* It provides a full PXE implementation enhanced with additional features such as:
+* boot from a web server via HTTP
+* boot from an iSCSI SAN
+* boot from a Fibre Channel SAN via FCoE
+* boot from an AoE SAN
+* boot from a wireless network
+* boot from a wide-area network
+* boot from an Infiniband network
+* control the boot process with a script
+
 ### Questions
 
 > How to change partitions sizes? Extend partitions
-> 
+> How to run `wic` image on virt-manager
 
 
 
