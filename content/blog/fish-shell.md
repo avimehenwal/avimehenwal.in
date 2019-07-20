@@ -12,6 +12,10 @@ tags:
 - eval
 ---
 
+process substitution
+: is a form of *inter-process communication* that allows the input or output of a command to appear as a *file*.
+* The command is substituted in-line, where a file name would normally occur, by the command shell.
+
 ### How to test if a variable (env) is set or not [^1]
 
 1. `set -q var` (note the missing "$" - this uses the variable name) can be used to check if a variable has been set.
@@ -19,7 +23,7 @@ tags:
 3. use [fish test function](http://fishshell.com/docs/current/commands.html#test)
    1. When using a variable as an argument for a test operator you should almost always enclose it in double-quotes[^2].
 
-## Input/Output (IO) redirection 
+## Input/Output (IO) redirection
 
 FD
 : file descriptors
@@ -92,7 +96,7 @@ bind \e prevd
 bind \c] nextd
 
 # list of all bind functions
-bind --function-names 
+bind --function-names
 ```
 
 Keybinding | fish escape sequence
@@ -162,12 +166,12 @@ Wildcard expansion
 
 ### Variable expansion
 
-however, an important difference in how variables are expanded when quoted and when unquoted. An unquoted variable expansion will result in a variable number of arguments. For example, if the variable $foo has zero elements or is undefined, the argument $foo will expand to zero elements. If the variable $foo is an array of five elements, the argument $foo will expand to five elements. When quoted, like "$foo", a variable expansion will always result in exactly one argument. 
+however, an important difference in how variables are expanded when quoted and when unquoted. An unquoted variable expansion will result in a variable number of arguments. For example, if the variable $foo has zero elements or is undefined, the argument $foo will expand to zero elements. If the variable $foo is an array of five elements, the argument $foo will expand to five elements. When quoted, like "$foo", a variable expansion will always result in exactly one argument.
 
 ## Debugging
 
 - `breakpoint`
-- 
+-
 
 set -l foo
 begin

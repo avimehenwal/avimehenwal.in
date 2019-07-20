@@ -1,7 +1,7 @@
 ---
-title: Front end rendering - VUE.js
+title: VUE.js - Front end rendering
 date: "2019-07-06T10:41:30+02:00"
-revision: 0
+revision: 1
 slug: ""
 weight: 5
 series:
@@ -11,6 +11,7 @@ categories:
 tags:
 - vue
 - gridsome
+- javascript
 ---
 
 > web application are replacing older desktop applications. Why?
@@ -39,7 +40,10 @@ Axios
 
 firebase
 : provides dynamic backend data store for web, android and ios
-* database, authentication, storage (user images), hosting, functions and ML 
+* database, authentication, storage (user images), hosting, functions and ML
+
+vue.js
+: declarative rendering and component composition.
 
 ## SPA-single page applications | MPA-multiple page application
 
@@ -92,7 +96,7 @@ firebase
   5. May also include GraphQL to fetch data like in *gatsby*
 * components are binded together under `/layouts`
 * conditionals `v-if`
-* loops `v-for` 
+* loops `v-for`
 * User inputs `v-on:click=""`
 * all DOM manipulations are handled by Vue
 * DOM is a tree
@@ -100,7 +104,7 @@ firebase
   * Componenet need to be registered with vue
     * componenets properties `prop` are binded with data `v-bind`
 * [Vue Life cycle diagram][2]
-* Vue compiles the templates into <mark>Virtual DOM rendering</mark> functions[^3]. 
+* Vue compiles the templates into <mark>Virtual DOM rendering</mark> functions[^3].
   * Combined with the **reactivity system**, Vue is able to intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulations when the app state changes.
 * `v-once` interpolation that do not change
 * **computed** properties | **data** property
@@ -159,7 +163,7 @@ router {
   * js didn't have import/export for a long time
   * to future proof your js code
 * Frameworks like angular, vue, react, Babel plugin helps address *cross browser compatibility*
-  * scroll bar display on PC mac were off, causes virtualised scroll causes performance issues due to pixel deviation 
+  * scroll bar display on PC mac were off, causes virtualised scroll causes performance issues due to pixel deviation
 * Does you application work on slow connections?
   * *webpagetest*
   * *lighthouse* chrome tool
@@ -199,8 +203,98 @@ vue Directives | Description
 3. Insert your own data into graphQL using Data Source API
 
 
+
+## VUE.JS tutorial
+
+* Everything is encapsulated
+* Babel - compile new js specification for older browser compatibility
+* VUEX - website state management system
+* npm install -g @vue/cli
+* create new project
+  * CLI way
+    * vue test
+  * GUI way
+    * vue ui
+* Components are embedded just like HTML tags
+* `main.js` is the entrypoint of vue
+* browser requests/loads index.html, which has `id='app'` and vue components enter through main.js into the webpage.
+* **props** are exported to expose
+* there has to be atleast one element inside `<Template>` tag
+* `<style scoped>` css would affect only the local elements
+* Javascript book on GitHub[^2]
+* There may be data/utilities(axios) you’d like to use in many components - vue instance prototype property
+
+el
+: element
+
+vue double moustache syntax
+: {{ something }}
+
+v-on
+: listen to DOM event and event handling
+
+vue directives
+: are used to interact with DOM
+
+> difference between *v-if* and *v-show*?
+
+* css property display:none vs not being present in DOM at all
+* So prefer v-show if you need to toggle something very often, and prefer v-if if the condition is unlikely to change at runtime.
+
+* v-bind:/<html attribute/>
+  * Dynamically add classes
+    * Object syntax
+    * js ternary syntax
+* a component’s data option must be a function, so that each instance can maintain an independent copy of the returned data object when the component is reused
+* Componenet must pe places BEFORE new Vue object is instantiated
+* every component must have a single root elemen
+* Component lifecycle functions
+* inside components only required field to have is template
+* vue **computed** properties are halfway between *data* and *methods*
+* vueX - state management system
+* vue has global store
+* use short for project root directory `import cats from '@/data/cats'`
+* actions -> mutations -> updates state
+* that only kebab-case names are valid directly in the DOM (i.e. non-string templates).
+
+> Sample applications you can make using vue or FSR?
+
+1. quiz application
+   1. questions pulled from API
+   2. only user action for selection are computed
+   3. red / green based on user choice
+2. toDo list
+3. Drill down Animals data
+
+
+## Dashboards
+
+* SVG + Front end rendering (VUE)
+* data coming from browser, draw SVG, no graphing library required
+* SVG rectangle powered by javascript to draw bar graphs
+* `<g>` element in SVG is like `div` element in html
+* random data generated to draw bar up/down effect
+* ANimate things very nicely with vue
+* Transitions -> CSS animations -> jS animations
+* show and hide things based on conditions
+  * style bindings
+  * out-in - mostly
+  * in-out
+* Flip technique - causes least amount of repiants in browser than transitions
+  * store and filter data animations
+  * sudoku rearranges nummbers
+* Reactive programming is programming with asynchronous data streams. stream is ongoing
+* `<Watchers>` for reactive programming
+
+{{% codePen WqYGMp %}}
+
+[difference between front end framework and templating language](https://stackoverflow.com/questions/25025317/what-is-the-conceptual-difference-between-angularjs-and-view-template-engines-in)
+
+
 ### Footnotes
 
 [^1]: [scrimba, vue tutorial](https://scrimba.com/g/gvuex)
 [2]: https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram  "vuejs, lifecycle diagram"
 [^3]: [Virtual DOM](https://www.accelebrate.com/blog/the-real-benefits-of-the-virtual-dom-in-react-js/)
+[4]: [w3schools, filter search](https://www.w3schools.com/howto/howto_js_filter_lists.asp)
+[5]: [gh, You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
