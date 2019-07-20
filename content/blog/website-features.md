@@ -11,9 +11,6 @@ title: Website Features
 weight: 5
 ---
 
-tl;dr
-<!-- more -->
-
 - [ ] Blog with markdown content for posts
 - [ ] Search posts with Fuse.js and vue-fuse
 - [ ] Theme Switcher with Dark Mode
@@ -27,12 +24,37 @@ tl;dr
 - [ ] Scroll to sections using vue-scrollto
 - [ ] Clean and minimal design
 
+<!-- more -->
 
+## Netlify | Forestry
+
+* publish posts from any browser to your static sites
+* NetlifyCMS accessable on `https://site_url/admin`
+
+## Collaspable section in markdown
+
+{{< code numbered="true" >}}
+[[[<details>]]]
+    [[[<summary>]]]
+        Expand to view details
+    </summary>
+    * lorem
+    * ipsum
+    *text
+</details>
+{{< /code >}}
+
+1. Begin a collapsable block element
+2. Text inside this tag will be visible, rest everything would be hidden
+
+{{% note %}}
+  **or use shortcode expandable labels**
+{{% /note %}}
 
 
 
 [bibliography]
 ### Footnotes
 
-[^1]: 
-[^2]: 
+[^1]:
+[^2]:

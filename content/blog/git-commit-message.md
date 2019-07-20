@@ -15,9 +15,9 @@ tags:
 > Why care about commit message anyways? What's the need?
 
 
-We write commit message to get a glance of development activity. Hence writing Awesome commit message might mean people scouring through git logs would be able to undestand development activity better and faster.
+We write commit message to get a glance of development activity. Hence writing Awesome commit message might mean people scouring through git logs would be able to understand development activity better and faster.
 
-Here are some tips to write awesome git commit messages.
+## some tips to write awesome git commit messages.
 
 1. Use present tense: **add awesome-package**, not **added ...**
 2. Use preceding subsystem when applicable: **registry: add theme foobar**
@@ -25,8 +25,39 @@ Here are some tips to write awesome git commit messages.
 4. Use of emoji is free[^1]
 
 {{% note %}}
-  [Use git commit message to close PRs and issues on github's Automated kanban project board](https://help.github.com/en/articles/closing-issues-using-keywords)
+  [Use git commit message to close PRs and issues on GitHub's Automated kanban project board](https://help.github.com/en/articles/closing-issues-using-keywords)
 {{% /note %}}
+
+## [Anatomy of a commit message](https://chris.beams.io/posts/git-commit/)
+
+> [It's all connected](https://about.gitlab.com/2016/03/08/gitlab-tutorial-its-all-connected/)
+
+#### Examples of well crafted repositories
+
+While many repositories’ logs look like the former, there are exceptions. The Linux kernel and Git itself are great examples. Look at Spring Boot, or any repository managed by Tim Pope.
+
+```
+Subject in IMPERATIVE
+
+Explanation, what, why
+```
+
+imperative verbs
+: Soften
+* Add
+* Fix
+* Rewrite
+* Avoid
+* Close
+* Document
+* Refactor
+* Optimize
+
+* Reference
+  - To reference an issue: `#123`
+  - To reference a MR: `!123`
+  - To reference a snippet `$123`
+- strive for <mark>atomic commits</mark>
 
 ## How to automate this process?
 
@@ -67,7 +98,7 @@ git commit -a
 
 ### How to unstage a file?
 
-`git rm --cached <filePath>` does not unstage a file, it actually **stages the removal of the file(s) from the repo** (assuming it was already committed before) but leaves the file in your working tree (leaving you with an untracked file). **will unstage the file for future commits also**. It's unstaged untill it gets added again with git add <file>.
+`git rm --cached <filePath>` does not unstage a file, it actually **stages the removal of the file(s) from the repo** (assuming it was already committed before) but leaves the file in your working tree (leaving you with an untracked file). **will unstage the file for future commits also**. It's unstaged until it gets added again with git add <file>.
 
 `git reset -- <filePath>` will **unstages the file in the current commit.**
 
