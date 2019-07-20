@@ -72,6 +72,23 @@ end
 ls (zenity --file-selection --directory)
 ```
 
+### tracking a process in linux?
+
+`top` and `htop` commands
+
+htop
+: interactive process manager
+* entire logic for gathering process data is based on the `/proc` filesystem
+* UI uses `ncurses` only
+
+#### other solutions
+
+* [ top + awk ] = to a graphing tool
+* [sysdig inspector](https://github.com/draios/sysdig-inspect.git)
+* `free` command
+* [pipe output to python script](https://manashpratim.com/plot-realtime-terminal-data)
+*
+
 ## Questions
 
 1. write a vue.js based terminal app?[^1]

@@ -1,5 +1,5 @@
 ---
-title: Front end rendering - VUE.js
+title: VUE.js - Front end rendering
 date: "2019-07-06T10:41:30+02:00"
 revision: 0
 slug: ""
@@ -39,7 +39,10 @@ Axios
 
 firebase
 : provides dynamic backend data store for web, android and ios
-* database, authentication, storage (user images), hosting, functions and ML 
+* database, authentication, storage (user images), hosting, functions and ML
+
+vue.js
+: declarative rendering and component composition.
 
 ## SPA-single page applications | MPA-multiple page application
 
@@ -92,7 +95,7 @@ firebase
   5. May also include GraphQL to fetch data like in *gatsby*
 * components are binded together under `/layouts`
 * conditionals `v-if`
-* loops `v-for` 
+* loops `v-for`
 * User inputs `v-on:click=""`
 * all DOM manipulations are handled by Vue
 * DOM is a tree
@@ -100,7 +103,7 @@ firebase
   * Componenet need to be registered with vue
     * componenets properties `prop` are binded with data `v-bind`
 * [Vue Life cycle diagram][2]
-* Vue compiles the templates into <mark>Virtual DOM rendering</mark> functions[^3]. 
+* Vue compiles the templates into <mark>Virtual DOM rendering</mark> functions[^3].
   * Combined with the **reactivity system**, Vue is able to intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulations when the app state changes.
 * `v-once` interpolation that do not change
 * **computed** properties | **data** property
@@ -159,7 +162,7 @@ router {
   * js didn't have import/export for a long time
   * to future proof your js code
 * Frameworks like angular, vue, react, Babel plugin helps address *cross browser compatibility*
-  * scroll bar display on PC mac were off, causes virtualised scroll causes performance issues due to pixel deviation 
+  * scroll bar display on PC mac were off, causes virtualised scroll causes performance issues due to pixel deviation
 * Does you application work on slow connections?
   * *webpagetest*
   * *lighthouse* chrome tool
