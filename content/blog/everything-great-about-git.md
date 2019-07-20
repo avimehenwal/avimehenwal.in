@@ -10,6 +10,7 @@ categories:
 tags:
 - git
 <<<<<<< HEAD
+<<<<<<< HEAD
 - merge
 - rebase
 - bisect
@@ -106,6 +107,10 @@ git rebase master -i
 
 ---
 >>>>>>> 37344af... Update from Forestry.io
+=======
+
+---
+>>>>>>> 37344af3f7f65df52868269f2b767e4a49a78517
 ## Git Hooks
 
 Allows us to run custom scripts whenever certain important events occur in the Git
@@ -188,9 +193,13 @@ Reuse your hooks in every project
 
 [^1]: [Git hooks, practical uses](https://www.tygertec.com/git-hooks-practical-uses-windows/)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [^2]: [atlassian git-hook tutorial](https://www.atlassian.com/git/tutorials/git-hooks)
 [^3]: [git merge | git rebase](https://hackernoon.com/git-merge-vs-rebase-whats-the-diff-76413c117333)
 [^4]: [What is git rebase](https://gist.github.com/leesmith/8441773)
 =======
 [^2]: [atlassian git-hook tutorial](https://www.atlassian.com/git/tutorials/git-hooks)
 >>>>>>> 37344af... Update from Forestry.io
+=======
+[^2]: [atlassian git-hook tutorial](https://www.atlassian.com/git/tutorials/git-hooks)
+>>>>>>> 37344af3f7f65df52868269f2b767e4a49a78517
