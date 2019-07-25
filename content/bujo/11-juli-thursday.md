@@ -110,8 +110,25 @@ VGA - DVI - HDMI - then finally DP (basically oldest to newest)
 
 ## partition table
 
+
+### How to list partitions
+
 lsblk
 : lists all the block devices of your system along with their logical partitions
+* `lsblk --fs`
+* `lsblk --topology`
+* `lsblk --`
+
+```
+sudo fdisk -l
+sudo sfdisk -l
+
+df -h
+pydf
+hwinfo
+```
+
+
 
 Name-Name of the devices
 
