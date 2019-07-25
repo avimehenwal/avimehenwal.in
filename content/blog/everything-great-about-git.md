@@ -5,14 +5,59 @@ weight     : 5
 revision   : 0
 series:
 - myLearning
-categories: 
+categories:
 - development
 tags:
 - git
 - merge
 - rebase
 - bisect
+- diff
 ---
+
+## How to read git diff output?
+
+{{< code numbered="true" >}}
+diff --git [[[a/content/blog/everything-great-about-git.md]]] [[[b/content/blog/everything-great-about-git.md]]]
+index 18123c7..00c8696 [[[100644]]]
+--- a/content/blog/everything-great-about-git.md
+[[[+++]]] b/content/blog/everything-great-about-git.md
+@@ [[[-7]]],3 +7,[[[3]]] @@ series:
+- myLearning
+[[[-]]]categories:
+[[[+]]]categories:
+ - development
+[[[@@ -14,4 +14,25 @@]]] tags:
+ - bisect
++- diff
+ ---
+{{< /code >}}
+
+1. Old/original file
+2. new file version being diffed to
+3. `100644` means that it is ordinary file and not e.g. symlink, and that it doesn't have executable permission bit
+4. Symbols used for both files
+5. the original file, starting on line 7
+6. has 3 lines before this diff was applied.
+7. `+` A line was added here to the first file.
+8. `-` A line was removed here from the first file.
+8. start of new **hunk** `@@ -start,count +start,count @@`
+
+
+`git diff myfile.txt`
+: If you want to see what you haven't git added yet:
+
+`git diff --cached myfile.txt`
+: or if you want to see already added changes
+
+Another exciting use-case is to check for leading and trailing whitespaces in your file
+`git diff --check`
+
+Check whitespaces only on python files
+```
+$ git diff --name-only HEAD~1 HEAD | grep \.py$ | \
+$ xargs git diff --check HEAD~1 HEAD --
+```
 
 ## git bisect - debugging code for culprit commit
 
@@ -29,10 +74,14 @@ git bisect next (y)
 git bisect good <commit-id>
 git bisect log
 git bisect visualize
-git bisect reset 
+git bisect reset
 ```
 
 ## git merge vs git rebase[^3]
+
+{{% note %}}
+    Git by default uses 3-way merge which adds a extra commit message at the time of merge
+{{% /note %}}
 
 * git merge introduced all commits from the feature branches[^4] into master with a special merge commit.
 * what if? we want all the changes done in a branch as a single commit to master
@@ -55,6 +104,32 @@ git checkout feature
 git rebase master -i
 ```
 
+## Rebase - rewrite history
+
+{{% ticks %}}
+  1. Amend last/previous commits - `git commit --amend --no-edit`
+  2. reword older commit messages - `git rebase -i HEAD~3` to operate on last 3 commit messages. Change `pick` to `reword`
+  3. delete commit messages - `git rebase` and then change `pick` to `drop`
+  4. Reorder commit messages - run `rebase` adn change order of commits in interactive mode
+  5. Squash commit messages - `rebase` and use `fixup` or `squash`
+  6. split commit messages - use `edit` then `git reset HEAD^` to unstage files and then stage/commit them in the order you want.
+{{% /ticks %}}
+
+{{% warning %}}
+  Make a copy of branch before proceeding
+{{% /warning %}}
+
+{{< code numbered="true" >}}
+    git checkout -b working-on-backup-branch
+    git rebase -i [[[master]]]
+
+    [[[pick   SHA <older commit message>
+    squash SHA <older commit message>
+    squash SHA <older commit message>]]]
+{{< /code >}}
+
+1. rebase current branch **on** master. Rebase will compute diff for each commit and add it to master incrementally.
+2. squash 2 commit messages into the first one. Might take a while, as git recalculates everything when rewriting history.
 
 ## Git Hooks
 
@@ -105,18 +180,18 @@ Reuse your hooks in every project
     git config --global core.hooksPath /path/to/global/hooks
 {{% /cmd %}}
 
-## git hooks usecases
+## git hooks use-cases
 
-1. Lynting - Check the quality of the code before committing
+1. Linting - Check the quality of the code before committing
 2. Auto generate documentation as changes are uploaded
 3. Spell checks
 
 ### pre-commit hook checklist
 
 - are relevant files added
-- are unrelevant files removed from staging
+- are irrelevant files removed from staging
 - Review untracked files
-- Would you like to lynt
+- Would you like to lint
 - Would you like to spellcheck
 
 ### Work on multiple branches?
@@ -125,10 +200,10 @@ Reuse your hooks in every project
     git worktree
 {{% /cmd %}}
 
-* seperate checkout in a different directory
+* separate checkout in a different directory
   * cheaper
   * shared objects and config
-* 
+
 ### Related work
 
 * [python, pre-commit.com](https://pre-commit.com/)

@@ -57,9 +57,14 @@ iPXE
 
 ### Questions
 
+<<<<<<< HEAD
+> How to change partitions sizes? Extend partitions
+> How to run `wic` image on virt-manager
+=======
 > How to change partitions sizes? Extend partitions?
 > fdisk
 >
+>>>>>>> a6e35f5ddcd660179b60cfd543098b564f86e928
 
 
 

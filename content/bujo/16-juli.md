@@ -24,11 +24,6 @@ crontab -l
 
 [Limit memory usage for a single Linux process](https://unix.stackexchange.com/questions/44985/limit-memory-usage-for-a-single-linux-process)
 
-tmux
-: terminal multiplexer to quickly switch to app
-
-tmux-session for applications
-
 ## How to update terminal text without repainting? How to overwrite a line
 
 * repaint terminal
@@ -51,11 +46,11 @@ TUI APplication
 * zenity
 
 * Terminals offer control sequences to control color, font, cursor position and more
-* Terminal interprets escape sequences 
+* Terminal interprets escape sequences
 
 ```
-echo -n first 
-sleep 1 
+echo -n first
+sleep 1
 echo -ne "\rsecond"
 echo
 
@@ -77,6 +72,23 @@ end
 ls (zenity --file-selection --directory)
 ```
 
+### tracking a process in linux?
+
+`top` and `htop` commands
+
+htop
+: interactive process manager
+* entire logic for gathering process data is based on the `/proc` filesystem
+* UI uses `ncurses` only
+
+#### other solutions
+
+* [ top + awk ] = to a graphing tool
+* [sysdig inspector](https://github.com/draios/sysdig-inspect.git)
+* `free` command
+* [pipe output to python script](https://manashpratim.com/plot-realtime-terminal-data)
+*
+
 ## Questions
 
 1. write a vue.js based terminal app?[^1]
@@ -84,4 +96,4 @@ ls (zenity --file-selection --directory)
 ### Footnotes
 
 [^1]: [Create a Terminal Program with Vue.js and blessed-vue](https://alligator.io/vuejs/blessed-vue-terminal/)
-[^2]: 
+[^2]:
