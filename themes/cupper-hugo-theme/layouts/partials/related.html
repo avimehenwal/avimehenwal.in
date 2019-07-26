@@ -1,0 +1,12 @@
+
+{{ $related := .Site.RegularPages.Related . }}
+{{ with $related }}
+    <nav class="toc" aria-labelledby="toc-heading">
+        <h2 id="toc-heading">See also the Related Pages</h2>
+        <ol>
+            {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ol>
+    </nav>
+{{ end }}
