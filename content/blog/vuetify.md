@@ -35,6 +35,10 @@ Follow [this sample project's logs for development][1]
 breakpoints
 : width of display devices in pixels
 
+slots
+: vanilla js feature
+* pass predefined content into a component
+
 ## CSS Flex System
 
 Let us assume that our screen is divided into 12 columns.
@@ -58,4 +62,4 @@ lg | large
 ### Footnotes
 
 [1]: https://github.com/avimehenwal/v-demo/commits/master
-[^2]:
+[2]: [yt, The Net Ninja Playlist](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/videos)
