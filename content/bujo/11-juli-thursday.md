@@ -15,6 +15,8 @@ tags:
 - kvm
 - virtualization
 - grub
+- linux
+- lsblk
 ---
 
 x86
@@ -42,6 +44,8 @@ EFI
 
 s-video
 : separate video is a signaling standard for standard definition video
+
+> configuration to boot from old BIOS mode or UEFI mode
 
 [What is the difference in “Boot with BIOS” and “Boot with UEFI”](https://superuser.com/questions/496026/what-is-the-difference-in-boot-with-bios-and-boot-with-uefi)
 
@@ -104,11 +108,83 @@ s-video
 
 VGA - DVI - HDMI - then finally DP (basically oldest to newest)
 
+## partition table
+
+
+### How to list partitions
+
+lsblk
+: lists all the block devices of your system along with their logical partitions
+* `lsblk --fs`
+* `lsblk --topology`
+* `lsblk --`
+
+```
+sudo fdisk -l
+sudo sfdisk -l
+
+df -h
+pydf
+hwinfo
+```
+
+
+
+Name-Name of the devices
+
+Maj:Min-Major and Min Device numbers
+
+RM-Whether the device is removable(1) or not (0)
+
+Size-Size of the device
+
+RO-Is the device read-only(1) or not (0)
+
+Type-Type of device, i.e, if it is a disk or partitions, etc.
+
+MountPoint-The mount point of the device(if applicable).
+
+[Active partition contains OS](http://www.linfo.org/active_partition.html)
+
 ## Mender
+
+Mender uses the double partition layout: the device will have at least 2 rootfs partitions, one active and one inactive. Mender will deploy an update on the inactive partition, so that in case of an error during the update process, it will still have the active partition intact. If the update succeeds, it will switch to the updated partition: the active partition becomes inactive and the inactive one becomes the new active. As the kernel and the device tree are stored in the /boot folder of the root filesystem, it is possible to easily update an entire system. Note that Mender needs at least 4 partitions:
+
+bootloader partition
+data persistent partition
+rootfs + kernel active partition
+rootfs + kernel inactive partition
+
+- binary rootfs file system image (e.g. with .mender
+- 
 
 * bootloader integration (required for dual A/B updates) has been the most challenging part of adopting Mender.
   * abstracted out the x86 support using the UEFI framework
-* 
+
+```
+systemctl status mender
+
+mender -rootfs /mnt/usb/testUpdate.mender
+mender -commit skysails-mastercontrol-image-genericx86-64.mender
+mender -debug --rootfs test-image-pynq-z1.mender
+mender -debug -rootfs ./skysails-mastercontrol-image-genericx86-64.mender -skipverify
+```
+
+It can happen if your U-Boot 'mender_boot_part' environment variable is 
+unset or wrong. Can you verify that it has the correct value with 
+'fw_printenv'? It should be a number, not a '/dev' reference. 
+
+This can also happen if 'mender_boot_part' doesn't match what is in your 
+currently mounted filesystem list. Check the output of 'mount' and 
+verify that it matches what is in the U-Boot variable (except that 
+mount's version *will* be a '/dev' reference). 
+
+[boot partition](https://en.wikipedia.org/wiki/System_partition_and_boot_partition)
+
+### Help and resources
+
++ [Google Groups](https://groups.google.com/a/lists.mender.io/forum/#!forum/mender)
++ 
 
 
 
