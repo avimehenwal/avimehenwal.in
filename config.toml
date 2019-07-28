@@ -44,17 +44,21 @@ enableGitInfo          = true
     url = "/projects/"
     weight = 3
   [[menu.nav]]
+    name = "Deutsche"
+    url = "/deutsche/"
+    weight = 4
+  [[menu.nav]]
     name = "Tags"
     url = "/tags/"
-    weight = 4
+    weight = 5
   [[menu.nav]]
     name = "Categories"
     url = "/categories/"
-    weight = 5
+    weight = 6
   [[menu.nav]]
     name = "Series"
     url = "/series/"
-    weight = 6
+    weight = 7
   [[menu.nav]]
     name = "About"
     url = "/about/"
@@ -62,15 +66,15 @@ enableGitInfo          = true
   [[menu.nav]]
     name = "Contact"
     url = "/contact/"
-    weight = 7
+    weight = 9
   [[menu.nav]]
     name = "Notes"
     url = "/notes/"
-    weight = 8
+    weight = 10
   [[menu.nav]]
     name = "Bullet journal"
     url = "/bujo/"
-    weight = 9
+    weight = 11
 
 # Social icons appear in introduction and contact section. Add as many more as you like.
 # Find icon names here: http://fontawesome.io/cheatsheet/
@@ -103,3 +107,7 @@ params = ["categories", "tags"]
 
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
+
+# _target="blank" to external links
+[blackfriday]
+hrefTargetBlank = true

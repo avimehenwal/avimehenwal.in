@@ -24,6 +24,47 @@ tmux
    * `watch 'git status'`
 2. pair-programming and share terminal
 
+## Tmux scripting
+
+* various porjects may have various setups
+
+## Listing, renaming and killing windows and panes
+
+all keyboard shortcuts are run inside tmux session with PREFIX
+
+### Sessions
+
+```
+s  sessions list
+$  rename session
+:new<CR>  new session
+```
+
+### Windows / tabs
+
+```
+w           windows list
+,           rename window
+c           new window
+f           find window
+&           kill window
+
+n           next window switch
+p           previous window switch
+<number>    jump to window with number - numer starts from 0
+```
+
+
+## Misc
+
+```
+?  list shortcuts
+d  detach
+t  time - display clock
+:  prompt
+q  display pane numbers for a short while
+
+```
 
 ## Session Management
 
