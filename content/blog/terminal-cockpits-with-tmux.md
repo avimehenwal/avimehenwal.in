@@ -26,7 +26,8 @@ tmux
 
 ## Tmux scripting
 
-* various porjects may have various setups
+* various projects may have various setups
+* New tmux window for each project
 
 ## Listing, renaming and killing windows and panes
 
@@ -51,7 +52,7 @@ f           find window
 
 n           next window switch
 p           previous window switch
-<number>    jump to window with number - numer starts from 0
+<number>    jump to window with number - number starts from 0
 ```
 
 
@@ -82,6 +83,12 @@ q  display pane numbers for a short while
 
 `tmux detach (prefix + d)`
 : detach the currently attached session
+
+## How to scroll in tmux
+
+<kbd>CTRL + b</kbd> then <kbd>[</kbd> then you can use your normal navigation keys to scroll around (eg. <kbd>Up Arrow</kbd> or <kbd>PgDn</kbd>). Press <kbd>q</kbd> to quit scroll mode.
+
+Alternatively you can press <kbd>Ctrl-b PgUp</kbd> to go directly into copy mode and scroll one page up (which is what it sounds like you will want most of the time)
 
 ## Window Management
 

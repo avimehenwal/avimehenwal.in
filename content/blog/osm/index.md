@@ -22,6 +22,11 @@ VDU
 juju
 : Juju is an open source application modelling tool. With it, you can deploy, configure, scale, and operate your software on public and private clouds
 
+charm
+: is a set of action and hooks
++ `actions` are programs
++ `hooks` are events and signals
+
 ![OSM Architecture](OSM-architecture.png)
 
 * ETSI-hosted open source management and orchestration (MANO) community project
@@ -36,6 +41,7 @@ In order for OSM to work, it is assumed that:
 + Each VIM has a so called management network which provides IP address to VNFs
 + That management network is reachable from OSM
 + `OSM client`, a python-based CLI for OSM, will be available as well in the host machine. Via the OSM client, you can manage descriptors, NS and VIM complete lifecycle.[^6]
++ `LXD` container to run `juju`
 
 ### Supported VIMs[^6]
 
@@ -47,6 +53,12 @@ In order for OSM to work, it is assumed that:
 {{% note %}}
 we can add VIMs into OSM either by **client** or **UI**[^6]
 {{% /note %}}
+
+### OSM directories
+
+* /usr/share/osm-devops/
+* /etc/osm - db password and all
+
 
 ## NBI - North Bound Interface[^1]
 
@@ -61,9 +73,10 @@ we can add VIMs into OSM either by **client** or **UI**[^6]
 ### Footnotes
 
 [^1]: https://osm.etsi.org/wikipub/index.php/OSM_Release_SIX_Documentation
-[^2]: [Pyang a NETCONF parser](https://github.com/mbj4668/pyang)
-[^3]: [NETCONF RFC](https://tools.ietf.org/html/rfc6241)
-[^4]: [Examples of hackerfest](https://osm.etsi.org/wikipub/index.php/Examples_from_OSM_Hackfests#Hackfest_material)
-[^5]: [OSM source code](https://osm.etsi.org/gitweb/)
+[2]: [Pyang a NETCONF parser](https://github.com/mbj4668/pyang)
+[3]: [NETCONF RFC](https://tools.ietf.org/html/rfc6241)
+[4]: [Examples of hackerfest](https://osm.etsi.org/wikipub/index.php/Examples_from_OSM_Hackfests#Hackfest_material)
+[5]: [OSM source code](https://osm.etsi.org/gitweb/)
 [^6]: [Installation via apt, vagrant](https://osm.etsi.org/wikipub/index.php/OSM_Release_SIX)
-[^7]: [Day-0, day-n configuration](https://community.cisco.com/t5/nso-developer-hub-blogs/day-1-day-0-day-1-day-2-n-configurations/ba-p/3658255)
+[7]: [Day-0, day-n configuration](https://community.cisco.com/t5/nso-developer-hub-blogs/day-1-day-0-day-1-day-2-n-configurations/ba-p/3658255)
+[8]: [connecting openstack to osm](https://osm.etsi.org/wikipub/index.php/Openstack_configuration)
