@@ -290,6 +290,31 @@ vue directives
 
 [difference between front end framework and templating language](https://stackoverflow.com/questions/25025317/what-is-the-conceptual-difference-between-angularjs-and-view-template-engines-in)
 
+## Demo project
+
+Use `npm` on linux else face the wrath of teminal error
+
+{{% cmd %}}
+  vue create test --packageManager=npm
+{{% /cmd %}}
+
+![yarn error](vue-cli-error.png)
+
+still facing issues
+
+```
+$vue create v-demo --packageManager=npm
+
+  vue create is a Vue CLI 3 only command and you are using Vue CLI 2.9.6.
+  You may want to run the following to upgrade to Vue CLI 3:
+
+npm uninstall -g vue-cli
+npm install -g @vue/cli
+```
+{{% warning %}}
+  Always check `htop` process manager as which process is stuck from process tree list
+{{% /warning %}}
+
 
 ### Footnotes
 

@@ -79,6 +79,10 @@ git bisect reset
 
 ## git merge vs git rebase[^3]
 
+{{% note %}}
+    Git by default uses 3-way merge which adds a extra commit message at the time of merge
+{{% /note %}}
+
 * git merge introduced all commits from the feature branches[^4] into master with a special merge commit.
 * what if? we want all the changes done in a branch as a single commit to master
   * `git merge --squash` followed by a `git commit`
@@ -100,6 +104,32 @@ git checkout feature
 git rebase master -i
 ```
 
+## Rebase - rewrite history
+
+{{% ticks %}}
+  1. Amend last/previous commits - `git commit --amend --no-edit`
+  2. reword older commit messages - `git rebase -i HEAD~3` to operate on last 3 commit messages. Change `pick` to `reword`
+  3. delete commit messages - `git rebase` and then change `pick` to `drop`
+  4. Reorder commit messages - run `rebase` adn change order of commits in interactive mode
+  5. Squash commit messages - `rebase` and use `fixup` or `squash`
+  6. split commit messages - use `edit` then `git reset HEAD^` to unstage files and then stage/commit them in the order you want.
+{{% /ticks %}}
+
+{{% warning %}}
+  Make a copy of branch before proceeding
+{{% /warning %}}
+
+{{< code numbered="true" >}}
+    git checkout -b working-on-backup-branch
+    git rebase -i [[[master]]]
+
+    [[[pick   SHA <older commit message>
+    squash SHA <older commit message>
+    squash SHA <older commit message>]]]
+{{< /code >}}
+
+1. rebase current branch **on** master. Rebase will compute diff for each commit and add it to master incrementally.
+2. squash 2 commit messages into the first one. Might take a while, as git recalculates everything when rewriting history.
 
 ## Git Hooks
 
@@ -173,7 +203,7 @@ Reuse your hooks in every project
 * separate checkout in a different directory
   * cheaper
   * shared objects and config
-*
+
 ### Related work
 
 * [python, pre-commit.com](https://pre-commit.com/)

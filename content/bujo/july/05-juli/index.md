@@ -21,6 +21,8 @@ tags:
   * application and 
   * system updates
 
+### How to buid mender client into linux image
+
 <!-- more -->
 
 meta-mender[^1]

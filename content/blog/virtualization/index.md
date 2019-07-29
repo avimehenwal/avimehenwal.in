@@ -12,6 +12,10 @@ title: Virtualization
 video: ""
 ---
 
+[ovmf](https://www.linux-kvm.org/page/OVMF)
+: OVMF "is a project to enable UEFI support for Virtual Machines".
+
+
 > Sharing a common development environment with everyone on your team
 
 Virtualization:: abstraction layer which make a s/w (like OS) installed on shared h/w

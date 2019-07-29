@@ -24,6 +24,48 @@ tmux
    * `watch 'git status'`
 2. pair-programming and share terminal
 
+## Tmux scripting
+
+* various projects may have various setups
+* New tmux window for each project
+
+## Listing, renaming and killing windows and panes
+
+all keyboard shortcuts are run inside tmux session with PREFIX
+
+### Sessions
+
+```
+s  sessions list
+$  rename session
+:new<CR>  new session
+```
+
+### Windows / tabs
+
+```
+w           windows list
+,           rename window
+c           new window
+f           find window
+&           kill window
+
+n           next window switch
+p           previous window switch
+<number>    jump to window with number - number starts from 0
+```
+
+
+## Misc
+
+```
+?  list shortcuts
+d  detach
+t  time - display clock
+:  prompt
+q  display pane numbers for a short while
+
+```
 
 ## Session Management
 
@@ -41,6 +83,12 @@ tmux
 
 `tmux detach (prefix + d)`
 : detach the currently attached session
+
+## How to scroll in tmux
+
+<kbd>CTRL + b</kbd> then <kbd>[</kbd> then you can use your normal navigation keys to scroll around (eg. <kbd>Up Arrow</kbd> or <kbd>PgDn</kbd>). Press <kbd>q</kbd> to quit scroll mode.
+
+Alternatively you can press <kbd>Ctrl-b PgUp</kbd> to go directly into copy mode and scroll one page up (which is what it sounds like you will want most of the time)
 
 ## Window Management
 

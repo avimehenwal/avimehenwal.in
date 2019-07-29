@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a00db104-562e-4c21-a7e2-321c0c84998b/deploy-status)](https://app.netlify.com/sites/aviportfolio/deploys)
 
+Hugo Static Site Generator v0.55.6 linux/amd64
+
 ### Installing hugo from precompiled binaries
 
 [![asciicast](https://asciinema.org/a/159660.png)](https://asciinema.org/a/159660?speed=1.5)
@@ -35,4 +37,4 @@ hugo -d docs  # --destination string
 
 1. [In english, there is no space before punctuation](https://english.stackexchange.com/questions/4645/is-it-ever-correct-to-have-a-space-before-a-question-or-exclamation-mark)
 2. Blockquotes for questions
-3. 
+
