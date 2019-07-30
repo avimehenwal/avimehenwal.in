@@ -62,7 +62,7 @@ imperative verbs
 ## How to automate this process?
 
 commit-msg
-: git commit hook [to check/lint commit messages for issue IDs]({{< relref "/blog/everything-great-about-git.md#git-hooks" >}})
+: git commit hook [to check/lint commit messages for issue IDs]({{< relref "blog/everything-great-about-git/index.md#git-hooks" >}})
 
 ```
 git log --pretty=oneline --abbrev-commit \

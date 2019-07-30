@@ -1,81 +1,103 @@
 {{ define "main" }}
-  <main id="main">
-    {{ partial "breadcrumb.html" . }}
-    <h1>
-      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      {{ .Title }}
-    </h1>
+<main id="main">
+  <h1>
+    <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <use xlink:href="#bookmark"></use>
+    </svg>
+    {{ .Title }}
+  </h1>
 
-    <div class="date">
-      {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
-      {{ $publishDate := .PublishDate }}
-      <strong aria-hidden="true">Publish date: </strong>{{ $publishDate.Format $dateFormat }}
-      {{ with .Lastmod }}
+  <div id="pn" style="margin:0%">
+    <span class="tooltip">
+      {{ if .PrevInSection }}
+      <a href="{{ .PrevInSection.Permalink }}" style="border-bottom:none">
+        <i class="fa fa-arrow-circle-left" style="font-size: 2em;"></i>
+        <span class="tooltiptext">
+          {{ .PrevInSection.Title }}
+        </span>
+      </a>
+      {{ end }}
+    </span>
+    <span class="tooltip">
+      {{ if .NextInSection }}
+      <a href="{{ .NextInSection.Permalink }}" style="border-bottom:none">
+        <span class="tooltiptext">
+          {{ .NextInSection.Title }}
+        </span>
+        <i class="fa fa-arrow-circle-right" style="font-size: 2em;"></i>
+      </a>
+      {{ end }}
+    </span>
+  </div>
+
+
+  <div class="date">
+    {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
+    {{ $publishDate := .PublishDate }}
+    <strong aria-hidden="true">Publish date: </strong>{{ $publishDate.Format $dateFormat }}
+    {{ with .Lastmod }}
       {{ if gt . $publishDate }}
       <br>
       <strong aria-hidden="true">Last updated: </strong>{{ .Format $dateFormat }}
       {{ end }}
+    {{ end }}
+  </div>
+
+
+  {{ with .Params.tags }}
+    <span class="tags">
+    <strong aria-hidden="true">Tags: </strong>
+    <ul aria-label="tags">
+      {{ range . }}
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}
+        <a href="{{ $href }}">{{ . }}</a>
+      </li>
       {{ end }}
-    </div>
+    </ul>
+  </span>
+  {{ end }}
 
-    {{ with .Params.series }}
-    <span class="tags">
-      <strong aria-hidden="true">Series: </strong>
-      <ul aria-label="tags">
-        {{ range . }}
-        <li>
-          <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-            <use xlink:href="#tag"></use>
-          </svg>
-          {{ $href := print ("series/" | absLangURL) (. | urlize) "/" }}
-          <a href="{{ $href }}">{{ . }}</a>
-        </li>
-        {{ end }}
-      </ul>
-    </span>
-    {{ end }}
+  {{ with .Params.categories }}
+  <span class="tags">
+    <ul aria-label="tags">
+      {{ range . }}
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        {{ $href := print ("categories/" | absLangURL) (. | urlize) "/" }}
+        <a href="{{ $href }}">{{ . }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </span>
+  {{ end }}
 
-    {{ with .Params.categories }}
-    <span class="tags">
-      <strong aria-hidden="true">Categories: </strong>
-      <ul aria-label="tags">
-        {{ range . }}
-        <li>
-          <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-            <use xlink:href="#tag"></use>
-          </svg>
-          {{ $href := print ("categories/" | absLangURL) (. | urlize) "/" }}
-          <a href="{{ $href }}">{{ . }}</a>
-        </li>
-        {{ end }}
-      </ul>
-    </span>
-    {{ end }}
+  {{ with .Params.series }}
+  <span class="tags">
+    <ul aria-label="tags">
+      {{ range . }}
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        {{ $href := print ("series/" | absLangURL) (. | urlize) "/" }}
+        <a href="{{ $href }}">{{ . }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </span>
+  {{ end }}
 
-    {{ with .Params.tags }}
-      <span class="tags">
-      <strong aria-hidden="true">Tags: </strong>
-      <ul aria-label="tags">
-        {{ range . }}
-        <li>
-          <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-            <use xlink:href="#tag"></use>
-          </svg>
-          {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}
-          <a href="{{ $href }}">{{ . }}</a>
-        </li>
-        {{ end }}
-      </ul>
-    </span>
-    {{ end }}
-
-    {{ if ne .Params.toc false }}
-      {{ partial "toc" . }}
-    {{ end }}
-    {{ partial "gallery.html" . }}
-    {{ .Content }}
-    {{ partial "related.html" . }}
-  </main>
+  {{ if ne .Params.toc false }}
+    {{ partial "toc" . }}
+  {{ end }}
+  {{ partial "gallery.html" . }}
+  {{ .Content }}
+  {{ partial "related.html" . }}
+</main>
 {{ end }}

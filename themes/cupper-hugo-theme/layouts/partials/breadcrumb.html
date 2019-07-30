@@ -1,18 +1,37 @@
 <nav class="date" id="breadcrumn">
+  <span>
+    {{ if .PrevInSection }}
+    <a href="{{ .PrevInSection.Permalink }}" style="float:left">
+      <i class="fa fa-arrow-circle-left" style="font-size: 2em;"></i>
+      <!-- {{ .PrevInSection.Title }} -->
+    </a>
+    {{ end }}
+  </span>
+
+  <!-- <span>
     <strong aria-hidden="true">
-        {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+      {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
     </strong>
+  </span> -->
+
+  <span>
+    {{ if .NextInSection }}
+    <a href="{{ .NextInSection.Permalink }}" style="float:right">
+        <!-- {{ .NextInSection.Title }} -->
+        <i class="fa fa-arrow-circle-right" style="font-size: 2em;"></i>
+    </a>
+    {{ end }}
+  </span>
+
 </nav>
 
 {{ define "breadcrumbnav" }}
-    {{ if .p1.Parent }}
-        {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
-    {{ else if not .p1.IsHome }}
-        {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
-    {{ end }}
-    <span>
-        {{ if ne .p1 .p2 }}
-            <a href="{{ .p1.Permalink }}">{{ .p1.Title }} > </a>
-        {{ end }}
-    </span>
+{{ if .p1.Parent }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+{{ else if not .p1.IsHome }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+{{ end }}
+<span>
+  <a href="{{ .p1.Permalink }}">{{ .p1.Title }} ></a>
+</span>
 {{ end }}
