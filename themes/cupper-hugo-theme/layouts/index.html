@@ -2,30 +2,9 @@
   <main id="main">
     <h1>{{ .Title }}</h1>
     {{ .Content }}
-    
-    {{/* Show a count of pages by different types */}}
-    <!-- Note the use of .RegularPages, a site variable that counts all regular content pages
-      but not the _index.md pages used to add front matter and content to list templates. -->
-    <aside aria-label="note" class="note">
-      <div>
-        <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
-          <use xlink:href="#info"></use>
-        </svg>
-        There are <strong>{{ len .Site.RegularPages }} pages </strong> currently on this site.
-        <table>
-          {{ range .Site.Sections.ByDate }}
-          {{ $type := .Type }}
-          <tr>
-            <th>
-              <a href="{{.RelPermalink}}">{{.Title}}</a>
-            </th>
-            <th>
-              <strong>{{ len (where .Site.RegularPages "Section" "=" $type) }}</strong>
-            </th>
-          </tr>
-          {{ end }}
-        </table>
-      </div>
-    </aside>
+
+    {{ partial "stat-most-least.html" . }}
+    {{ partial "stat-pages-summary.html" . }}
+
   </main>
 {{ end }}

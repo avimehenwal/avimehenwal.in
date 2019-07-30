@@ -20,25 +20,59 @@
       {{ end }}
     </div>
 
+    {{ with .Params.series }}
+    <span class="tags">
+      <strong aria-hidden="true">Series: </strong>
+      <ul aria-label="tags">
+        {{ range . }}
+        <li>
+          <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+            <use xlink:href="#tag"></use>
+          </svg>
+          {{ $href := print ("series/" | absLangURL) (. | urlize) "/" }}
+          <a href="{{ $href }}">{{ . }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </span>
+    {{ end }}
+
+    {{ with .Params.categories }}
+    <span class="tags">
+      <strong aria-hidden="true">Categories: </strong>
+      <ul aria-label="tags">
+        {{ range . }}
+        <li>
+          <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+            <use xlink:href="#tag"></use>
+          </svg>
+          {{ $href := print ("categories/" | absLangURL) (. | urlize) "/" }}
+          <a href="{{ $href }}">{{ . }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </span>
+    {{ end }}
+
     {{ with .Params.tags }}
-    <div class="tags">
+      <span class="tags">
       <strong aria-hidden="true">Tags: </strong>
       <ul aria-label="tags">
         {{ range . }}
         <li>
           <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
             <use xlink:href="#tag"></use>
-              </svg>
-              {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}
-              <a href="{{ $href }}">{{ . }}</a>
-            </li>
-            {{ end }}
-          </ul>
-      </div>
+          </svg>
+          {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}
+          <a href="{{ $href }}">{{ . }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </span>
     {{ end }}
 
     {{ if ne .Params.toc false }}
-    {{ partial "toc" . }}
+      {{ partial "toc" . }}
     {{ end }}
     {{ partial "gallery.html" . }}
     {{ .Content }}

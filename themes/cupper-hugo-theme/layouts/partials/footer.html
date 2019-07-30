@@ -1,4 +1,4 @@
-<footer role="contentinfo">  
+<footer role="contentinfo">
   {{ partial "prev_next.html" . }}
   <div>
     <label for="themer">
@@ -7,8 +7,10 @@
     </label>
   </div>
   {{ partial "disqus.html" . }}
-  {{ if eq $.Site.Params.socialshare true }} {{ partial "socialshare.html" . }} {{ end }} 
+  {{ if eq $.Site.Params.socialshare true }} {{ partial "socialshare.html" . }} {{ end }}
   {{ with .Site.Params.footer }}
   {{ . | markdownify }}
   {{ end }}
+  <br>
+  Last Built on : {{ now.Format "Mon Jan 2 at 15:04 hours CET 2006"}}
 </footer>

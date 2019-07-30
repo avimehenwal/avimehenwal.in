@@ -1,0 +1,35 @@
+ <!-- Most and least recently updated pages on website -->
+<table>
+  <tr>
+    <th>
+      Most recently modified pages
+    </th>
+    <th>
+      Least recently modified pages
+    </th>
+  </tr>
+
+  <tr>
+    <td>
+      <ol>
+        {{ range first 20 .Pages.ByLastmod.Reverse }}
+        {{ $type := .Type }}
+        <li>
+          <a href="{{.RelPermalink}}">{{.Title}}</a>
+        </li>
+        {{ end }}
+      </ol>
+    </td>
+
+    <td>
+      <ol>
+        {{ range first 20 .Pages.ByLastmod }}
+        {{ $type := .Type }}
+        <li>
+          <a href="{{.RelPermalink}}">{{.Title}}</a>
+        </li>
+        {{ end }}
+      </ol>
+    </td>
+  </tr>
+</table>
