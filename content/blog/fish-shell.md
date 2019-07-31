@@ -78,13 +78,13 @@ use `eval`
 1. loads configuration
    1. system wide `/etc/fish/config.fish`
    2. user specific `$HOME/.config/config.fish`
-2. prepares and makes available all Environment variabls. *unlike other shells* no subshells[^3]
+2. prepares and makes available all Environment variables. *unlike other shells* no subshells[^3]
 3. useful command-line parameters for fish, aka **subshell** in other shells
    1. `--inint-command=USR_CMD`
    2. `--command=USR_CMD`
 4. shell function to [fish escape characters](https://fishshell.com/docs/current/index.html#escapes) `bind`
    1. there are special bind functions available
-   2. `fish_key_reader` to studt input recieved by terminal
+   2. `fish_key_reader` to stdout input received by terminal
 
 ```
 # sane navigation
@@ -181,6 +181,17 @@ will create a second version of $foo inside that block, and return to the other 
 
 So, what you need to do is to define it outside of the block and then just change it inside:
 
+## How to upgrade fish shell
+
+```
+sudo apt-get install --only-upgrade fish
+```
+
+### Update fish completions from MAN pages
+
+```
+fish_update_completions
+```
 
 ## Footnotes
 

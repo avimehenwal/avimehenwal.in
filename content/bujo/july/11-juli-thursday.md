@@ -66,7 +66,7 @@ s-video
 4. QEMU supports a wide range of hardware and can make use of the KVM when running a target architecture which is the same as the host architecture.
 5. Xen is a Type-1 hypervisor[^6] where VirtualBox and QEMU are considered as Type-2 hypervisors (also there might be a debate considering kvm being a kernel module).
 
-## KVM - Kernel-based Virtual Machine)
+## KVM - Kernel-based Virtual Machine
 
 1. KVM which is an accelerator(linux kernel module which enables the guest instruction to run directly on the host CPU)
    1. which makes Qemu+KVM a faster solution, unlike the slower alternative of Qemu+TCG.

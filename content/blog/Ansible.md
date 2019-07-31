@@ -1,15 +1,16 @@
 ---
-categories:
-- Programming
+title: Ansible
 date: "2019-06-17T12:57:27+02:00"
 external_link: https://docs.ansible.com/ansible/latest/index.html
+weight: 5
 revision: 0
 series:
 - myLearning
+categories:
+- deployment
+- devops
 tags:
-- DevOps
-title: Ansible
-weight: 5
+- ansible
 ---
 
 > Configuration Management
@@ -25,7 +26,9 @@ weight: 5
 
 ### How to get vagrant image with ansible provision?
 
-The Vagrant Ansible provisioner allows you to provision the guest using Ansible playbooks by executing ansible-playbook from the Vagrant host. Ansible should be installed on host
+The Vagrant Ansible provisioner allows you to provision the guest using Ansible
+playbooks by executing ansible-playbook from the Vagrant host. Ansible should
+be installed on host. [Link here]({{< relref "/blog/virtualization/index.md#vagrant" >}})
 
 
 # Ansible
@@ -34,7 +37,7 @@ The Vagrant Ansible provisioner allows you to provision the guest using Ansible 
 * Configure systems
 * Deploy softwares
   * From Apt package manager an pip
-  * Download and run make/dpkg -i commands 
+  * Download and run make/dpkg -i commands
 * Orchestrate IT Tasks
 * Zero downtime rolling updates
 * Continuous deployments
@@ -54,13 +57,16 @@ The Vagrant Ansible provisioner allows you to provision the guest using Ansible 
 * Agentless - uses OpenSSH
 * Uses INVENTORIES - list of hosts
 * What to run - PLAYBOOK
-* Where to run - INVENTORY
+* Where to run - [INVENTORY FILE](https://github.com/avimehenwal/dotfiles/blob/ubuntu/Excalibur/hostss)
 * How to run - Ansible language directives
 * PLaybooks -> Tasks (runs sequentially) -> Modules
-* HANDLERS are triggered by TASKS  
+* HANDLERS are triggered by TASKS
 
 ## USe-cases?
+
 * Check if all nodes have same kernel - `yum -a “name=kernel state=latest”`
+* [Add mutiple users on hosts](https://github.com/avimehenwal/dotfiles/blob/ubuntu/Excalibur/addUsers.yml)
+* [Use with docker containers](https://docs.ansible.com/ansible/latest/scenario_guides/guide_docker.html)
 
 Install or remove a apt package
 ```
@@ -68,7 +74,7 @@ ansible localhost --module-name apt --args "name=tree state=absent" --become --a
 ansible localhost --module-name apt --args "name=tree" --become --ask-become-pass -vvv
 ansible localhost -m shell -a "wget https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy -P $HOME/mySoftwares/vagrant/trusty"
 ansible localhost -m git -a "repo=https://github.com/junegunn/fzf.git dest=~/mySoftwares/vagrant/trustyAnsible/fzf"
-ansible localhost -m shell -a "git init --bare ./dotfiles" 
+ansible localhost -m shell -a "git init --bare ./dotfiles"
 
 # Passinv variables from command line
 ansible-playbook release.yml --extra-vars "version=1.23.45 other_variable=foo"
@@ -89,7 +95,7 @@ tasks:
     dest: /etc/foo.conf
   tags:
   - configuration
-  
+
 ansible-playbook example.yml --tags "configuration,packages"
 ansible-playbook example.yml --skip-tags "notification"
 ansible-playbook --tags "test" ~/playbook.yml -e "sys_user=vagrant" -e "hosts=kjsdiofiosfiosd"
@@ -117,7 +123,7 @@ Independent variables, tasks, files, templates, and modules.
 
 ```
 # Directory structure is important
-ansible-galaxy init vivekrole 
+ansible-galaxy init vivekrole
 
 ```
 
@@ -127,4 +133,4 @@ ansible-galaxy init vivekrole
 * Importing playbooks is possible
   - `import_playbook: webservers.yml`
 * Ansible uses **Jinja2** templating to enable dynamic expressions and access to variables
-* Working with conditions, **when**
+* Working with conditions use `when` directive
