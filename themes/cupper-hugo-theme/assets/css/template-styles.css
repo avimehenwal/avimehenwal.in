@@ -163,6 +163,7 @@ code {
     border-radius: 3px;
     margin: 0;
     padding: .2em .4em;
+    color: crimson;
 }
 .cmd {
     padding: 0.75rem;

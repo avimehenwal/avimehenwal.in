@@ -6,7 +6,7 @@ comments: false
 weight     : 5
 revision   : 0
 series:
-- deutsch
+- Deutsch
 categories:
 - wortschatz
 - redemittel
