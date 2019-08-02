@@ -159,3 +159,4 @@ try npm run build and then there file be a dist folder. copy the contents of the
 [^1]: [wiki, CGI](https://en.wikipedia.org/wiki/Common_Gateway_Interface)
 [^2]: [HOw to use python in web](https://docs.python.org/3.4/howto/webservers.html?highlight=cgi)
 [Vue app on nginx on docker](https://cli.vuejs.org/guide/deployment.html#docker-nginx)
+[^3]: [Controlling webbrowser with python](https://docs.python.org/3.6/library/webbrowser.html)
