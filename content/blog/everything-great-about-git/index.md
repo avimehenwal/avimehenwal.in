@@ -185,6 +185,8 @@ Git hook sample already under `/.git/hooks` directory
   * pre-receive.sample*
 {{% /fileTree %}}
 
+[Sample OSM commit-msg hook file](http://osm.etsi.org/gerrit/tools/hooks/commit-msg)
+
 {{% warning %}}
     git hooks are NOT saved along with source code repo by default
 {{% /warning %}}

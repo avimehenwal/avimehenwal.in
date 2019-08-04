@@ -63,6 +63,7 @@ imperative verbs
 
 commit-msg
 : git commit hook [to check/lint commit messages for issue IDs]({{< relref "blog/everything-great-about-git/index.md#git-hooks" >}})
+* [sample OSM commit-msg hook](http://osm.etsi.org/gerrit/tools/hooks/commit-msg)
 
 ```
 git log --pretty=oneline --abbrev-commit \
