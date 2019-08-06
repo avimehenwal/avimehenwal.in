@@ -43,6 +43,25 @@ index 18123c7..00c8696 [[[100644]]]
 8. `-` A line was removed here from the first file.
 8. start of new **hunk** `@@ -start,count +start,count @@`
 
+## How to view git diff
+
+{{% cmd %}}
+git diff
+{{% /cmd %}}
+
+Shows the changes between the working directory and the index. This shows what has been changed, but is not staged for a commit.
+
+{{% cmd %}}
+git diff --cached / --staged
+{{% /cmd %}}
+
+Shows the changes between the index and the HEAD (which is the last commit on this branch). This shows what has been added to the index and staged for a commit.
+
+{{% cmd %}}
+git diff HEAD
+{{% /cmd %}}
+
+Shows all the changes between the working directory and HEAD (which includes changes in the index). This shows all the changes since the last commit, whether or not they have been staged for commit or not.
 
 `git diff myfile.txt`
 : If you want to see what you haven't git added yet:
@@ -165,6 +184,8 @@ Git hook sample already under `/.git/hooks` directory
   * pre-rebase.sample*
   * pre-receive.sample*
 {{% /fileTree %}}
+
+[Sample OSM commit-msg hook file](http://osm.etsi.org/gerrit/tools/hooks/commit-msg)
 
 {{% warning %}}
     git hooks are NOT saved along with source code repo by default

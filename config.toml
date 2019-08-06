@@ -5,7 +5,7 @@ title                  = "@avimehenwal"
 theme                  = "cupper-hugo-theme"
 googleAnalytics        = "UA-113741959-1"
 disqusShortname        = "yourdiscussshortname"
-enableGitInfo          = true
+enableGitInfo          = true                          # https://gohugo.io/variables/git/
 
 [taxonomies]
   tag       = "tags"
@@ -20,7 +20,7 @@ enableGitInfo          = true
   quality = 99
 
 [params]
-  description      = "My website, bog, personal dropbox or trash Korb whatever you call it. Learning should be free and so is this website"
+  description      = "My website, blog, personal dropbox and a Korb. Learning should be free and so is this website"
   homeMetaContent  = "An accessibility-friendly Hugo theme, ported from the original Cupper project."
   footer           = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
   # For more date formats see https://gohugo.io/functions/format/

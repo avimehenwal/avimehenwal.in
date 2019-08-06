@@ -1,11 +1,12 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-lastmod: {{ .Date }}
-type:  "post"
+title      : "{{ replace .Name "-" " " | title }}"
+date       : {{ .Date }}
+lastmod    : {{ .Date }}
+publishdate: {{ ((.Date | time ).AddDate 0 0 2).Format "2006-01-02T15:04:05Z07:00"}}
+type       :  "post"
 w3codecolor: true
-comments: false
-thumbnail: https://www.bbcgoodfood.com/sites/default/files/editor_files/2017/11/plant-based-diet-guide-main-image-700-350.jpg
+comments   : false
+thumbnail  : https://www.bbcgoodfood.com/sites/default/files/editor_files/2017/11/plant-based-diet-guide-main-image-700-350.jpg
 series:
 - FoodBlog
 categories:

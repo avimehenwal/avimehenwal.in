@@ -22,11 +22,11 @@
   <div>
     <span>
       {{ with .Site.Sections}}
-      {{ range .}}
-      <a href="{{.RelPermalink}}" {{if eq .Section $sec}}class="active"{{end}}>
-        {{ .Title }}
-      </a>
-      {{ end }}
+        {{ range .}}
+          <a href="{{.RelPermalink}}" {{if eq .Section $sec}}class="active"{{end}}>
+            {{ .Title }}
+          </a>
+        {{ end }}
       {{ end }}
     </span>
   </div>
