@@ -201,3 +201,4 @@ mount's version *will* be a '/dev' reference).
 [^9]: [kvm offical forum/blog](https://planet.virt-tools.org/)
 [^10]: [wiki, EFI_system_partition](https://en.wikipedia.org/wiki/EFI_system_partition)
 [^11]: [wiki, s-video](https://en.wikipedia.org/wiki/S-Video)
+[Detailed Look at the Boot Process](https://www-uxsup.csx.cam.ac.uk/pub/doc/redhat/redhat8/rhl-rg-en-8.0/s1-boot-init-shutdown-process.html)
