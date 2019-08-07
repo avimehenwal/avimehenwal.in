@@ -67,6 +67,22 @@ q  display pane numbers for a short while
 
 ```
 
+{{< code numbered="true" >}}
+# Silently run processes in tmux in background
+tmux [[[new-session]]] \
+-s session-name \
+-n window-name \
+[[[-d]]] [[[htop]]]
+
+# To attach use
+tmux [[[attach]]] -t session-name
+{{< /code >}}
+
+1. Only creates session and doesn't attach to them. Alias `new`
+2. To detach new-session from current terminal window, unless specified
+3. Linux command to run inside tmux window
+4. alias for `attach-session`
+
 ## Session Management
 
 `tmux new -s session_name`

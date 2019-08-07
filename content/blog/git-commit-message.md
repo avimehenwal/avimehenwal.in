@@ -10,6 +10,7 @@ categories:
 tags:
 - git
 - commit
+- gerrit
 ---
 
 > Why care about commit message anyways? What's the need?
@@ -103,7 +104,29 @@ git commit -a
 
 `git reset -- <filePath>` will **unstages the file in the current commit.**
 
+## Gerrit
 
+Web based code-review system. Read the code and comment on it. Learn from code
+
+* First started as the code-review for Android project, 500+ repositories
+* Has git ACLs, restricts branch, repo views.
+* Code reviews are at commit level unlike branch level @github
+* Single view for multiple repositories
+* Gerrit intercepts the commit and make a code-review
+* Reviwed changes are `amended` instead of new commit
+* Pushing is gerrits speciality. When pushing for code-review
+
+```
+git push origin HEAD:refs/for/master
+```
+
+* When by-passing code-review stage
+
+```
+git push origin HEAD:master
+```
 ## Footnotes
 
 [^1]: [use emoji on github](https://www.webfx.com/tools/emoji-cheat-sheet/)
+[Excellent git ppt](https://docs.google.com/presentation/d/1IQCRPHEIX-qKo7QFxsD3V62yhyGA9_5YsYXFOiBpgkk/edit?usp=sharing)
+[Excellent gerrit code-review ppt](https://docs.google.com/presentation/d/1C73UgQdzZDw0gzpaEqIC6SPujZJhqamyqO1XOHjH-uk/edit?usp=sharing)

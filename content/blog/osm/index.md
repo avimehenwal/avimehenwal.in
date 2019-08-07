@@ -20,8 +20,7 @@ SO / RO
 VDU
 : Virtual Deployment Unit
 
-juju
-: Juju is an open source application modelling tool. With it, you can deploy, configure, scale, and operate your software on public and private clouds
+[What is juju?]({{< relref "/blog/juju/index.md" >}})
 
 charm
 : is a set of action and hooks
@@ -119,3 +118,4 @@ To be able to serve a site on HTTPS from localhost you need to create a self-sig
 [7]: [Day-0, day-n configuration](https://community.cisco.com/t5/nso-developer-hub-blogs/day-1-day-0-day-1-day-2-n-configurations/ba-p/3658255)
 [8]: [connecting openstack to osm](https://osm.etsi.org/wikipub/index.php/Openstack_configuration)
 [^9]: [Self-signed_certificate](https://en.wikipedia.org/wiki/Self-signed_certificate)
+[^10]: [openstack presentation](https://www.openstack.org/assets/presentation-media/Achieving-end-to-end-NFV-with-OpenStack-and-Open-Source-MANO.pdf)
