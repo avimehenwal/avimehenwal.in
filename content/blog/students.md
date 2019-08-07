@@ -15,11 +15,10 @@ tags:
 
 ## Student discounts
 
-[Github](https://education.github.com/pack/offers#namecheap)
+[Github Students Pack from partners](https://education.github.com/pack/offers#namecheap)
 <!-- more -->
 
 
 ### Footnotes
 
 [^1]:
-[^2]:
