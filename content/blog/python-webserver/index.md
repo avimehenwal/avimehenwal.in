@@ -18,6 +18,9 @@ tags:
 - nginx
 ---
 
+> external program outputs HTML instead of plain text, the browser-shell detects it and renders it as a web page.
+> Webserver invokes external programs
+
 A browser is an **HTTP client** because it sends requests to an **HTTP server** (Web server),
 which then sends responses back to the client. The standard (and default) port for HTTP
 servers to listen on is **80**, though they can use any port.

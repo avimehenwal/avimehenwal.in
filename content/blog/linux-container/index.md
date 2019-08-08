@@ -32,7 +32,7 @@ LXD
 
 * LXC is a userspace interface for the Linux kernel containment features[^1]
 * create and manage **system** or **application** containers
-*
+* currently implemented using `libvirt`
 * provides whole OS like VMs[^1]
 * is an **operating-system-level virtualization method** for running multiple isolated Linux systems (containers) on a control host using a **single Linux kernel**
 * `cgroups` limitation and prioritization of resources (CPU, memory, networking)
