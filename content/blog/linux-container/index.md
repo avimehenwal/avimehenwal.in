@@ -58,6 +58,7 @@ lxc exec <name> -- /bin/bash
 lxc stop <name>
 sudo lxc list
 sudo lxc image list
+lxc launch images:kali kali
 
 # Set the password for user
 lxc exec first -- /bin/bash
@@ -132,6 +133,20 @@ We can use all these tools together. Docker can run a app side-by-side a LXC con
 
 + KVM will start with a **BIOS**, then a **bootloader** that loads its **Kernel** and OS-user space, followed by loading **drivers** and **CPU-scheduling** for application processes
 + LXD are thinner and removes lot of overhead
+
+> How to create custom LXC images? And provision them?
+
+* External provisioners like Ansible
+* LXD REST API
+
+```sh
+# cretate new project
+lxc project create client-website -c features.images=false -c features.profiles=false
+
+lxc profile show default --project default
+lxc move dbserver dbserver --project client-website --target-project client2-website
+
+```
 
 ## Questions
 

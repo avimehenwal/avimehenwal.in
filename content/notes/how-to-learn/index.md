@@ -1,5 +1,5 @@
 ---
-title      : "How to Learn"
+title      : "How to Learn?"
 date       : 2019-08-04T12:52:04+02:00
 publishdate: 2019-08-05T12:52:04+02:00
 draft      : false
@@ -14,6 +14,8 @@ tags:
 - learn
 ---
 
+If you are one us mere mortals, then you dont remember what you should and it takes too much time to memorise.
+
 {{% note %}}
 By organizing scattered bits of information into pattern of knowledge, schema gives
 depth and richness to our thinking.
@@ -21,6 +23,7 @@ Understanding and intelligence is derived largely from the schema we have acquir
 over long period of time.
 {{% /note %}}
 
+> Recall (using queues) vs Recognition, dont confuse them
 <!-- more -->
 
 * Every memory is stored in a **neural pathway**
@@ -74,11 +77,70 @@ Feeling informed VS truly understanding something
 
 ![stm-to-lte](stm-to-lte.png)
 
+## Tools to use
+
+### ANKI
+
+is content-agnostic and supports images, audio, videos and scientific markup (via LaTeX), the possibilities are endless. For example:
+
+* learning a language
+* studying for medical and law exams
+* memorizing people’s names and faces
+* brushing up on geography
+* mastering long poems
+* even practicing guitar chords!
+
+### Use a Text-to-Speech software
+
+Google API
+
+```
+espeak -v german 'Guten Morgen'
+```
+* [Python pyttsx3 module](https://pypi.org/project/pyttsx3/)
+* [Google Sheets python API to read spreadsheet](https://developers.google.com/sheets/api/quickstart/python)
+
+{{< code numbered="true" >}}
+echo "Guten Morgen" | espeak [[[-v de]]] [[[-s 150]]] [[[-w]]] guten-morgen.wav [[[-z]]] [[[-x]]]
+{{< /code >}}
+
+1. Use german $voice$
+2. Set speeach rate/speed to 150 (slower). Default is 160
+3. Save audio file as `wav` format
+4. No final sentence pause at the end of the text
+5. Write **phoneme mnemonics** to stdout
+
+
+---
+
+* Use image occulusion tools
+* Put images on website and then use links in anki!
+* Make your own condensed sheets
+* `Active` vs `passive` learning. Rewatching whole content material is waste of time. Review notes
+1. Make languauge learning translation decks from Google Phrasebook
+2. Add Google Translate Audios to your decks using [awesome TTS](https://ankiweb.net/shared/info/301952613)
+3. [Quizlet](https://quizlet.com/)
+4. Google SHeets, and slides for collaborative learning
+5. Use FACT based Flashcards, make good flashcards
+6. Ask a native speaker to read the text for you, record it and break it into audio clippings
+
+## Learning Strategies
+
+1. Active Learning - learn whats important and RECALL
+2. Flashcards (Anki)
+3. Mnemonics
+4. Memory Palace / Method of Loci
+5. Reviewing each method regularly
+
 ### Food for thought
 
 1. Will I enjoy sitting in the class, all day, everyday?
 2.
 
+## How to learn a languages
+
+1. [Get 1k most commonly used words of the language](https://1000mostcommonwords.com/1000-most-common-german-words/)[or from wikimedia website](https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists#German)
+2.
 
 [Interesting facts about brain](https://faculty.washington.edu/chudler/ffacts.html)
 
