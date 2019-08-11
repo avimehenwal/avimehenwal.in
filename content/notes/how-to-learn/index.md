@@ -144,8 +144,29 @@ echo "Guten Morgen" | espeak [[[-v de]]] [[[-s 150]]] [[[-w]]] guten-morgen.wav 
 
 [Interesting facts about brain](https://faculty.washington.edu/chudler/ffacts.html)
 
+## SRS - Spaced Repitition System
+
+Techniques and methods
+
++ The Leitner Box System[^2]
+
+### Apps and Softwares
+
+[List of flashcard softwares](https://en.wikipedia.org/wiki/List_of_flashcard_software)
+
++ [cram](https://www.cram.com/)
++ [Brainscape](https://www.brainscape.com)
+
+## How to learn language?
+
+* [Comprehensable Input](https://youtu.be/fnUc_W3xE1w)
+* FOcused and Diffused learning modes
+* Shadowing
+* stoicism
+
 
 ### Footnotes
 
 [^1]: [yt, how to leanr](https://youtu.be/V-UvSKe8jW4)
-[^2]:
+[^2]: [wiki, Leitner Box System](https://en.wikipedia.org/wiki/Leitner_system)
+[Anki, Learning Hell, longer intervals](https://youtu.be/1XaJjbCSXT0)
