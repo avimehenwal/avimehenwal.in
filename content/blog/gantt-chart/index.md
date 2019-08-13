@@ -1,30 +1,32 @@
 ---
-categories:
-- design
+title: Gantt Chart
 date: "2019-07-06T19:03:28+02:00"
 revision: 0
+weight: 5
+slug: ""
 series:
 - myLearning
-slug: ""
+categories:
+- productivity
 tags:
 - visualiation
-title: Gantt Chart
-weight: 5
+- management
 ---
 
-tl;dr
-<!-- more -->
+## Why use Gantt charts?
 
-Scheduling of tasks
+Scheduling of tasks and displaying visual progress.
+Displays <mark>dependency relationship and schedule status</mark>
 
 + Effective communication tool
 + East to see and understand
-+ Add daily cost and cumulative costs to task planning 
-- Don't clearly show the relationships between tasks
-- Doesnt clearly the show impact if a task is delayed
-* Gantt charts are sometimes complimentated with resource histogram[^1]
++ Considers tasks parallelism
++ Add daily cost and cumulative costs to task planning
+- Don't clearly show the **relationships between tasks**
+- Doesnt clearly the show **impact of a task is delayed**
+* Gantt charts are sometimes complimentated with **resource histogram**[^1]
 
-### Task Relationship Types  aka Dependencies
+## Task Relationship Types aka Dependencies
 
 FS (Finish to Start)
 : A task that cannot start before the completion of its preceding task
@@ -52,6 +54,7 @@ CPM - Critical Path Method
 + if any activity schedule changes, entire project duration will change
 
 Network diagrams
+
 1. PDN - Precedence Diagram Method
 2. CPM - Critical Path Method
 
@@ -63,4 +66,4 @@ Network diagrams
 ### Footnotes
 
 [^1]: [yt, gantt chart and resource histogram](https://www.youtube.com/watch?v=NwyCTXQraLk)
-[^2]: 
+2. [gantt chart using SPARKLINES](https://docs.google.com/spreadsheets/d/1WuNJwecZkWKDmdJWmGLI-7qlepwXuT4b_71LYkoO8DI/edit#gid=0)

@@ -14,9 +14,24 @@ tags:
 - sketching
 ---
 
+## Fundamentals
+
+1. COnstruction
+2. Perception
+3. Perspective
+4. Composition
+5. Anatomy
+6. Gesture
+7. Color Theory
+8. Rendering
+
+{{% note %}}
+If you can draw a circle, square and a cylinder at any angle, basically you can draw anything.
+{{% /note %}}
 <!-- more -->
 - Take care of proportions
-- VArying (think/thin) lines
+- Varying (think/thin) lines
+- Centre for hair partition/ growth
 
 ### Footnotes
 
