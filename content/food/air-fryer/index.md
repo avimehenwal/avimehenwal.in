@@ -19,12 +19,12 @@ w3codecolor: true
 
 ## Air Fryer Recipies
 
-### Vegitable Pakora
+## Vegitable Pakora
     wheat flour
     chickpea flour / gram flour
     corn flour
 
-### Falafal balls
+## Falafal balls
     blend
         chickpeas
         onions
@@ -33,47 +33,47 @@ w3codecolor: true
     add flour and
     airfry 380F for 15 mins
 
-### Onion Rings
+## Onion Rings
     batter
         wheat + corn flour
 
-### Animal style fries
+## Animal style fries
     baked potatoes (with salt, pepper, peprikka)
     fried onions in broth (degalzed)
     tofu+lemon+yeast+ketchup+white wine vinegar+dates : mixture sauce
 
-### Lasagne
-    are stacked pasta### ### 
+## Lasagne
+    are stacked pasta### ###
 
-### Vegan French Toasts
+## Vegan French Toasts
     egg mixture alternative
         blend:: tofu/banana/chickpeas/any-other-flour + vanilla + cinnamom + non-dairy milk (cocunut/soy)
 
-### Vegan pasta sauce
+## Vegan pasta sauce
     roasted:: red pepper + 2 tomatoes and zuckkini
 
-### dabbe biryani
+## dabbe biryani
     70% cooked rice
     in a closed lid box layered manner
     vegitabled marinated in cocunut milk
 
-### stuffed vegitables pockets
+## stuffed vegitables pockets
     tofu veggie mixture
     inside wheat dough
     10mins 180
 
-### onion chickpea coating with stuffed tofu inside
+## onion chickpea coating with stuffed tofu inside
     7 mins 200C
 
-### Cookies
+## Cookies
     melt:: cocunut oil + peanut butter + maple syrup (sweetner)
     baking powdder + salt + flour + milk
     10 mins 160
 
-### banana oats cookies
+## banana oats cookies
     10 mins 160-170
 
-### Marinades::
+## Marinades::
     Marination is the process of soaking foods in a seasoned, often acidic, liquid before cooking.
 
 1. lemon grass
@@ -157,6 +157,13 @@ Denser the vegitables, smaller the cuts
 
 above 250 is roasting, anything below that is baking
 
+## [Best baked potatoes ever](https://youtu.be/_wx__fEyDj0)
+
+1. Add potatoes to boiling water with a pinch of **baking soda** (alkaline)
+2. Seperately, heat 5tbl spoon oil with rosemary and minced 3 garlic
+3. Mix poratoes with strained oil (garlic seperated) with some seasoning and mix them until the edges get little messy.
+4. Bake them for 20 mins or so, sitrring them in between
+5. Add strained garlic before serving
 
 ## References
 https://en.wikipedia.org/wiki/Air_fryer
