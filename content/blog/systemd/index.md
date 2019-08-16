@@ -46,10 +46,39 @@ DHCP=yes
 notify-send
 : send alerts from terminal commands/scripts
 
+## Timedate control
+
+systemd manages `timesyncd` daemon which requires linux user and group by name `systemd-timesync` to be present on system.
+It synchronizes system clock across the network
+
 timedatectl list-timezones
 : set system time and zone settings
 * `timedatectl status`
 
+
+`/var/lib/systemd/clock`
+: This file contains the timestamp of the last successful synchronization.
+
+```
+systemctl status systemd-timedated.service
+bat /lib/systemd/system/systemd-timedated.service
+
+localectl
+timedatectl status
+```
+
+### Disable timwsyncd service in yocto
+
+To disable timesyncd in your Yocto build, create a *.bbappend recipe in your own layer called
+
+```
+recipes-core/systemd/systemd_216.bbappend
+And add the following content
+
+PACKAGECONFIG[timesyncd] = "--enable-timesyncd,--disable-timesyncd,timesyncd"
+
+PACKAGECONFIG_remove = "timesyncd"
+```
 
 ### Footnotes
 
