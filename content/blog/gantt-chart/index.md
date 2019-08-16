@@ -11,7 +11,12 @@ categories:
 tags:
 - visualiation
 - management
+- charts
 ---
+
+> Charts are an opportunity, a story telling tool, a chance to make
+> convincing argument through visualizing data
+
 
 ## Why use Gantt charts?
 
@@ -25,6 +30,7 @@ Displays <mark>dependency relationship and schedule status</mark>
 - Don't clearly show the **relationships between tasks**
 - Doesnt clearly the show **impact of a task is delayed**
 * Gantt charts are sometimes complimentated with **resource histogram**[^1]
+* [Fully function excel gantt chart with completed status](https://youtu.be/KtR-CVxC5qA)
 
 ## Task Relationship Types aka Dependencies
 
@@ -60,7 +66,7 @@ Network diagrams
 
 
 
-
+* [When to use which chart?](https://youtu.be/qGaIB-bRn-A)
 
 [bibliography]
 ### Footnotes
