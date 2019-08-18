@@ -28,22 +28,22 @@ w3codecolor: true
 4. 3 cups flour gradually
 5. sit for 40 mins
 6. then another 20 mins after slicing portions
-7. sprinkle base with corn flour 
+7. sprinkle base with corn flour
 
 ## Vegan pizza
 
-### Vegan mozzarella 
+### Vegan mozzarella
 
 * 1/4 cup cashews (35 g)
 * 1 teaspoon lemon juice
 * 1 teaspoon maple syrup
 * 2 tbsp nutritional yeast (10 g)
-* 1 tbsp agar powder 
+* 1 tbsp agar powder
 * 2 tbsp tapioca starch (14 g)
 * 1 teaspoon salt
 * 1/3 cup deodorized coconut oil, melted (80 ml)
 * 1 1/2 cup water (375 ml)
-  
+
 
 Soak the cashews for 10 minutes in boiling water.
 Drain cashews and place in a blender along with the rest of the ingredients.
@@ -63,10 +63,25 @@ Remove by turning upside down onto a board.
 
 Using a wooden spoon, combine all the ingredients in a large mixing bowl.
 
-Turn the dough onto your work surface. 
+Turn the dough onto your work surface.
 
 Knead by gently but firmly pushing the dough down and away from you with the heels of your hands for 2 to 3 minutes, adding flour as needed.
 
+## [Trapizzino - pizza](https://youtu.be/5E97QPjC9Xw)
+
+* High hidration pizza dough
+* Roman street food snack
+* 1 Kg Bread Flour
+* 800 g of water (**80% hydration dough**)
+* 20 grams of salt
+* 7 grams of instant yeast
+* 40 grams of olive oil
+* Incorporate everythign and let it sit for 1 Hr
+* Folding Process - Pat it out in rectangle, 3 folds (let air sit inside and Co2 escape)
+* Put it in refridgeratore overnight, upside down
+* Use oil to get golden crown color
+* 16 mins 290 degree C
+*
 ## References
 
 [^1]: [yt, Ultimate Vegan Pizza [From Scratch] | The Buddhist Chef](https://youtu.be/pkCdrnzUWvI)

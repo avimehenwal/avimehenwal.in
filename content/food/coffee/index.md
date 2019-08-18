@@ -7,6 +7,7 @@ date: "2019-05-08T23:48:59+02:00"
 lastmod: "2019-05-08T23:48:59+02:00"
 tags:
 - techniques
+- beverages
 thumbnail: https://vignette.wikia.nocookie.net/coffee/images/8/85/Coffee_Bean_Structure.png/revision/latest?cb=20070203215647
 title: Soemthing about Coffee
 type: post
@@ -26,7 +27,7 @@ A [coffee bean](#references) is a seed of the coffee plant and the source for co
 
 ## Popular forms of coffee consumption
 
-Coffee is consume and prepared in various ways depending on the 
+Coffee is consume and prepared in various ways depending on the
 culture and various parts of the world. There is no one way.
 
 ### 1. Drip coffee
@@ -44,7 +45,7 @@ Espresso is also the base for other drinks such as a
 - caffè latte,
 - cappuccino,
 - caffè macchiato,
-- caffè mocha, 
+- caffè mocha,
 - flat white, or caffè Americano.
 
 {{< figure src="expresso-vs-drip-coffee.jpg" title="a) Expresso making process. b) Drip coffee making method" >}}
@@ -52,9 +53,17 @@ Espresso is also the base for other drinks such as a
 ### Vegan crema options
 
 * oats milk creamer
-* Cocunut milk + crushed cashewnut 
+* Cocunut milk + crushed cashewnut
 
 ## Health benefits or risks?
+
+## Beverages
+
+1. Strawberry Daiquiri
+
+## Make you own ice-creams
+
+cocunut milk + furuit + sweetner/lime and Blend
 
 ## References
 https://en.wikipedia.org/wiki/Coffee_bean

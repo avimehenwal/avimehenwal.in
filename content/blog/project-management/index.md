@@ -115,7 +115,7 @@ Provides power to use google tools like Apps
 * Google Apps Script can interact with APIs from all over the web like *github* etc.
 * Make full fledged web-applications out of sheets with UI and appscript as business Logic.
 * Google internally uses a AppScript based project management tool for Drive and docs team
-*
+* [Social Media Content Tracking Google Spreadsheets](https://mashable.com/2012/02/09/social-media-analytics-spreadsheets/?europe=true)
 
 
 {{< code numbered="true">}}
