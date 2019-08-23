@@ -26,7 +26,6 @@ tags:
 2. Task doent have a end time
 {{< /warning >}}
 
-
 Until a reminder is completed, users will be notified of the task by a message displayed on top of Google Calendar.
 Once the user has finished the task, the reminder can be swiped away from notification area.
 If you feel that this is a bit irritating then you can set the Reminder to a later time, similar to Events.
@@ -52,6 +51,11 @@ Tasks
 
 Goals
 : mix of events and reminders
+
+### Reminders vs Tasks
+
+* Both has only START time
+* 
 
 ### Interconversions?
 
