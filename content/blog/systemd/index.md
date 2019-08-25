@@ -12,6 +12,7 @@ categories:
 - linux
 tags:
 - systemd
+- dbus
 ---
 
 ## How to configure network using systemd?
@@ -28,7 +29,7 @@ Configuration file path `/etc/systemd/network/dhcp.network`
   * recplaces lots of shell scripts for system boot
 * Software platform for developing other apps
 * Glue between user and kernel spacce applications
-  * provides `dbus`
+  * [provides `dbus`](https://en.wikipedia.org/wiki/D-Bus)
 * Resources are called `Units`, it manages them in dependency graph.
 * Seperate bootstrap scripts `one-shot` applications on various clous environments.
 
@@ -80,6 +81,33 @@ PACKAGECONFIG[timesyncd] = "--enable-timesyncd,--disable-timesyncd,timesyncd"
 PACKAGECONFIG_remove = "timesyncd"
 ```
 
+## Systemd vs Supervisord
+
+Let’s say I have a Django application named Foo. I want to be sure Foo is running all the time, even if it crashes. Also, I want a simple interface to start, stop and restart its process. Supervisord is a perfect match for this job.
+
+* Process Monitoring
+* systemd has not, like controlling services with a web interface
+* Project Cockpit[^2] interactive server admin interface
+
+
+> Cockpit uses systemd and the DBus APIs it provides to configure and monitor core aspects of the system.
+
+{{< code numbered="true" >}}
+[Unit]
+Description="Foo web application"
+After=network.target
+
+[Service]
+User=foo
+Group=foo
+Environment=LANG=en_US.UTF-8,LC_ALL=en_US.UTF-8
+ExecStart=/home/foo/bin/start_foo
+
+[Install]
+WantedBy=multi-user.target
+{{< /code >}}
+
 ### Footnotes
 
 [^1]: https://www.freedesktop.org/software/systemd/man/systemd.network.html
+[^2]: [Project cockpit](https://cockpit-project.org/)

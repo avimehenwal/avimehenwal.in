@@ -12,7 +12,7 @@
   <tr>
     <td>
       <ol>
-        {{ range first 20 .Pages.ByLastmod.Reverse }}
+        {{ range first ($.Site.Params.statPagesNum) .Pages.ByLastmod.Reverse }}
         {{ $type := .Type }}
         <li>
           <a href="{{.RelPermalink}}">{{.Title}}</a>
@@ -23,7 +23,7 @@
 
     <td>
       <ol>
-        {{ range first 20 .Pages.ByLastmod }}
+        {{ range first ($.Site.Params.statPagesNum) .Pages.ByLastmod }}
         {{ $type := .Type }}
         <li>
           <a href="{{.RelPermalink}}">{{.Title}}</a>

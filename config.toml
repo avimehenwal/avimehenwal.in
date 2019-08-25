@@ -29,6 +29,7 @@ enableGitInfo          = true                          # https://gohugo.io/varia
   katex            = true
   socialshare      = true
   lazySearch       = true
+  statPagesNum     = 50
 
 [menu]
   [[menu.nav]]

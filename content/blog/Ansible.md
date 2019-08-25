@@ -23,6 +23,12 @@ tags:
 * How to deploy a OS / vm image onto infrastructure
 * Terraform, OpenStack
 
+## Why use CM tool instead of simple shell scripts?[^1]
+
+1. Idempotency `grep myhost /etc/hosts || echo '1.2.3.4  myhost' >> /etc/hosts`
+2. juju has charms, puppet has cookbooks ~ ansible has playbook.
+
+> Infrastructure as a Code / Documentation
 
 ### How to get vagrant image with ansible provision?
 
@@ -45,9 +51,9 @@ be installed on host. [Link here]({{< relref "/blog/virtualization/index.md#vagr
 
 ## What is Ansible
 * Automation language
-  * Apt yum [modules]()
-  * Template module - src= dest= to copy config files
-  * Service: state= name=
+  * `Apt`, `yum`, modules
+  * Template module - `src=`, `dest=` to copy config files
+  * Service: `state=`, `name=`
   * Handlers:
 * Automation engine that runs the Playbooks
 * Ansible tower GUI and API
@@ -76,7 +82,7 @@ ansible localhost -m shell -a "wget https://raw.githubusercontent.com/so-fancy/d
 ansible localhost -m git -a "repo=https://github.com/junegunn/fzf.git dest=~/mySoftwares/vagrant/trustyAnsible/fzf"
 ansible localhost -m shell -a "git init --bare ./dotfiles"
 
-# Passinv variables from command line
+# Passing variables from command line
 ansible-playbook release.yml --extra-vars "version=1.23.45 other_variable=foo"
 
 # Use tags to run specific parts of playbook
@@ -123,9 +129,14 @@ Independent variables, tasks, files, templates, and modules.
 
 ```
 # Directory structure is important
-ansible-galaxy init vivekrole
+ansible-galaxy init /path/ofdir/where/roles/need/creation
 
 ```
+
+## Handlers
+
+A handler tasks gets executed when **notified** from other normal ansible tasks.
+For eg: start service only when cetrtain package is installed, start nginx when nginx install job notifies the handler.
 
 ### Know HOWs
 * Ansible by default assumes you are using **SSH keys**. SSH keys are encouraged else use **--ask-pass**. If using sudo features and when sudo requires a password, also supply **--ask-become-pass**
@@ -134,3 +145,8 @@ ansible-galaxy init vivekrole
   - `import_playbook: webservers.yml`
 * Ansible uses **Jinja2** templating to enable dynamic expressions and access to variables
 * Working with conditions use `when` directive
+
+
+## Footnotes
+
+[^1]: [Advantages of a deployment tool such as Ansible over shell(https://stackoverflow.com/questions/19702879/advantages-of-a-deployment-tool-such-as-ansible-over-shell)
