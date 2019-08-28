@@ -30,6 +30,7 @@ enableGitInfo          = true                          # https://gohugo.io/varia
   socialshare      = true
   lazySearch       = true
   statPagesNum     = 50
+  googleTagManager = "GTM-PD4QRLX"
 
 [menu]
   [[menu.nav]]
