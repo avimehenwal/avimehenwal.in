@@ -36,6 +36,12 @@ Management could focus on niche area like
 2. Process
 3. Production rate
 
+## PM Use cases
+
+1. Track Marketing Campaigns
+2. 
+
+## PM Tools
 
 Project Name | FREE | Reporting
 -------------|------|----------

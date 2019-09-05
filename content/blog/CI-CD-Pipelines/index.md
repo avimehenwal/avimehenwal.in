@@ -82,10 +82,11 @@ gitlab-runner register \
 1. Docker container linking
 
 
-traptrap
+trap
 : perform an action when the shell receives a signal
 * HUP INT QUIT ILL TRAP ABRT BUS FPE KILL USR1 SEGV USR2 PIPE ALRM TERM STKFLT CHLD CONT STOP TSTP TTIN TTOU URG XCPU XFSZ VTALRM PROF WINCH POLL PWR SYS
 * `trap cleanup EXIT`
+* `trap cleanup SIGINT SIGTERM SIGQUIT`
 
 id
 : print real and effective user and group IDs
@@ -104,10 +105,17 @@ tr
 * `tr -d ' '`
 * `echo "avi m" | tr --delete 'av'` i m
 
+tput
+: initialize a terminal or query terminfo database
+* `tput init`
+
 Running a command on remote machine
 ```sh
 ssh skysails lsb_release --all
 ssh user@machine 'bash -s' < local_script.sh
+
+# Pseudo terminal
+ssh root@192.168.120.195 -T uname -a
 ```
 
 timesyncd.conf, timesyncd.conf.d

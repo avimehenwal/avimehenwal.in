@@ -15,7 +15,18 @@ tags:
 ---
 
 ## Robot Framework
-<!-- more -->
+
+--prerunmodifier
+: Programmatic modification of test data
+* Select every Xth test
+* Exclude tests by name
+* Skip setups and teardowns
+* Add Global setups and teardowns
+
+`--variablefile`
+: can have one or multiple variable file
+* either in robot language format or python
+* could be a python file with arguments
 
 ## MQTT
 
