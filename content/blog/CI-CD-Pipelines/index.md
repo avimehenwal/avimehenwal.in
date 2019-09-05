@@ -121,6 +121,7 @@ ssh root@192.168.120.195 -T uname -a
 timesyncd.conf, timesyncd.conf.d
 : Network Time Synchronization configuration files
 
+> X11 Forwarding from docker to localhost 
 
 ### Footnotes
 

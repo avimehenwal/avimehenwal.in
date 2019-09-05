@@ -59,6 +59,7 @@ vue.js
 #### CONS -
 
 - SEO may not know about content which comes via AJAX calls
+  - [`ref=canonical` links for SEOs](https://help.medium.com/hc/en-us/articles/217991468-About-SEO-and-duplicate-content)
 - Securty concerns
   - more prone to XSS (cross site scripting) attacks
 

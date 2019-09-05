@@ -61,6 +61,17 @@ too costly to maintain
 * Elisabeth Hendrickson
 * 
 
+## New Direction
+
+* RPA - Robot process Automation[^6]
+  * [Blueprism](https://www.blueprism.com/)
+  * [RPA tools](https://www.guru99.com/robotics-process-automation-tools.html)
+  * Pick any task and ask this question, what would I have to do to automate it?
+* Usually requires FLOWCHARTS to decide workflow paths
+* Python Automation | RPA
+  * context and scope of application
+
+
 ## Questions?
 
 1. which companies are succeding with testing and test automation?
@@ -76,3 +87,4 @@ too costly to maintain
 [^3]: https://medium.com/datadriveninvestor/which-are-the-best-software-testing-and-quality-assurance-companies-in-the-world-in-2019-90f85db7fe47
 [^4]: https://hackernoon.com/top-20-software-testing-companies-worth-your-attention-in-2019-f8cc8899dc11
 [^5]: [The Periodic Table Of Data – Pipe Dream or Possibility?](https://www.ministryoftesting.com/dojo/series/the-testing-planet-archive/lessons/the-periodic-table-of-data-pipe-dream-or-possibility)
+[^6]: https://en.wikipedia.org/wiki/Robotic_process_automation

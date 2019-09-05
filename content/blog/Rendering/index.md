@@ -145,7 +145,9 @@ FX
   * Beautiful lit monkey in blender
 * Rendering Engines
   * Eevee - node base, faster for real-time
+    * How do we make an material glow? Like a lot!
   * Cycles - more accurate but takes more processing, cpu | gpu
+    * Sampling
 * Rigging
   * parent-child relationship using Constraints
   * Armature ~ skeleton[^4]

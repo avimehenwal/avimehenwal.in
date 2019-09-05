@@ -1,0 +1,24 @@
+---
+title      : "Philosophy"
+date       : 2019-09-05T22:43:14+02:00
+publishdate: 2019-09-06T22:43:14+02:00
+draft      : false
+comments   : false
+weight     : 5
+revision   : 0
+series:
+- myLearning
+categories:
+- life
+tags:
+- philosophy
+---
+
+tl;dr
+<!-- more -->
+
+
+### Footnotes
+
+[^1]:
+[^2]:
