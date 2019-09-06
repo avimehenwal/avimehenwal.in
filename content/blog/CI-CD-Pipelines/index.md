@@ -123,6 +123,8 @@ timesyncd.conf, timesyncd.conf.d
 
 > X11 Forwarding from docker to localhost 
 
+`ssh -XC username@hostname`
+
 ### Footnotes
 
 [^1]:

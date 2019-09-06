@@ -15,6 +15,10 @@ tags:
 - dbus
 ---
 
+D-BUS
+: Desktop Bus
+* S/w bus for communication b/w processes using IPC and RPC
+
 ## How to configure network using systemd?
 
 `systemd` uses [`networkd`](https://en.wikipedia.org/wiki/Systemd#networkd) to configure netwrok interfaces.

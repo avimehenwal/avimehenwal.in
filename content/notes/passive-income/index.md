@@ -16,7 +16,7 @@ tags:
 
 * [Passive income sources](https://docs.google.com/spreadsheets/d/1zS7lvDmNuRea7bG5FRid2I7cciTjiNsHRgq1MoGpU7k/edit?usp=sharing)
 * [Make money by lending your CPU](https://www.loadteam.com/)
-neural network training and cryptocurrency mining.
+  * neural network training and cryptocurrency mining. started with performing load test of sites
 
 ### Footnotes
 

@@ -193,6 +193,28 @@ sudo apt-get install --only-upgrade fish
 fish_update_completions
 ```
 
+#### How to test files and directories in fish shell?
+
+use fish `test` operator
+
+```
+if test -e /path/filename
+    echo "File exists"
+end
+
+if test -d /directory/
+    echo "Directory exists"
+end
+
+```
+
+#### how to set environment variables in fish shell?
+
+```
+set --[global|local|universal] --export/x <variable_name>
+```
+
+
 ## Footnotes
 
 [^1]: https://stackoverflow.com/questions/47743015/fish-shell-how-to-check-if-a-variable-is-set-empty

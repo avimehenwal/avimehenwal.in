@@ -38,10 +38,6 @@ blockdev --getsize64 /dev/sda
 cat /proc/partitions
 ```
 
-yocto
-: that provides templates, tools and methods to help you create custom Linux-based systems for embedded products regardless of the hardware architecture
-* create a nodejs enabled linux image for raspberrypi
-* [wiki-yocto How_do_I](https://wiki.yoctoproject.org/wiki/How_do_I)
 
 iPXE
 : is the leading open source network boot firmware.
