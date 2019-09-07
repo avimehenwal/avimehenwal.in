@@ -36,6 +36,25 @@ RIGGING
 : going from static models to animated characters
 * Act of assigning relationships b/w objects so that moving one thing will move another
 
+ART
+: something which stirs/arouses (good) emotions in you, touches heart
+* could be visual like painting, sculptures
+* could be auditorial, like music
+* could be a mixture like movie, animation
+* standup comedy, theatre, live performances
+* About your personal experience, potential to learn and grow from it, tell a STORY, record history
+* when you draw the HEART of something
+* [What is GOD?](https://www.youtube.com/watch?v=gs_gY1K1AMU) What is ART?
+
+Brainwashing
+: Brainwashing is said to reduce its subject's ability to think critically or independently
+* Techniques
+* Isolation
+* Monopolization of perception 
+
+Gaslighting
+: brainwashing technique that makes victim lose all self confidence in themselves and question their own sanity
+
 Studio
 : a film or television production company.
 * a room where an artist, photographer, sculptor, etc. works.

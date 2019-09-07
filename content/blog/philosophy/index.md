@@ -14,10 +14,21 @@ tags:
 - philosophy
 ---
 
-tl;dr
-<!-- more -->
+## What is GOD?
 
+**omni**-gods
 
+* Health
+* Happyness - sustainable
+* Love
+
+## What is religion?
+
+Religion is a social-cultural system of designated behaviors and practices, morals, worldviews, texts, sanctified places, prophecies, ethics, or organizations, that relates humanity to supernatural, transcendental, or spiritual elements. However, there is no scholarly consensus over what precisely constitutes a religion.[1][2]
+
+## Culture?
+
+* Social behaviour and norms found in human societies
 ### Footnotes
 
 [^1]:
