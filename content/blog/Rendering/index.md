@@ -36,8 +36,58 @@ RIGGING
 : going from static models to animated characters
 * Act of assigning relationships b/w objects so that moving one thing will move another
 
+Studio
+: a film or television production company.
+* a room where an artist, photographer, sculptor, etc. works.
+
+> Robyn and [Rand Miller](https://en.wikipedia.org/wiki/Robyn_Miller) developed a game called [MYST](https://en.wikipedia.org/wiki/Myst) at home, on mac PC
+
 * blender 2.8
 * Learn shorcuts to save time and be efficient
+
+## 3D Animation BASICS
+
+> There is NO belieavable relation between a color and a emotion
+
+1. Where is it used?
+   1. 3D printing, VR, games, VFX, animated movies, Architectural animations, still image
+2. Modelling - mesh
+3. Texture and Materials
+4. Lighting
+5. Concept of **Open Movies**, [Ton Roosendaal](https://twitter.com/tonroosendaal) (founder of blender)
+6. Photo Realistic Images
+7. Model and scultp characters
+8. Create realistic environments
+9. Architecture, fire, smoke, fluid, object simulation
+10. Camera Tracking, compositing
+11. [Lighting is important](https://www.youtube.com/playlist?list=PLjEaoINr3zgH9vCr47kSS5W8PEJBNIiwK)
+    1.  Direction
+        1.  direction creates SHADOWS, and shadows reveal FORMS
+        2.  circle or sphere? Shadows are your friends
+        3.  Front lighting makes everything flat
+        4.  above head light might create shadow uner eyes, and eyes are doors to soul
+        5.  Split Lighting, half
+        6.  Guide your eyes, with background lighting composition
+    2.  Size of lamp in relation to object
+        1.  For human photography, use BIG filter lights to remove impoerfections, details
+        2.  Custome BIG light, gradient with point light
+        3.  **GOLDEN HOUR** is typically one hr after/before sun-rise/set, air particles flatterns the light
+            1.  Photo maganizes wont even consider if photos are not shot at dawn/dusk, such a strict rule
+    3.  Color of light
+        1.  changes mood and feeling of picture
+        2.  NAtural light color vs Artificial
+        3.  **BLUE HOUR** architectural photography
+            1.  1 hr after sun-rise/set
+    4.  Redability
+        1.  Adequate light
+        2.  Object Seperation
+            1.  RIM lighting
+    5. Emphasis / Composition
+       1. Closer the light, larger the falloff and emphasis
+       2. Eyes are drawn to contrast, not the light itself
+
+
+> ART is the #1 priority and NOT the TOOLS
 
 ## 3D Model a sword
 
@@ -147,18 +197,56 @@ FX
   * Eevee - node base, faster for real-time
     * How do we make an material glow? Like a lot!
   * Cycles - more accurate but takes more processing, cpu | gpu
+    * Raytracer
     * Sampling
 * Rigging
   * parent-child relationship using Constraints
   * Armature ~ skeleton[^4]
+  * Object and Bone COnstraints
+    * position object relative to its position constraint
+    * Keep an object on certain path during animation
+  * Rigify - AddOn
+  * Rig matching on X axis
+  * Align rig to scene origin and then scale  
+  * Advanced rigify rig wwith constraints
+* Inverse Kinematics
+* VErtex groups and weights
+* Keyframes - foundations od animation
+  * KeyFrame Editors
+    * Graph editor
+      * view and edit motion curves
+    * Dopesheet
+      * most powerful animation tools
+    * Timeline
+  * How to insert keyframes?
+  * Keyframes types
+  * Adjust the loop region in timeline
+  * **E** Try animating a bouncing ball
+  * Add Markers, like to insert an explosion
+  * Add music/audio to your animation
+* Sculpturing
+  * Draw tool - add/subtract volume
+  * Clay/ clay strip - circular and rougher look
+  * Inflate / Defalte
+  * 
 
 
+## How to create a CGI with blender
 
-PROGRESS ^23
+
+## Industry work done
+
+1. [NextGen movie on Netflix](https://www.youtube.com/watch?v=uf3ALGKgpGU)
+2. Develop 2D movie within blender - Greasy Pen
+3. [Blender Industry standards](https://www.youtube.com/watch?v=MyxWDHy4ppY)
+4. How to make Games?
+
+
 ### References
 
 * https://en.wikipedia.org/wiki/George_Lucas
 * https://en.wikipedia.org/wiki/Robert_Zemeckis
+* [Visual Effect magazine](https://cinefex.com/)
 
 
 ### Footnotes

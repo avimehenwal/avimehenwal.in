@@ -107,6 +107,10 @@ Video Editing
 7. Cut the video at PlayHeadd position, <kbd>CTRL + K</kbd>
 8. Seperate audio from video
 9. ADjust audio volume levels
+10. How to add text overlays?
+    1.  like link at the bottom over the video
+    2.  HIghlight some portion of video, like toolbar etc.
+    3.  Add certain text description etc
 
 ## Video Editing Workflow
 

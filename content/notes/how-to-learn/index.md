@@ -164,6 +164,13 @@ Techniques and methods
 * Shadowing
 * stoicism
 
+## War of Art
+
+> What have you grown the most, most fun with, honored my true self the most?
+What are the things you want to-do and are scared of?
+Figure out that and pursue it.
+GUARENTEE: You will see more growth and fuilfillment from that journey than anythign else you could do in life
+
 
 ### Footnotes
 
