@@ -4,7 +4,7 @@
 docker build --tag avi/hugo:latest .
 
 # Container
-docker run --rm --name "hugo1" -p 1313:1313 \
+docker run --name "hugo1" -p 1313:1313 \
     --volume (pwd):/blog \
     -e HUGO_WATCH="true" \
     avi/hugo:latest
