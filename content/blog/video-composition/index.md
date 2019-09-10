@@ -16,6 +16,9 @@ tags:
 - video
 ---
 
+composition
+: the nature of something's ingredients or constituents; the way in which a whole or mixture is made up.
+
 Render
 jumptcuts
 outro fade in
@@ -49,7 +52,7 @@ outro fade in
 > How can I have an impact?
 
 
-## Why do some things look better than others?
+## Why do some things/images look better than others?
 
 Beauty may lie in the eye of the beholder, but its the Patterns and Rations whichi matter
 

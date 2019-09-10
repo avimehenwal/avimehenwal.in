@@ -104,6 +104,8 @@ Studio
     5. Emphasis / Composition
        1. Closer the light, larger the falloff and emphasis
        2. Eyes are drawn to contrast, not the light itself
+12.[Color Harmony](https://www.youtube.com/watch?v=Qj1FK8n7WgY)
+12.Blender Project/Film management using ATTRACT
 
 
 > ART is the #1 priority and NOT the TOOLS
@@ -247,7 +249,12 @@ FX
   * Draw tool - add/subtract volume
   * Clay/ clay strip - circular and rougher look
   * Inflate / Defalte
-  * 
+
+## Jobs in Animation
+
+* character development and modelling
+* VFX Effects
+* Rendering Developers
 
 
 ## How to create a CGI with blender
@@ -260,6 +267,38 @@ FX
 3. [Blender Industry standards](https://www.youtube.com/watch?v=MyxWDHy4ppY)
 4. How to make Games?
 
+## [How to make a movie](https://www.youtube.com/watch?v=ru0tQRJ4qKs)
+
+Part I
+1. Brainstorm
+2. Story
+3. Script
+4. Concept Art
+5. Storyboard
+6. Criticism
+7. Animatic
+8. Improvement
+
+Part II
+9. Modeling
+10. Rigging
+11. Previz
+12. Animating
+13. Texturing
+14. Lighting
+
+Part III
+15. Rendering
+16. Compositing
+17. Editing
+18. Color Correction & Grading
+19. Music & Sound Design
+20. Voice
+21. Finalize
+
+Part IV
+22. Preview
+23. Publish
 
 ### References
 

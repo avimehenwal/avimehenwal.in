@@ -144,6 +144,15 @@ tmux new-window (prefix + c)
 `tmux source-file ~/.tmux.conf`
 : reloads the current tmux configuration (based on a default tmux config)
 
+swap
+: swapon --show
+* sudo fallocate -l 4G /swapfile
+* sudo mkswap /swapfile
+* sudo swapon /swapfile
+* free -h
+* cat /proc/sys/vm/swappiness
+
+
 ### Footnotes
 
 [^1]:

@@ -25,6 +25,9 @@ prolific
 Empathy
 : is the capacity to understand or feel what another person is experiencing from within their frame of reference, that is, the capacity to place oneself in another's position
 
+CBT
+: Cognitive Behaviour Therapy
+
 ## Permission Marketting
 
 * Traditional methods of marketing often revolve around the idea of **interruption marketting**
@@ -267,3 +270,46 @@ Unless we have a answer to this, we are not going to get, what we need.
 > FittingIn is a short term strategy to get you nowhere.
 > StandingOUT is a long term strategy that takes guts and produces results
 > If you care enough about your work, to be willing to be criticized for it, then you have done a GOOD DAYs work
+
+## Linchpin
+
+* Are you a Genius?
+  * Albert Einstein corrupted/destroyed the idea of genius
+* We are treating our customers like Goldfish
+* Target the smallest possible audience
+  * smallest you can deal with.
+  * What is the smallest group that I can work BEST for?
+* What would I do with a purple cow?
+  * I will tell other people if its Remarkable
+    * REMARKABLE - worth making a remark about
+  * BUt with time purple cow gets Grey,
+    * Keep inventing
+* Will you choose to matter?
+* Do it worng until you do it right
+* Is Failure is not an option, then Success is also not
+* You are prepared, but you would never be **ready** 
+* We have the 3 choices
+  1. Become a replacable cog in pyramid
+  2. Become founder/owner who runs that thing
+  3. Most of us, is ti become the Linchpin, one we cannot live without
+* NObody learns against their will
+  * Quick win - doesnt work
+  * Taking emotional labor of sitting there and CHOSSING to be curious instead of angry
+  * wispering instead of yelling, being the best version of ourself, and seek possiblity
+* Dance with your Fear, not run away from them
+  * Do it with fear, change your narrative, Oh yeah, you are back (fear) lets do it again
+  * I can do it all day
+
+> What do you think about passion, calling? Whats your take on that?
+
+* I choose to love the thing I do, And tthis IDEAD that we can become passionate about our work, as opposed to expecting that our work will give us passion, gives us more leverage
+
+> How do I decide to love something?
+
+* If you smile you will be in a better mood, its not the other way round
+* Smile at your kid, everytime you see him/her
+
+> What is the impact you want to have on the world?
+
+Know by what the other people who learn from me taught other people.
+Level up the culture, because thats all we got

@@ -109,23 +109,6 @@ tput
 : initialize a terminal or query terminfo database
 * `tput init`
 
-Running a command on remote machine
-```sh
-ssh skysails lsb_release --all
-ssh user@machine 'bash -s' < local_script.sh
-
-# Pseudo terminal
-ssh root@192.168.120.195 -T uname -a
-```
 
 timesyncd.conf, timesyncd.conf.d
 : Network Time Synchronization configuration files
-
-> X11 Forwarding from docker to localhost 
-
-`ssh -XC username@hostname`
-
-### Footnotes
-
-[^1]:
-[^2]:
