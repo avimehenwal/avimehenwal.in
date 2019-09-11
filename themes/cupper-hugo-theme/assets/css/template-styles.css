@@ -211,7 +211,7 @@ dd li + li {
 
 /* Blockquotes */
 blockquote {
-  border-left: 1rem solid;
+  border-left: 0.5rem solid;
   padding-left: 0.75rem;
   font-weight: bold;
   font-style: italic;

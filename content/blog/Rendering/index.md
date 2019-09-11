@@ -232,7 +232,7 @@ FX
   * Advanced rigify rig wwith constraints
 * Inverse Kinematics
 * VErtex groups and weights
-* Keyframes - foundations od animation
+* Keyframes - foundations of animation
   * KeyFrame Editors
     * Graph editor
       * view and edit motion curves
@@ -267,9 +267,10 @@ FX
 3. [Blender Industry standards](https://www.youtube.com/watch?v=MyxWDHy4ppY)
 4. How to make Games?
 
-## [How to make a movie](https://www.youtube.com/watch?v=ru0tQRJ4qKs)
+[How to make a movie](https://www.youtube.com/watch?v=ru0tQRJ4qKs)
 
 Part I
+
 1. Brainstorm
 2. Story
 3. Script
@@ -280,6 +281,7 @@ Part I
 8. Improvement
 
 Part II
+
 9. Modeling
 10. Rigging
 11. Previz
@@ -288,6 +290,7 @@ Part II
 14. Lighting
 
 Part III
+
 15. Rendering
 16. Compositing
 17. Editing
@@ -297,21 +300,41 @@ Part III
 21. Finalize
 
 Part IV
+
 22. Preview
 23. Publish
+
+## Effects
+
+* Smoke
+* Fire, explosion
+* Muzzle flash, with sparks and lighthing and shadow
+* Texture imperfections, fingerprints
+* Particle effects
+* Simulations
+  * crumbling building
+  * rain
+  * fire
+  * smoke
+  * fluid
+  * cloth
+  * hair
+  * full on destruction
+  * Particle
 
 ### References
 
 * https://en.wikipedia.org/wiki/George_Lucas
 * https://en.wikipedia.org/wiki/Robert_Zemeckis
 * [Visual Effect magazine](https://cinefex.com/)
+* [Free Rendering Farm](https://www.sheepit-renderfarm.com/index.php)
 
 
 ### Footnotes
 
 [^1]: [yt, shot CGI movies](https://www.youtube.com/channel/UCrSvhrtUgpZT3EU0x1Zoy-w)
 [^2]: [sketchfab.com](https://sketchfab.com/3d-models/popular)
-[^3]: [maxmo](https://www.mixamo.com/#/)
+[^3]: [mixamo](https://www.mixamo.com/#/)
 [^4]: https://cloud.blender.org/blog/introducing-blender-animation-fundamentals-training
 
 

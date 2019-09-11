@@ -27,9 +27,9 @@ netstat
 * Replacement for netstat -g is `ip maddr`.
 
 ss
-: another utility to investigate sockets
+: another utility to investigate sockets.
 
-The “Recv-Q” and “Send-Q” columns
+Recv-Q and Send-Q columns
 : tell us how much data is in the queue for that socket, waiting to be read (Recv-Q) or sent (Send-Q). In short: if this is 0, everything’s ok, if there are non-zero values anywhere, there may be trouble. If you look closely at the example, you’ll see that two sockets have a Recv-Q with 38 unread bytes in them. We’ll look into those connections once we know what the other columns mean.
 
 ```

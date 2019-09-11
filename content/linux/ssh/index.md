@@ -14,17 +14,52 @@ tags:
 - ssh
 ---
 
+> Shall goes in, shall goes out
+
 ## What is SSH?
 
 - Stands for **S**ecure **SH**ell
-- Client/Server protocol `ssh/sshd`
+- Client `ssh` / Server `sshd` protocol
 - appeared in mid 1990s, connecting to remote machines via internet (unsecure n/w)
-- Application layer protocol, port `22`
+- Application layer protocol, `sshd` server on standard port `22` 
 - older protocols like `telnet` would sent everything in plain text. Not secure over internet
   - packets could be sniffed and read by packet Sniffer
+
 <!-- more -->
 
-* Shall goes in, shall goes out
+
+## Port Forwarding
+
+Think of your SSH connections as tubes. Big tubes. Normally, you'll reach through these tubes to run a shell on a remote computer.
+
+[SSH Tunneling - Local and Remote Use Cases](https://unix.stackexchange.com/questions/223652/ssh-tunneling-local-and-remote-use-cases)
+
+```
+ssh -L 123:localhost:456 user@example.com
+```
+
+This will forward all traffic from port 123 on my local machine to port 456 on example.com. But example.com would see the traffic coming from its own localhost.
+
+```
+ssh -L 123:google.com:456 user@example.com
+```
+
+This will forward all traffic from port 123 on my local machine to port 456 on google.com. After that it will establish an ssh session to example.com.
+
+situation when example.com can connect to [google.com] host while your box can't. For example, you have VPN connection which is restricted to a number of boxes, while you want to access host not in list. ssh -L 123:target.host.com:456 user@vpn.host.com.
+
+```
+ssh -R 123:localhost:456 user@example.com
+```
+
+This will establish an ssh session to user@example.com and forward all traffic from port 123 on example.com to port 456 on my local machine. My local machine will then see the traffic as coming from localhost.
+
+```
+ssh -R 123:google.com:456 user@example.com
+```
+
+This will establish an ssh session to user@example.com and forward all traffic from port 123 on example.com to port 456 on google.com. Unlike #2, example.com is used as the remote host.
+
 
 ### There are three types of port forwarding with SSH:
 
@@ -112,6 +147,12 @@ ssh -L 22222:localhost:33333 dirk@192.168.100.1
 ssh -R 1234:localhost:4321 test@10.10.10.10
 ```
 ### Local Port Forwarding
+
+Recieving Emails from remote server 
+
+```
+myLocalHost% ssh -L localhost:9143:myRemoteHost:143 myRemoteHost 
+```
 
 #### Jump Server[^1]
 
