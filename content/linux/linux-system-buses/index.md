@@ -90,16 +90,23 @@ subsystem
 
 ## SPI
 
+![spi_shift_registers_ring](spi_shift_registers_ring.png)
+
 * synchronous, serial communication interface
 * Short-distance communication in embedded systems
 * Full duplex mode
 * SPI is one master and multi slave communication
 * Motorolla in 1980s
+* SPI maximum speed, It is in fact capable of `80MHz`.
 * Multiple salves are supported using `SS` **Slave select** or `CS` **chip select**
 * Transmissions normally involve two **shift registers** of some given word-size, such as eight bits, one in the master and one in the slave; they are connected in a virtual ring topology
 * Independent slave configuration | Daisy chain configuration
 * The SS line is normally held high, which disconnects the slave from the SPI bus. (This type of logic is known as **active low**
 * Because of the high speed signals, SPI should only be used to send data over short distances (up to a few feet). If you need to send data further than that, lower the clock speed, and consider using specialized driver chips.
+
+When the chip select pin is held in the inactive state, the chip or device is "deaf", and pays no heed to changes in the state of its other input pins; it holds its outputs in the high impedance state, so other chips can drive those signals. When the chip select pin is held in the active state, the chip or device assumes that any input changes it "hears" are meant for it, and responds as if it is the only chip on the bus. Because the other chips have their chip select pins in the inactive state, their outputs are high impedance, allowing the single selected chip to drive its outputs.[5]
+
+CS may also affect a power consumption or serve as cycle control in certain circuits (such as SRAM or DRAM) 
 
 ### Pros and CONS
 
@@ -301,7 +308,13 @@ i2cget
 
 **SPI-0** is configured and available on device along with **spidev_test** utility.
 
-## How to configure SPI bus on embedded system?
+## Developing or Troubleshooting the SPI bus?
+
+Using a [Logic Analyser](https://en.wikipedia.org/wiki/Logic_analyzer) to measure current flow.
+Most logic analyzers have the capability to decode bus signals into high-level protocol data and show ASCII data.
+
+* is only for Logic (0|1) measurements
+* 
 
 1. Configure kernel modules
 

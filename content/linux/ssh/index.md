@@ -262,6 +262,26 @@ where,
 -O  os related information
 $$
 
+## How to edit remote files from local editor
+
+When vim is compiled with `+clientserver` support
+
+```
+vim --version | ack client
++clientserver 
+
+vim scp://user@myserver[:port]//path/to/file.txt
+vim scp://root@192.168.120.141/spi-traffic.sh 
+
+OR
+
+sudo apt-get install sshfs
+sudo adduser <username> fuse
+mkdir ~/remoteserv    
+sshfs -o idmap=user <username>@<ipaddress>:/remotepath ~/remoteserv
+
+```
+
 ## Questions
 
 1. Can as add base configuration for all hosts in `ss/config` file? Hierarchy based config, and then the host spefic config?
