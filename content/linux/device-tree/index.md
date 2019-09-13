@@ -9,10 +9,30 @@ revision   : 0
 series:
 - Linux
 categories:
-- programming
-tags:
 - embedded
+- os
+tags:
+- device-tree
 ---
+
+AMP
+: Asymmetric Multiprocessing
+
+DMA
+: Direct Memory Access
+
+DTB
+: Device tree Blob
+
+DTC
+: Device Tree Compiler
+
+DTS
+: Device Tree Syntax
+
+SoC
+: System on Chip
+
 
 * The Device Tree should describe the board's hardware
 * is a data structure describing the hardware components of a particular computer so that the operating system's kernel can use and manage those components, including the CPU or CPUs, the memory, the buses and the peripherals.

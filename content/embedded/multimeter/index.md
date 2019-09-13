@@ -18,6 +18,13 @@ tags:
 
 <!-- more -->
 
+## Fatal Current
+
+The real measure of shock's intensity lies in the amount of current (amperes) forced though the body, and not the voltage.
+ANything above `0.1` Amperes could kill you, So use clamp Multimeter for current
+
+![fatal-current](fatal-current.png)
+
 address lines
 : Data inside a computer is accessed by means of metallic conductors called address lines. Each of them carries a bit of information, the same as a data line. A group of address lines is called an address bus.
 * related to memory
