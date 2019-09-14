@@ -4,13 +4,19 @@ MAINTAINER avimehenwal
 RUN apt update
 RUN apt install -y git
 
-ENV HUGO_VERSION 0.55.6
-ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit.deb
-ENV GITHUB https://github.com/gohugoio/hugo/releases/download
+# expect a build-time variable
+ARG ASSET_HUGO_LOC
+# use the value to set the ENV var default
+ENV ASSET_HUGO_LOC $ASSET_HUGO_LOC
+RUN echo $ASSET_HUGO_LOC 
 
-ADD ${GITHUB}/v${HUGO_VERSION}/${HUGO_BINARY} /tmp/hugo.deb
-RUN dpkg -i /tmp/hugo.deb \
+COPY ${ASSET_HUGO_LOC} /tmp/hugo.deb
+# ADD $ASSET_HUGO_LOC /tmp/hugo.deb
+RUN ls /tmp
+RUN dpkg --install /tmp/hugo.deb \
 	&& rm /tmp/hugo.deb
+# TEST
+RUN hugo version
 
 # Create working directory
 RUN mkdir /blog

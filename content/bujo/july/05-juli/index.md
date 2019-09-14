@@ -37,7 +37,7 @@ meta-mender-core
 * Setting up the U-Boot bootloader to support Mender
 
 udev - userspace /dev
-: is a device manager for the Linux kernel.
+: [is a device manager for the Linux kernel.](https://en.wikipedia.org/wiki/Udev)
 * checks when new device is plugged in and makes it available as a FILE
 
 Gyroscopes

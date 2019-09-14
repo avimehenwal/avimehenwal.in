@@ -249,6 +249,7 @@ FX
   * Draw tool - add/subtract volume
   * Clay/ clay strip - circular and rougher look
   * Inflate / Defalte
+* [MOrphing](https://www.youtube.com/watch?v=n5b_nIzdvfI)
 
 ## Jobs in Animation
 
@@ -293,6 +294,7 @@ Part III
 
 15. Rendering
 16. Compositing
+    1.  stacking all your assets (smoke filter, castle, real footage)
 17. Editing
 18. Color Correction & Grading
 19. Music & Sound Design
