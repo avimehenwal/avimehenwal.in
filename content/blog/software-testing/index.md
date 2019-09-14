@@ -71,6 +71,31 @@ too costly to maintain
 * Python Automation | RPA
   * context and scope of application
 
+## Design Testing
+
+1) Functionality Testing
+   1) Look for broken links on page
+      1) External Links
+      2) Incoming links
+      3) Anchor and mailTo links
+   2) HTTP codes for URL paths
+   3) Image Validations
+   4) What happens if a user deletes their cookies while visiting the site?
+   5) What happens if a user deletes cookies following a site visit?
+2) Usability testing
+   1) TimeZone config is respected?
+3) Interface testing
+   1) All interface components are actively responding
+4) Compatibility testing / Crossbrowser testing
+5) Performance testing
+6) Security testing
+   1) Javascript INjections in forms
+   2) Cookies Manupulation
+   3) ProxyServer testing
+   4) Credential Encryption / Man in the middle attack
+   5) Open ports on server
+   6) Network Vulnability Attacks
+   7) Webframework specific exploits
 
 ## Questions?
 
