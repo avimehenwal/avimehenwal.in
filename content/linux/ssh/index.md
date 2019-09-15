@@ -24,6 +24,7 @@ tags:
 - Application layer protocol, `sshd` server on standard port `22` 
 - older protocols like `telnet` would sent everything in plain text. Not secure over internet
   - packets could be sniffed and read by packet Sniffer
+- Each user on machine has its own `/home/user/.ssh` directory
 
 <!-- more -->
 
@@ -201,7 +202,7 @@ This particular example would be useful for giving someone on the outside access
 * ssh-agent
   * keeps decrypted key in memory
 
-> HOw to generrate keys and add them?
+> How to generrate keys and add them?
 
 ```
 ssh-keygen -t rsa

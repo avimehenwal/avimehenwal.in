@@ -19,10 +19,29 @@ datasheets
 
 <!-- more -->
 
+## IoT Boards
+
 * Beaglebone Black[^1] , wiki[^2]
   * Sitara AM335x[^3] CPU
 * NodeMCU[^4] Lua based firmware
   * Documentation[^5]
+  
+## Measurements Meteres
+
+* Signal generator[^6]
+
+## Sensors
+
+* Temperature Sensor
+* Pressure Sensor
+* Humidity Sensor
+* Proximity Sensor
+* Accelerometer and Gyroscope Sensor
+* IR Sensor
+* Optical Sensor
+* Gas Sensor
+* Smoke Sensor
+* Antenna transmitter / reciever
 
 ### Footnotes
 
@@ -31,3 +50,4 @@ datasheets
 [^3]: https://www.ti.com/product/AM3358
 [^4]: https://github.com/nodemcu
 [^5]: https://nodemcu.readthedocs.io/en/master/
+[^6]: https://en.wikipedia.org/wiki/Signal_generator
