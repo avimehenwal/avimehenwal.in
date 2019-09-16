@@ -41,6 +41,9 @@ LXD
 
 [Read more about containers]({{< relref "/blog/linux-container/index.md" >}})
 
+PDU
+: Protocol data unit
+
 [There are several isolation programs available](https://blog.docker.com/2014/03/docker-0-9-introducing-execution-drivers-and-libcontainer/)
 
 ![Isolation programs](docker-execdriver-diagram.png)
@@ -107,6 +110,10 @@ To be able to serve a site on HTTPS from localhost you need to create a self-sig
 
 *
 
+## tng-bench
+
+* Runs experiments on vim-emu, its a client. Takes a `PED` file and output directory to store results
+* `tng-sdk-package` packs/unpacks `.tgo` files based on TOSCA specifications
 ### Footnotes
 
 [^1]: https://osm.etsi.org/wikipub/index.php/OSM_Release_SIX_Documentation
