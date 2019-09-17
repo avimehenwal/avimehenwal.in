@@ -11,6 +11,7 @@ categories:
 tags:
 - linux
 - tmux
+- swap
 ---
 
 tmux
@@ -144,14 +145,24 @@ tmux new-window (prefix + c)
 `tmux source-file ~/.tmux.conf`
 : reloads the current tmux configuration (based on a default tmux config)
 
-swap
-: swapon --show
-* sudo fallocate -l 4G /swapfile
-* sudo mkswap /swapfile
-* sudo swapon /swapfile
-* free -h
-* cat /proc/sys/vm/swappiness
+## swap
 
+{{% code %}}
+sudo swapon --show
+sudo swapon --summary
+sudo fallocate -l 4G /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+free -h
+cat /proc/sys/vm/swappiness
+cat /proc/swaps
+{{% /code %}}
+
+1. Displays SWAP on system
+
+> How do I add fresh new swap?
+
+Turn `swapon` and `swapoff` from `GParted` tool
 
 ### Footnotes
 
