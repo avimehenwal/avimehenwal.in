@@ -50,7 +50,12 @@ ACL - access control list
 - Firewall
 - `Reverse Shells` infect device, which connects back to you. Sometime need to break into routers first. Fishing attacking are possible
 
+## Groups
+
+1. LulzSec[^1]
+
+
 ### Footnotes
 
-[^1]:
+[^1]: https://en.wikipedia.org/wiki/LulzSec
 [^2]:

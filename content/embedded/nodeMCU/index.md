@@ -108,4 +108,4 @@ RTS (Request to Send) and CTS (Clear to Send)
 ### Footnotes
 
 [^1]: https://www.youtube.com/watch?v=myU2x27FIIc
-[^2]:
+[^2]: https://github.com/spacehuhn/esp8266_deauther

@@ -32,6 +32,9 @@ yocto
 
 ## List USB devices on linux
 
+lsusb
+: show you whether the kernel sees usb 3.0 support.
+
 ```
 # List block devices
 lsblk
