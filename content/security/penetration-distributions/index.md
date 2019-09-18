@@ -27,7 +27,11 @@ tags:
    1. `debian` standard based
 
 <!-- more -->
+## Why I switched to Kali linux?
 
+1. Was unable to install `hugo` from snap
+2. `usermod` command not installed, to modify group setting and I could not find where to install it
+3. Unable to run docker, installed as `docker.io` package
 
 ### Footnotes
 
