@@ -35,7 +35,7 @@ echo $status
     docker run --rm --name "hugo1" -p 1313:1313 \
         --volume (pwd):/blog \
         -e HUGO_WATCH="true" \
-        avi/hugo:latest /
+        avi/hugo:latest
     else
 
     # 4. Debug Mode

@@ -34,14 +34,25 @@ datasheets
 
 * Temperature Sensor
 * Pressure Sensor
+  * BMp280
 * Humidity Sensor
 * Proximity Sensor
 * Accelerometer and Gyroscope Sensor
+  * MPU9250
 * IR Sensor
 * Optical Sensor
 * Gas Sensor
 * Smoke Sensor
 * Antenna transmitter / reciever
+* IMU
+  * mma8452
+
+## IMU
+
+* Inertial measurement unit
+* that measures and reports a body's specific force, angular rate, and sometimes the orientation of the body, using a combination of accelerometers, gyroscopes, and sometimes magnetometers.
+* A wireless IMU is known as a WIMU
+
 
 ### Footnotes
 

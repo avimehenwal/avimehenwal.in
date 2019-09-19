@@ -33,13 +33,15 @@ DTS
 SoC
 : System on Chip
 
+Slides[^1]
 
 * The Device Tree should describe the board's hardware
 * is a data structure describing the hardware components of a particular computer so that the operating system's kernel can use and manage those components, including the CPU or CPUs, the memory, the buses and the peripherals.
 * A device tree can hold any kind of data as internally it is a tree of named nodes and properties
+* Can have multiple `compatibility` drivers for a device
 
 
 ### Footnotes
 
-[^1]:
-[^2]:
+[^1]: http://events17.linuxfoundation.org/sites/events/files/slides/dt_internals.pdf
+[^2]: https://elinux.org/Device_Tree_Usage#Understanding_the_compatible_Property
