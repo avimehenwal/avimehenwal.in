@@ -23,6 +23,11 @@ datasheets
 
 * Beaglebone Black[^1] , wiki[^2]
   * Sitara AM335x[^3] CPU
+  * **3.3V** `4.6` **mA**
+  * Documents
+    * SRM - Software reference manual
+    * Schematics
+    * CPU Sitara reference for Pin-Multiplexing
 * NodeMCU[^4] Lua based firmware
   * Documentation[^5]
   

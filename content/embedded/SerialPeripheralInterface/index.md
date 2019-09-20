@@ -15,6 +15,10 @@ tags:
 - spi
 ---
 
+* Official Documentation[^1]
+* a multiplexed shift register
+* Range 1-20 MHz
+* The Raspberry Pi is equipped with one SPI bus that has **2 chip selects**.
 <!-- more -->
 
 * We want to use 3 slaves with SPI0, but am335x supports only 2 CS signals.
@@ -27,6 +31,15 @@ Device tree configuration for SPI Polarity and Phase
 ```
 
 ## Querying Device tree
+
+### From /proc
+
+```
+/proc/device-tree/ocp/spi@48030000
+```
+
+
+### From dtb file
 
 Open Core Protocol (OCP)-based architectures
 : OCP is a standards-based embedded-bus interface and multicore IP integration protocol defined by the OCP-IP industry consortium
@@ -99,16 +112,35 @@ ti,spi-num-cs
     };
     spidev@2{
         compatible="spidev";
-        reg =<2>; //chipselect 2
+        reg =<2>; //chipselect 2`
         spi-max-frequency= <3125000>;
     };
+
+imu@X {
+     compatible = "adi,adis16480";
+     reg = <YOUR_CHIPELECT_PIN_NR>;
+     spi-cpol;
+     spi-cpha;
+     spi-max-frequency = [[[<1000000>]]];
+};
 {{< /code >}}
 
 1. Driver to use for this device
 2. Register where device could be found
 3. Control device state, on/off
+4. SPI frequency breakpoints 1Mhz, 2MHz, 3.2mHx
+
+## Traffic Generation
+
+```
+./spidev_test -v
+spidev_test --device /dev/spidev0.0 --verbose -p 'MESSGAE' --speed 250000
+
+# Write binary 1, 2 and 3
+echo -ne "\x01\x02\x03" > /dev/spidev0.0
+```
 
 ### Footnotes
 
-[^1]:
-[^2]:
+[^1]: https://www.kernel.org/doc/html/latest/driver-api/spi.html?highlight=spi
+[^2]: https://ez.analog.com/linux-device-drivers/linux-software-drivers/f/q-a/97600/adis16448-iio-driver-on-nvidia-jetson-tk1

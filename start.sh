@@ -29,19 +29,39 @@ docker build \
 # echo "ARGS = $argv"
 # echo "$argv[1]"
 echo $status
-    # 3. Run Server Container
-    if set --query $argv[1]
-        echo "server"
+
+# Without passwd and group scm-tools like git will not work in the container
+# This does not pass any passwords to the container; just the id <-> name mapping.
+# getent passwd > passwd.txt
+# getent group > group.txt
+
+# getent passwd > passwd                                                                                                                                                 I 
+# An error occurred while redirecting file 'passwd'
+# open: Is a directory
+# mv -v passwd.txt passed
+# mv -v group.txt group
+
+# 3. Run Server Container
+if set --query $argv[1]
+    echo "server"
     docker run --rm --name "hugo1" -p 1313:1313 \
         --volume (pwd):/blog \
-        -e HUGO_WATCH="true" \
+        --volume (pwd):(pwd):rw \
+        --env DISPLAY=$DISPLAY \
+        --env HUGO_WATCH="true" \
         avi/hugo:latest
-    else
+        # --volume (pwd)/passwd:/etc/passwd \
+        # --volume (pwd)/group:/etc/group \
+else
 
-    # 4. Debug Mode
-        echo "debug"
-        docker run --rm --name "hugointeractive"\
-            --interactive --tty \
-            --volume (pwd):/blog \
-            avi/hugo:latest /bin/bash
-    end
+# 4. Debug Mode
+    echo "debug"
+    docker run --rm --name "hugointeractive"\
+        --interactive --tty \
+        --volume (pwd):/blog \
+        --volume (pwd):(pwd):rw \
+        --env DISPLAY=$DISPLAY \
+        avi/hugo:latest /bin/bash
+        # --volume (pwd)/passwd:/etc/passwd \
+        # --volume (pwd)/group:/etc/group \
+end

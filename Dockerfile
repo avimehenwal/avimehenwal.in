@@ -25,7 +25,7 @@ RUN hugo version
 # Create working directory
 RUN mkdir /blog
 WORKDIR /blog
-VOLUME [ "/blog" ]
+VOLUME [ "/blog", "/etc/passwd", "/etc/group" ]
 
 # Expose default hugo port
 EXPOSE 1313

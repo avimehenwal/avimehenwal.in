@@ -314,7 +314,11 @@ Using a [Logic Analyser](https://en.wikipedia.org/wiki/Logic_analyzer) to measur
 Most logic analyzers have the capability to decode bus signals into high-level protocol data and show ASCII data.
 
 * is only for Logic (0|1) measurements
-* 
+* Mode of operations
+  * Timing Analysis mode
+  * State Analysis mode
+* Sequential Sampling
+* COmpresssion Sampling
 
 1. Configure kernel modules
 

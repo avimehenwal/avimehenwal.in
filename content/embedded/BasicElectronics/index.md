@@ -30,6 +30,9 @@ Flow
 Actuators
 : produces motion
 
+breakout-board
+:  bundled cable and “breaks out” each conductor to a terminal that can easily accept a hook-up wire for distribution to another device.
+
 * Wirk app to create GUI and mobile apps for IOT
 
 ## Basic Electronics laws
