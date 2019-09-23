@@ -129,7 +129,7 @@ Cracking: WEP and WPA PSK (WPA 1 and 2)
 Open System Authentication:
 
 Ask the AP for authentication.
-The AP answers: OK, you are authenticated.
+The AP answers: OK, you are authenticated.`
 Ask the AP for association
 The AP answers: OK, you are now connected.
 

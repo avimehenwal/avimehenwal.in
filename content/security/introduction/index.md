@@ -47,7 +47,7 @@ ACL - access control list
 - `TOR` onion routing, free to use, anonymous to a very large extent, access **Dark Web**
 - VPS - Virtual Private Server, only users from certain host/ n/w could access a service
 - `Keyloggers` steal information and then send email, can send existing info as well, like screenshots, turn on camera etc
-- Firewall
+- [Firewall](({{< relref "/linux/networking/index.md" >}}))
 - `Reverse Shells` infect device, which connects back to you. Sometime need to break into routers first. Fishing attacking are possible
 
 ## Groups

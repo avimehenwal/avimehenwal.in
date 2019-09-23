@@ -42,6 +42,17 @@ The `ADD` instruction copies new files, directories or remote file URLs from <sr
 
 The `COPY` instruction copies new files or directories from <src> and adds them to the <mark>filesystem of the **container**</mark> at the path <dest>.
 
+> How to keep local directory synchronized within container directory?
+
+* --bind
+* `--volume`
+
+> HANDLING PERMISSIONS WITH DOCKER VOLUMES
+
+1. If you write to the volume you won't be able to access the files that container has written because the process in the container usually runs as root.
+2. You shouldn't run the process inside your containers as root but even if you run as some hard-coded user it still won't match the user on your laptop/jenkins/staging.
+
+
 ### Footnotes
 
 [^1]:

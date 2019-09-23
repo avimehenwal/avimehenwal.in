@@ -97,7 +97,7 @@ getent
 * `getent group`
 * `getent passwd`
 
-ufw
+[ufw]({{< relref "/linux/networking/index.md" >}})
 : program for managing a netfilter firewall
 
 tr

@@ -17,7 +17,8 @@ tags:
 - network
 ---
 
-tl;dr
+netfilter[^1]
+: Netfilter is a framework provided by the Linux kernel that allows various networking-related operations to be implemented in the form of customized handlers. Netfilter offers various functions and operations for packet filtering, network address translation, and port translation, which provide the functionality required for directing packets through a network and prohibiting packets from reaching sensitive locations within a network.
 <!-- more -->
 
 ## How to find out Wireless Networking info?
@@ -58,7 +59,37 @@ enabled  enabled  enabled  enabled
 > scan
 ```
 
+## Opensource Firewalls
+
+Very important when exposed to external world
+
+iptables
+: baked into linux
+
+ufw
+: uncomplicated firewall
+
+```
+ufw --dry-run status verbose
+ufw --dry-run enable/disable
+ufw --dry-run reset
+ufw show raw
+
+ufw --dry-run default deny incoming
+ufw --dry-run default allow outgoing
+
+ufw --dry-run allow/deny ssh/22/tcp/udp
+
+ufw --dry-run allow from 192.168.1.1                    # default gateway
+ufw --dry-run allow from 192.168.1.1 to any port 22
+ufw --dry-run allow from 192.168.1.1/24
+ufw --dry-run status numbered
+
+ufw --dry-run delete 1/deny 80/tcp
+ufw logging on/off
+```
+
 ### Footnotes
 
-[^1]:
+[^1]: https://en.wikipedia.org/wiki/Netfilter
 [^2]:
