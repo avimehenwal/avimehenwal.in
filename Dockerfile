@@ -18,14 +18,17 @@ RUN dpkg --install /tmp/hugo.deb \
 # TEST
 RUN hugo version
 
-# Set user for subsequent commands
-# RUN addgroup --gid 1024 avi
-# RUN adduser --disabled-password --gecos "" --force-badname --ingroup avi avi 
-# USER avi
-# Create working directory
-RUN mkdir /blog
+ENV USER_NAME=avi
+ENV USER_ID=1000
+ENV GROUP_NAME=avi
+ENV GROUP_ID=1000
+RUN groupadd --gid $GROUP_ID $GROUP_NAME \
+    && useradd --uid $USER_ID --gid $GROUP_ID $USER_NAME
+USER $USER_NAME
+COPY . /blog
 WORKDIR /blog
-VOLUME [ "/blog", "/etc/passwd", "/etc/group" ]
+VOLUME [ "/blog", ]
+# "/etc/passwd", "/etc/group" ]
 
 # Expose default hugo port
 EXPOSE 1313
