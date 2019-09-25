@@ -30,3 +30,10 @@ CNAME	www    youthful-villani-10bc56.netlify.com
 Save everything and wait for changes to reflect. You are done!
 
 Enjoy your new website
+
+> How to check dns nameserver on your linux machine?
+
+```
+cat /etc/resolve.conf
+nmcli device show | grep DNS
+```
