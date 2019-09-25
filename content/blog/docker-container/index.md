@@ -49,9 +49,25 @@ The `COPY` instruction copies new files or directories from <src> and adds them 
 
 > HANDLING PERMISSIONS WITH DOCKER VOLUMES
 
+![docker-permission-issue-creating-file-from-container.png](docker-permission-issue-creating-file-from-container.png)
+
 1. If you write to the volume you won't be able to access the files that container has written because the process in the container usually runs as root.
 2. You shouldn't run the process inside your containers as root but even if you run as some hard-coded user it still won't match the user on your laptop/jenkins/staging.
 
+```
+# Create a localuser in container
+
+ARG USER_NAME=avi
+ARG USER_ID=1000
+ARG GROUP_NAME=avi
+ARG GROUP_ID=1000
+RUN groupadd --gid $GROUP_ID $GROUP_NAME \
+    && useradd --uid $USER_ID --gid $GROUP_ID $USER_NAME
+USER $USER_NAME
+COPY . /blog
+WORKDIR /blog
+VOLUME [ "/blog", ]
+```
 
 ### Footnotes
 

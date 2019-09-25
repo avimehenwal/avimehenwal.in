@@ -16,6 +16,7 @@ tags:
 ---
 
 <!-- more -->
+## [APT - Advanced Package Tool](https://en.wikipedia.org/wiki/APT_(Package_Manager))
 
 * Executable permission for directory to enter it
   * may make `ssh/config` unredable
@@ -31,6 +32,11 @@ chown --changes --from=avi:sudo --recursive avi:avi /home/avi/PersonalProjects/
 
 ```
 
+> How to find out where the package is installed?
+
+```
+dpkg --listfiles python
+```
 
 ### Footnotes
 

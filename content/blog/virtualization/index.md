@@ -24,7 +24,7 @@ video: ""
 Virtualization
 : abstraction layer which make a s/w (like OS) installed on shared h/w
 as if its native and completely isolated from other s/w apps.
-* Virtualization saved cost and reuse hardware infrastructure.
+* Virtualization saved cost and reuse hardware infrastructure.[^1]
 
 > Sharing a common development environment with everyone on your team
 
@@ -200,3 +200,5 @@ docker run --interactive --tty ubuntu bash
 - https://en.wikipedia.org/wiki/Virtualization
 - https://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-for-creating-an-isolated-environment
 - http://danilodellaquila.com/en/blog/openstack-in-a-local-vagrant-box
+
+[^1]: [yt, diff b/w kvm,virtualization](https://www.youtube.com/watch?v=KBvYlppukUo) 
