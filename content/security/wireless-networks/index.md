@@ -48,8 +48,13 @@ How to add a new VLAN?
 ```
 ip link add link eth0 name eth0.2 type vlan id 2
 ip link add link eth0 name eth0.3 type vlan id 3
-```
 
+ip link set dev <interface> up
+ip link set dev <interface> down
+```
+> What does bring interface up/down so in system?
+
+Sets a flag on the driver that the state of the interface is up or down. The NIC is still powered on and can participate in WOL (Wake on LAN) etc.
 
 ## nc
 
