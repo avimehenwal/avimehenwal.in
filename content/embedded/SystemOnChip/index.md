@@ -58,6 +58,9 @@ datasheets
 * that measures and reports a body's specific force, angular rate, and sometimes the orientation of the body, using a combination of accelerometers, gyroscopes, and sometimes magnetometers.
 * A wireless IMU is known as a WIMU
 
+## PCF8574
+
+https://www.letscontrolit.com/wiki/index.php/PCF8574
 
 ### Footnotes
 

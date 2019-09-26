@@ -39,6 +39,7 @@ Slides[^1]
 * is a data structure describing the hardware components of a particular computer so that the operating system's kernel can use and manage those components, including the CPU or CPUs, the memory, the buses and the peripherals.
 * A device tree can hold any kind of data as internally it is a tree of named nodes and properties
 * Can have multiple `compatibility` drivers for a device
+* `.dtsi` <- files for included files, generally containing SoC-level definitions (the **i** in dts**i** stands for **I**nclude)
 
 
 ### Footnotes

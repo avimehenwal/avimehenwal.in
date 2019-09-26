@@ -194,6 +194,10 @@ docker run --interactive --tty ubuntu bash
 1. Can I build linux from source and run it from virtualbox?
 2. Virtualbox can run ISO images, how to get ISO from compiled linux kernel?
 
+## Writing your own virtualization API?
+
+* https://docs.rs/virt/0.2.11/virt/
+* 
 
 ##  References
 

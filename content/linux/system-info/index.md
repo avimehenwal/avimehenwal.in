@@ -50,5 +50,5 @@ BUy RAM with same speeds
 
 ### Footnotes
 
-[^1]:
-[^2]:
+[^1]: [Kernel | microkernel | linux](https://github.com/nu11secur1ty/Kernel-and-Types-of-kernels)
+[^2]: [OS Comparision](https://en.wikipedia.org/wiki/Comparison_of_operating_system_kernels)

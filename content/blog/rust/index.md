@@ -87,6 +87,11 @@ tags:
 
 https://stackoverflow.com/questions/29611387/why-does-the-println-function-use-an-exclamation-mark-in-rust
 
+Writing shell scripts in Rust
+
+* https://github.com/google/rust-shell
+* https://doc.rust-lang.org/std/process/struct.Command.html
+
 ### Footnotes
 
 [^1]: https://www.rust-lang.org/

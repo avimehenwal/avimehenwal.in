@@ -191,6 +191,21 @@ As a recap, each gpio pin on the BBB has <mark>three different numbering</mark> 
 Only the last scheme, the gpio number, is used in software!
 {{% /warning %}}
 
+The Pi's GPIO ports can be controlled from the command line (i.e. bash), python scripts, and C/C++ programs. There are 17 GPIO ports available on the Pi. Some of them have special purposes or special hardware configurations and should be avoided for normal use.
+
+```
+#   Exports pin to userspace
+echo "18" > /sys/class/gpio/export                  
+
+# Sets pin 18 as an output
+echo "out" > /sys/class/gpio/gpio18/direction
+
+# Sets pin 18 to high
+echo "1" > /sys/class/gpio/gpio18/value
+
+# Sets pin 18 to low
+echo "0" > /sys/class/gpio/gpio18/value 
+```
 
 # Bus Protocols
 

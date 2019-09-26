@@ -13,6 +13,7 @@ categories:
 tags:
 - filesystem
 - grep
+- partitions
 ---
 
 ## What is Filesysem?
@@ -30,6 +31,15 @@ grep --recursive --include='*.dtb' am33xx ./build/
 --files-with-matches
 ```
 
+## Partitions
+
+Formattting a external mounted drive
+
+```
+fdisk /dev/sdb
+dd if=/dev/zero of=/dev/sdb  bs=512  count=1
+fdisk -l /dev/sdb
+```
 
 ### Footnotes
 

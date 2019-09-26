@@ -10,6 +10,7 @@ categories:
 - development
 tags:
 - fzf
+- find-command
 ---
 
 Start finder on entries that start with core and end with either go, rb, or py:
@@ -35,6 +36,18 @@ bat --list-themes | fzf --preview="bat --theme={} --color=always /path/to/file"
 fzf -q '.md' --color=always --preview='bat --theme=<> --language <bash> {}' 
 
 ```
+
+## Search Filesystem
+
+Find and delete all files that are owner by `root` owner/group. Useful then debugging file ownership issues inside docker volumes
+```
+find . -group root -delete 
+
+Excluding paths
+find / -name NameOfFile ! -path '*/Directory/*'
+```
+
+> Use grep to search through the contents of the file
 
 ### Footnotes
 
