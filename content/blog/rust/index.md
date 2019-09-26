@@ -14,6 +14,8 @@ tags:
 - rust
 ---
 
+> What do you want to make the computer do?
+
 101
 : what going on here
 * the survey course
@@ -25,7 +27,7 @@ tags:
 
 ## Rust
 
-* low level **system language**, contrast to `Go`, a language for **sysadmins**
+* low level **system language**[^8], contrast to `Go`, a language for **sysadmins**
 * memory safe, solve memory management problem
   * no `segmenation fault` - date moved by a pointer and then a function calling the dereferenced pointer again
   * Compiler keeps track of all pointers in context
@@ -62,7 +64,21 @@ tags:
 * Package Manager `cargo`
 * Libraries `crates`
 * Are you building a library or a binary that uses a library
-*  
+* Variables in Rust are immutable by default, and require the `mut` keyword to be made mutable.
+* By default, the items in a module have **private** visibility, but this can be overridden with the `pub` modifier
+
+
+## Anatomy
+
+* Software Package
+  * Binary
+    * Libraries / Dependencies
+      * Source code Files
+        * Functions, classes and methods
+          * Blocks - scopes - lifetimes
+            * Statements
+              * Expressions
+
 
 > How far does rust SAFE extends?
 
@@ -92,6 +108,87 @@ Writing shell scripts in Rust
 * https://github.com/google/rust-shell
 * https://doc.rust-lang.org/std/process/struct.Command.html
 
+> Using shell scripts is fine when you're using their strengths
+
+## [LLVM](https://en.wikipedia.org/wiki/LLVM)
+
+The LLVM compiler infrastructure project is a set of compiler and toolchain technologies,[3] which can be used to develop a front end for any programming language and a back end for any instruction set architecture. LLVM is designed around a language-independent intermediate representation that serves as a portable, high-level assembly language that can be optimized with a variety of transformations over multiple passes.
+
+* it has debuggers, optimiser
+* Java, haskell, swift, rust all are written using LLVM
+* [LLVM Hello world program](https://github.com/dfellis/llvm-hello-world)
+* **LLVM IR** RISC-like instruction set, strongly typed language
+
+[how a code gets converted to machine code](https://www.youtube.com/watch?v=yOyaJXpAYZQ&t=2s)
+
+## Macros
+
+* Metaprogramming
+* macros are expanded into source code that gets compiled with the rest of the program as abstract syntax trees
+* write DSL Domain specific language like LISP
+
+
+## Questions
+
+1. [how do you run a rust binary on other systems?](https://rust-lang-nursery.github.io/cli-wg/tutorial/packaging.html)
+2. [Can I built a OS using rust?](https://www.redox-os.org/)
+
+> Strive to write software that can survive in perpetuity
+
+
+## Time to rewrite OS
+
+> What is a Software? Can axel arounf your definition of s/w
+
+* T-10 minutes away from exestiantial crisis
+* And you realise that you know nothing that as if ancient SUmerians were running softwares!
+* OS defines the livelyness of a machine, without it, no program can run
+  * Asnchronous, interrupt driven program
+* Includes
+  * Kernel
+  * Libraries
+  * Compilers
+  * Drivers
+  * commands
+  * deamons
+  * facilities
+* Second system Syndrome
+* UNIX was originally written in Assembly language and later ported to `B` and `C`
+* Why not write OS in ruby, python etc?
+  * It it age appropriate
+* Sophesticated garbage collection `GC`
+  * Why are you writing garbage? GC hates you
+  * Stop creating crap
+  * in `JS` its easy to have an object graph (very connected), a `slosure` having a reference to this object graph, now none of this can go away
+* Amazing time, when all the s/w is being written
+* Once s/w runs it practically runs forever, as it solves a mathematical problem, it will outlive us
+* Rust
+  * Who owns what and when
+  *  Give the superpower of GC collected lang, with the performance of manual memory management lang
+     *  Wrong size b zeros
+     *  mem copies that have wrong size on them
+     *  Memory leaks and corruptions
+  *  Compiler doesnt like to get Belligerent with you
+* I am controlling heaven and earth on my software
+* Rust allows you to Compose
+  * you can write a memory leak free C, I can write a code in C, But interfacing both s/w could be problem
+* C uses `AVL` trees, rust uses `B` trees, from databases
+* Hygenic macros
+* Characterstics of OS
+  * It it fast and correct?
+* Well, there is no memoery to run this program
+  * well, then GO AND CREATE SOME, you are the OS
+* Its humanity vs Firmware[^7], everybody have to pick a side
+  * open Firmware written in rust would be a huge huge favor to humanity
+  * we can use it deep in the stack
+* Hybrid based approach, allowing C execution
+* This is the formation of ancient Greek, rust is going to be forever, prediction
+
+> I want to build permanent s/w that outlives me,
+> not beacuse I lan to walk in the traffic tonight
+
+
+
 ### Footnotes
 
 [^1]: https://www.rust-lang.org/
@@ -99,3 +196,6 @@ Writing shell scripts in Rust
 [^3]: http://edunham.net/
 [^4]: http://talks.edunham.net/
 [^5]: https://github.com/rust-lang/rustlings/
+[^6]: https://www.youtube.com/watch?v=HgtRAbE1nBM
+[^7]: https://en.wikipedia.org/wiki/OpenBMC
+[^8]: https://en.wikipedia.org/wiki/Systems_programming
