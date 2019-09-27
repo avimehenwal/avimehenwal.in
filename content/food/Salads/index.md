@@ -46,7 +46,7 @@ tags:
    2. Acid
       1. Vinegar
       2. Lime / Lemon
-      3. Balsamic vinegar
+      3. Balsamic vinegar - it's a product of red wine 
    3. Djon mustard
    4. Silghtly extra salt / pepper
 
@@ -70,3 +70,6 @@ Only 2 health promoting  sweetners
 
 1. Dates sugar
 2. Molasses 
+
+> High-fat food could cripple our artery functions for hours
+
