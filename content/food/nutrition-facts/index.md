@@ -146,6 +146,7 @@ Avoid
 Cooking tomatoe boost **Lycopene**
 
 ### Balsamic Vinegar 
+
 Make food leave the stomach longer. Which is good, makes us feel full for longer period of time.
 
 {{< figure src="vinegar-in-food.png" title="2 table spoon vinegar each meal" >}}

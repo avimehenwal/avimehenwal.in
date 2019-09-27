@@ -187,7 +187,9 @@ The LLVM compiler infrastructure project is a set of compiler and toolchain tech
 > I want to build permanent s/w that outlives me,
 > not beacuse I lan to walk in the traffic tonight
 
-
+* [How does a prograsaming languague works?](https://www.youtube.com/watch?v=QXjU9qTsYCc)
+* CPU architecture matters for machine code, ISA
+* CPUs also have bugs, why trust them? Intel CPU has bugs just as s/w do
 
 ### Footnotes
 

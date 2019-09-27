@@ -178,7 +178,6 @@ for example, is the application storing sensitive data that could be the target 
 
 > We need to up our game
 
-
 ## Hackers
 
 1. LulzSec[^1]
