@@ -81,7 +81,6 @@ Pipes are a unidirectional IPC mechanism, with one end of a pipe opened for read
 
 Both the ls and more commands run without knowing they're connected through a pipe. They simply read from file descriptor 0 (standard input) and write to file descriptor 1 (standard output).
 
-<<<<<<< HEAD
 * All descriptors point to active terminal session.
 * Pipes follow the mechanism of **IPC**(*inter provecc communication*)
 * Similar to other linux concepts like, signals, queues and sockets.
@@ -97,8 +96,6 @@ Both the ls and more commands run without knowing they're connected through a pi
 mkfifo fifo
 cal > fifo
 ```
-=======
->>>>>>> 152b34636d6cdb38ff90f04fa0e1174829ac8fa9
 
 
 ```sh
@@ -119,9 +116,5 @@ ls | less
 
 ### Footnotes
 
-<<<<<<< HEAD
 [^1]: [yt, Pipes FS](https://youtu.be/2pTLehAj9fA)
-=======
-[^1]:
->>>>>>> 152b34636d6cdb38ff90f04fa0e1174829ac8fa9
 [^2]:
