@@ -118,15 +118,44 @@ The LLVM compiler infrastructure project is a set of compiler and toolchain tech
 * Java, haskell, swift, rust all are written using LLVM
 * [LLVM Hello world program](https://github.com/dfellis/llvm-hello-world)
 * **LLVM IR** RISC-like instruction set, strongly typed language
+* 
 
 [how a code gets converted to machine code](https://www.youtube.com/watch?v=yOyaJXpAYZQ&t=2s)
 
+```
+sudo apt install -y llvm-8 \
+llvm-8-doc llvm-8-examples \
+llvm-8-runtime llvm-8-tools
+```
+
+* llvm-as
+* `lli` - llvm interpreter
+* `llc` - static compiler
+* `opt` - optimiser
+* Static code Analysis
+
+llvm-ir
+: Can write programs in IR
+* Strongly types
+* `%` Temporary Register
+* `Backend` generate Assembly for target architecture from `IR`
+* `Bitcode` `.bc` representaion
+
+
+
 ## Macros
 
-* Metaprogramming
+* [Metaprogramming](https://en.wikipedia.org/wiki/Metaprogramming)
 * macros are expanded into source code that gets compiled with the rest of the program as abstract syntax trees
-* write DSL Domain specific language like LISP
+*[ write DSL Domain specific language like LISP](https://medium.com/@phoomparin/a-beginners-guide-to-rust-macros-5c75594498f1)
+* comes in 3 forms
+  * Function like `println!`
+  * `#derive(Serialize)`
+  * Attribute macro `#[wasm_bindgen]`
+* **TokenStream** lexical foundation for all rust syntax
 
+extern keyword
+: The extern keyword is used in two places in Rust. One is in conjunction with the crate keyword to make your Rust code aware of other Rust crates in your project, i.e., extern crate lazy_static;. The other use is in foreign function interfaces (FFI).
 
 ## Questions
 
@@ -191,6 +220,25 @@ The LLVM compiler infrastructure project is a set of compiler and toolchain tech
 * CPU architecture matters for machine code, ISA
 * CPUs also have bugs, why trust them? Intel CPU has bugs just as s/w do
 
+## HIstory of Rust
+
+* time divided into epochs
+* Originally rust compiler was written in OCAML[^9], now its in rust itself
+* Typesystem expoerts
+* Instead of 1 person incharge to loosely 20,30 people in charge
+* cargo build has debig flags, cargo release doesnt, but you can change it
+* cargo figures out dependencies on dependencies and compilers the common ones (if exists)
+* Use `x86` assembly functions as rust functions
+* RFC federation management process, inspired from python PEP
+* Game development, OS dev, web dev
+  * `crates.io` is built into rust itself and uses 30 MB in memory
+    * 25MB for ruby process then 200-200 MB for rails
+* 6 week release period - very aggressive
+* Always backward compatible unless, low level typesystem need to be modified
+
+> We can change the world with code
+
+
 ### Footnotes
 
 [^1]: https://www.rust-lang.org/
@@ -201,3 +249,7 @@ The LLVM compiler infrastructure project is a set of compiler and toolchain tech
 [^6]: https://www.youtube.com/watch?v=HgtRAbE1nBM
 [^7]: https://en.wikipedia.org/wiki/OpenBMC
 [^8]: https://en.wikipedia.org/wiki/Systems_programming
+[^9]: https://en.wikipedia.org/wiki/OCaml
+[^10]: https://github.com/steveklabnik
+[^11]: [Learn assembly instructions](https://godbolt.org/)
+[^12]: [Assembly LLVM-IR for rust source code](https://github.com/gnzlbg/cargo-asm)
