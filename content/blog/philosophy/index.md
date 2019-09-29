@@ -14,6 +14,8 @@ tags:
 - philosophy
 ---
 
+> Its good to love, but profound to be understood
+
 ## What is GOD?
 
 **omni**-gods
@@ -21,6 +23,8 @@ tags:
 * Health
 * Happyness - sustainable
 * Love
+
+> You go High, when they go low
 
 ## What is religion?
 

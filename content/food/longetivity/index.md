@@ -153,7 +153,33 @@ When its not a necessity for survival, it become a choice
 and choices always stem from believes.
 {{</quote>}}
 
+## What is Aging?
+
+* Chromosomes get shorter
+  * DNA - ATCG and
+  * https://en.wikipedia.org/wiki/Epigenome
+  * What is Analog about Epigenome?
+  * Packaging fails overtime? Why is it failing?
+  * Anxiety, stress, they forget to pack again
+* Proteins are like packman machines whichi move, package DNA
+  * More like bob the builder, breaks and fixed the things
+* We got 20,000 types of Enzymes in body
+  * Excercise, diet, get hungry
+  * When organism feel under threat? How do we make our body feel like its under threat?
+  * Run a lot, ADversity, get hungry - skip a meal or two
+* DNA clock of aging - Third level
+  * [Methylation](https://en.wikipedia.org/wiki/DNA_methylation), works well wor humans as well as dogs
+* Level 2 [MEtformin](https://en.wikipedia.org/wiki/Metformin)
+* Hot and Cols sona for an hour on Sunday - body in adversity
+* We can give ourselves the ability to grow like when we were embroys
+* AVoid Xrays and CT Scans as they break the DNA
+* Be little bit hungey, dont eat - dont be malnourished
+* 
+
+> Instructions to be younger are still in the cells
+
 ## References
-https://www.youtube.com/watch?v=PKfR6bAXr-c
-https://en.wikipedia.org/wiki/Sirtuin
-https://static1.squarespace.com/static/5646cc17e4b0a2863f2ce1a2/t/5b73ae1e898583d1bafc318e/1534307881781/Fasting+and+plant+foods+diet+in+lymphoma+treatment.pdf
+[^1]: https://www.youtube.com/watch?v=PKfR6bAXr-c
+[^2]: https://en.wikipedia.org/wiki/Sirtuin
+[^3]: https://static1.squarespace.com/static/5646cc17e4b0a2863f2ce1a2/t/5b73ae1e898583d1bafc318e/1534307881781/Fasting+and+plant+foods+diet+in+lymphoma+treatment.pdf
+[^4]: https://www.youtube.com/watch?v=IEz1P4i1P7s

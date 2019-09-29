@@ -67,6 +67,7 @@ tags:
 * Variables in Rust are immutable by default, and require the `mut` keyword to be made mutable.
 * By default, the items in a module have **private** visibility, but this can be overridden with the `pub` modifier
 
+> C is like playing with knoves, C++ is juggling flaming chain saws
 
 ## Anatomy
 
@@ -98,10 +99,25 @@ tags:
 
 * LLVM supported hardwares
 * ESP32 board
+* CALLSTACK - stack- fixed and heap - variable
+  * PAper stack analogy
+* Copying
+  * a value to variable - individual copy
+  * a pointer - not okey - 2 owners
+    * `MOVE` ownership
+* Even function arguments takes ownership
+  * variable ownership is moved to argument
+* 
 
 > Why does the println! function use an exclamation mark in Rust?
 
 https://stackoverflow.com/questions/29611387/why-does-the-println-function-use-an-exclamation-mark-in-rust
+
+> How to expand macros in rust?
+
+```
+rustc src/main.rs --pretty=expanded -Z unstable-options
+```
 
 Writing shell scripts in Rust
 
@@ -118,7 +134,6 @@ The LLVM compiler infrastructure project is a set of compiler and toolchain tech
 * Java, haskell, swift, rust all are written using LLVM
 * [LLVM Hello world program](https://github.com/dfellis/llvm-hello-world)
 * **LLVM IR** RISC-like instruction set, strongly typed language
-* 
 
 [how a code gets converted to machine code](https://www.youtube.com/watch?v=yOyaJXpAYZQ&t=2s)
 
@@ -253,3 +268,4 @@ extern keyword
 [^10]: https://github.com/steveklabnik
 [^11]: [Learn assembly instructions](https://godbolt.org/)
 [^12]: [Assembly LLVM-IR for rust source code](https://github.com/gnzlbg/cargo-asm)
+[^13]: https://www.youtube.com/watch?v=8M0QfLUDaaA

@@ -86,5 +86,5 @@ crunch 11 11 -t %%%%hunder 1234567890 \
 
 ### Footnotes
 
-[^1]:
+[^1]: https://en.wikipedia.org/wiki/Kevin_Mitnick
 [^2]:
