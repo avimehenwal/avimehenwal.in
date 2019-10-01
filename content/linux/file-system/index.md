@@ -41,6 +41,30 @@ dd if=/dev/zero of=/dev/sdb  bs=512  count=1
 fdisk -l /dev/sdb
 ```
 
+df - disk free
+: display the amount of available disk space for file system
+* `df --human-readable`
+* `df` doesnt show partitions, rather Filesystems
+* `df -h -x tmpfs -x devtmpfs``
+
+[rootfs / ramfs][1]
+: `rootfs` is a special instance os `tempfs` image used in initram
+* [`tmpfs` (aka `ramfs`) partitions][1] are mounted from an *internal RAM disk*
+* You can't unmount rootfs
+
+du - disk usage
+: `du -ks`
+
+linux commands
+
+```
+cat /sys/class/block/sda/size
+
+# determine the size of block device
+blockdev --getsize64 /dev/sda
+cat /proc/partitions
+```
+
 ### Footnotes
 
 [^1]:
