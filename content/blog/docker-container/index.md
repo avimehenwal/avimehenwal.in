@@ -69,7 +69,30 @@ WORKDIR /blog
 VOLUME [ "/blog", ]
 ```
 
+## Alternative swarm kubernatives[^1]
+
+* Docker has built in monitoring endpoint for Prometheus
+* [Docker swarm orchestrated for monitoring](https://github.com/stefanprodan/swarmprom)
+* [docker ELK](https://github.com/deviantony/docker-elk)
+* [docker.socks](https://stackoverflow.com/questions/35110146/can-anyone-explain-docker-sock/35110344)
+* [swarmpit gui](https://github.com/swarmpit/swarmpit#installation)
+* [Portrain.io](https://www.portainer.io/installation/)
+  * can scale, kill services from GUI, see logs, ssh into container
+* https://askubuntu.com/questions/660091/kubernetes-vs-mesosmarathon-vs-juju-how-to-demystify
+* Provision docker daemon to send monitoring data to prometheus[^7]
+
+```
+docker swarm init
+docker node ls
+docker node ps
+```
+
+## Docker compose
+
+* Like make file, but for docker services
+* List `depends_on`
+
 ### Footnotes
 
-[^1]:
+[^1]: https://docs.docker.com/config/thirdparty/prometheus/
 [^2]:

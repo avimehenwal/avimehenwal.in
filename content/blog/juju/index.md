@@ -118,6 +118,7 @@ juju deploy cs:bundle/openstack-base-61
 ## Charms
 
 * [Reactive Programming](https://en.wikipedia.org/wiki/Reactive_programming)
+  * For example, in an imperative programming setting, {\displaystyle a:=b+c}a:=b+c would mean that {\displaystyle a}a is being assigned the result of {\displaystyle b+c}b+c in the instant the expression is evaluated, and later, the values of {\displaystyle b}b and {\displaystyle c}c can be changed with no effect on the value of {\displaystyle a}a. On the other hand, in reactive programming, the value of {\displaystyle a}a is automatically updated whenever the values of {\displaystyle b}b or {\displaystyle c}c change, without the program having to re-execute the statement {\displaystyle a:=b+c}a:=b+c to determine the presently assigned value of a
 * deploy OS, event handling based interface management
 * Bundles
   * Charms
@@ -131,6 +132,7 @@ juju deploy cs:bundle/openstack-base-61
   * `relationship`
 * [Components of a charm](https://jaas.ai/docs/components-of-a-charm)
 * [Charm store](https://jaas.ai/store)
+* Relationships - Provides and Requires
 
 ```
 charm create vanilla
@@ -162,3 +164,4 @@ juju switch avi-os
 [^3]: https://www.youtube.com/watch?v=yuIt8D5ijYQ
 [^4]: https://jaas.ai/docs/getting-started-with-juju
 [^5]: https://github.com/juju/hello-juju
+[^6]: https://github.com/juju/hello-juju-charm
