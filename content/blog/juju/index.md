@@ -63,6 +63,8 @@ sudo snap install juju --edge --classic
 fish_update_completions
 juju whoami
 juju list-controllers
+
+# Initializes a cloud environment.
 juju bootstrap
 ```
 
@@ -79,10 +81,84 @@ juju deploy cs:bundle/mediawiki-single
 juju status
 juju destroy-model default
 juju add-model default
-juju gui
+juju gui --browser
+juju deploy cs:bundle/openstack-base-61
 ```
+
+## Juju - WHy
+
+* Documentation[^4]
+* Stop spending time on Configuration MAnagement - use prebuilt charms
+* A software is stuff connected to other stuff
+* Hosting Environment
+  * Machines
+  * Providers
+  * Clouds
+* Juju Architecture
+  * Bundles
+    * Charmes
+      * Layers
+  * Client
+  * Controller
+  * Agents
+* SOftware Medelling
+  * Applications
+  * Models
+  * Units
+  * Relations
+
+> The Juju controller will manage:
+
+* Multiple models
+* All VMs in all your running models
+* Scale out, config and placement
+* User accounts and identification
+* Sharing and access
+
+## Charms
+
+* [Reactive Programming](https://en.wikipedia.org/wiki/Reactive_programming)
+* deploy OS, event handling based interface management
+* Bundles
+  * Charms
+    * Layers `charm layers`
+* built in layers, anologous to docker layers
+* could be written in bash or python
+* `charm build`
+* reactive framework
+  * juju `hooks`
+  * `def install()`
+  * `relationship`
+* [Components of a charm](https://jaas.ai/docs/components-of-a-charm)
+* [Charm store](https://jaas.ai/store)
+
+```
+charm create vanilla
+juju add-unit -n5 ubuntu            # add 5 units
+juju deploy ubuntu mytestmachine1
+juju deploy ubuntu mytestmachine2
+
+juju add-model --verbose mediawiki
+juju deploy haproxy
+juju deploy my-web-app
+juju add-relation my-web-app:website haproxy:reverseproxy
+juju add-unit my-web-app
+juju destroy-model --verbose mediawiki
+
+juju switch avi-os
+```
+
+* [HAProxy](https://www.youtube.com/watch?v=1deGB63U7d4)
+  * Layer 4 or Layer 7 load balancing
+  * Algorithms
+    * Round robin
+    * Least connections
+  * 
 
 ### Footnotes
 
 [^1]: [juju, docs](https://jaas.ai/docs)
 [^2]: [juju local with LXD](https://jaas.ai/docs/lxd-cloud)
+[^3]: https://www.youtube.com/watch?v=yuIt8D5ijYQ
+[^4]: https://jaas.ai/docs/getting-started-with-juju
+[^5]: https://github.com/juju/hello-juju

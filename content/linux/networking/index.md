@@ -89,7 +89,35 @@ ufw --dry-run delete 1/deny 80/tcp
 ufw logging on/off
 ```
 
+## Types
+
+* Instant virtual network with mininet[^2]
+## Bridges
+
+> Used a lot with virtualization
+
+
+* Divide LAN into multiple segments
+* works under Data link layer
+  * works with `MAC` address of device
+* Any request is first sent to bridge, then bridge decides which segment to broadcast the data to
+
+* Home router IPs are always `192.168.*.*`
+* ISP provided IP address `24.*.*.*`
+
+```
+brctl
+networkctl list
+networkctl status
+```
+
+## Troubleshooting Network
+
+* Analysize communication using `tcpdump`
+  * `-A` - print in ASCII
+
+
 ### Footnotes
 
 [^1]: https://en.wikipedia.org/wiki/Netfilter
-[^2]:
+[^2]: http://mininet.org/
