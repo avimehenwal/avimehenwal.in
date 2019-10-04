@@ -29,6 +29,9 @@ Volumes
   * The host directory is declared at container run-time: The host directory (the mountpoint) is, by its nature, host-dependent. This is to preserve image portability, since a given host directory can’t be guaranteed to be available on all hosts. For this reason, you can’t mount a host directory from within the Dockerfile. The VOLUME instruction does not support specifying a host-dir parameter. You must specify the mountpoint when you create or run the container.
 * 
 
+stack
+: is a group of interrelated services that share dependencies, and can be orchestrated and scaled together.
+
 > Where are docker images and layers stored on system ?
 
 ```
@@ -68,6 +71,13 @@ COPY . /blog
 WORKDIR /blog
 VOLUME [ "/blog", ]
 ```
+
+## Hierarchy
+
+1. swarm - orchestrator
+2. stack
+3. service - docker compose
+4. containers - Dockerfile
 
 ## Alternative swarm kubernatives[^1]
 
@@ -114,6 +124,25 @@ VBoxManage list vms / runningvms
 * [The relation between “docker/swarm” and “docker/swarmkit”](https://stackoverflow.com/questions/38474424/the-relation-between-docker-swarm-and-docker-swarmkit)
 * [swarmkit | swarm mode | swarm container](https://sreeninet.wordpress.com/2016/07/14/comparing-swarm-swarmkit-and-swarm-mode/)
 * [swarm examples](https://docs.docker.com/get-started/part4/)
+
+# Container ORchestration Wars
+
+* apache Mesos
+* Kubernetes
+* Swarn
+
+## Kubernetes
+
+* Container scheduling and Management
+
+## Tasks
+
+* BLue green deployments
+* Load Balancing via HAproxy, nginx, swarm cluster
+
+## Others
+
+* REDIS **RE**mote **DI**distributed **S**store - in-memoery KV store
 
 ### Footnotes
 

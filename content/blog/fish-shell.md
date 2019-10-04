@@ -214,6 +214,25 @@ end
 set --[global|local|universal] --export/x <variable_name>
 ```
 
+## Fonts and Typography
+
+* [Nerd Fonts 4.1GB](https://github.com/haasosaurus/nerd-fonts/tree/regen-mono-font-fix)
+* font with powerline glyphs and zsh/bash/fish theme
+* [Fonts](https://en.wikipedia.org/wiki/Font)
+* `fc-cache -vf ~/.local/share/fonts/`
+* `sudo apt install -y fontforge fontforge-doc/rolling fontforge-extras/rolling python-fontforge/rolling`
+* [UTF-chars File](https://www.cl.cam.ac.uk/~mgk25/ucs/examples/)
+
+```
+fc-list | grep -i Hack
+sudo apt install -y fonts-hack-ttf
+echo $TERM $LANG
+echo -e '\xe2\x82\xac'  # print euro sign
+locale charmap          # ISO-8859-1
+
+wget https://www.cl.cam.ac.uk/~mgk25/ucs/examples/TeX.txt; and cat
+
+```
 
 ## Footnotes
 
