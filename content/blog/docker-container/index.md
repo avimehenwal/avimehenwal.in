@@ -92,7 +92,30 @@ docker node ps
 * Like make file, but for docker services
 * List `depends_on`
 
+## [Docker machine](https://docs.docker.com/machine/overview/)
+
+Docker Machine is a tool that lets you install Docker Engine on virtual hosts, and manage the hosts
+with docker-machine commands
+
+```
+docker-machine create --driver virtualbox default
+docker run -d -p 8000:80 nginx
+curl (docker-machine ip default):8000
+
+VBoxManage showvminfo default
+VBoxManage list vms / runningvms
+```
+
+> `swarm init` versus `docker run swarm create`[^2]
+
+
+## Docker swarm
+
+* [The relation between “docker/swarm” and “docker/swarmkit”](https://stackoverflow.com/questions/38474424/the-relation-between-docker-swarm-and-docker-swarmkit)
+* [swarmkit | swarm mode | swarm container](https://sreeninet.wordpress.com/2016/07/14/comparing-swarm-swarmkit-and-swarm-mode/)
+* [swarm examples](https://docs.docker.com/get-started/part4/)
+
 ### Footnotes
 
 [^1]: https://docs.docker.com/config/thirdparty/prometheus/
-[^2]:
+[^2]: https://stackoverflow.com/questions/48723608/docker-run-swarm-create-vs-docker-swarm-init
