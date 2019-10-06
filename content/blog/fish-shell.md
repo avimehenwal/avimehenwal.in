@@ -15,6 +15,7 @@ tags:
 process substitution
 : is a form of *inter-process communication* that allows the input or output of a command to appear as a *file*.
 * The command is substituted in-line, where a file name would normally occur, by the command shell.
+* `echo (cat README.md | psub)`
 
 ### How to test if a variable (env) is set or not [^1]
 
@@ -72,6 +73,16 @@ use `eval`
 * previous command `echo $status` code
 * tee /dev/tty
 * `and` and `or` operator in if conditions using `begin-end` syntax
+
+So there are three options:
+
+```
+Command Substitution: $(...)
+Process Substitution: <(...)
+zsh-Flavored Process Substitution: =(...)
+```
+
+* [File Descriptor in fish](https://github.com/fish-shell/fish-shell/issues/1586) 
 
 ## What happen when you start the shell
 
@@ -213,6 +224,8 @@ end
 ```
 set --[global|local|universal] --export/x <variable_name>
 ```
+$LINES
+: number of lines (or rows) in the current terminal
 
 ## Fonts and Typography
 

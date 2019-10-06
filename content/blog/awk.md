@@ -13,6 +13,7 @@ video: ""
 
 1. Variable which defines values which can be changed such as field separator and record separator.
 2. Variable which can be used for processing and reports such as Number of records, number of fields.
+3. pattern scanning and processing language
 
 
 awk variable | Description

@@ -24,11 +24,27 @@ tags:
 
 ## Searching with GREP
 
+{{% note %}}
+Grep comes from old computer days reg-ex searchs `g/re/p` global re search!
+{{% /note %}}
+
 Search for PATTERN am33xx at LOCATION ./build/, but include only '*.dtb' files for searching
 ```
 grep --recursive --include='*.dtb' am33xx ./build/
 
 --files-with-matches
+```
+
+* `rsync` is a friend to move things around - incremental copying
+* `mkdir $(ls | cut -d. -f1)`
+
+```
+$(cat README) - Run this command and give me the output
+<(cat README) - Run command, hook it to a File Descriptor and
+                then give me the path of FD
+
+# Treat any resource like a file
+grep google <(curl --silent http://google.com)
 ```
 
 ## Partitions
@@ -64,6 +80,54 @@ cat /sys/class/block/sda/size
 blockdev --getsize64 /dev/sda
 cat /proc/partitions
 ```
+
+## Proc Filesystem
+
+> Everything running is a process
+
+* In memory pseudo (virtual) Filesystem, whichi gets built at each reboot
+  * Explains why file size is `0` for all files insode `/proc`
+* regarded as a control and information centre for the kernel
+* Has directories created with process names
+  * `echo $fish_pid` or `echo $$` will have a dir
+* Process directory has associated `FD` file descriptors info
+* All process and kernel states are stored in proc file system
+* `/proc/PID/maps` (containing the currently mapped memory regions and their access permissions)
+* `/proc/PID/status` (get the status information of a process)
+* `/proc/PID/smaps` (is an extension based on maps, showing the memory consumption for each of the process's mappings)
+* /proc/meminfo (Provides information about distribution and utilization of memory)
+* /proc/vmallocinfo (Provides information about vmalloced/vmaped areas)
+* /proc/net/dev (Can use this information to see which network devices are available in your system and how much traffic was routed over those devices)
+* /proc/net ( tcp, udp, tcp6, udp6, igmp, ecc)
+
+> List whichi processes have current file opened?
+
+* `lsof /var/log/syslog`
+* Process that are using a linux library 
+  * `lsof /lib/x86/libssl.so`
+* What is this user upto?
+  * `lsof --user dave`
+
+```
+# Network sockets
+
+lsof -i TCP
+lsof -i UDP
+lsof -i :80
+lsof -i -n -P | grep
+```
+
+## FD - Files descriptors
+
+Symbols | Meanings
+--------|-----------
+2 | stderr
+3 | stdout
+9w | care about writing only
+
+> Where is a progess logging into?
+
+`lsof -p PID | grep log`
 
 ### Footnotes
 

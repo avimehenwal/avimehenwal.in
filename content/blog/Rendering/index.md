@@ -59,6 +59,11 @@ Studio
 : a film or television production company.
 * a room where an artist, photographer, sculptor, etc. works.
 
+[Pyrotechnics](https://en.wikipedia.org/wiki/Pyrotechnics)
+: cience and craft of using self-contained and self-sustained exothermic chemical reactions to make heat, light, gas, smoke and/or sound.
+* Air Ram - catapult a person as soon as they step on it
+* Can wipe the wires easily
+
 > Robyn and [Rand Miller](https://en.wikipedia.org/wiki/Robyn_Miller) developed a game called [MYST](https://en.wikipedia.org/wiki/Myst) at home, on mac PC
 
 * blender 2.8

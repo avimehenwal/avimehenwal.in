@@ -32,6 +32,19 @@ Volumes
 stack
 : is a group of interrelated services that share dependencies, and can be orchestrated and scaled together.
 
+[Alpine Linux](https://alpinelinux.org/about/)
+: Linux distribution based on `musi` and `Busybox`
+* Uses **hardened** kernel
+* User-space binaries are <mark>position-independent-executables</mark>
+* Quick boot-up times
+* The image is **only 5 MB** in size and
+* has access to a [package repository ](https://pkgs.alpinelinux.org/packages)
+* [Used a lot in containers, because of size and security than ubuntu.](https://hub.docker.com/_/alpine)
+
+[Busybox](https://en.wikipedia.org/wiki/BusyBox)
+: provides several Unix utilities in a single executable file.
+* Swiss army knife of embedded linux
+
 > Where are docker images and layers stored on system ?
 
 ```
@@ -134,17 +147,69 @@ VBoxManage list vms / runningvms
 ## Kubernetes
 
 * Container scheduling and Management
+* [Minikube for local development and educational purposes](https://minikube.sigs.k8s.io/)
+* **Pods** are instances of a container deployment
+* **Services** are endpoints that exports ports to outside world
+* Kubernetes cheatsheet[^3]
+* build your image and then create the kubernetes resources using kubectl command
+* Remember to build the images from Dockerfile in K8 context minikube
+* Process Sharing between containers
+  * Access config files from other containers
+    * `head /proc/8/root/etc/nginx/nginx.conf`
+* `Kompose` translator service from docker-compose to openstack or K8 envs
+  * `./kompose up`
+* A **Jobs** in Kubernetes is a supervisor for pods carrying out batch processes, that is, a process that runs for a certain time to completion, for example a calculation or a backup operation.
+
+```
+minikube config view
+minikube start --vm-driver=virtualbox
+kubectl cluster-info
+minikube dashboard
+kubectl create deployment hello-node --image=gcr.io/hello-minikube-zero-install/hello-node
+
+kubectl get nodes
+kubectl get deployments
+kubectl get pods
+kubectl get events
+kubectl label nodes <your-node-name> disktype=ssd
+kubectl get nodes --show-labels
+
+# schedule the pod
+kubectl apply -f https://k8s.io/examples/pods/pod-nginx.yaml
+
+# get container shell access running inside pod
+kubectl exec -it init-demo -- /bin/bash
+
+kubectl expose deployment hello-node --type=LoadBalancer --port=8080
+kubectl get services
+minikube service hello-node
+minikube addons list
+minikube cache add ubuntu:16.04
+minikube cache list
+minikube addons list
+minikube tunnel - Load Balancing, alters n/w routes
+
+```
 
 ## Tasks
 
 * BLue green deployments
 * Load Balancing via HAproxy, nginx, swarm cluster
+* Deploy a hugo website to K8 clusterp[^4]
 
 ## Others
 
 * REDIS **RE**mote **DI**distributed **S**store - in-memoery KV store
 
+## How to write an excellent Dockerfile
+
+1. Keep app versions on top and as Labels, env vars
+2. Check `sha256` of downloads and stop on failure
+
 ### Footnotes
 
 [^1]: https://docs.docker.com/config/thirdparty/prometheus/
 [^2]: https://stackoverflow.com/questions/48723608/docker-run-swarm-create-vs-docker-swarm-init
+[^3]: https://kubernetes.io/docs/reference/kubectl/cheatsheet/#creating-objects
+[^4]: https://www.linode.com/docs/applications/containers/kubernetes/deploy-container-image-to-kubernetes/
+[^5]: https://medium.com/@soumyadipde/monitoring-in-docker-stacks-its-that-easy-with-prometheus-5d71c1042443
