@@ -116,8 +116,38 @@ networkctl status
 * Analysize communication using `tcpdump`
   * `-A` - print in ASCII
 
+### How do I add eth2 to my linux machine?
+
+On Linux machines, eth0 and eth1 correspond to real network ports. To add an eth2, you'll need to add another NIC, either by adding an internal PCI(e) network card, or by adding a USB network adapter. 
+
+* [How do I create virtual ethernet devices in linux?](https://stackoverflow.com/questions/2082722/how-do-i-create-virtual-ethernet-devices-in-linux)
+* [TUN and TAP virtual network interfaces](https://en.wikipedia.org/wiki/TUN/TAP)
+
+## Networking tasks
+
+1. check interface status and IP
+2. Release and renew IP from DHCP server
+3. `eth0` is the first netwrok card in system
+4. Internet routung is self-healing. Whst if we nuke a router?
+5. VPN - uses **Tunneling Protocol**, encryption
+   1. Tunnel can recreate itself in case of `Man-in-the-middle-attack`
+6. interface `eth0.1` is a virtual interface with **VLAN ID 1** having eth0 as its parent interface.
+7. A Linux bridge behaves like a network switch. It forwards packets between interfaces that are connected to it. It’s usually used for forwarding packets on routers, on gateways, or between VMs and network namespaces on a host. It also supports STP, VLAN filter, and multicast snooping.
+8. DHCP 4 step protocol stages
+   1. DHCPDISCOVER
+   2. DHCPOFFER
+   3. DHCPREQUEST
+   4. DHCPACK
+9. 
+
+```
+# Release and renew DHCP client
+dhclient
+/etc/init.d/networking
+```
 
 ### Footnotes
 
 [^1]: https://en.wikipedia.org/wiki/Netfilter
 [^2]: http://mininet.org/
+[^3]: https://developers.redhat.com/blog/2018/10/22/introduction-to-linux-interfaces-for-virtual-networking/

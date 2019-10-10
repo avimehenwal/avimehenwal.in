@@ -1,0 +1,27 @@
+packages:
+    - tree
+    - nginx
+
+groups:
+    - avi
+
+users:
+    - default
+    - name: avi
+      sudo: true
+
+runcmd:
+    - [ ls, -l, / ]
+    - [ sh, -xc, "echo $(date) ': hello world!'" ]
+    - [ sh, -c, echo "=========hello world'=========" ]
+    - ls -l /root
+
+datasource:
+    OpenStack:
+        metadata_urls: ["http://fgcn-backflip9.cs.uni-paderborn.de"]
+        max_wait: -1
+        timeout: 10
+        retries: 5
+        apply_network_config: True
+
+final_message: CLOUD-INIT FINISHED

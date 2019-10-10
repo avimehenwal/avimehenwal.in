@@ -253,6 +253,12 @@ extern keyword
 
 > We can change the world with code
 
+## Errors
+
+```
+error: expected item, found keyword `let`
+```
+* let can only be used in a function
 
 ### Footnotes
 

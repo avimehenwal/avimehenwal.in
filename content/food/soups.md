@@ -35,4 +35,16 @@ $$ soup(s) = vegetables + stock $$
 3. baby carrots
 4. Rosemary and Garlic Powder
 5. Soup setting on instant pot (20 mins)
-6.
+
+## Vegitable Pancake
+
+* 2 and half cup vegitables
+  * sweet potato
+  * zuchinni
+  * onion
+  * green onion
+  * Jalapeño
+  * Mushroom on the top
+* Flour 3/4 cup
+* salt 1/2 tea spoon
+* Water 3/4 cup
