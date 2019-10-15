@@ -111,6 +111,14 @@ ExecStart=/home/foo/bin/start_foo
 WantedBy=multi-user.target
 {{< /code >}}
 
+> LC_ALL: cannot change locale
+
+```
+sudo locale-check
+sudo locale-gen en_US
+sudo update-locale LANG=en_US
+```
+
 ### Footnotes
 
 [^1]: https://www.freedesktop.org/software/systemd/man/systemd.network.html

@@ -11,6 +11,8 @@ title: Awk
 video: ""
 ---
 
+> AWK is a domain-specific language designed for text processing and typically used as a **data extraction** and **reporting tool**
+
 1. Variable which defines values which can be changed such as field separator and record separator.
 2. Variable which can be used for processing and reports such as Number of records, number of fields.
 3. pattern scanning and processing language
@@ -33,3 +35,17 @@ awk 'BEGIN{RS="\n";FS=","; \
         else if($3=="")print$0",0"; \
         else print$0}'
 ```
+
+## Structure
+
+```
+BEGINE {}
+CONDITIONS {ACTION1}
+           {ACTION2}
+END {}
+```
+
+## Tasks we can accomplish with awk scripting
+
+1. Report only on required info like IP addr from `ip a` output
+2. 

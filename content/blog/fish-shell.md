@@ -169,11 +169,22 @@ echo {good,bad}" apples"
 process expansion
 : echo %self
 
-Command substitutions
-Variable expansions
-Bracket expansion
-Pid expansion
-Wildcard expansion
+<pre><span style="background-color:#3465A4"><font color="#2E3436"> ~/D/P/avimehenwal.in </font></span><span style="background-color:#C4A000"><font color="#3465A4"> </font></span><span style="background-color:#C4A000"><font color="#2E3436"> master ± </font></span><font color="#C4A000"> </font><font color="#4E9A06">echo</font> <font color="#FCE94F">%</font><font color="#06989A">chrome</font>                                                                                                                                         <font color="#3465A4"></font><span style="background-color:#3465A4"><font color="#2E3436"> I </font></span>
+1424 2579 2607 24354 24363 24374 24404 24409 24631 24738 24791 25016 25067 25076 25093 25105 25120 25520 25610 25652 25908 26961 29077 29097 29109 29126 29154 29173 29186 29210 29227 29250 29280 29296 29313 29333 29349 29365 29387 29402 29421 29438 29455 29477 29489 29503 29517 29541 29559 29584 29598 29612 29775 29787 29799 29813 29842 29857 29879 29901 29918 29931 29949 29971 29991 30003 30020 30040 30065 30077 30092 31487 31509 31562
+<span style="background-color:#3465A4"><font color="#2E3436"> ~/D/P/avimehenwal.in </font></span><span style="background-color:#C4A000"><font color="#3465A4"> </font></span><span style="background-color:#C4A000"><font color="#2E3436"> master ± </font></span><font color="#C4A000"> </font><font color="#4E9A06">echo</font> <font color="#FCE94F">%</font><font color="#06989A">python3</font>                                                                                                                                        <font color="#3465A4"></font><span style="background-color:#3465A4"><font color="#2E3436"> I </font></span>
+754 23757
+<span style="background-color:#3465A4"><font color="#2E3436"> ~/D/P/avimehenwal.in </font></span><span style="background-color:#C4A000"><font color="#3465A4"> </font></span><span style="background-color:#C4A000"><font color="#2E3436"> master ± </font></span><font color="#C4A000"> </font><font color="#4E9A06">echo</font> <font color="#FCE94F">%</font><font color="#06989A">python</font>                                                                                                                                         <font color="#3465A4"></font><span style="background-color:#3465A4"><font color="#2E3436"> I </font></span>
+754 23757
+<span style="background-color:#3465A4"><font color="#2E3436"> ~/D/P/avimehenwal.in </font></span><span style="background-color:#C4A000"><font color="#3465A4"> </font></span><span style="background-color:#C4A000"><font color="#2E3436"> master ± </font></span><font color="#C4A000"> </font><font color="#4E9A06">echo</font> <font color="#FCE94F">%</font><font color="#06989A">code</font>                                                                                                                                           <font color="#3465A4"></font><span style="background-color:#3465A4"><font color="#2E3436"> I </font></span>
+28079 28082 28110 28123 28285 28286 28316 28402 28595 28621 28622 28652 28831
+<span style="background-color:#3465A4"><font color="#2E3436"> ~/D/P/avimehenwal.in </font></span><span style="background-color:#C4A000"><font color="#3465A4"> </font></span><span style="background-color:#C4A000"><font color="#2E3436"> master ± </font></span><font color="#C4A000"> </font>                                                                                                                                                     <font color="#3465A4"></font><span style="background-color:#3465A4"><font color="#2E3436"> I </font></span></pre>
+
+* Command substitutions
+* Variable expansions
+* Process Expansion
+* Bracket expansion
+* Pid expansion
+* Wildcard expansion
 
 ### Variable expansion
 

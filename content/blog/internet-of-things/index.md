@@ -64,3 +64,6 @@ data gathering, data ingest, data processing, and data analysis.
 5. Gas Sensor
 6. Microswitch
 7. Optical Sensor
+8. Clock and Calendar sensor
+   1. [`PCF8583`](https://www.nxp.com/docs/en/data-sheet/PCF8583.pdf)
+   2. 

@@ -114,6 +114,12 @@ ls | less
 
 > [Link to github project](https://github.com/avimehenwal/python.avimehenwal/tree/master/SockerProgramming)
 
+## SoCAT
+
+stands for **SO**cket **CAT**
+
+
+
 ### Footnotes
 
 [^1]: [yt, Pipes FS](https://youtu.be/2pTLehAj9fA)
