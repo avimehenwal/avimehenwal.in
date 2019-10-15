@@ -66,4 +66,7 @@ data gathering, data ingest, data processing, and data analysis.
 7. Optical Sensor
 8. Clock and Calendar sensor
    1. [`PCF8583`](https://www.nxp.com/docs/en/data-sheet/PCF8583.pdf)
-   2. 
+
+## What can you do
+
+* https://www.youtube.com/watch?v=-p_8u_0GNZE
