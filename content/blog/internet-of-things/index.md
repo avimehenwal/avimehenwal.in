@@ -55,6 +55,10 @@ data gathering, data ingest, data processing, and data analysis.
 * Rate of data generation and arrival
 * CAlculate how much data storage you need
 
+## Boards and devices
+
+1. https://developer.nvidia.com/embedded/jetson-nano-developer-kit
+
 ## Types of Sensors
 
 1. Temperature sensor

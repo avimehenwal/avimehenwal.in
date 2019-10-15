@@ -66,6 +66,7 @@ tags:
 * Are you building a library or a binary that uses a library
 * Variables in Rust are immutable by default, and require the `mut` keyword to be made mutable.
 * By default, the items in a module have **private** visibility, but this can be overridden with the `pub` modifier
+* `let` Bind variables to values in a scope
 
 > C is like playing with knoves, C++ is juggling flaming chain saws
 

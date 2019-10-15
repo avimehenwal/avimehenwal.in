@@ -109,9 +109,16 @@ inherit autotools
 EXTRA_OECONF
 : Options to be passed to configure script. In this case it is empty, so is not necessary.
 
+DEPENDS
+:  means a build-time dependency
+
+RDEPENDS
+: Runtime dependency
+* https://lists.yoctoproject.org/pipermail/yocto/2013-August/015811.html
+
 * Automatically create yocto recipes from using `devtool`
   * [Yocto Project SDK](https://www.yoctoproject.org/docs/2.8/sdk-manual/sdk-manual.html#sdk-installing-the-extensible-sdk)
-* 
+* Caution - Do not use recipe name followed by `-` (hyphen), use underscore for versioning instead
 
 ## Devtools yocto recipe
 

@@ -225,6 +225,25 @@ Reuse your hooks in every project
   * cheaper
   * shared objects and config
 
+## How to get changes from master?
+
+```
+git checkout <branch>
+git rebase master
+```
+
+## How to generate and apply patches
+
+```
+# PATCH GENERATE
+git diff 2 1 > mypatch.diff
+git format-patch -1 <sha>
+git format-patch -1 HEAD
+
+# PATCH APPLY
+git apply ../0001-Update-mender-artifact-number-and-add-wt-as-runtime-.patch 
+```
+
 ### Related work
 
 * [python, pre-commit.com](https://pre-commit.com/)
