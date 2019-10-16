@@ -16,8 +16,10 @@ tags:
 ---
 
 D-BUS
-: Desktop Bus
+: [Desktop Bus](https://en.wikipedia.org/wiki/D-Bus)
 * S/w bus for communication b/w processes using IPC and RPC
+* D-bus wire protocol allows connection b/w various processes using **unix domain sockets**
+* `:1.1557` unique process address
 
 ## How to configure network using systemd?
 
@@ -35,7 +37,7 @@ Configuration file path `/etc/systemd/network/dhcp.network`
 * Glue between user and kernel spacce applications
   * [provides `dbus`](https://en.wikipedia.org/wiki/D-Bus)
 * Resources are called `Units`, it manages them in dependency graph.
-* Seperate bootstrap scripts `one-shot` applications on various clous environments.
+* Seperate bootstrap scripts `one-shot` applications on various cloud environments.
 
 ```
 [Match]

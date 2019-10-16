@@ -27,7 +27,9 @@ ko
 : kernle objects
 
 so
-: Source Objects
+: Shared Objects
+* The advantage of .so (shared object) over .a library is that they are linked during the runtime i.e. after creation of your .o file -o option in gcc. So, if there's any change in .so file, you don't need to recompile your main program. But make sure that your main program is linked to the new .so file with ln command.
+* files are loaded in `python pip` modules like `spidev`
 
 KMOD - kernel modules
 : a loadable kernel module is an object file that contains code to extend the running kernel

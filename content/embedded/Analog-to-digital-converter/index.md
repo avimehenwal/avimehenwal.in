@@ -22,7 +22,19 @@ tags:
 Jitter
 : In electronics and telecommunications, jitter is the deviation from true periodicity of a presumably periodic signal, often in relation to a reference clock signal. In clock recovery applications it is called timing jitter
 
-## ADIS1256[^1]
+Device | Driver
+-------|----------
+[ADS1256](http://www.ti.com/lit/ds/symlink/ads1255.pdf) | ADIS1256[^1]
+
+
+## ADS1256 - datasheet
+
+* `24-bit` analog-to-digital (A/D) converters
+* There are three methods to reset the ADS1255/6: the
+  * RESET input pin, 
+    * When using the RESET pin, take it low to force a reset
+  * RESET command,
+  * and a special SCLK reset pattern.
 
 ### Footnotes
 

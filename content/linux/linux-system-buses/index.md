@@ -160,6 +160,20 @@ spidev_test --device /dev/spidev0.0 --verbose -p 'MESSGAE' --cs-high
 
 ```
 
+## SPI - ADC
+
+```
+spidev_test --verbose --cpha 1 --cpol 0 -p '\x10\x01'
+```
+
+### How to read register values
+
+You can't access registers directly, because Linux use **MMU** and this create for your application virtual address space which is different than physical MCU address space and access outside this virtual address space cause segmentation fault.
+
+Only Way to access these registers in Linux (if you don't want to write kernel drivers) is to open file /dev/mem as file and map it with [mmap](http://man7.org/linux/man-pages/man2/mmap.2.html)
+
+For example I have small python library for access GPIO registers on Atmel SAM MCU gpiosam. You can inspire and port it to C.
+
 ## CAN
 
 - the transmission rate is specified in Bits/Sec not Hz.
