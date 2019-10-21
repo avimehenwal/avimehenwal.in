@@ -23,6 +23,10 @@ tags:
 * `/metrics`
 * `/grpah`
 * System monitoring tool, with TS database
+  * stores data on local disk `--storage.tsdb.path` usually `.data/`
+  * `2hr` samples are aggregated
+* PushGateways
+* Exporters
 * care about entire path of monitoring, not only storing data
 * [Service Application level monitoring](https://www.youtube.com/watch?v=PDxcEzu62jk)
 * Label data model for matrics
@@ -31,7 +35,10 @@ tags:
   * Then export samples to other DB, Adapter (influxdb)
 * Automatic service discovery
   * Task Schedulers
-* 
+* Alert Manager
+  * Grouping
+  * Inhibition
+  * Silence
 
 
 
