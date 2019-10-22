@@ -34,10 +34,39 @@ Device tree configuration for SPI Polarity and Phase
 
 ### From /proc
 
-```
+{{< code numbered="true" >}}
 /proc/device-tree/ocp/spi@48030000
-```
 
+root@beaglebone-yocto:/sys/firmware/devicetree/base/ocp/l4_wkup@44c00000/scm@210000/pinmux@800/[[[spi0_pins_default]]]# pwd
+/sys/firmware/devicetree/base/ocp/l4_wkup@44c00000/scm@210000/pinmux@800/spi0_pins_default
+root@beaglebone-yocto:/sys/firmware/devicetree/base/ocp/l4_wkup@44c00000/scm@210000/pinmux@800/spi0_pins_default# ls -la
+total 0
+drwxr-xr-x  2 root root  0 Oct 22 14:29 .
+drwxr-xr-x 21 root root  0 Oct 22 14:29 ..
+-r--r--r--  1 root root 18 Oct 22 14:42 name
+-r--r--r--  1 root root  4 Oct 22 14:30 phandle
+-r--r--r--  1 root root 40 Oct 22 14:29 pinctrl-single,pins
+root@beaglebone-yocto:/sys/firmware/devicetree/base/ocp/l4_wkup@44c00000/scm@210000/pinmux@800/spi0_pins_default# 
+
+mount /dev/mmcblk1p1 /mnt
+find . -type f -exec head {} + | less
+
+{{< /code >}}
+
+1. Binary file
+2. 
+
+### Using debugfs
+
+* `/sys/kernel/debug`
+* `/sys/kernel/debug/pinctrl/44e10800.pinmux-pinctrl-single/pingroups`
+
+{{< code numbered="true" >}}
+
+# pins associated with spi
+cat /sys/kernel/debug/pinctrl/44e10800.pinmux-pinctrl-single/pingroups | grep -A5 -i spi
+
+{{< /code >}}
 
 ### From dtb file
 

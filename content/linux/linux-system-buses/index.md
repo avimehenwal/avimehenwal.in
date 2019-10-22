@@ -48,9 +48,6 @@ Where:
     T = Time (usually seconds)
 ```
 
-GPIO expanders
-: for GPIO pins to connect multiple i2c devices when the number of available on board pins are less
-
 A push–pull amplifier
 : is a type of electronic circuit that uses a pair of active devices that alternately supply current to, or absorb current from, a connected load
 
@@ -190,36 +187,6 @@ For example I have small python library for access GPIO registers on Atmel SAM M
 {{% cmd %}}
   ip link set can0 type can bitrate 12500
 {{% /cmd %}}
-
-## GPIO -  General Purpose Input Output
-
-* They are General Purpose Input Output and are pins on various processors that aren’t dedicated to anything.
-
-As a recap, each gpio pin on the BBB has <mark>three different numbering</mark> schemes associated with it!
-
-1. The physical pin location, in the form of `PX_Y (P8_28)`
-2. The gpio name, in the form of `GPIOX_Y (GPIO2_24)`
-3. The gpio number, in the form of $$32*X + Y (88)$$
-
-{{% warning %}}
-Only the last scheme, the gpio number, is used in software!
-{{% /warning %}}
-
-The Pi's GPIO ports can be controlled from the command line (i.e. bash), python scripts, and C/C++ programs. There are 17 GPIO ports available on the Pi. Some of them have special purposes or special hardware configurations and should be avoided for normal use.
-
-```
-#   Exports pin to userspace
-echo "18" > /sys/class/gpio/export                  
-
-# Sets pin 18 as an output
-echo "out" > /sys/class/gpio/gpio18/direction
-
-# Sets pin 18 to high
-echo "1" > /sys/class/gpio/gpio18/value
-
-# Sets pin 18 to low
-echo "0" > /sys/class/gpio/gpio18/value 
-```
 
 # Bus Protocols
 
