@@ -52,7 +52,7 @@ echo "1" > /sys/class/gpio/gpio18/value
 echo "0" > /sys/class/gpio/gpio18/value 
 ```
 
-## How to Reset a sensor?
+## How to Reset a sensor via GPIO pin?
 
 Find the sensor register (GPIO Expander)
 
@@ -61,8 +61,11 @@ find / -name [[['*03f*']]]
 /sys/devices/platform/ocp/4802a000.i2c/i2c-1/1-003f
 /sys/bus/i2c/devices/1-003f
 
-echo <NUM> > export
-cd <NUM>
+gpiochip[[[456]]] -> ../../devices/platform/ocp/4802a000.i2c/i2c-1/1-003f/gpio/gpiochip456
+echo [[[457]]] > export
+
+gpio457 -> ../../devices/platform/ocp/4802a000.i2c/i2c-1/1-003f/gpiochip10/gpio/gpio457
+cd gpio457
 cat value
 cat direction
 echo 0 > value
@@ -70,6 +73,26 @@ echo 1 > value
 {{< /code >}}
 
 1. Find on FS by register name
+2. 456 appears to be the first Pin
+3. Need second pin from IO Expander
+
+```
+# RESET ADC /KMD_RESET
+cd /sys/class/gpio
+echo 457 > export
+sleep 1
+cd gpio457
+find . -maxdepth 1 -type f -exec head {} +
+echo out > direction
+echo 1 > value
+sleep 1
+spidev_test --device /dev/spidev0.0 --verbose --cpha --speed 1000000 -p '\x10\x00'
+echo 0 > value
+find . -maxdepth 1 -type f -exec head {} +
+spidev_test --device /dev/spidev0.0 --verbose --cpha --speed 1000000 -p '\x10\x00'
+cd ..
+echo 457 > unexport
+```
 
 ### Footnotes
 

@@ -13,6 +13,7 @@ categories:
 tags:
 - bus
 - spi
+- debugfs
 ---
 
 * Official Documentation[^1]
@@ -60,8 +61,11 @@ find . -type f -exec head {} + | less
 
 * `/sys/kernel/debug`
 * `/sys/kernel/debug/pinctrl/44e10800.pinmux-pinctrl-single/pingroups`
+* RAM-based file system specially designed for debugging purposes
 
 {{< code numbered="true" >}}
+# check if trace is enabled
+cat /proc/sys/kernel/ftrace_enabled
 
 # pins associated with spi
 cat /sys/kernel/debug/pinctrl/44e10800.pinmux-pinctrl-single/pingroups | grep -A5 -i spi
@@ -74,29 +78,30 @@ Open Core Protocol (OCP)-based architectures
 : OCP is a standards-based embedded-bus interface and multicore IP integration protocol defined by the OCP-IP industry consortium
 
 ```
-fdtget /boot/am335x-boneblack.dtb --list /
-fdtget /boot/am335x-boneblack.dtb --properties /
-fdtget /boot/am335x-boneblack.dtb --list /cpus
-fdtget /boot/am335x-boneblack.dtb --list /ocp     # buses
-fdtget /boot/am335x-boneblack.dtb --properties /ocp/spi@48030000
-fdtget /boot/am335x-boneblack.dtb /ocp/spi@48030000 --type s status
+DTFL=/mnt/am335x-boneblack.dtb
+fdtget $DTFL --list /
+fdtget $DTFL --properties /
+fdtget $DTFL --list /cpus
+fdtget $DTFL --list /ocp     # buses
+fdtget $DTFL --properties /ocp/spi@48030000
+fdtget $DTFL /ocp/spi@48030000 --type s status
 
-for i in $PROPS; do out=$(fdtget --type x /boot/am335x-boneblack.dtb spi0 $i); echo -e "$i\t\t$out";  done
+for i in $PROPS; do out=$(fdtget --type x $DTFL spi0 $i); echo -e "$i\t\t$out";  done
 
-fdtput /boot/am335x-boneblack.dtb --verbose --delete /ocp/spi@48030000 status
-fdtput /boot/am335x-boneblack.dtb --verbose --remove /ocp/spi@48030000 status
-fdtput /boot/am335x-boneblack.dtb --verbose --create /ocp/spi@48030000 status okay
-fdtput /boot/am335x-boneblack.dtb --verbose --type s /ocp/spi@48030000 compatible rohm,dh2228fv
+fdtput $DTFL --verbose --delete /ocp/spi@48030000 status
+fdtput $DTFL --verbose --remove /ocp/spi@48030000 status
+fdtput $DTFL --verbose --create /ocp/spi@48030000 status okay
+fdtput $DTFL --verbose --type s /ocp/spi@48030000 compatible rohm,dh2228fv
 
 ```
 
 Testing
 
 ```
-watch --interval 1 --differences 'PROPS=$(fdtget /boot/am335x-boneblack.dtb --properties /ocp/spi@48030000); for i in $PROPS; do out=$(fdtget /boot/am335x-boneblack.dtb spi0 $i); echo -e "$i\t\t$out";  done'
+watch --interval 1 --differences 'DTFL=/mnt/am335x-boneblack.dtb; PROPS=$(fdtget $DTFL --properties /ocp/spi@48030000); for i in $PROPS; do out=$(fdtget $DTFL /ocp/spi@48030000 $i); echo -e "$i\t\t$out";  done'
 ```
 
-Sample output `fdtdump /boot/am335x-boneblack.dtb --scan | grep -A15 'spi@48030000 {'`
+Sample output `fdtdump $DTFL --scan | grep -A15 'spi@48030000 {'`
 
 {{% code %}}
 spi@48030000 {
@@ -117,8 +122,6 @@ spi@48030000 {
 
 ti,spi-num-cs
 : Number of chipselect supported  by the instance.
-
-
 
 
 {{< code numbered="true" >}}
@@ -168,6 +171,14 @@ spidev_test --device /dev/spidev0.0 --verbose -p 'MESSGAE' --speed 250000
 # Write binary 1, 2 and 3
 echo -ne "\x01\x02\x03" > /dev/spidev0.0
 ```
+
+## How to interchange MISO and MOSI lines?
+
+>  spi0_d0 as MOSI. I just change on kernel & u-boot mux data but it seems not enough
+
+* `ti,pindir-d0-out-d1-in`:  Select the `D0` pin as output and `D1` as input.
+  * The default is D0 as input and D1 as output.
+
 
 ### Footnotes
 

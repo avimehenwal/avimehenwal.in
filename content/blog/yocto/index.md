@@ -32,8 +32,15 @@ yocto
 - `fdtdump /boot/am335x-boneblack.dtb`
 - Getting a property from device tree <key> <property>
   - `fdtget /boot/am335x-boneblack.dtb spi0 status`
-- `./tools/run_in_container.sh build ./tools/build/bitbake.sh build/bbb nas.pb.avantys.de:/mnt/nas/data/Projekte/SkySails/os/yocto-thud linux-yocto -c devshell`
-- `make dtbs`
+
+```
+# Configure before devshell else might face SYNCCONFIG error
+./tools/run_in_container.sh build ./tools/build/bitbake.sh build/bbb nas.pb.avantys.de:/mnt/nas/data/Projekte/SkySails/os/yocto-thud linux-yocto -c clean
+./tools/run_in_container.sh build ./tools/build/bitbake.sh build/bbb nas.pb.avantys.de:/mnt/nas/data/Projekte/SkySails/os/yocto-thud linux-yocto -c configure
+./tools/run_in_container.sh build ./tools/build/bitbake.sh build/bbb nas.pb.avantys.de:/mnt/nas/data/Projekte/SkySails/os/yocto-thud linux-yocto -c devshell
+
+make dtbs
+```
 
 ## List USB devices on linux
 

@@ -22,6 +22,14 @@ tags:
 <!-- more -->
 [Linke to linux FS notes](https://docs.google.com/document/d/e/2PACX-1vQY6TqYjKTnNEUWjS3Av0vboq-NhuZ04w7b5wVfHGzX_qF26a_FRTY3dD-RM-8y6bNPAGr8ZcVous63/pub)
 
+## Various filesystems in Linux
+
+1. sysfs
+2. tempfs
+3. procfs
+4. debugfs
+
+
 ## Searching with GREP
 
 {{% note %}}
@@ -128,6 +136,12 @@ Symbols | Meanings
 > Where is a progess logging into?
 
 `lsof -p PID | grep log`
+
+
+## sysfs
+
+* exports information about various kernel subsystems, hardware devices, and associated device drivers from the kernel's device model to user space through virtual files
+* 
 
 ### Footnotes
 
