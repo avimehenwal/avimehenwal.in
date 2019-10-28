@@ -143,6 +143,18 @@ Symbols | Meanings
 * exports information about various kernel subsystems, hardware devices, and associated device drivers from the kernel's device model to user space through virtual files
 * 
 
+## initramfs
+
+```
+# You can upgrade kernel and keep it getting upgraded to future point Ubuntu releases by running
+sudo apt install linux-generic-hwe-18.04
+
+update-initramfs -u
+
+```
+
+[How to remove old kernel versions from boot menu](https://linoxide.com/booting/remove-old-kernel-versions-boot-menu/)
+
 ### Footnotes
 
 [^1]:

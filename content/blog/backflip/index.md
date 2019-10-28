@@ -75,8 +75,11 @@ iperf --server
 ```
 # Install talos and ET rules
 sudo sostat
-
 ```
+
+
+* NBI API Swagger API documentation[^1]
+
 
 ## Questions
 
@@ -84,5 +87,5 @@ sudo sostat
 
 ### Footnotes
 
-[^1]:
+[^1]: https://forge.etsi.org/swagger/ui/?url=https%3A%2F%2Fosm.etsi.org%2Fgitweb%2F%3Fp%3Dosm%2FSOL005.git%3Ba%3Dblob_plain%3Bf%3Dosm-openapi.yaml%3Bhb%3DHEAD
 [^2]:

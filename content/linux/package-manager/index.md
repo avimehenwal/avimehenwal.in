@@ -16,7 +16,7 @@ tags:
 ---
 
 <!-- more -->
-## [APT - Advanced Package Tool](https://en.wikipedia.org/wiki/APT_(Package_Manager))
+## APT - Advanced Package Tool[^1]
 
 * Executable permission for directory to enter it
   * may make `ssh/config` unredable
@@ -40,5 +40,5 @@ dpkg --listfiles python
 
 ### Footnotes
 
-[^1]:
+[^1]: https://en.wikipedia.org/wiki/APT_(Package_Manager)
 [^2]:
