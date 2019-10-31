@@ -94,6 +94,11 @@ cd ..
 echo 457 > unexport
 ```
 
+## Questions
+
+* What is the difference between GPIO pin and GPIOchip?
+* 
+
 ### Footnotes
 
 [^1]:
