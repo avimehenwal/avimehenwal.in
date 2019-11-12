@@ -16,10 +16,14 @@ tags:
 - debugfs
 ---
 
-* Official Documentation[^1]
-* a multiplexed shift register
+* Official Documentation[^1][^4]
+* a multiplexed shift register[^3][^4]
+  * 74HC595
+  * Shift register and Storage register[^3]
+  * 4 clock cycles to transfer 4 bit message
 * Range 1-20 MHz
 * The Raspberry Pi is equipped with one SPI bus that has **2 chip selects**.
+* **CPHASE=1** data is sampled at trailing edge of clock 
 <!-- more -->
 
 * We want to use 3 slaves with SPI0, but am335x supports only 2 CS signals.
@@ -184,3 +188,5 @@ echo -ne "\x01\x02\x03" > /dev/spidev0.0
 
 [^1]: https://www.kernel.org/doc/html/latest/driver-api/spi.html?highlight=spi
 [^2]: https://ez.analog.com/linux-device-drivers/linux-software-drivers/f/q-a/97600/adis16448-iio-driver-on-nvidia-jetson-tk1
+[^3]: https://www.youtube.com/watch?v=unorn9n-UpE
+[^4]: https://www.youtube.com/watch?v=7F5TGZleOgw

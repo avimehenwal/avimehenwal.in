@@ -20,11 +20,52 @@ tags:
 <!-- more -->
 
 Jitter
-: In electronics and telecommunications, jitter is the deviation from true periodicity of a presumably periodic signal, often in relation to a reference clock signal. In clock recovery applications it is called timing jitter
+: In electronics and telecommunications, jitter is the deviation from true periodicity of a presumably periodic signal, often in relation to a reference clock signal. In clock recovery applications it is called timing jitter.
+* Is it related/similar to phase?
+
+![Jitter](Clock_Jitter_r01-1-700x387.png)
 
 Device | Driver
 -------|----------
 [ADS1256](http://www.ti.com/lit/ds/symlink/ads1255.pdf) | ADIS1256[^1]
+
+## Tensile force Sensor
+
+Tensile
+: relating to tension
+
+Tension
+:  pulling force transmitted axially by the means of a string, a cable, chain, or similar one-dimensional continuous object, or by each end of a rod, truss member, or similar three-dimensional object;
+
+![tensile-force-sensor](tensile-force-sensor.jpeg)
+
+### How to connect sensor to microcontroller?
+
+* SPI pins are board (CPU) dependent
+* Could be available as a seperate ADC chip or on a breakup board
+
+1. Correct circuit diagram and schematics
+   1. How to draw digital schematics? CAD design Tools
+      1. LibrePCB
+      2. Fritze
+2. Search for sensor library
+   1. **ads1256 arduino library**
+   2. **ads1256 beaglebone library**
+
+### CAD - Artistic PCB designing
+
+1. Workspace editor
+2. Schematics visualizer and editor
+
+
+A hobby that you can use directly from home. Detecting poison in air[^2].
+
+Make LED spaceships, butterflys, christmas trees
+
+> Workflow on fusing Mechanical design couples with electrical design[^2]
+
+1. Can we version control PCB designs?
+
 
 
 ## ADS1256 - datasheet
@@ -39,4 +80,4 @@ Device | Driver
 ### Footnotes
 
 [^1]: http://www.ti.com/lit/ds/symlink/ads1255.pdf
-[^2]:
+[^2]: https://www.youtube.com/watch?v=FlynweLLpOY
