@@ -17,7 +17,14 @@ tags:
 
 [ADC](https://en.wikipedia.org/wiki/Analog-to-digital_converter)
 : sound picked up by a microphone or light entering a digital camera, into a digital signal
+* Tensile force sensor
+* Music players
+* https://www.youtube.com/watch?v=Y2OPnrgb0pY
+* Example https://www.ti.com/store/ti/en/p/product/?p=ADS1256IDBTG4
 <!-- more -->
+
+PGA
+: programmable gain amplifier
 
 Jitter
 : In electronics and telecommunications, jitter is the deviation from true periodicity of a presumably periodic signal, often in relation to a reference clock signal. In clock recovery applications it is called timing jitter.
@@ -40,6 +47,10 @@ Tension
 ![tensile-force-sensor](tensile-force-sensor.jpeg)
 
 ### How to connect sensor to microcontroller?
+
+> Once you've confirmed the Linux kernel supports your sensor you need to use the device tree 
+> to configure and enable the sensor driver
+
 
 * SPI pins are board (CPU) dependent
 * Could be available as a seperate ADC chip or on a breakup board

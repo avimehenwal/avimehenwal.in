@@ -1,7 +1,7 @@
 ---
 title      : "12 Juli Friday"
 date       : 2019-07-12T08:47:37+02:00
-draft      : true
+draft      : false
 comments: false
 revision: 0
 weight: 5

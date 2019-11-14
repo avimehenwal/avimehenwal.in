@@ -26,7 +26,6 @@ Flow
 : Current
 
 <!-- more -->
-
 Actuators
 : produces motion
 
@@ -41,7 +40,15 @@ breakout-board
 
 1. Ohms Law
 2. Kirchhoff's circuit laws
-   1. Current entering a junction equals the current leaving the jkunction
+   1. Current entering a junction equals the current leaving the junction
+
+## Standard notations used
+
+Vdd
+:Voltage Drain Drain
+
+Vss
+:Voltage Source Source
 
 
 ## Capacitors
@@ -83,7 +90,46 @@ breakout-board
 
 * 
 
+## Resistor-Capicitor (RC) lowpass Filters
+
+![rc-lpf](rc-lpf.png)
+
+Filter Circuits
+: change frequency content of signal
+* Music Equalizer settings
+
+![filter.png](filter.png)
+
+Low pass filter - LPF
+: is a filter that passes signals with a frequency lower than a selected cutoff frequency
+and attenuates signals with frequencies higher than the cutoff frequency.
+* https://www.youtube.com/watch?v=OBM5T5_kgdI
+
+
+![filter_types](Davis_intro_to_filters_filter_types.png)
+
+> How to create a LPF hardware ?
+
+* Filter introduces a shift in phase
+* Changes the signal amplitude
+* **Bode Plott**
+* cut off frequency[^3] of filter equation
+
+![cof-of-filter.png](cof-of-filter.png)
+
+### Similarly
+
+* https://en.wikipedia.org/wiki/RL_circuit
+* https://en.wikipedia.org/wiki/LC_circuit
+* https://en.wikipedia.org/wiki/RLC_circuit
+
+What is Inductance?
+: https://www.youtube.com/watch?v=ukBFPrXiKWA
+* Magnetic fields do not like to change
+
+
 ### Footnotes
 
 [^1]: https://www.youtube.com/watch?v=5hFC9ugTGLs
 [^2]: [3D printing online service](https://www.3dhubs.com/)
+[^3]: https://en.wikipedia.org/wiki/Cutoff_frequency

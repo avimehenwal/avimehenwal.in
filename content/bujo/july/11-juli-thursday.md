@@ -1,7 +1,7 @@
 ---
 title      : "11 Juli Thursday"
 date       : 2019-07-11T09:05:28+02:00
-draft      : true
+draft      : false
 revision   : 0
 weight: 5
 series:
