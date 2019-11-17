@@ -206,6 +206,19 @@ minikube tunnel - Load Balancing, alters n/w routes
 1. Keep app versions on top and as Labels, env vars
 2. Check `sha256` of downloads and stop on failure
 
+## Docker Network
+
+```
+docker-compose up
+Creating network "prometheus_default" with the default driver
+ERROR: could not find an available, non-overlapping IPv4 address pool among the defaults to assign to the network
+```
+
+{{< code numbered="true" >}}
+docker network ls
+docker network prune
+{{<> /code >}}
+
 ### Footnotes
 
 [^1]: https://docs.docker.com/config/thirdparty/prometheus/
