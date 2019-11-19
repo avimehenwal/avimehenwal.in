@@ -61,6 +61,7 @@ It is assumed that we already know how to compile a kernel, use menuconfig and w
 1. How to create/write a kernel module?
    1. https://github.com/fishinabarrel/linux-kernel-module-rust
    2. https://github.com/tsgates/rust.ko
+   3. http://www.tldp.org/LDP/lkmpg/2.6/html/lkmpg.html#AEN121
 2. Have you compiled the linux kernel yourself?
 
 ### Footnotes

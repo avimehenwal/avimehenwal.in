@@ -32,12 +32,21 @@ Continuous Deployment [CD automatically](https://en.wikipedia.org/wiki/Continuou
 : similar to CD
 <!-- more -->
 
+## Gitlab runner
+
 Gitlab Runner
 : runs jobs and sends results back to Gitlab
 * opensource project written in `go`, single binary file
 * Install and register Gitlab Runner
 * [Gitolab runner commands](https://docs.gitlab.com/runner/commands/README.html)
-* 
+
+### Installing runner
+
+```
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
+```
+
+### Runner operating instructions
 
 There are several available [EXECUTORS](https://docs.gitlab.com/runner/executors/README.html)
 

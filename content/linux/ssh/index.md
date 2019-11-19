@@ -295,6 +295,12 @@ sshfs -o idmap=user <username>@<ipaddress>:/remotepath ~/remoteserv
 
 ```
 
+##  Insecure SSH access from shell script
+
+```
+SSH_CMD="ssh ${SSH_TARGET} -p ${SSH_PORT} -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+```
+
 ## Questions
 
 1. Can as add base configuration for all hosts in `ss/config` file? Hierarchy based config, and then the host spefic config?

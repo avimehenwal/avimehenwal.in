@@ -476,6 +476,22 @@ It is possible to tell canplayer to play messages recorded on one interface back
     can0 0DF805A0 [8] 03 D2 6E 03 80 66 23 00
 ```
 
+## Resetting via gpio
+
+```
+# Exports pin to userspace
+echo "63" > /sys/class/gpio/export                  
+sleep 1
+# Sets pin 63 as an output
+echo "out" > /sys/class/gpio/gpio63/direction
+sleep 1
+# Sets pin 18 to low
+echo "0" > /sys/class/gpio/gpio63/value 
+sleep 2
+# Sets pin 18 to high
+echo "1" > /sys/class/gpio/gpio63/value
+```
+
 ## Quesetions
 
 1. spi vs i2c vs uart, whats the difference?

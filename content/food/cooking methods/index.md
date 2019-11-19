@@ -33,22 +33,35 @@ fungus-species.png
 Gluten - viscoelastic matrix
 like bubble gum
 
-### What is fermentation ?
+## What is fermentation ?
 {{< figure src="Fermentation-definition.png" title="Fermentation definition" >}}
 
 
 {{< figure src="baking-powder.png" title="Baking powder ingredients" >}}
 
-#### baking powder vs baking soda vs yeast
+## baking powder vs baking soda vs yeast
 "Baking powder is baking soda mixed with a few extra ingredients, including an acid. When you're baking a recipe that doesn't call for any acids, baking powder provides the rising power of baking soda and takes care of the chemistry part for you. Baking powder is only fully activated by heat, which is why a cake rises in the oven and not on your countertop, the way bread does.
 
 For cakes, muffins, pancakes, or any other baked goods that go straight into the oven without rising, baking soda or baking powder are the way to go. Baking soda (scientific name: sodium bicarbonate) also creates carbon dioxide, and although it doesn't need resting time to start working, it does need acid. Baking soda is great for recipes that have built-in acidic elements, like lemon or buttermilk — without them, baking soda leaves behind a distinctive taste.
 
 
-##### Grilling vs Broiling
+## Grilling vs Broiling
 heat source on top:: Broiling
 heat source on bottom:: Grilling
 Roasting::
 Baking::
 
 **TODO**:: Include air fryer methods and recipies and seperate How yeast and fermentation process works?
+
+## Healthiest bread
+
+1. [sauerdough bread](https://en.wikipedia.org/wiki/Sourdough) Sauerteigbrot
+2. [Mohnbrötchen](https://en.wikipedia.org/wiki/Poppy_seed_roll)
+
+### To try comfort food
+
+1. Spätzle
+2. olive oil with Balsamic vinegar
+3. Porridge
+   1. oats + water/milk + salt in MW/boil
+   2. topping - fruits/ dried plum [prunes](https://en.wikipedia.org/wiki/Prune)
