@@ -23,7 +23,7 @@ tags:
   * 4 clock cycles to transfer 4 bit message
 * Range 1-20 MHz
 * The Raspberry Pi is equipped with one SPI bus that has **2 chip selects**.
-* **CPHASE=1** data is sampled at trailing edge of clock 
+* **CPHASE=1** data is sample   d at trailing edge of clock 
 <!-- more -->
 
 * We want to use 3 slaves with SPI0, but am335x supports only 2 CS signals.

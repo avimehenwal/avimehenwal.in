@@ -1,5 +1,5 @@
 ---
-title      : "12 Juli Friday"
+title      : "Mender"
 date       : 2019-07-12T08:47:37+02:00
 draft      : false
 comments: false
