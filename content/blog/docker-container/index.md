@@ -27,7 +27,7 @@ Volumes
 * The `VOLUME` instruction should be used to expose any **database storage area**, **configuration storage**, or **files/folders created by your docker container**. You are strongly encouraged to use VOLUME for any mutable and/or user-serviceable parts of your image.
 * The `VOLUME` instruction creates a mount point with the specified name and marks it as holding externally mounted volumes from native host or other containers.
   * The host directory is declared at container run-time: The host directory (the mountpoint) is, by its nature, host-dependent. This is to preserve image portability, since a given host directory can’t be guaranteed to be available on all hosts. For this reason, you can’t mount a host directory from within the Dockerfile. The VOLUME instruction does not support specifying a host-dir parameter. You must specify the mountpoint when you create or run the container.
-* 
+
 
 stack
 : is a group of interrelated services that share dependencies, and can be orchestrated and scaled together.
@@ -212,12 +212,11 @@ minikube tunnel - Load Balancing, alters n/w routes
 docker-compose up
 Creating network "prometheus_default" with the default driver
 ERROR: could not find an available, non-overlapping IPv4 address pool among the defaults to assign to the network
-```
 
-{{< code numbered="true" >}}
 docker network ls
 docker network prune
-{{<> /code >}}
+```
+
 
 ### Footnotes
 
