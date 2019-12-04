@@ -17,15 +17,26 @@ tags:
 ## NodeMCU - ESP8266
 
 * Microcontroller
-* 60MHz with 64KB memory, 96KB data
+* `60MHz` with `64KB` memory, `96KB` data
 * Asynchronous event-driven programming model
 * Lua Flash Store (LFS) support
   * Lua is designed primarily for embedded use in applications
   * enables to create Lua applications with up to **256Kb** Lua code and read-only constants executing out of flash. All of the RAM is available for read-write data!
 * Operating voltage `5V`
 * Home Automation
+* Version 2
+* [Documentation](https://arduino-esp8266.readthedocs.io/en/latest/)
+* [WiFi Library](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html)
 
-<!-- more -->
+## CODE
+
+* 2 LEDs
+  * `D0` inboard
+  * `D4` on ESP board
+* can have only 1 `main.cpp` file
+* 
+
+
 Firmware
 : provides the low-level control for the device's specific hardware. Firmware can either provide a standardized operating environment for the device's more complex software (allowing more hardware-independence), or, for less complex devices, act as the device's complete operating system, performing all control, monitoring and data manipulation functions. Typical examples of devices containing firmware are embedded systems, consumer appliances, computers, computer peripherals, and others. Almost all electronic devices beyond the simplest contain some firmware.
 
@@ -68,6 +79,12 @@ RTS (Request to Send) and CTS (Clear to Send)
 
 * Microcontroller is more specifc, Microprocessor is more general in use
 
+```sh
+# is serival device connected
+ls /sys/class/tty/ttyUSB*
+
+```
+
 > What is SERIAL port?[^1]
 
 ## IoT Projects structure
@@ -109,3 +126,4 @@ RTS (Request to Send) and CTS (Clear to Send)
 
 [^1]: https://www.youtube.com/watch?v=myU2x27FIIc
 [^2]: https://github.com/spacehuhn/esp8266_deauther
+[^3] : https://github.com/nodemcu/nodemcu-devkit-v1.0/blob/master/NODEMCU_DEVKIT_V1.0.PDF
