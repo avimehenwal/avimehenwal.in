@@ -34,6 +34,7 @@ incandescent
    1. DC gear motor selection
 3. Design
 4. Power supply lines
+5. [Arduino Robot](https://www.arduino.cc/en/guide/robot)
 
 > Keepign the world in motion
 
@@ -49,6 +50,9 @@ incandescent
 8. Wrenches
 9. Chisels
 10. Vise
+11. Peg Board
+12. Rotary Encoders
+13. [Acrylic fibre](https://en.wikipedia.org/wiki/Acrylic_fiber)
 
 ## Wheels
 
@@ -57,7 +61,7 @@ incandescent
 3. Torque
 4. Gear Train
 5. Wheel hub
-6. 
+6. [Stepper motor](https://en.wikipedia.org/wiki/Stepper_motor)
 
 
 ## Workshop
@@ -75,6 +79,22 @@ incandescent
 * robot workshop
 * torque
 * schaft
+
+## Motors
+
+1. Servo motor
+2. Stepper motor
+3. gear motor
+
+> connect/solder LEDs to motor
+
+
+### Motor drivers
+
+> Why are they called H-bridge?
+
+1. Cytron MD10C - MOSFET
+2. L298N - BJT
 
 ### Footnotes
 
