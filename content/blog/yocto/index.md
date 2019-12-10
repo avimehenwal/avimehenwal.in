@@ -86,7 +86,9 @@ iPXE
 
 ## Questions
 
-1. How to change partitions sizes? Extend partitions
+1. How to change partitions sizes? Extend partitions?
+   1. Use `fdisk --list /dev/part` command 
+   2. `wks` File
 2. How to run `wic` image on virt-manager
 3. [How to build ubuntu from scratch using yocto?](https://stackoverflow.com/questions/46725208/yocto-how-to-create-a-basic-ubuntu-16-04-linux)
 
