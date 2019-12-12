@@ -8,7 +8,7 @@ weight     : 5
 revision   : 0
 series:
 - Python
-categories:`
+categories:
 - programming
 tags:
 - test
@@ -20,9 +20,9 @@ tags:
 * Attach methods and attributes to mocked classes
 * Assert on how many times mock objects were called and with which paramss
 * they record all interactions with them and you can then inspect these interactions.
-* 
 
-### Footnotes
+
+## Footnotes
 
 [^1]:
 [^2]:

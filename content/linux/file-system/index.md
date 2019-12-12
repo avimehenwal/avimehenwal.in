@@ -2,7 +2,6 @@
 title      : "File System"
 date       : 2019-08-09T19:02:54+02:00
 publishdate: 2019-08-10T19:02:54+02:00
-draft      : false
 comments   : false
 weight     : 5
 revision   : 0
@@ -14,6 +13,7 @@ tags:
 - filesystem
 - grep
 - partitions
+- dd
 ---
 
 ## What is Filesysem?
@@ -57,7 +57,42 @@ grep google <(curl --silent http://google.com)
 
 ## Partitions
 
-Formattting a external mounted drive
+* Formattting a external mounted drive
+* [Sparse Images](https://en.wikipedia.org/wiki/Sparse_image)
+
+If you’re familiar with disk structure, you know that disks are broken down into sectors, which are typically 512 bytes in size; all Read or Write operations occur in multiples of the sector size. When you look more closely, hard disks include extra data between sectors. The disk uses these extra bytes to detect and correct errors within each sector.
+
+When the sector size is increased from 512 bytes to a larger value, more efficient and powerful error-correction algorithms can be used. Thus, changing to a larger sector size has two practical benefits: improved reliability and greater disk capacity — at least in theory.
+
+### Add space to wic image size, inplace
+
+* `/dev/zero` [Add zeros to the wic image](https://en.wikipedia.org/wiki//dev/zero)
+
+```
+cp mastercontrol-image-genericx86-64--20191212115741.wic 123.wic
+dd status=progress bs=1G if=/dev/zero of=./space.img count=1
+bat ./space.img >> 123.wic
+sudo cfdisk 123.wic 
+```
+
+### dd command
+
+{{% note %}}
+`dd` command copies sector by sector, so the final image will be the same size.
+{{% /note %}}
+
+* Why would the disk image be so large?
+* Is it going to equal the size of the partition?
+* Is there a way to keep the disk image to just the size of the actual space used?
+* Is there a better tool to use?
+
+1. dd makes a **byte-for-byte** copy, so the total size of the partition matters, not what's in the partition.
+2. Yes. It will grow to 220 GB.
+3. You can compress the resulting image using gzip or xz:
+```
+sudo dd if=/dev/sda1 | xz > /tmp/ubuntu.image
+```
+4. Depends on what you call a better tool. For some tasks, a byte-for-byte copy is needed (say, data recovery from a failing disk). In such cases, dd + compression is the simplest way. If not, consider something like partimage .
 
 ```
 fdisk /dev/sdb
