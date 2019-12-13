@@ -50,7 +50,7 @@ incandescent
 8. Wrenches
 9. Chisels
 10. Vise
-11. Peg Board
+11. Peg Board vs French cleats Tools wall
 12. Rotary Encoders
 13. [Acrylic fibre](https://en.wikipedia.org/wiki/Acrylic_fiber)
 

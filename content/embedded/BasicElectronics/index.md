@@ -117,6 +117,18 @@ and attenuates signals with frequencies higher than the cutoff frequency.
 
 ![cof-of-filter.png](cof-of-filter.png)
 
+## DIY cheap projects
+
+1. Ice-cream stick single motor car
+2. cola Bottle caps as wheels
+3. Light thermocol
+4. Cheap plastics cups, join them to make interesting shapes
+5. Cardboard
+6. [Amazing DIY toys](https://youtu.be/HL_xrAFsldY) 
+7. Plastic bottles as casing
+8. Old CD disks
+9. Toothpase case
+
 ### Similarly
 
 * https://en.wikipedia.org/wiki/RL_circuit
@@ -126,7 +138,6 @@ and attenuates signals with frequencies higher than the cutoff frequency.
 What is Inductance?
 : https://www.youtube.com/watch?v=ukBFPrXiKWA
 * Magnetic fields do not like to change
-
 
 ### Footnotes
 
