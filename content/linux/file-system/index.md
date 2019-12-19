@@ -14,6 +14,7 @@ tags:
 - grep
 - partitions
 - dd
+- parted
 ---
 
 ## What is Filesysem?
@@ -122,6 +123,42 @@ cat /sys/class/block/sda/size
 # determine the size of block device
 blockdev --getsize64 /dev/sda
 cat /proc/partitions
+```
+
+## GParted tool
+
+{{< code numbered="true" >}}
+
+sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s rm 6
+sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s rm 5
+sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s rm 4
+
+sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s print free
+
+sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s mkpart extended 4243968s 8471055s
+sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s mkpart logical ext4 4243969s 5471055s 
+sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s mkpart logical ext4 5471057s 8471055s
+
+sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s print free
+
+sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s mkpart extended 4243968s 8471055s
+Warning: The resulting partition is not properly aligned for best performance.
+
+{{< /code >}}
+
+
+### Block size versus sector size
+
+In Linux, disk sector size can be determined with
+
+```
+fdisk -l | grep "Sector size
+```
+
+and block size can be determined with
+
+```
+blockdev --getbsz /dev/sda.[10]
 ```
 
 ## Proc Filesystem
