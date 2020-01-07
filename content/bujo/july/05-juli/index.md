@@ -12,6 +12,7 @@ tags:
 - vue
 - open-source
 - pwa
+- udev
 ---
 
 ## Mender
@@ -36,12 +37,24 @@ meta-mender-core
 * Partitioning the image correctly
 * Setting up the U-Boot bootloader to support Mender
 
+Gyroscopes
+: measure orientation and angular velocity
+
 udev - userspace /dev
 : [is a device manager for the Linux kernel.](https://en.wikipedia.org/wiki/Udev)
 * checks when new device is plugged in and makes it available as a FILE
 
-Gyroscopes
-: measure orientation and angular velocity
+udev rule to permanently change network interface name
+{{< code numbered="true" >}}
+# PCI device 0x14e4:0x164c (bnx2)
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", \
+  ATTR{address}==[[["52:54:00:f1:93:3e"]]],           \
+  ATTR{type}=="1", [[[NAME="enp2s0"]]]
+{{< /code >}}
+
+1. MAC address of interface
+2. New interface name
+3. Skip using `Kernel`
 
 Press <kbd>space</kbd> to interrupt bootloader
 
