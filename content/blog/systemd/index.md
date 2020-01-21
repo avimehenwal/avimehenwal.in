@@ -117,6 +117,7 @@ WantedBy=multi-user.target
 
 ```
 sudo locale-check
+sudo locale -a
 sudo locale-gen en_US
 sudo update-locale LANG=en_US
 ```

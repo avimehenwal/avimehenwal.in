@@ -4,7 +4,6 @@ date       : 2019-07-09T23:15:22+02:00
 slug       : ""
 weight     : 5
 revision   : 0
-draft      : true
 series:
 - Test
 categories:

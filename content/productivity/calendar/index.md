@@ -2,7 +2,7 @@
 title      : "Calendar and time management"
 date       : 2019-08-16T11:43:47+02:00
 publishdate: 2019-08-17T11:43:47+02:00
-expirydate : 2019-08-31T11:43:47+02:00
+# expirydate : 2019-08-31T11:43:47+02:00
 draft      : false
 comments   : false
 weight     : 5

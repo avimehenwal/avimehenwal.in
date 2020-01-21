@@ -1,7 +1,6 @@
 ---
 title      : "26 Juli Friday"
 date       : 2019-07-26T11:24:21+02:00
-draft      : true
 comments: false
 revision: 0
 weight: 5

@@ -1,7 +1,6 @@
 ---
 title      : "16 Juli"
 date       : 2019-07-16T00:19:44+02:00
-draft      : true
 comments: false
 revision: 0
 weight: 5

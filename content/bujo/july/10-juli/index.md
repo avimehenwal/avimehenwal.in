@@ -1,7 +1,6 @@
 ---
 title      : "10 Juli"
 date       : 2019-07-10T11:05:06+02:00
-draft      : true
 comments: false
 revision: 0
 weight: 5
