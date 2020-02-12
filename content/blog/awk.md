@@ -48,4 +48,13 @@ END {}
 ## Tasks we can accomplish with awk scripting
 
 1. Report only on required info like IP addr from `ip a` output
-2. 
+2. Print output in tabular format
+
+{{< code numbered="true" >}}
+mount | awk '{[[[printf]]] "[[[%-20s]]]%-30s[[[|]]]%20s[[[\n]]]",$1,$3,$5}'
+{{< /code >}}
+
+1. `printf` instead of `print`
+2. left alignment
+3. column seperator (optional)
+4. Next line - important

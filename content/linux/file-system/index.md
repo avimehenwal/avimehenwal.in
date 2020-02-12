@@ -31,7 +31,7 @@ tags:
 4. debugfs
 
 
-## Searching with GREP
+## Searching filesystem with GREP
 
 {{% note %}}
 Grep comes from old computer days reg-ex searchs `g/re/p` global re search!
@@ -76,7 +76,7 @@ bat ./space.img >> 123.wic
 sudo cfdisk 123.wic 
 ```
 
-### dd command
+### dd command - copying filesystems
 
 {{% note %}}
 `dd` command copies sector by sector, so the final image will be the same size.
@@ -226,6 +226,18 @@ update-initramfs -u
 ```
 
 [How to remove old kernel versions from boot menu](https://linoxide.com/booting/remove-old-kernel-versions-boot-menu/)
+
+
+## Mounting and unmounting filesystems
+
+{{< code numbered="true" >}}
+mount
+umount [[[-a]]]
+fuser [[[-km]]] /data
+{{< /code >}}
+
+1. Unmount all devices from filesystems
+2. Kill all processses using filesystem at location
 
 ### Footnotes
 
