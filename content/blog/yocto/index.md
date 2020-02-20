@@ -1,5 +1,5 @@
 ---
-title      : "yocto"
+title      : "yocto Build System"
 date       : 2019-09-06T12:49:11+02:00
 publishdate: 2019-09-07T12:49:11+02:00
 draft      : false
@@ -61,6 +61,7 @@ blkid
 - [Questions](#questions)
 - [Bitbake Recipe](#bitbake-recipe)
 - [Devtools yocto recipe](#devtools-yocto-recipe)
+- [How to update yocto build system?](#how-to-update-yocto-build-system)
   - [Footnotes](#footnotes)
 
 iPXE
@@ -141,6 +142,14 @@ RDEPENDS
 * [Bitbake OE recipies](http://git.openembedded.org/meta-openembedded/tree/meta-python/recipes-devtools/python)
 * 
 
+## How to update yocto build system?
+
+- `MAJOR.Minor.patch`
+- [Yocto release process, every 6 months](https://wiki.yoctoproject.org/wiki/Yocto_Project_Release_Process)
+- `Poky` is the reference distro the Yocto Project releases with each Yocto Project release. These releases are named releases (danny, dora, dylan, edison, etc.) as well as numbered utilizing Major.minor.patch numbering.
+- 
+
+
 
 
 
@@ -148,3 +157,5 @@ RDEPENDS
 
 [^1]: https://www.kernel.org/doc/Documentation/filesystems/ramfs-rootfs-initramfs.txt
 [^2]: https://git.yoctoproject.org/cgit.cgi/poky/plain/meta/recipes-devtools/
+[^3]: http://events17.linuxfoundation.org/sites/events/files/slides/Yocto-upgrades-ELC-2017.pdf
+
