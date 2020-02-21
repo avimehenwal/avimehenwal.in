@@ -41,3 +41,4 @@ MBus is a chip-to-chip bus designed for ultra-constrained systems
 [^1]: [Wireless m-bus module with RF solution](https://wireless-solutions.de/products/radiomodules/im871amodule/html)
 [^2]: [Meter bus](https://en.wikipedia.org/wiki/Meter-Bus)
 [^3]: [m-bus .io](http://mbus.io/)
+[^4]: https://www.karo-electronics.com/fileadmin/download/Datasheets/TX28-Datasheet.pdf

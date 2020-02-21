@@ -25,6 +25,11 @@ yocto
 * means `10^24`
 * lets you write OS for newly devloped IoT device like washing machine
 
+SDK
+: A software development kit (SDK) is a collection of software development tools in one installable package
+* specific to a hardware platform and operating system combination
+
+
 ## How to configure device tree using yocto
 
 - dts file in linux-yocto recipe
@@ -58,8 +63,10 @@ blkid
 - [How to configure device tree using yocto](#how-to-configure-device-tree-using-yocto)
 - [List USB devices on linux](#list-usb-devices-on-linux)
 - [Build Linux from scratch!](#build-linux-from-scratch)
+- [Bitbake](#bitbake)
 - [Questions](#questions)
 - [Bitbake Recipe](#bitbake-recipe)
+- [Yocto](#yocto)
 - [Devtools yocto recipe](#devtools-yocto-recipe)
 - [How to update yocto build system?](#how-to-update-yocto-build-system)
   - [Footnotes](#footnotes)
@@ -84,6 +91,14 @@ iPXE
   * grub configs
 * Linux boot in 8 secs to work with LCDs
 * Able to change HDD size for vagrant VB provider VM, mark it as SSD
+
+
+## Bitbake
+
+* BitBake is a make-like build tool with the special focus of distributions and packages for embedded Linux cross compilation
+* BitBake recipes specify how a particular package is built
+* Recipes consist of the source URL (http, https, ftp, cvs, svn, git, local file system) of the package, dependencies and compile or install options
+* 
 
 ## Questions
 
@@ -130,6 +145,11 @@ RDEPENDS
 * Automatically create yocto recipes from using `devtool`
   * [Yocto Project SDK](https://www.yoctoproject.org/docs/2.8/sdk-manual/sdk-manual.html#sdk-installing-the-extensible-sdk)
 * Caution - Do not use recipe name followed by `-` (hyphen), use underscore for versioning instead
+
+## Yocto
+
+- `linux-yocto` recipe layer has actual linux kernel versions
+
 
 ## Devtools yocto recipe
 
