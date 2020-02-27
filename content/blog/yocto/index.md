@@ -69,6 +69,8 @@ blkid
 - [Yocto](#yocto)
 - [Devtools yocto recipe](#devtools-yocto-recipe)
 - [How to update yocto build system?](#how-to-update-yocto-build-system)
+- [Yocto kernels](#yocto-kernels)
+- [Cool Features](#cool-features)
   - [Footnotes](#footnotes)
 
 iPXE
@@ -169,7 +171,21 @@ RDEPENDS
 - `Poky` is the reference distro the Yocto Project releases with each Yocto Project release. These releases are named releases (danny, dora, dylan, edison, etc.) as well as numbered utilizing Major.minor.patch numbering.
 - 
 
+## Yocto kernels
 
+* [yocto kernel Documentation](https://www.yoctoproject.org/docs/current/kernel-dev/kernel-dev.html)
+  * `PREFFERED_PROVIDER_virtual/kernel = `
+*  how to set up your build host to support kernel development
+*  
+
+```
+devtool modify linux-yocto
+```
+
+## Cool Features
+
+* [ ] [Skip building recipies BBMASK](https://www.yoctoproject.org/docs/latest/ref-manual/ref-manual.html#var-BBMASK)
+* [ ] 
 
 
 
@@ -178,4 +194,5 @@ RDEPENDS
 [^1]: https://www.kernel.org/doc/Documentation/filesystems/ramfs-rootfs-initramfs.txt
 [^2]: https://git.yoctoproject.org/cgit.cgi/poky/plain/meta/recipes-devtools/
 [^3]: http://events17.linuxfoundation.org/sites/events/files/slides/Yocto-upgrades-ELC-2017.pdf
+[^4]: [i.MX or NXP energy efficient ARM based processor](https://www.karo-electronics.com/de/produkte/produktauswahl)
 
