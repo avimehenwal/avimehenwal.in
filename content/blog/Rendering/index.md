@@ -31,6 +31,10 @@ MESH
 
 TEXTURE
 : the feel, appearance, or consistency of a surface or a substance.
+* [DIsplacement Maps](https://en.wikipedia.org/wiki/Displacement_mapping)
+* [Bump Maps](https://en.wikipedia.org/wiki/Bump_mapping)
+* [Reflection Map](https://en.wikipedia.org/wiki/Reflection_mapping)
+* [BSDF - Bidirectional scattering distribution function](https://en.wikipedia.org/wiki/Bidirectional_scattering_distribution_function)
 
 RIGGING
 : going from static models to animated characters

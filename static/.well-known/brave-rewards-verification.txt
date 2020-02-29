@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: avimehenwal.in
+Token: 2562a1380342931308b77fdfbd3f28166bd0bfac36affd21ce263cbdc6ac1849
