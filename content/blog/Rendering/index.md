@@ -88,7 +88,7 @@ Studio
 8. Create realistic environments
 9. Architecture, fire, smoke, fluid, object simulation
 10. Camera Tracking, compositing
-11. [Lighting is important](https://www.youtube.com/playlist?list=PLjEaoINr3zgH9vCr47kSS5W8PEJBNIiwK)
+11. [Lighting is important](https://www.youtube.com/playlist?list=PLjEaoINr3zgH9vCr47kSS5W8PEJBNIiwK)````
     1.  Direction
         1.  direction creates SHADOWS, and shadows reveal FORMS
         2.  circle or sphere? Shadows are your friends
