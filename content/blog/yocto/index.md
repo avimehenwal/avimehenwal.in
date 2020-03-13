@@ -20,25 +20,34 @@ tags:
 
 yocto
 : that provides templates, tools and methods to help you create custom Linux-based systems for embedded products regardless of the hardware architecture
-* create a nodejs enabled linux image for raspberrypi
+* **Eg:** create a nodejs enabled linux image for raspberrypi
 * [wiki-yocto How_do_I](https://wiki.yoctoproject.org/wiki/How_do_I)
 * means `10^24`
 * lets you write OS for newly devloped IoT device like washing machine
 
 SDK
 : A software development kit (SDK) is a collection of software development tools in one installable package
+* backend, api, frontend in 1 package
 * specific to a hardware platform and operating system combination
 
 
 ## How to configure device tree using yocto
 
+- `linux-yocto` kernel (or whichever is being used)
 - dts file in linux-yocto recipe
 - device tree blob (dtb)
 - `fdtdump /boot/am335x-boneblack.dtb`
 - Getting a property from device tree <key> <property>
   - `fdtget /boot/am335x-boneblack.dtb spi0 status`
 
-```
+{{< code numbered="true" >}}
+bitbake-layers show-recipes [[[-i]]] kernel [[[-r]]]
+{{< /code >}}
+
+1. Recipies which `inherit` kernel `.bbclass` as all kernel recipies should inherit it
+2. List recipe name only
+
+```sh
 # Configure before devshell else might face SYNCCONFIG error
 ./tools/run_in_container.sh build ./tools/build/bitbake.sh build/bbb nas.pb.avantys.de:/mnt/nas/data/Projekte/SkySails/os/yocto-thud linux-yocto -c clean
 ./tools/run_in_container.sh build ./tools/build/bitbake.sh build/bbb nas.pb.avantys.de:/mnt/nas/data/Projekte/SkySails/os/yocto-thud linux-yocto -c configure
@@ -52,7 +61,7 @@ make dtbs
 lsusb
 : show you whether the kernel sees usb 3.0 support.
 
-```
+```sh
 # List block devices
 lsblk
 
@@ -60,18 +69,6 @@ dmesg | grep usb
 lsusb --tree
 blkid
 ```
-- [How to configure device tree using yocto](#how-to-configure-device-tree-using-yocto)
-- [List USB devices on linux](#list-usb-devices-on-linux)
-- [Build Linux from scratch!](#build-linux-from-scratch)
-- [Bitbake](#bitbake)
-- [Questions](#questions)
-- [Bitbake Recipe](#bitbake-recipe)
-- [Yocto](#yocto)
-- [Devtools yocto recipe](#devtools-yocto-recipe)
-- [How to update yocto build system?](#how-to-update-yocto-build-system)
-- [Yocto kernels](#yocto-kernels)
-- [Cool Features](#cool-features)
-  - [Footnotes](#footnotes)
 
 iPXE
 : is the leading open source network boot firmware.
@@ -100,12 +97,12 @@ iPXE
 * BitBake is a make-like build tool with the special focus of distributions and packages for embedded Linux cross compilation
 * BitBake recipes specify how a particular package is built
 * Recipes consist of the source URL (http, https, ftp, cvs, svn, git, local file system) of the package, dependencies and compile or install options
-* 
+*
 
 ## Questions
 
 1. How to change partitions sizes? Extend partitions?
-   1. Use `fdisk --list /dev/part` command 
+   1. Use `fdisk --list /dev/part` command
    2. `wks` File
 2. How to run `wic` image on virt-manager
 3. [How to build ubuntu from scratch using yocto?](https://stackoverflow.com/questions/46725208/yocto-how-to-create-a-basic-ubuntu-16-04-linux)
@@ -131,8 +128,8 @@ S
 : Where the source can be found after being fetched and unpacked.
 
 inherit autotools
-: Use a bitbake class that can configure, build and install an autotools project
-* `autoconf` and `automake`
+: [GNU Build System Tools](https://ast.wikipedia.org/wiki/GNU_build_system)
+* `GNU Autoconf`, `GNU Automake` and `GNU lib tool`
 
 EXTRA_OECONF
 : Options to be passed to configure script. In this case it is empty, so is not necessary.
@@ -162,30 +159,47 @@ RDEPENDS
 > How to installl python packages on yocto?
 
 * [Bitbake OE recipies](http://git.openembedded.org/meta-openembedded/tree/meta-python/recipes-devtools/python)
-* 
+
+```sh
+# Show layer dependencies
+bitbake-layers layerindex-show-depends meta-python
+# Add layer inside poky
+bitbake-layers layerindex-fetch meta-oe
+```
+
 
 ## How to update yocto build system?
 
 - `MAJOR.Minor.patch`
 - [Yocto release process, every 6 months](https://wiki.yoctoproject.org/wiki/Yocto_Project_Release_Process)
 - `Poky` is the reference distro the Yocto Project releases with each Yocto Project release. These releases are named releases (danny, dora, dylan, edison, etc.) as well as numbered utilizing Major.minor.patch numbering.
-- 
+-
 
 ## Yocto kernels
 
 * [yocto kernel Documentation](https://www.yoctoproject.org/docs/current/kernel-dev/kernel-dev.html)
   * `PREFFERED_PROVIDER_virtual/kernel = `
 *  how to set up your build host to support kernel development
-*  
+*
 
-```
+```sh
 devtool modify linux-yocto
+
+# Add Recipies
+IMAGE_INSTALL_append = "gtk+3"
+EXTRA_IMAGE_FEATURES += " package-management "
 ```
+
+## Efficient
+
+1. Build dashboards - toaster
+2. Error Reporting - Dashboards
+
 
 ## Cool Features
 
 * [ ] [Skip building recipies BBMASK](https://www.yoctoproject.org/docs/latest/ref-manual/ref-manual.html#var-BBMASK)
-* [ ] 
+* [ ]
 
 
 
