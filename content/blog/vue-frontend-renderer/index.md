@@ -45,7 +45,33 @@ firebase
 vue.js
 : declarative rendering and component composition.
 
+
+## How to Learn vuejs?
+
+{{% fileTree %}}
+* Learning Resources
+  * [Awesome vue -github](https://github.com/vuejs/awesome-vue)
+  * [Interview Questions](https://github.com/sudheerj/vuejs-interview-questions)
+  * [Official News](https://news.vuejs.org/)
+  * [Questions tagged vuejs](https://stackoverflow.com/questions/tagged/vue.js)
+  * [Vue enterprise boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
+  * [Books on vuejs pattern and antipatterns](https://dev.to/heshanfu/top-10-vue-js-books-you-should-read-240c)
+  * [Companies which uses vuejs](https://madewithvuejs.com/blog/enterprises-you-didnt-know-were-using-vue-js)
+  * [Asynchronous component loading](https://vuejs.org/v2/guide/components-dynamic-async.html)
+{{% /fileTree %}}
+
+
 ## SPA-single page applications | MPA-multiple page application
+
+* Why a frontend framework in the first place? Which problem does it solve?
+  * [virtualDOM manupulation](https://en.wikipedia.org/wiki/Document_Object_Model)
+* At what point an application becomes an Enterprise?
+  * simple timer, vs app watch timer with sharing, timezones and alarms options!
+  * potential, lifetime, robust, support, scale
+  * Applications like Gitlab
+* Code is like stuff, code is like Garbage
+* Get webpage out - manage the creation and modification of digital content- **CMS**
+
 
 #### PROS +
 
