@@ -36,7 +36,15 @@ vuex uses **reactive approach** when one component updates the state,
 other components using the data are notified.
 
 Axios
-: Promise based HTTP client for the browser and node.js
+: [Promise based HTTP client](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261) for the browser and node.js
+* [Futures and Promises for concurrent calls](https://en.wikipedia.org/wiki/Futures_and_promises)
+* `resolve()` and `reject()`
+
+```js
+const wait = time => new Promise((resolve) => setTimeout(resolve, time));
+
+wait(3000).then(() => console.log('Hello!')); // 'Hello!'
+```
 
 firebase
 : provides dynamic backend data store for web, android and ios
@@ -58,8 +66,25 @@ vue.js
   * [Books on vuejs pattern and antipatterns](https://dev.to/heshanfu/top-10-vue-js-books-you-should-read-240c)
   * [Companies which uses vuejs](https://madewithvuejs.com/blog/enterprises-you-didnt-know-were-using-vue-js)
   * [Asynchronous component loading](https://vuejs.org/v2/guide/components-dynamic-async.html)
+  * [Code Splitting](https://medium.com/js-dojo/3-code-splitting-patterns-for-vuejs-and-webpack-b8fff1ea0ba4)
+  * [Google + VueJS](https://github.com/gsmart-in/AppsCurryApp)
 {{% /fileTree %}}
 
+## Prerequisite - How to learn JS ES6?
+
+{{% fileTree %}}
+* How to learn JS ES6 Syntax?
+  * [What is ECMAScript?](https://en.wikipedia.org/wiki/ECMAScript)
+  * [List of ECMA Script Engines](https://en.wikipedia.org/wiki/List_of_ECMAScript_engines)
+  * Which problem does it solve? Why use it?
+    * virtual DOM Manupulation,
+    * CSS style manupulation
+    * [Syntax](https://www.w3schools.com/js/default.asp)
+    * Javascript Objects and objects manupulation
+  * What are Browser EVENTS?
+    * anything which browser does
+  * [ES6 Arrow Function](https://www.w3schools.com/js/js_arrow_function.asp)
+{{% /fileTree %}}
 
 ## SPA-single page applications | MPA-multiple page application
 
@@ -81,6 +106,7 @@ vue.js
   + resources (HTML, CSS and JS) are loaded once
   + later only DATA (json) is exchanged
 + easier to make Mobile applications as developer can reuse the same backend
++ [PWA Template](https://github.com/vuejs-templates/pwa)
 
 #### CONS -
 
@@ -102,6 +128,11 @@ vue.js
 9. Communication events
 10. Forms
 11. Tabs
+12. Filters
+13. State Management Pattern
+14. SPA Routing
+15. Modules and Namespaces
+16. [Helper Functions](https://stackoverflow.com/questions/19270178/what-are-helper-functions-in-c)
 
 * Declerative rendering
 * Progressive web framework
@@ -219,6 +250,8 @@ vue Directives | Description
 
 1. vue + firebase application
 2. show reactivity happening live on browser
+3. Read JSON from `Google App Script`, from spreadsheets
+4. [Google Script WebApp using vuejs controls](https://blog.gsmart.in/single-page-apps-vue-bootstrap-on-google-apps-script/)
 
 ### Gridsome
 
@@ -292,6 +325,10 @@ vue directives
    3. red / green based on user choice
 2. toDo list
 3. Drill down Animals data
+4. Upvoting, sorted list App
+5. SHopping Cart
+6. Notification and Feed system
+7. Calendar/ Planner App
 
 
 ## Dashboards
@@ -349,4 +386,5 @@ npm install -g @vue/cli
 [2]: https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram  "vuejs, lifecycle diagram"
 [^3]: [Virtual DOM](https://www.accelebrate.com/blog/the-real-benefits-of-the-virtual-dom-in-react-js/)
 [4]: [w3schools, filter search](https://www.w3schools.com/howto/howto_js_filter_lists.asp)
+
 [5]: [gh, You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)

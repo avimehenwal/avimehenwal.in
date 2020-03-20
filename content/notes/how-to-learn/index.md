@@ -47,12 +47,21 @@ Cognitive Conflict
 Intellectual Humility
 : make disagreements more constructive
 
+{{% fileTree %}}
+* Language Learning
+  * [Repos on github](https://github.com/topics/language-learning)
+  * [Repos tagged spacd repetition](https://github.com/topics/spaced-repetition)
+  * [Language Learning Toolkit](https://github.com/lltk/lltk)
+  * [Quizlet Approach](https://medium.com/tech-quizlet/spaced-repetition-for-all-cognitive-science-meets-big-data-in-a-procrastinating-world-59e4d2c8ede1)
+  * [wikiDictionary API](https://en.wiktionary.org/w/api.php)
+  * [Translate API example](https://www.chlehr.com/blog/2019-05-01-build-your-own-translator-with-vue/)
+{{% /fileTree %}}
+
 ## Problem[^1]
 
-1. After reading, watching a video or listening to something you feel like you are know, but actually you don't. We trick ourself thinking we are competent.
-2.
-
 > How to promote motivation to resolve cognitive conflict?
+
+1. After reading, watching a video or listening to something you feel like you are know, but actually you don't. We trick ourself thinking we are competent.
 
 3 ingredients
 
@@ -77,7 +86,17 @@ Feeling informed VS truly understanding something
 
 ![stm-to-lte](stm-to-lte.png)
 
+## Learning Schedule
+
+The Fibonacci numbers 1,2,3,5,8,13,21,34,55,89,144,233,377…
+
+Why Fibonacci Sequence is the best spaced repetition schedule to remember vocabulary
+
 ## Tools to use
+
+* https://github.com/lltk/Koko
+*
+
 
 ### ANKI
 
