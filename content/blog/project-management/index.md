@@ -16,30 +16,46 @@ tags:
 - app-script
 ---
 
+> See things happening as they progress in realtime
 
 ## Agile Methodologies
 
 * [What is project management?](https://en.wikipedia.org/wiki/Project_management)
-* [Critical chain project management](Critical chain project management)
-
-- Scrum
-- Kanban
+* [Critical chain project management](https://en.wikipedia.org/wiki/Critical_chain_project_management) Management could focus on niche area like
+  1. Product
+  2. Process
+  3. Production rate
+* Scrum
+* Kanban
 <!-- more -->
 
 {{% warning %}}
-We all have only $$1440 minutes$$ everyday!
+We all have only $$1440$$ minutes everyday!
 {{% /warning %}}
 
-Management could focus on niche area like
-
-1. Product
-2. Process
-3. Production rate
 
 ## PM Use cases
 
+> provides visual queus on completed vs todo
+
 1. Track Marketing Campaigns
-2. 
+2. Track development progress
+
+## [PM in 25 mins](https://www.youtube.com/watch?v=i69U0lvi89c)
+
+* For problems - listen to customers
+* For solutions - do not listen to them
+* Watch/dont watch competition - Does it really help?
+* Steal like an Artist
+* Always learn - be dumb
+
+## What are we tracking?
+
+* Products / Projects
+* Tasks / Subtasks
+* Time
+* Project Boards
+
 
 ## PM Tools
 
@@ -48,7 +64,7 @@ Project Name | FREE | Reporting
 [Project Open](http://www.project-open.com/en/install-ubuntu-xenial-xerus) | y | y
 [Open Project](https://www.openproject.org/download-and-installation/) | y | ?
 [Taiga](https://tree.taiga.io/project/avimehenwal-project-life/admin/project-profile/details) | y | n
-`todoist` | y | y
+[todoist](https://todoist.com/) | y | y
 
 ## Task analysis
 
@@ -123,8 +139,7 @@ Provides power to use google tools like Apps
 * Google internally uses a AppScript based project management tool for Drive and docs team
 * [Social Media Content Tracking Google Spreadsheets](https://mashable.com/2012/02/09/social-media-analytics-spreadsheets/?europe=true)
 
-
-{{< code numbered="true">}}
+```js
 function myFunction() {
   var sheet = SpreadsheetApp.getActiveSheet();
   var address = sheet.getRange("A1").getValue();
@@ -135,7 +150,14 @@ function myFunction() {
 
   MailApp.sendEmail("email@addr", "Subject", "body map.getMapUrl()");
 }
-{{< /code >}}
+```
+
+## What do I need?
+
+* Idea Capture system - brainstorm/research, +/-
+  * Can it make a business idea/plan?
+  * [Business model canvas](https://www.pinterest.de/pin/556827941399433613/)
+* Spaced Repetition system
 
 ## Building your own PM solution
 
@@ -168,6 +190,17 @@ function myFunction() {
    2. `sum` and `sumif` functions
    3.
 7. Geo charts
+8. Google App Maker
+
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHoFOy_DIKv_ctLQGpm4RBg-aXbwY0Tu-dmHdsq9_zObKCHQ/viewform?embedded=true" width="640" height="1186" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+## Inspirations
+
+* https://trello.com/b/cu32qF3q/learn
+* [ ] Build to learn board
+* [ ] [Ideas Board](https://trello.com/b/alB1ryRP/ideas)
+* [ ]
 
 ## Footnotes
 

@@ -59,6 +59,7 @@ Application Programming Interfaces provides means to connect a URL to a availabl
 * [Pokemon API](https://pokeapi.co/)
 * [Get current ISS location](http://open-notify.org/Open-Notify-API/ISS-Location-Now/)
 * [Get Google FIT data to spreadsheet](https://ithoughthecamewithyou.com/post/export-google-fit-daily-steps-to-a-google-sheet)
+* [Which technologies a website is using?](https://www.wappalyzer.com/)
 
 > Making promise based API calls from sheets!
 

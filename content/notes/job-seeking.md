@@ -26,6 +26,12 @@ tags:
 2. How will you help company earn more? What do you bring to the table?
 3. You need to sell yourself
 
+{{% fileTree %}}
+* Interview Preperation
+  * [Coding interview questions](https://github.com/mre/the-coding-interview)
+  *
+{{% /fileTree %}}
+
 ## Resume writing
 
 * Specific to job 80-90% match

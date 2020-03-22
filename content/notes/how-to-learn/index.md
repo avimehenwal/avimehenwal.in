@@ -82,7 +82,8 @@ Feeling informed VS truly understanding something
 2. Feynman Technique
    1. avoid convoluted language
    2. Use ANALOGIES
-3. Spaced Repetition
+3. Spaced Repetition (longterm) vs Cramming (shortterm)
+   1. Allot same time, but massive performance boost
 
 ![stm-to-lte](stm-to-lte.png)
 

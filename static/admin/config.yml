@@ -25,3 +25,6 @@ collections:
       - {label: Sharing, name: share, widget: boolean, default: true}
       - {label: Type, name: type, widget: hidden, default: "post"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+
+# https://github.com/ChrisStayte/Blog/blob/master/static/admin/config.yml
