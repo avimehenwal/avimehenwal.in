@@ -32,6 +32,7 @@ API is a **communication interface** to enable communication b/w various program
    2. https://stripe.com/docs/api
    3. https://api.slack.com/
    4. https://developer.twitter.com/en/docs
+6. [Public APIs API](https://api.publicapis.org/entries)
 
 ## REST constraints
 

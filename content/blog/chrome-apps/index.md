@@ -63,6 +63,14 @@ Do not use when, it changes from **Mission Critical** to **Mission Impossible**
 
 * Google Sheets as a JSON Endpoint
 
+## Features
+
+* Copy paste to get ris of the underlying formula for us
+* Import data from multiple sources (shapes, size)
+* Can show image thumbnails
+* Rows Grouping
+
+
 ### Footnotes
 
 * https://www.youtube.com/watch?v=vnm6ViI06MM

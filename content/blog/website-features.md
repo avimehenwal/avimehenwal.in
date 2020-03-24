@@ -11,6 +11,13 @@ title: Website Features
 weight: 5
 ---
 
+HTML Forms
+: Pass data from client (browser) to server (API/backend)
+* submission method can be `GET` or `POST`
+* multipart/form-data
+*
+
+
 - [ ] Blog with markdown content for posts
 - [ ] Search posts with Fuse.js and vue-fuse
 - [ ] Theme Switcher with Dark Mode
@@ -25,6 +32,10 @@ weight: 5
 - [ ] Clean and minimal design
 
 <!-- more -->
+## Features
+
+* How to post forms from fronend to google shhet backend?
+* How to read data from google sheet backend?
 
 ## Netlify | Forestry
 

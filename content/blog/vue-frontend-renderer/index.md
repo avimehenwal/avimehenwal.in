@@ -68,6 +68,7 @@ vue.js
   * [Asynchronous component loading](https://vuejs.org/v2/guide/components-dynamic-async.html)
   * [Code Splitting](https://medium.com/js-dojo/3-code-splitting-patterns-for-vuejs-and-webpack-b8fff1ea0ba4)
   * [Google + VueJS](https://github.com/gsmart-in/AppsCurryApp)
+  * [Awesome Vuetify](https://github.com/vuetifyjs/awesome-vuetify)
 {{% /fileTree %}}
 
 ## Prerequisite - How to learn JS ES6?
@@ -348,7 +349,7 @@ vue directives
   * store and filter data animations
   * sudoku rearranges nummbers
 * Reactive programming is programming with asynchronous data streams. stream is ongoing
-* `<Watchers>` for reactive programming
+* `<Watchers>` [for reactive programming](https://www.youtube.com/watch?time_continue=327&v=OEitxLemE_g&feature=emb_logo)
 
 {{% codePen WqYGMp %}}
 
@@ -378,6 +379,22 @@ npm install -g @vue/cli
 {{% warning %}}
   Always check `htop` process manager as which process is stuck from process tree list
 {{% /warning %}}
+
+### vue-enterprise-boilerplate
+
+* out of the box page loading and loaders
+* `API_BASE_URL` environment variable set.
+* Has generators to create viwes, components, utils, tests etc
+* Aliases for commonly used paths like components
+
+## Boilerplates and templates
+
+* [PWA app](https://github.com/vuesion/vuesion)
+* [webpack template](https://github.com/vuejs-templates/webpack)
+* [ENterprise boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
+* [vuebase](https://github.com/nathaniel83/Vuebase)
+* https://github.com/MuhaddiMu/VuetiForm
+* https://github.com/ClintOxx/vuetify-admin-dashboard
 
 
 ### Footnotes
