@@ -42,6 +42,7 @@ index 18123c7..00c8696 [[[100644]]]
 7. `+` A line was added here to the first file.
 8. `-` A line was removed here from the first file.
 8. start of new **hunk** `@@ -start,count +start,count @@`
+9. `git-flow` workflow, set of guidelines
 
 ## How to view git diff
 
@@ -241,7 +242,7 @@ git format-patch -1 <sha>
 git format-patch -1 HEAD
 
 # PATCH APPLY
-git apply ../0001-Update-mender-artifact-number-and-add-wt-as-runtime-.patch 
+git apply ../0001-Update-mender-artifact-number-and-add-wt-as-runtime-.patch
 ```
 
 ### Related work
