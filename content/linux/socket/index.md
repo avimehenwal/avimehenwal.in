@@ -116,7 +116,9 @@ ls | less
 
 ## SoCAT
 
-stands for **SO**cket **CAT**
+* stands for **SO**cket **CAT**
+* [Swiss Army knife for network debugging](https://medium.com/@copyconstruct/socat-29453e9fc8a6)
+* What makes socat so versatile is the fact that an **address** can represent a `network socket`, any `file descriptor`, a `Unix domain datagram or stream socket`, `TCP` and `UDP` (over both IPv4 and IPv6), `SOCKS` 4/4a over IPv4/IPv6, SCTP, PTY, datagram and stream sockets, named and `unnamed pipes`, raw IP sockets, `OpenSSL`, or on Linux even any arbitrary `network device`.
 
 
 
