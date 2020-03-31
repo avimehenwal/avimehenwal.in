@@ -50,6 +50,7 @@ Framework for framework ... wierd right?
 12. [ ] Add access_token from cookie to axios request as bearer
 13. [ ] [Add Bearer token to axios](https://axios.nuxtjs.org/helpers.html#settoken)
 14. [ ] [Querystring with axios](https://github.com/nuxt-community/axios-module/issues/97)
+15. [ ] [Accessing getters from modules](https://forum.vuejs.org/t/vuex-namespace-getters-accessing-across-modules/25474/12)
 
 ## Which problems does nuxt solves?
 

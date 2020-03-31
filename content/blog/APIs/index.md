@@ -66,6 +66,15 @@ Application Programming Interfaces provides means to connect a URL to a availabl
 
 [Use `flush()` to apply all pending Spreadsheet changes.](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app#flush)
 
+## Google APIs
+
+* https://developers.google.com/oauthplayground/#step3&apisSelect=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive&url=https%3A%2F%2Fwww.googleapis.com%2Fdrive%2Fv3%2Fabout%3Ffields%3D*&content_type=application%2Fjson&http_method=GET&useDefaultOauthCred=unchecked&oauthEndpointSelect=Google&oauthAuthEndpointValue=https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth&oauthTokenEndpointValue=https%3A%2F%2Foauth2.googleapis.com%2Ftoken&includeCredentials=unchecked&accessTokenType=bearer&autoRefreshToken=unchecked&accessType=offline&prompt=consent&response_type=code&wrapLines=on
+* https://stackoverflow.com/questions/32076503/using-postman-to-access-oauth-2-0-google-apis
+
+```sh
+curl 'https://www.googleapis.com/drive/v3/about?fields=*' -H 'authority: www.googleapis.com' -H 'pragma: no-cache' -H 'cache-control: no-cache' -H 'accept: application/json, text/plain, */*' -H 'origin: http://localhost:3000' -H 'authorization: https://www.googleapis.com/drive/v3/about' -H 'sec-fetch-dest: empty' -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36' -H 'sec-fetch-site: cross-site' -H 'sec-fetch-mode: cors' -H 'referer: https://www.googleapis.com/' -H 'accept-language: en-US,en;q=0.9' --compressed
+```
+
 ### Footnotes
 
 [1]: [Some cool and funny APIs to work with](https://github.com/benlcollins/apps_script_apis)
