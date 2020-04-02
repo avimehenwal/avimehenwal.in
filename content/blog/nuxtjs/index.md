@@ -28,7 +28,13 @@ Framework for framework ... wierd right?
 * Pages -> router
 * assets -> SASS
 * `fetch` is replaced with [Anonymous middleware](https://nuxtjs.org/api/pages-middleware#anonymous-middleware)
-*
+
+{{% fileTree %}}
+* Frontend Application
+  * Server side Renderign SSR vs Client side Rendering CSR
+  * asyncData (SSR) vs data (CSR)
+  * Use proxy URLs to fix CORS errors
+{{% /fileTree %}}
 
 ## Thing you should know
 
@@ -51,6 +57,10 @@ Framework for framework ... wierd right?
 13. [ ] [Add Bearer token to axios](https://axios.nuxtjs.org/helpers.html#settoken)
 14. [ ] [Querystring with axios](https://github.com/nuxt-community/axios-module/issues/97)
 15. [ ] [Accessing getters from modules](https://forum.vuejs.org/t/vuex-namespace-getters-accessing-across-modules/25474/12)
+16. [ ] [Difference between Asyncdata vs Fetch](https://stackoverflow.com/questions/49251437/difference-between-asyncdata-vs-fetch)
+17. [ ] Load data from API before page is rendered
+18. [ ] Nuxt Modules - globally available
+19. [ ] [Getters with Arguments?](https://stackoverflow.com/questions/41503527/vuexjs-getter-with-argument)
 
 ## Which problems does nuxt solves?
 

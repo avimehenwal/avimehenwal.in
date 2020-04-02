@@ -1,7 +1,7 @@
 ---
 title      : "Javascript"
 date       : 2019-07-12T23:16:43+02:00
-comments: false
+comments: true
 weight     : 5
 revision   : 0
 series:
@@ -142,8 +142,6 @@ ijsinstall
 
 ### jupyter lab
 
-
-
 ```
 // no variable types
 b = 123
@@ -266,6 +264,89 @@ emitter.emit('event')
 ## Questions
 
 1. Difference b/w node and vue js?
+
+> Understand the CONCEPT, why JS is the way they are? What do people who wrote
+> JQUERY wrote know that you dont know. Those that learn how things work under the
+> hood, solves the problem better.
+
+## Javascript
+
+{{% note %}}
+Code is executing code, which is written by other people
+{{% /note %}}
+
+```js
+// JS Hoisting, still works though a=undefined unlike other languages
+b()
+console.log(a)
+
+var a = 'Hello World'
+function b() {
+  console.log('called b')
+}
+
+// coercion example
+var a = 1 + '2';
+console.log(a);    // a = 12
+
+// Callbacks
+let x = function () {
+  console.log('inside X')
+}
+let y = function (callback) {
+  console.log('Function Y')
+  callback()
+}
+y(x)
+```
+
+1. Tools you need - **browser**. Setup env to run js in browser
+2. multiple Key-value = Objects
+3. language grammer, compiler/interpreter
+   1. Syntax Parsers - parsing source code character by character as per defined grammer
+4. Javascript Engine creates
+   1. Lexical Environment
+   2. Global Execution Context - particular/running lexical env
+   3. JS file loaded, syntax parser started and execution context was created
+      1. `this.`, `window` - global object
+      2. these things are automatically created by JS engine, we wrote no code for it
+   4. Google chrome `v8 engine`
+   5. **Javascript HOISTING**
+      1. Execution context is created in 2 phases
+         1. Creation phase
+            1. Global object
+            2. this
+            3. outer environment
+            4. setup memory space for variables and functions = hoisting
+         2. Execution phase - line by line traditional execution
+            1.
+5. `undefined` is a special value js has inside it.
+6. `null` lack of existence
+   1. I the programmer, never set this value
+7. JS is single threaded, synchronous execution
+8. Function Invocation `function()` - function call
+9. Veriable environment - namespace, where does the variable live?
+10. Scope Chains, lexical linking
+11. `let` block scoping. Not allowed to use it until the line of code is run that declares the variable
+    1.  inside the block
+12. Asynchronous Callbacks
+    1.  More than one at a time
+    2.  Event Queue
+13. Static typing and Dynamic Typing
+14. Data types in JS - null, undefind, boolean, string, number, object, symbol, function
+15. **Coercion** - Converting a value from one type to another
+16. Frameworks
+    1. Not seperatring the code in any way, no new execution context
+    2. just stacking code
+    3. Running all js code as if was inside one file
+    4. checking the global namespace so that it doesnt collide
+       1. `window.libraryName = window.libraryName || "Lib 2"`
+17. Objects and Functions are closely related in JS
+    1.  `var Person = {}`
+18. Callback Functions - Higher order functions
+    1.  First Class Objects - pass other functions as arguments to functions
+    2.  Enforce the order of time-consuming operations
+        1.  Adding new data to DB then updating the view once updated
 
 
 ### Footnotes
