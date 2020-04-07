@@ -32,7 +32,7 @@ For every byte of data transmitted, there are actually 10 bits being sent: a sta
   * Linux can be configured to run headless, that is, without a video console + keyboard; the console is assigned to a serial port.
   * Depends on Motherboard and BIOS
 * How to identify Serial port?
-  * Port 1 - in most cases[^1]
+  * **Port 1** - in most cases[^1] or **COM**
   * USB-Serial adapter to connect to modern laptop - `ttyUSB0` in most cases
     * dmesg
   * Most of the times, linux already will have serial device driver installed
@@ -41,15 +41,15 @@ For every byte of data transmitted, there are actually 10 bits being sent: a sta
   * Minicon
   * SSH connection
 * Methods to connect to a IoT device like RPi?
-  * HDMI port with USB keyboard
-  * via Networking using SSH
+  * HDMI port with USB keyboard - requires OS service
+  * via Networking using SSH - requires OS service
   * Serial Port (if device has one)- using UARTS RX and TX
     * [How to make one?](https://www.youtube.com/watch?v=ZRKBlGvsxMw)
     * Small arduino device relaying RX, TX traffic to USB port connected to computers
     * You need 2 UART interfaces
 * to connect to a IoT device using serial connect all we need is
-  * [ ] targe device with 1 UART interface enabled
-  * [ ] Intermediate device to forward UART traffic via USB to a laptop, How to cpnfigure it
+  * targe device with 1 UART interface enabled
+  * Intermediate device to forward UART traffic via USB to a laptop, How to configure it
   * [ ] Laptop equipped with putty/picocom, to read forwarded UART traffic
 
 ## Serial communication in Linux
