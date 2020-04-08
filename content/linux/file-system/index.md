@@ -73,7 +73,7 @@ When the sector size is increased from 512 bytes to a larger value, more efficie
 cp mastercontrol-image-genericx86-64--20191212115741.wic 123.wic
 dd status=progress bs=1G if=/dev/zero of=./space.img count=1
 bat ./space.img >> 123.wic
-sudo cfdisk 123.wic 
+sudo cfdisk 123.wic
 ```
 
 ### dd command - copying filesystems
@@ -136,7 +136,7 @@ sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s rm 4
 sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s print free
 
 sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s mkpart extended 4243968s 8471055s
-sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s mkpart logical ext4 4243969s 5471055s 
+sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s mkpart logical ext4 4243969s 5471055s
 sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s mkpart logical ext4 5471057s 8471055s
 
 sudo parted --script skysails-mastercontrol-image-genericx86-64.wic unit s print free
@@ -180,22 +180,30 @@ blockdev --getbsz /dev/sda.[10]
 * /proc/net/dev (Can use this information to see which network devices are available in your system and how much traffic was routed over those devices)
 * /proc/net ( tcp, udp, tcp6, udp6, igmp, ecc)
 
+## lsof
+
 > List whichi processes have current file opened?
 
 * `lsof /var/log/syslog`
-* Process that are using a linux library 
+* Process that are using a linux library
   * `lsof /lib/x86/libssl.so`
 * What is this user upto?
   * `lsof --user dave`
 
-```
-# Network sockets
-
-lsof -i TCP
+{{< code numbered="true" >}}
+lsof -i [[[TCP]]]
 lsof -i UDP
 lsof -i :80
 lsof -i -n -P | grep
-```
+lsof -u avi | wc
+lsof [[[-u ^avi]]] | wc --line
+lsof [[[-U]]]
+{{< /code >}}
+
+1. List all open TCP network sockets
+2. List all FD opened by user other than avi
+3. List all UNIX domain specific FD
+
 
 ## FD - Files descriptors
 
@@ -213,7 +221,7 @@ Symbols | Meanings
 ## sysfs
 
 * exports information about various kernel subsystems, hardware devices, and associated device drivers from the kernel's device model to user space through virtual files
-* 
+*
 
 ## initramfs
 
