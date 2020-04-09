@@ -50,13 +50,14 @@ For every byte of data transmitted, there are actually 10 bits being sent: a sta
 * to connect to a IoT device using serial connect all we need is
   * targe device with 1 UART interface enabled
   * Intermediate device to forward UART traffic via USB to a laptop, How to configure it
-  * [ ] Laptop equipped with putty/picocom, to read forwarded UART traffic
+  * Laptop equipped with putty/picocom, to read forwarded UART traffic
 
 ## Serial communication in Linux
 
 * Most of the times Linux already has serial device drivers installed
 * In Linux, **COM1** is `ttyS0`, **COM2** is `ttyS1`
 * Pesudoterminals[^3]
+  * Pair of master and slave pseudo devices
   * to feed text input to the master pseudo-device for use by the shell (such as bash), which is connected to the slave pseudo-device,
   * to read text output from the master pseudo-device and show it to the user.
 
@@ -64,7 +65,7 @@ For every byte of data transmitted, there are actually 10 bits being sent: a sta
 [[[dmesg]]] | grep tty
 demsg | grep pty
 [[[setserial]]] -g /dev/ttyS[0123]
-socat -d -d [[[pty]]],raw,echo=0 pty,raw,echo=0
+[[[socat]]] [[[-d -d]]] [[[pty]]],raw,echo=0 pty,raw,echo=0
 
 cat [[[/proc/tty/driver/serial]]]
 serinfo:1.0 driver revision:
@@ -84,12 +85,14 @@ cat /sys/class/tty/tty0/[[[active]]]
 
 1. check is any serial device is detected by OS or not?
 2. Program to connect to serial device. Could be `minicom`, `picocom`, `putty` as well
-3. Create a virtual TTY using `socat` program
-4. How do I know how manyc and which UARTs are connected?
-5. Connected/ used by a device
-6. Free and available
-7. List all TTYs and PTS used on linux machine
-8. Active TTY
+3. [SOcket CAT]({{< relref "/linux/socket/index.md#socat" >}})
+4. Prints fatal, error, warning, and notice messages
+5. Create a **virtual TTY** using socat program
+6. How do I know how manyc and which UARTs are connected?
+7. Connected/ used by a device
+8. Free and available
+9. List all TTYs and PTS used on linux machine
+10. Active TTY
 
 * Proxy serial over TCP with socat
 * Advantages of serial console vs normal console[^2]
