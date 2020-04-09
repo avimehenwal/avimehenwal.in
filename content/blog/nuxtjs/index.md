@@ -61,6 +61,8 @@ Framework for framework ... wierd right?
 17. [ ] Load data from API before page is rendered
 18. [ ] Nuxt Modules - globally available
 19. [ ] [Getters with Arguments?](https://stackoverflow.com/questions/41503527/vuexjs-getter-with-argument)
+20. [ ] Google Analytics
+21. [ ] [Other useful Modules](https://www.telerik.com/blogs/20-nuxt-modules-with-tips-to-increase-productivity-build-web-apps-faster)
 
 ## Which problems does nuxt solves?
 
