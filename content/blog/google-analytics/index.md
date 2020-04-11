@@ -31,6 +31,8 @@ Most likely to sink
 * Who and how many people are using your wesite?
 * Most/Least revenue generating page?
 * Best/worst source which brings/converges people to a website?
+* What is revenue on website analytics?
+  * to analyze purchase activity on your site or app
 
 ## Google Tag Manager
 
@@ -46,6 +48,21 @@ Tags fire in response to events. Trigger listens to your web page or mobile app 
   * Google Ad Sense
   * Floodlight Counter
 * Enable/disblae google Analytics from GTM UI (no coding)
+
+## Google Search Console
+
+> Check of your website is ranked in SEO and how?
+
+[Google Search Console](https://en.wikipedia.org/wiki/Google_Search_Console) is a web service by Google which allows webmasters to check indexing status and optimize visibility of their websites.
+
+* Help website owners (webmasters), SEO owners, developers understand how they are doing on google search?
+* Not a requirnment for organic search, but can help monitor
+* [ ] Crawl, index and discover pages
+* [ ] Submit updated content to google index
+* [ ] Monitor search performance by countries
+
+## Automate Interconnections between social media
+
 
 ### Footnotes
 
