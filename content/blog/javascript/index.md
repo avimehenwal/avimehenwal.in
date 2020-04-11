@@ -11,6 +11,8 @@ categories:
 tags:
 - javascript
 - babel
+- npm
+- plugins
 ---
 
 ES6
@@ -348,8 +350,32 @@ y(x)
     2.  Enforce the order of time-consuming operations
         1.  Adding new data to DB then updating the view once updated
 
+## Publish your first vue npm package
+
+> Worlds largest software registry to share JS code
+
+* What does NPM mean?
+  * npm package manager UI
+  * npm command line tool
+  * npm files under npm_modules
+* Plugins enhances the functionality of codebase
+* [As stated in the Official Vue.js documentation,](https://vuejs.org/v2/guide/plugins.html) there is no strictly defined scope for a plugin. It simply adds global-level functionality to your project
+* Add some component options by global mixin. e.g. vue-router
+* using vue-cli `--target lib`  mode
+* npm publish --access public
+* npm init - to create package.json file
+* normal npm modules gets installed under node_modules directory
+*
+
+> `vuejs` plugins are different from `nuxtjs`
+
+* https://stackoverflow.com/questions/46805455/how-use-own-js-as-plugin-using-nuxt-js
+
+### Resources
+
+* [Named exports vs default exports in ES6](https://medium.com/@etherealm/named-export-vs-default-export-in-es6-affb483a0910)
+
 
 ### Footnotes
 
 [^1]: [ES6 features](http://es6-features.org/#ExpressionBodies)
-[^2]:
