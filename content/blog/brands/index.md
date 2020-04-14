@@ -40,8 +40,8 @@ $$ Brand = your Reputation $$
 
 ### How to make your own BRAND cult?
 
-$$ 
-Engagement 
+$$
+Engagement
 Quality of COMMUNITY not the PRODUCT
 $$
 
@@ -56,7 +56,7 @@ $$
   * What's your creation story
     * Apple started in garage
     * Paintings in museum are worth millions, while the once outside are worthless
-    * 
+    *
 4. Be Relatable
   * Influencers promoting
 5. Be Involved
@@ -64,6 +64,12 @@ $$
   * Community
 6. Be Pervasive
 
+## How to choose brand name?
+
+> Benovalent dictator for life
+
+* Google translate word/term in various languages.
+  * This is how `vue` got its name, french for view
 
 ### Footnotes
 

@@ -12,6 +12,7 @@ tags:
 - linux
 - tmux
 - swap
+- terminal
 ---
 
 tmux
@@ -163,6 +164,28 @@ cat /proc/swaps
 > How do I add fresh new swap?
 
 Turn `swapon` and `swapoff` from `GParted` tool
+
+## Terminal Applications
+
+> Which tools languages to use?
+> NOde, python, rust, bash? How to choose?
+
+* [Node.js vs Python Comparison: Which Solution to Choose for Your Next Project?](https://www.netguru.com/blog/node-vs-python)
+* [Domain specific Languages](https://en.wikipedia.org/wiki/Domain-specific_language)
+  * Perl - text processing
+  * awk - terminal reporting
+* Identify the components you need
+  * Colored fonts, texts - `chalk`
+  * Progress bars
+  * Dialog boxes, input fields
+  * PAssword text
+  * parsing command line arguments
+  * abstraction for internal CLIs (e.g. `readline`)
+
+## My Projects
+
+* https://github.com/avimehenwal/dotfiles
+* https://github.com/avimehenwal/git-ally
 
 ### Footnotes
 
