@@ -30,6 +30,8 @@ HTML Forms
 - [ ] Tailwind CSS v1.0 (with PurgeCSS)
 - [ ] Scroll to sections using vue-scrollto
 - [ ] Clean and minimal design
+- [ ] Form: Disable SUBMIT button is form is not valid using a computed property
+- [ ] Form: Image URL preview
 
 <!-- more -->
 ## Features

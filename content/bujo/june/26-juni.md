@@ -1,4 +1,5 @@
 ---
+title: 26 Juni
 categories:
 - design
 date: "2019-06-26T15:01:23+02:00"
@@ -7,7 +8,6 @@ series:
 - myLearning
 tags:
 - http
-title: 26 Juni
 weight: 5
 ---
 
@@ -85,6 +85,26 @@ Twitter cards[^4]
 Email Subscription Service [buttondown](https://buttondown.email/)
 
 [PWA service worker](https://gohugohq.com/howto/go-offline-with-service-worker/)
+
+## HTTP/2
+
+* [Faster content delivery](https://youtu.be/cznVISavm-k)
+* Whats critical resource for your webpage?
+  * 3 Most critial network calls
+  * Is it gonna be fonts?
+  * tracking scripts?
+  * jquery from CDN?
+  * Hero images?
+  * CSS for current route?
+* Performance is a UX (user exxperience) problem
+* Fonts are not discovered until CSS files are parsed - add `preload` headers
+* Enable your server (IIS, nginx, apachey) to use HTTP2 to enable network **PUSH**
+* Server PUsh benefits
+  * 1 round trip saving
+  * Useful for long server think time
+  * Useful for long RTT times
+* **Async Push**
+* [HTTP Push implementations vary widely](https://jakearchibald.com/2017/h2-push-tougher-than-i-thought/)
 
 ### Footnotes
 
