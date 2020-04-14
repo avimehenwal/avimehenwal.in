@@ -27,7 +27,12 @@ tags:
 
 ## Rust
 
+> A language empowering everyone to build reliable and efficient software.
+> Write code for perpetuity
+
 * low level **system language**[^8], contrast to `Go`, a language for **sysadmins**
+* Rust is a **statically compiled**
+  * The process of verifying and enforcing the constraints of types . Type Checking may occur either at compile-time (a static check) or at run-time (dynamic check).
 * memory safe, solve memory management problem
   * no `segmenation fault` - date moved by a pointer and then a function calling the dereferenced pointer again
   * Compiler keeps track of all pointers in context
@@ -35,6 +40,7 @@ tags:
   * Garbage Collector - pauses the execution for a monent and resorts everything
     * This pause could be noticable in small performance devices
 * BORROWING
+* For web, **web assembly**
 * Very precise deallocating memory, which you do nt have to do manually
 * LLVM supported architectures
 * Compare the newer [build result with the older versions](https://github.com/rust-lang-nursery/taskcluster-crater)
@@ -49,6 +55,7 @@ tags:
 * `...` match 3 dots - inclusive in the end
 * **Traits** and **Types**
   * trait describes a types ability
+  * [Rust implements traits on types (structs)](https://www.youtube.com/watch?v=0sI-GzVSYic)
 * OWNERSHIP
   * every value as exactly 1 one owner at a time
   * can be changed during execution
@@ -68,7 +75,21 @@ tags:
 * By default, the items in a module have **private** visibility, but this can be overridden with the `pub` modifier
 * `let` Bind variables to values in a scope
 
-> C is like playing with knoves, C++ is juggling flaming chain saws
+## Data types
+
+* Two types of Strings
+  * Primitive string - immutables
+  * Growable, heap allocated data structure
+    * `String::from("Hello");`
+* Tuples - group of values of various types
+  * MAx 12 elements
+* Vectors - Resizable Arrays
+  * `let mut number: Vec<i32> = vec![1, 2, 3, 4]`
+* Pointers, References
+* Structs - are kin do classes, custome data types
+  * `impl` has functions, methods and `struct` has properties
+
+> C is like playing with knives, C++ is juggling flaming chain saws
 
 ## Anatomy
 
@@ -90,7 +111,7 @@ tags:
 > Why is there a crab for rust? , mascot
 
 > How to keep track of security vurnabilities in libraries you are using? To make
-> sure your program is secure? 
+> sure your program is secure?
 > I wanted to write a socket, I spent good 30 mins time, where am I not looking?
 > Rust for embedded?
 
@@ -108,7 +129,7 @@ tags:
     * `MOVE` ownership
 * Even function arguments takes ownership
   * variable ownership is moved to argument
-* 
+*
 
 > Why does the println! function use an exclamation mark in Rust?
 
@@ -127,9 +148,9 @@ Writing shell scripts in Rust
 
 > Using shell scripts is fine when you're using their strengths
 
-## [LLVM](https://en.wikipedia.org/wiki/LLVM)
+## LLVM
 
-The LLVM compiler infrastructure project is a set of compiler and toolchain technologies,[3] which can be used to develop a front end for any programming language and a back end for any instruction set architecture. LLVM is designed around a language-independent intermediate representation that serves as a portable, high-level assembly language that can be optimized with a variety of transformations over multiple passes.
+The [LLVM compiler infrastructure](https://en.wikipedia.org/wiki/LLVM) project is a set of compiler and toolchain technologies,[3] which can be used to develop a front end for any programming language and a back end for any instruction set architecture. LLVM is designed around a language-independent intermediate representation that serves as a portable, high-level assembly language that can be optimized with a variety of transformations over multiple passes.
 
 * it has debuggers, optimiser
 * Java, haskell, swift, rust all are written using LLVM
@@ -162,6 +183,7 @@ llvm-ir
 ## Macros
 
 * [Metaprogramming](https://en.wikipedia.org/wiki/Metaprogramming)
+  * Metaprogramming is a programming technique in which computer programs have the ability to treat other programs as their data
 * macros are expanded into source code that gets compiled with the rest of the program as abstract syntax trees
 *[ write DSL Domain specific language like LISP](https://medium.com/@phoomparin/a-beginners-guide-to-rust-macros-5c75594498f1)
 * comes in 3 forms
@@ -260,6 +282,12 @@ extern keyword
 error: expected item, found keyword `let`
 ```
 * let can only be used in a function
+
+
+### Resources
+
+* [Official Documentation](https://users.rust-lang.org/)
+
 
 ### Footnotes
 

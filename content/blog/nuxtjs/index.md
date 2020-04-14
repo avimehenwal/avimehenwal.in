@@ -93,6 +93,20 @@ axios.get([[[`http://someurl.com/${this.$route.params.id}`]]], config)
 
 ## How is it different from vuejs?
 
+## NUXT Framework
+
+* SEO Advantages - custom `heads`, prebuild standard directory structure
+  * `hid: description` to avoid duplicated `meta` tags
+  * [vue-meta](https://vue-meta.nuxtjs.org/api/#plugin-properties) for supported SEO properties
+* Less work managing routes
+* Universal Mode
+  * Load the page after disabling javascript from browser
+  * On each route, app loades route specific JS, CSS and component (HTML) files
+* Prefetching
+  * prefetch `js` before clicked
+* vuex store
+  * return an anonymous function
+
 ### Footnotes
 
 * https://github.com/nuxt-community/awesome-nuxt

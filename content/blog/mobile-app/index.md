@@ -1,5 +1,5 @@
 ---
-title      : "How to make a mobile app"
+title      : "Mobile Development"
 date       : 2020-03-23T14:03:15Z
 publishdate: 2020-03-23T14:03:15Z
 draft      : false
@@ -16,6 +16,9 @@ categories:
 - deployment
 - development
 tags:
+- mobile
+- android
+- ios
 ---
 
 markup language

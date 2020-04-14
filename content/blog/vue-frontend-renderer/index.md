@@ -1,5 +1,5 @@
 ---
-title: VUE.js - Front end rendering
+title: "vuejs"
 date: "2019-07-06T10:41:30+02:00"
 revision: 1
 slug: ""

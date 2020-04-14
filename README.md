@@ -1,8 +1,11 @@
-# Avi Mehenwal
+<h1>
+    Avi Mehenwal
+    <a href='https://app.netlify.com/sites/avimehenwal/deploys'>
+        <img align="right" src='https://api.netlify.com/api/v1/badges/a00db104-562e-4c21-a7e2-321c0c84998b/deploy-status'/>
+    </a>
+</h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a00db104-562e-4c21-a7e2-321c0c84998b/deploy-status)](https://app.netlify.com/sites/aviportfolio/deploys)
-
-Hugo Static Site Generator v0.55.6 linux/amd64
+> Hugo Static Site Generator v0.55.6 linux/amd64
 
 ### Installing hugo from precompiled binaries
 
