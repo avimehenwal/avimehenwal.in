@@ -45,6 +45,10 @@ stack
 : provides several Unix utilities in a single executable file.
 * Swiss army knife of embedded linux
 
+{{% note %}}
+By default, Docker runs a container with a /dev/shm shared memory space 64MB
+{{% /note %}}
+
 > Where are docker images and layers stored on system ?
 
 ```
