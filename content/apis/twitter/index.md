@@ -3,7 +3,7 @@ title      : "Twitter Developer"
 date       : 2020-04-13T21:38:19Z
 publishdate: 2020-04-13T21:38:19Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

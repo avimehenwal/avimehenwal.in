@@ -8,11 +8,30 @@ series:
 - myLearning
 categories:
 - deployment
+- cloud
 tags:
 - firebase
+- serverless
 ---
 
+> Build Apps that people will Love. App development should be easy, serverless style
+
+## Firebase
+
 * self-hosted real time nosql databbase
+* Which problem does it solve?
+  * Building a **WebApp** is not easy?
+  * backend for data
+  * frontend view
+  * multiple devices, mobiles, tablets, desktop, app
+  * User LogIn
+  * Analytics / Monitor
+  * Build apps fast, without managing infrastructure
+* [Big Enough Free Tier](https://firebase.google.com/pricing)
+
+## Cloud Functions
+
+> Create your own API with cloud functions
 
 ### Footnotes
 

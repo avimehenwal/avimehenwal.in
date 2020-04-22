@@ -1,4 +1,5 @@
 ---
+title: Website Features
 categories:
 - design
 date: "2019-07-06T21:08:11+02:00"
@@ -7,7 +8,6 @@ series:
 - myLearning
 tags:
 - website
-title: Website Features
 weight: 5
 ---
 
@@ -15,7 +15,6 @@ HTML Forms
 : Pass data from client (browser) to server (API/backend)
 * submission method can be `GET` or `POST`
 * multipart/form-data
-*
 
 
 - [ ] Blog with markdown content for posts
@@ -64,6 +63,15 @@ HTML Forms
   **or use shortcode expandable labels**
 {{% /note %}}
 
+## Backends
+
+> Why seperate data from view? Code decoupling, seperation of concerns
+
+* JSON APIs are pretty much standard
+  * might be expensive to host
+* Google Sheets as API
+  * [How to post data from frontend?](https://trevorfox.com/2015/06/dynamically-pre-fill-google-forms-with-mailchimp-merge-tags/)
+* Free cloud Hosted JSON, txt, csv files as backends
 
 
 [bibliography]

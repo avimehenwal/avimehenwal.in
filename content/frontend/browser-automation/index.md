@@ -72,6 +72,9 @@ page.evaluate(pageFunction[, ...args])
 page.$$(selector)
 :  runs `document.querySelectorAll` within the page
 
+page.focus
+: Focuses on element before performing any action
+
 page.content()
 : Gets the full HTML contents of the page, including the doctype.
 
@@ -192,3 +195,8 @@ Turn anywebsite into an API
 * https://ericbidelman.com/posts/2019/02/pptrstagingserver
 * https://stackoverflow.com/questions/tagged/puppeteer
 * https://stackoverflow.com/questions/61176809/puppeteer-await-page-classname-but-i-get-only-the-first-11-element-with/61176935#61176935
+* https://socialmanager.tools/
+* https://github.com/social-manager-tools
+
+
+git remote add --track nightly upstream git@github.com:social-manager-tools/socialmanagertools-igbot.git

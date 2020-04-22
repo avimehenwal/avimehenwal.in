@@ -4,7 +4,7 @@ defaultContentLanguage = "en"
 title                  = "@avimehenwal"
 theme                  = "cupper-hugo-theme"
 googleAnalytics        = "UA-113741959-1"
-disqusShortname        = "yourdiscussshortname"
+disqusShortname        = "https-avimehenwal-in"
 enableGitInfo          = true                          # https://gohugo.io/variables/git/
 
 [taxonomies]
@@ -81,20 +81,33 @@ enableGitInfo          = true                          # https://gohugo.io/varia
 # Social icons appear in introduction and contact section. Add as many more as you like.
 # Find icon names here: http://fontawesome.io/cheatsheet/
 [[params.social]]
-    url = "https://github.com/avimehenwal"
-    icon = "github"
+    url = "https://www.buymeacoffee.com/F1j07cV"
+    icon = "coffee"
 
 [[params.social]]
-    url = "https://twitter.com/avimehenwal"
-    icon = "twitter"
+    url = "https://stackoverflow.com/users/1915935/avi-mehenwal"
+    icon = "stack-overflow"
 
 [[params.social]]
     url = "https://www.quora.com/profile/Avi-Mehenwal"
     icon = "quora"
 
 [[params.social]]
+    url = "https://github.com/avimehenwal"
+    icon = "github"
+
+[[params.social]]
     url = "https://www.linkedin.com/in/avimehenwal/"
     icon = "linkedin"
+
+[[params.social]]
+    url = "https://twitter.com/avimehenwal"
+    icon = "twitter"
+
+[[params.social]]
+    url = "https://brave.com/avi837"
+    icon = "money"
+
 
 # Algolia search #4
 [outputFormats.Algolia]

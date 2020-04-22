@@ -412,6 +412,11 @@ const myFn = async () => {
 
 * https://stackoverflow.com/questions/46805455/how-use-own-js-as-plugin-using-nuxt-js
 
+## Typescript vs Javascript
+
+* [Strict syntactic language](https://en.wikipedia.org/wiki/TypeScript)
+* Autocompletion, autoimports
+
 ### Resources
 
 * [Named exports vs default exports in ES6](https://medium.com/@etherealm/named-export-vs-default-export-in-es6-affb483a0910)
