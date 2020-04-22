@@ -90,6 +90,11 @@ var x = function(x, y) {
 const x = (x, y) => x * y;
 // or
 cont x = (x, y) => { x * y };
+
+// Array traversal ES6
+const array1 = ['avi', 'mehenwal']
+var array2 = array1.map((item) => item)
+console.log(array2)
 ```
 
 We can skip writing liternal name twice if name of variable is same as property name.
@@ -109,6 +114,18 @@ using `var` before variable names could be neglected
 var foo = 5;
 foo = 5;
 ```
+
+## Things to remember about ES6 syntax
+
+{{% fileTree %}}
+* ES6 Syntax
+  * Arrow Function Notation, Hipster Syntax
+  * `const` and `let` over `var`
+  * Arrays and Object deconstruction
+  * `import` and `export`
+  * working with `Promis` Objects
+  * Class structures
+{{% /fileTree %}}
 
 ## How to compiler javascript?
 
@@ -271,7 +288,7 @@ emitter.emit('event')
 > JQUERY wrote know that you dont know. Those that learn how things work under the
 > hood, solves the problem better.
 
-## Javascript
+# Javascript
 
 {{% note %}}
 Code is executing code, which is written by other people
@@ -301,6 +318,8 @@ let y = function (callback) {
 }
 y(x)
 ```
+
+
 
 1. Tools you need - **browser**. Setup env to run js in browser
 2. multiple Key-value = Objects
@@ -350,6 +369,28 @@ y(x)
     2.  Enforce the order of time-consuming operations
         1.  Adding new data to DB then updating the view once updated
 
+
+## Asynchronous Javascript
+
+How do JS deal with asynchronous, non-blocking events?
+
+> Callbacks, Promises and async, await syntax
+
+* Do NOT stall until action is finished, like response from server
+* In 2015, ES6 Promises were introduced in language
+* In ES7, **async/await** syntax was added to deal with **Promises**
+
+```js
+// With function declaration
+async function myFn() {
+  // await ...
+}
+// With arrow function
+const myFn = async () => {
+  // await ...
+}
+```
+
 ## Publish your first vue npm package
 
 > Worlds largest software registry to share JS code
@@ -370,6 +411,11 @@ y(x)
 > `vuejs` plugins are different from `nuxtjs`
 
 * https://stackoverflow.com/questions/46805455/how-use-own-js-as-plugin-using-nuxt-js
+
+## Typescript vs Javascript
+
+* [Strict syntactic language](https://en.wikipedia.org/wiki/TypeScript)
+* Autocompletion, autoimports
 
 ### Resources
 

@@ -62,14 +62,6 @@ graph.add_edge(pydot.Edge(node_d, node_a, label="and back we go again", labelfon
 graph.write_png('example2_graph.png')
 {{< /code >}}
 
-## Instagram
-
-* Blocked lot of bots from scraping data after Cambridge Analytica case, user privacy
-* [Unofficial Instagram API Endpoints](https://stevesie.com/apps/instagram-api)
-* Getting the most recent 25 posts links.
-* Get Posts related to a hashtag `https://www.instagram.com/explore/tags/{{italy}}/`
-* Selenium, scrapy, API + Beautyful soupe related solutions
-
 
 ### Footnotes
 
