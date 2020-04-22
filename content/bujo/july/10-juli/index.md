@@ -1,7 +1,7 @@
 ---
 title      : "10 Juli"
 date       : 2019-07-10T11:05:06+02:00
-comments: false
+comments   : true
 revision: 0
 weight: 5
 series:
@@ -24,14 +24,14 @@ tags:
 5. Union, intersection operations to cut and grab required shape
 6. quick scaling up and down
 7. Start by looking the shape and questions what the closes shape it resembles to?
-8. 
+8.
 
 ## Why bother about CSS?
 
 * Its universal, every browser uses it to style webpages
 * Responsiveness and supporting various devices, monitors, mobile phones, ultra wide screens
 * Good design leads to good UX
-* The <mark>BOX MODEL</mark> - everything is a box  
+* The <mark>BOX MODEL</mark> - everything is a box
   * circle is rectangle box with 50% border radius![](circle-is-a-box.png)
   * Big boxes are made up of smaller boxes
 * Positioning
@@ -53,7 +53,7 @@ tags:
 ## Responsive design
 
 * How many breakpoints and at what screen size
-* 
+*
 
 
 ### Footnotes

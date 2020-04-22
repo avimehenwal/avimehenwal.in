@@ -1,7 +1,7 @@
 ---
 title      : "Firebase"
 date       : 2019-07-22T22:57:50+02:00
-comments: false
+comments   : true
 weight     : 5
 revision   : 0
 series:

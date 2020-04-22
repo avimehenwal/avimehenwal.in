@@ -1,7 +1,7 @@
 ---
 title      : "Vuetify"
 date       : 2019-07-21T16:57:19+02:00
-comments: false
+comments   : true
 weight     : 5
 revision   : 0
 series:

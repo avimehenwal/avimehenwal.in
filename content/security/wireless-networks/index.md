@@ -3,7 +3,7 @@ title      : "Wireless Network"
 date       : 2019-09-17T12:19:27+02:00
 publishdate: 2019-09-17T12:19:27+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -130,7 +130,7 @@ Cracking: WEP and WPA PSK (WPA 1 and 2)
 5. [Patches](https://patches.aircrack-ng.org/)
 6. `rfkill list`
    1. Tool for enabling and disabling wireless devices
-   
+
 Open System Authentication:
 
 Ask the AP for authentication.

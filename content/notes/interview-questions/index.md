@@ -3,7 +3,7 @@ title      : "Interview Questions"
 date       : 2019-09-07T19:11:11+02:00
 publishdate: 2019-09-08T19:11:11+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -92,7 +92,7 @@ CBT
 
 > Mentors vs HEROS
 
-- For 1 successful people there are 2000 people 
+- For 1 successful people there are 2000 people
   - Mentors do not SCALE
 - HEROS DO
   - What what eva/clint/osbuk do?
@@ -287,7 +287,7 @@ Unless we have a answer to this, we are not going to get, what we need.
 * Will you choose to matter?
 * Do it worng until you do it right
 * Is Failure is not an option, then Success is also not
-* You are prepared, but you would never be **ready** 
+* You are prepared, but you would never be **ready**
 * We have the 3 choices
   1. Become a replacable cog in pyramid
   2. Become founder/owner who runs that thing

@@ -3,7 +3,7 @@ title      : "Job Seeking"
 date       : 2020-03-18T17:50:19Z
 publishdate: 2020-03-18T17:50:19Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

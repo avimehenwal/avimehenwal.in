@@ -3,7 +3,7 @@ title      : "Digital Goods"
 date       : 2019-08-18T21:18:32+02:00
 publishdate: 2019-08-19T21:18:32+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

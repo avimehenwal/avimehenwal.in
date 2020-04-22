@@ -2,7 +2,7 @@
 title      : "Mender"
 date       : 2019-07-12T08:47:37+02:00
 draft      : false
-comments: false
+comments   : true
 revision: 0
 weight: 5
 series:
@@ -54,19 +54,19 @@ After reboot
 ```
 root@genericx86-64:~# lsblk --fs
 NAME   FSTYPE LABEL    UUID                                 MOUNTPOINT
-sda                                                         
+sda
 |-sda1 vfat   efi      A5F1-6F37                            /boot/efi
-|-sda2 ext4   rootfs_0 909242fd-11b5-4f29-a94f-44a3b8790faa 
+|-sda2 ext4   rootfs_0 909242fd-11b5-4f29-a94f-44a3b8790faa
 |-sda3 ext4            e5a42c52-6bef-43c4-824a-5ea3ef4d817a /
-|-sda4                                                      
-|-sda5 ext4   config   93831baf-6c60-4883-96e0-3d6e78a55c8d 
+|-sda4
+|-sda5 ext4   config   93831baf-6c60-4883-96e0-3d6e78a55c8d
 `-sda6 ext4   data     6c4ce979-e364-4315-a346-9b9662f87c6f /data
 ```
 
 Reboot again and `/` will change to `sda2`
 
 ```
-root@genericx86-64:~# fw_printenv 
+root@genericx86-64:~# fw_printenv
 bootcount=1
 mender_boot_part=3
 upgrade_available=1
@@ -74,7 +74,7 @@ mender_boot_part_hex=3
 
 #REBOOT
 
-root@genericx86-64:~# fw_printenv 
+root@genericx86-64:~# fw_printenv
 bootcount=0
 mender_boot_part=2
 upgrade_available=0

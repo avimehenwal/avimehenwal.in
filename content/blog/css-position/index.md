@@ -2,7 +2,7 @@
 title      : "CSS Positioning"
 date       : 2019-08-01T12:30:48+02:00
 publishdate: 2019-08-02T12:30:48+02:00
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

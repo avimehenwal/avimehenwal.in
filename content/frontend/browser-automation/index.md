@@ -3,7 +3,7 @@ title      : "Browser Automation"
 date       : 2020-04-18T16:52:18Z
 publishdate: 2020-04-18T16:52:18Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

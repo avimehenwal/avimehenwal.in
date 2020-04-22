@@ -2,7 +2,7 @@
 categories:
 - foods
 - resources
-comments: false
+comments   : true
 date: "2019-05-08T23:48:59+02:00"
 lastmod: "2019-05-08T23:48:59+02:00"
 tags:

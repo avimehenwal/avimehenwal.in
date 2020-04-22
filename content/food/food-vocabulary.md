@@ -4,7 +4,7 @@ categories:
 - nutrition
 - facts
 - anatomy
-comments: false
+comments   : true
 date: "2019-03-29T18:50:08+01:00"
 draft: false
 lastmod: "2019-03-29T18:50:08+01:00"

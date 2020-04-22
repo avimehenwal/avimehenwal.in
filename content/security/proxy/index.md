@@ -3,7 +3,7 @@ title      : "Proxy Server"
 date       : 2020-03-02T09:40:12Z
 publishdate: 2020-03-02T09:40:12Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -50,7 +50,7 @@ A VPN doesn’t make you anonymous!
   * SOCKS5
   * All your traffic is encrypted
   * All of SOCKS Proxies are Elite proxies, the web server only get the information of proxy server.That’s why SOCKS 5 proxy is more Recommend.
-  * 
+  *
 
 {{< code numbered="true" >}}
 curl [[[--proxy]]] http://<squid-proxy-server-IP>:3128 [[[--location]]] http://google.com

@@ -1,12 +1,12 @@
 ---
 title      : "Svg Awesomeness"
 date       : 2019-07-10T10:50:45+02:00
-comments: false
+comments   : true
 weight     : 5
 revision   : 0
 series:
 - myLearning
-categories: 
+categories:
 - design
 - frontend
 tags:
@@ -22,7 +22,7 @@ Make web look crisp and nice at all resolutions
 
 1. Scalable Vector Graphics (SVG) Version 2.
 2. SVG is a language based on XML for describing two-dimensional vector and mixed vector/raster graphics
-3. SVG content is stylable, scalable to different display resolutions, and can be viewed stand-alone, mixed with HTML content, or embedded using XML namespaces within other XML languages  
+3. SVG content is stylable, scalable to different display resolutions, and can be viewed stand-alone, mixed with HTML content, or embedded using XML namespaces within other XML languages
 4. Look crisp and nice on all resolutions
 5. Official W3C Specification[^4]
 6. SVG Filters[^3]
@@ -41,15 +41,15 @@ Make web look crisp and nice at all resolutions
 
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  
+
   <symbol id="beaker" viewBox="214.7 0 182.6 792">
-    <!-- <path>s and whatever other shapes in here -->  
+    <!-- <path>s and whatever other shapes in here -->
   </symbol>
-  
+
   <symbol id="shape-icon-2" viewBox="0 26 100 48">
-    <!-- <path>s and whatever other shapes in here -->  
+    <!-- <path>s and whatever other shapes in here -->
   </symbol>
-  
+
 </svg>
 
 {{< /code >}}
@@ -65,7 +65,7 @@ Make web look crisp and nice at all resolutions
 * Animate, **morph**, add filters to SVGs via javascript code and programming[^5]
   * Program your animations
 * https://getwaves.io/
-* 
+*
 
 ### Additional Use Cases
 

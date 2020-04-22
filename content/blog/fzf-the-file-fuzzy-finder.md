@@ -1,12 +1,12 @@
 ---
 title      : "Fzf the File Fuzzy Finder"
 date       : 2019-07-14T05:07:12+02:00
-comments: false
+comments   : true
 weight     : 5
 revision   : 0
 series:
 - myLearning
-categories: 
+categories:
 - development
 tags:
 - fzf
@@ -33,7 +33,7 @@ fzf -q 'content/blog/ md$' --preview 'cat {} | head -30'
 ```
 bat --list-themes | fzf --preview="bat --theme={} --color=always /path/to/file"
 
-fzf -q '.md' --color=always --preview='bat --theme=<> --language <bash> {}' 
+fzf -q '.md' --color=always --preview='bat --theme=<> --language <bash> {}'
 
 ```
 
@@ -41,7 +41,7 @@ fzf -q '.md' --color=always --preview='bat --theme=<> --language <bash> {}'
 
 Find and delete all files that are owner by `root` owner/group. Useful then debugging file ownership issues inside docker volumes
 ```
-find . -group root -delete 
+find . -group root -delete
 
 Excluding paths
 find / -name NameOfFile ! -path '*/Directory/*'
@@ -51,5 +51,5 @@ find / -name NameOfFile ! -path '*/Directory/*'
 
 ### Footnotes
 
-[^1]: 
-[^2]: 
+[^1]:
+[^2]:

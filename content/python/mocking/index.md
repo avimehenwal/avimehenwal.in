@@ -3,7 +3,7 @@ title      : "Mocking"
 date       : 2019-12-02T09:52:25Z
 publishdate: 2019-12-02T09:52:25Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

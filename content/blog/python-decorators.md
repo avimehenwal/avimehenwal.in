@@ -2,7 +2,7 @@
 title      : "Python Decorators"
 date       : 2019-08-01T00:02:41+02:00
 publishdate: 2019-08-02T00:02:41+02:00
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

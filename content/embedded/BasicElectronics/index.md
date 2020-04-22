@@ -3,7 +3,7 @@ title      : "Basic Electronics"
 date       : 2019-09-17T00:43:46+02:00
 publishdate: 2019-09-17T00:43:46+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -84,11 +84,11 @@ Vss
   * New alternative - **Buck converter** or voltage step-down converter
 * Switch Mode Power Supply
 * Solderless Breadboards are not good for `RF` projects
-* 
+*
 
 ## How to analyze circuits?
 
-* 
+*
 
 ## Resistor-Capicitor (RC) lowpass Filters
 
@@ -124,7 +124,7 @@ and attenuates signals with frequencies higher than the cutoff frequency.
 3. Light thermocol
 4. Cheap plastics cups, join them to make interesting shapes
 5. Cardboard
-6. [Amazing DIY toys](https://youtu.be/HL_xrAFsldY) 
+6. [Amazing DIY toys](https://youtu.be/HL_xrAFsldY)
 7. Plastic bottles as casing
 8. Old CD disks
 9. Toothpase case

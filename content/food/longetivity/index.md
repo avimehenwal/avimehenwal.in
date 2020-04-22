@@ -3,7 +3,7 @@ categories:
 - foods
 - nutrition
 - facts
-comments: false
+comments   : true
 date: "2019-05-12T17:20:18+02:00"
 lastmod: "2019-05-12T17:20:18+02:00"
 tags:
@@ -174,7 +174,7 @@ and choices always stem from believes.
 * We can give ourselves the ability to grow like when we were embroys
 * AVoid Xrays and CT Scans as they break the DNA
 * Be little bit hungey, dont eat - dont be malnourished
-* 
+*
 
 > Instructions to be younger are still in the cells
 

@@ -3,7 +3,7 @@ title      : "Reset GPIO pins"
 date       : 2019-10-22T10:27:45+02:00
 publishdate: 2019-10-22T10:27:45+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -40,7 +40,7 @@ The Pi's GPIO ports can be controlled from the command line (i.e. bash), python 
 
 ```
 #   Exports pin to userspace
-echo "18" > /sys/class/gpio/export                  
+echo "18" > /sys/class/gpio/export
 
 # Sets pin 18 as an output
 echo "out" > /sys/class/gpio/gpio18/direction
@@ -49,7 +49,7 @@ echo "out" > /sys/class/gpio/gpio18/direction
 echo "1" > /sys/class/gpio/gpio18/value
 
 # Sets pin 18 to low
-echo "0" > /sys/class/gpio/gpio18/value 
+echo "0" > /sys/class/gpio/gpio18/value
 ```
 
 ## How to Reset a sensor via GPIO pin?
@@ -97,7 +97,7 @@ echo 457 > unexport
 ## Questions
 
 * What is the difference between GPIO pin and GPIOchip?
-* 
+*
 
 ### Footnotes
 

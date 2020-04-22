@@ -5,7 +5,7 @@ categories:
 - facts
 - anatomy
 - resources
-comments: false
+comments   : true
 date: "2019-05-30T22:58:06+02:00"
 lastmod: "2019-05-30T22:58:06+02:00"
 tags:
@@ -24,7 +24,7 @@ Amount of energy it would take to raise the temperature of 1 kg of water by
 one degree Celcius.
 </br></br>
 Everything we consume has a calorie count, a measure of how much energy the
-item stores in its chemical bonds. 
+item stores in its chemical bonds.
 {{</info>}}
 
 Because energy is defined via work, the SI unit for energy is the same as the unit of work – the joule (J), named in honor of James Prescott Joule and his experiments on the mechanical equivalent of heat. In slightly more fundamental terms, 1 joule is equal to 1 newton metre and, in terms of SI base units.
@@ -63,12 +63,12 @@ Because energy is defined via work, the SI unit for energy is the same as the un
    Calories your body needs just to keep you alive.
 * *TEF* Thermal Effect Of Food
 * *PA* Physical Activity
-     
-> 
+
+>
 > `TDEE = BMR + TEF + PA`
-> 
+>
 > ### How do we calculate BMR?
-> 
+>
 > #### Mifflin-St Jeor Equation
 > ```
 > BMR = (10 * Weight[Kg]) + (6.25 * height[cms]) + (5 * age[years]) + S
@@ -91,4 +91,4 @@ Use a *glucose* measuring device
 
 * myFitnessPal
 * Lose it
-* 
+*

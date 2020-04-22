@@ -3,7 +3,7 @@ title      : "CMake build tool"
 date       : 2020-01-21T08:58:16Z
 publishdate: 2020-01-21T08:58:16Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -21,7 +21,7 @@ tags:
 
 * cross platform build environment[^1]
 * software build process using **compiler independent** methods
-* It is used in conjunction with native build environments such as 
+* It is used in conjunction with native build environments such as
   * `Make`, `Qt Creator`, `Ninja`, `Apple's Xcode`, and `Microsoft Visual Studio`
 * Depends on `C++ compiler`
 * The ability to build a directory tree outside the source tree is a key feature
@@ -43,7 +43,7 @@ cmake QT applications
 * fucntions and macros
 * Include other scripts
 * Properties to <TARGETS>
-* 
+*
 
 ## CPack
 

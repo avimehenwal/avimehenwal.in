@@ -3,7 +3,7 @@ title      : "System Information"
 date       : 2019-09-15T23:31:11+02:00
 publishdate: 2019-09-15T23:31:11+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -43,7 +43,7 @@ sudo dmidecode [[[--type]]] memory
 sudo lshw -class memory
 {{< /code >}}
 
-1. Query 
+1. Query
 2. There are 42 types refer man dmidecode
    1. `--type` flag could take following values
    2. bios, system, baseboard, chassis, processor, memory, cache, connector, slot

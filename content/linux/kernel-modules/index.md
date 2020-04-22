@@ -3,7 +3,7 @@ title      : "Kernel Modules"
 date       : 2019-09-26T09:20:04Z
 publishdate: 2019-09-26T09:20:04Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

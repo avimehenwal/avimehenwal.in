@@ -1,7 +1,7 @@
 ---
 title      : "OSM"
 date       : 2019-07-22T11:22:43+02:00
-comments: false
+comments   : true
 weight     : 5
 revision   : 0
 series:

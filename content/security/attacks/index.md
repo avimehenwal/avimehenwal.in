@@ -3,7 +3,7 @@ title      : "Security Attacks"
 date       : 2019-09-29T00:02:22Z
 publishdate: 2019-09-29T00:02:22Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -38,7 +38,7 @@ tl;dr
   * exploiting Windows `SMD` service as payload (ransomeware)
   * Exploited NSA exploit - internal blue
   * [The SHadow broker released NSA leaks](https://en.wikipedia.org/wiki/The_Shadow_Brokers)
-* 
+*
 
 
 

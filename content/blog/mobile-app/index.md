@@ -3,7 +3,7 @@ title      : "Mobile Development"
 date       : 2020-03-23T14:03:15Z
 publishdate: 2020-03-23T14:03:15Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

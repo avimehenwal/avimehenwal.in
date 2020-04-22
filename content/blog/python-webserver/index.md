@@ -2,7 +2,7 @@
 title      : "Python Webservers"
 date       : 2019-07-31T18:15:25+02:00
 publishdate: 2019-08-01T18:15:25+02:00
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

@@ -3,7 +3,7 @@ title      : "Mesos"
 date       : 2019-10-03T16:49:02Z
 publishdate: 2019-10-03T16:49:02Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

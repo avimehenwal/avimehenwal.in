@@ -5,7 +5,7 @@ categories:
 - facts
 - anatomy
 - resources
-comments: false
+comments   : true
 date: "2019-03-29T22:11:26+01:00"
 draft: false
 lastmod: "2019-03-29T22:11:26+01:00"
@@ -21,4 +21,4 @@ w3codecolor: true
 * Journal of athletic training
 * Preventive food and nutrition journal
 * Journal of food science
-* 
+*

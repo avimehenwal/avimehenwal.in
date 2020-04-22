@@ -4,7 +4,7 @@ date       : 2019-08-16T11:43:47+02:00
 publishdate: 2019-08-17T11:43:47+02:00
 # expirydate : 2019-08-31T11:43:47+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -55,7 +55,7 @@ Goals
 ### Reminders vs Tasks
 
 * Both has only START time
-* 
+*
 
 ### Interconversions?
 

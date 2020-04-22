@@ -3,7 +3,7 @@ title      : "Software License"
 date       : 2019-09-26T20:16:19Z
 publishdate: 2019-09-26T20:16:19Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

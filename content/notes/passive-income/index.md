@@ -3,7 +3,7 @@ title      : "Passive Income"
 date       : 2019-09-05T19:11:27+02:00
 publishdate: 2019-09-06T19:11:27+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

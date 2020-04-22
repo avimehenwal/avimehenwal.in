@@ -3,7 +3,7 @@ title      : "Secure Shell"
 date       : 2019-09-09T20:35:31+02:00
 publishdate: 2019-09-10T20:35:31+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -21,7 +21,7 @@ tags:
 - Stands for **S**ecure **SH**ell
 - Client `ssh` / Server `sshd` protocol
 - appeared in mid 1990s, connecting to remote machines via internet (unsecure n/w)
-- Application layer protocol, `sshd` server on standard port `22` 
+- Application layer protocol, `sshd` server on standard port `22`
 - older protocols like `telnet` would sent everything in plain text. Not secure over internet
   - packets could be sniffed and read by packet Sniffer
 - Each user on machine has its own `/home/user/.ssh` directory
@@ -78,17 +78,17 @@ Dynamic port forwarding is rarely used. For example, dynamic port forwarding let
 
 ### How to create a SOCKS PROXY using SSH
 
-Dynamic Port Forwarding, maybe when Port 80 is blocked, 
+Dynamic Port Forwarding, maybe when Port 80 is blocked,
 
 {{% cmd %}}
-ssh -N -D 9055 username@machine 
+ssh -N -D 9055 username@machine
 {{% /cmd %}}
 
 -N      Do not execute a remote command.  This is useful for just forwarding ports.
 
 ```
 curl http://ifconfig.co/country
-ssh -N -D 9055 username@machine 
+ssh -N -D 9055 username@machine
 curl --proxy socks5://127.0.0.1:9055 http://ifconfig.co/country
 ```
 > Using proxy with curl?
@@ -139,7 +139,7 @@ ssh -R 8181:localhost:3389 user@machine
   * `nmap -sS 192.168.0.1 -A`
 * Creata a `wordlist` or dictionary file to attack
 * Brute force with `hydra`
-  * `hydar -l AttackComputer -p 'wordlist.txt' 192.168..0.8 ssh` 
+  * `hydar -l AttackComputer -p 'wordlist.txt' 192.168..0.8 ssh`
 
 ## SSH LOCAL and REMOTE Port Forwarding
 
@@ -149,10 +149,10 @@ ssh -R 1234:localhost:4321 test@10.10.10.10
 ```
 ### Local Port Forwarding
 
-Recieving Emails from remote server 
+Recieving Emails from remote server
 
 ```
-myLocalHost% ssh -L localhost:9143:myRemoteHost:143 myRemoteHost 
+myLocalHost% ssh -L localhost:9143:myRemoteHost:143 myRemoteHost
 ```
 
 #### Jump Server[^1]
@@ -175,7 +175,7 @@ This example opens a connection to the gw.example.com jump server, and forwards 
 > Difference with LOCAL?
 
 * Connect via vncserver `5901`, ask password and enter it, bam connected. Not very secure
-* Forwarda local port to a specific port (where we have already established our tunnel) `80->5901` on local and tunnel is established b/w `5901->remotehost:5901` 
+* Forwarda local port to a specific port (where we have already established our tunnel) `80->5901` on local and tunnel is established b/w `5901->remotehost:5901`
 
 {{% cmd %}}
 ssh -R 8080:localhost:80 public.example.com
@@ -197,7 +197,7 @@ This particular example would be useful for giving someone on the outside access
   * ED25519
     * elliptic curve cryptography that offers a better security with faster performance compared to DSA or ECDSA.
     * `ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "john@example.com"`
-* authorized key 
+* authorized key
 * identity key
 * ssh-agent
   * keeps decrypted key in memory
@@ -251,7 +251,7 @@ Pseudo-terminals are created and destroyed as needed. You can find the number of
 
 `w`, `who`, and `users` are the canonical tools for accessing information about logged in users. last and lastlog also contain historical data.
 
-> X11 Forwarding from docker to localhost 
+> X11 Forwarding from docker to localhost
 
 `ssh -XC username@hostname`
 
@@ -281,16 +281,16 @@ When vim is compiled with `+clientserver` support
 
 ```
 vim --version | ack client
-+clientserver 
++clientserver
 
 vim scp://user@myserver[:port]//path/to/file.txt
-vim scp://root@192.168.120.141/spi-traffic.sh 
+vim scp://root@192.168.120.141/spi-traffic.sh
 
 OR
 
 sudo apt-get install sshfs
 sudo adduser <username> fuse
-mkdir ~/remoteserv    
+mkdir ~/remoteserv
 sshfs -o idmap=user <username>@<ipaddress>:/remotepath ~/remoteserv
 
 ```
@@ -321,7 +321,7 @@ Host *
    1. In general, an address binding is an association between a service (e.g., SSH) and an IP address.
 A host may have multiple IP addresses (e.g., 127.0.0.1, 192.168.1.2). Address binding allows you to run a service on some or all of these addresses.
 9. How to detect Port Forwarding?
-   1.  `nmap` 
+   1.  `nmap`
 10. How to check if we have SSH POrt forwarding enabled?
     1.  `lsof -i | grep LISTEN`
 

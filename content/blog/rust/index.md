@@ -3,7 +3,7 @@ title      : "Rust Language"
 date       : 2019-09-25T21:04:53Z
 publishdate: 2019-09-25T21:04:53Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

@@ -5,7 +5,7 @@ categories:
 - facts
 - anatomy
 - resources
-comments: false
+comments   : true
 date: "2019-05-10T18:50:36+02:00"
 lastmod: "2019-05-10T18:50:36+02:00"
 tags:
@@ -65,7 +65,7 @@ Most vurnable vegetable to cooking is **Bell peppers**. Do try to eat them raw.
 * A stalk of celery
 * carrot
 * Half of red/orange/yellow bell pepper
-* Scallions/Green Onions 
+* Scallions/Green Onions
 * A quarter of Beetroots
 * A fifth of a raw haolepino pepper
 * little turmeric
@@ -141,7 +141,7 @@ Avoid
 
 Cooking tomatoes boost **Lycopene**
 
-### Balsamic Vinegar 
+### Balsamic Vinegar
 
 Make food leave the stomach longer. Which is good, makes us feel full for longer period of time.
 

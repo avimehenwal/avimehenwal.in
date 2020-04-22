@@ -3,7 +3,7 @@ title      : "Machine Learning"
 date       : 2020-01-22T14:27:57Z
 publishdate: 2020-01-22T14:27:57Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -18,7 +18,7 @@ tags:
 
 
 * Emperical Risk Minimization can lead to Overfitting[^1]
-* 
+*
 
 ### Footnotes
 

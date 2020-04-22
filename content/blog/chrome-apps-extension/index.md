@@ -3,7 +3,7 @@ title      : "Chrome Web Store"
 date       : 2019-08-15T19:22:24+02:00
 publishdate: 2019-08-16T19:22:24+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

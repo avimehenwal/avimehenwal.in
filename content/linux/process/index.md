@@ -3,7 +3,7 @@ title      : "Process"
 date       : 2019-10-06T12:20:00Z
 publishdate: 2019-10-06T12:20:00Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

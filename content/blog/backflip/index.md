@@ -3,7 +3,7 @@ title      : "Backflip"
 date       : 2019-09-22T08:27:27Z
 publishdate: 2019-09-22T08:27:27Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -31,7 +31,7 @@ PED
 [Promethius](https://prometheus.io/)
 : from metrics to insight
 * on Executor node
-  * [cAdvisor](https://github.com/google/cadvisor) 
+  * [cAdvisor](https://github.com/google/cadvisor)
   * [promethius node-exporter](https://github.com/prometheus/node_exporter)
 
 ```
@@ -59,13 +59,13 @@ iperf --server
 ### TCP Windowing
 
 * control sending to too much data so that client doesnt fall behind
-  * sequencce numbers 
+  * sequencce numbers
   * Acknowledgements ACK
 * Window size is dynamic and changes several times during a communication
 
 ## Test IDS suricata and snort
 
-* Hail Mary Attack using [Armitage](http://www.fastandeasyhacking.com/manual) 
+* Hail Mary Attack using [Armitage](http://www.fastandeasyhacking.com/manual)
 * install IDS on [security-onion](https://securityonion.net/) in a VM
   * with 2 network intrfaces
     * Bridge

@@ -3,7 +3,7 @@ title      : "Cloud-Init"
 date       : 2019-10-06T22:16:36Z
 publishdate: 2019-10-06T22:16:36Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

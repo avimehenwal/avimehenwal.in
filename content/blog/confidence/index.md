@@ -3,7 +3,7 @@ title      : "Confidence"
 date       : 2019-10-23T17:02:34Z
 publishdate: 2019-10-23T17:02:34Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

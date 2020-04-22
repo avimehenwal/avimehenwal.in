@@ -1,12 +1,12 @@
 ---
 title      : "Linux How to Seek Self Help"
 date       : 2019-07-13T10:44:21+02:00
-comments: false
+comments   : true
 weight     : 5
 revision   : 0
 series:
 - myLearning
-categories: 
+categories:
 - development
 - Linux
 tags:
@@ -50,4 +50,4 @@ date | tee /dev/tty | rev
 ### Footnotes
 
 [^1]: [wiki, aprops](https://en.wikipedia.org/wiki/Apropos_(Unix))
-[^2]: 
+[^2]:

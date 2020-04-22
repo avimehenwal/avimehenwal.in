@@ -3,7 +3,7 @@ title      : "Regular Expressions"
 date       : 2019-08-25T23:20:30+02:00
 publishdate: 2019-08-26T23:20:30+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

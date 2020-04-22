@@ -5,7 +5,7 @@ lastmod    : 2019-09-27T19:19:34Z
 publishdate: 2019-09-29T19:19:34Z
 type       :  "post"
 w3codecolor: true
-comments   : false
+comments   : true
 thumbnail  : https://www.bbcgoodfood.com/sites/default/files/editor_files/2017/11/plant-based-diet-guide-main-image-700-350.jpg
 series:
 - FoodBlog
@@ -46,7 +46,7 @@ tags:
    2. Acid
       1. Vinegar
       2. Lime / Lemon
-      3. Balsamic vinegar - it's a product of red wine 
+      3. Balsamic vinegar - it's a product of red wine
    3. Djon mustard
    4. Silghtly extra salt / pepper
 
@@ -69,7 +69,7 @@ $$
 Only 2 health promoting  sweetners
 
 1. Dates sugar
-2. Molasses 
+2. Molasses
 
 > High-fat food could cripple our artery functions for hours
 

@@ -3,7 +3,7 @@ categories:
 - foods
 - nutrition
 - recipy
-comments: false
+comments   : true
 date: "2019-05-21T18:37:29+02:00"
 lastmod: "2019-05-21T18:37:29+02:00"
 tags:

@@ -1,7 +1,7 @@
 ---
 title      : "Scraping Webpage"
 date       : 2019-07-29T22:37:32+02:00
-comments: false
+comments   : true
 weight     : 5
 revision   : 0
 series:

@@ -1,7 +1,7 @@
 ---
 title      : "Terminal Cockpits With Tmux"
 date       : 2019-07-18T22:09:55+02:00
-comments: false
+comments   : true
 weight     : 5
 revision   : 0
 series:

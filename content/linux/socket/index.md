@@ -3,7 +3,7 @@ title      : "Linux Socket"
 date       : 2019-08-09T10:55:36+02:00
 publishdate: 2019-08-10T10:55:36+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

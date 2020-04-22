@@ -3,7 +3,7 @@ title      : "Open Contribute"
 date       : 2019-09-28T10:28:10Z
 publishdate: 2019-09-28T10:28:10Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

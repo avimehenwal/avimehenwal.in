@@ -3,7 +3,7 @@ title      : "Data Visualization"
 date       : 2020-03-06T12:34:59Z
 publishdate: 2020-03-06T12:34:59Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

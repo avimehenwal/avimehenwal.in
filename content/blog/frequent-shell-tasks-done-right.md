@@ -1,7 +1,7 @@
 ---
 title      : "Frequent Shell Tasks Done Right"
 date       : 2019-07-13T10:06:04+02:00
-comments: false
+comments   : true
 weight     : 5
 revision   : 0
 series:

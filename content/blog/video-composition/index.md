@@ -3,7 +3,7 @@ title      : "Video/Image Composition"
 date       : 2019-09-03T01:05:55+02:00
 publishdate: 2019-09-04T01:05:55+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -138,7 +138,7 @@ Video Editing
 * LOCATION - bedroom, office
 * Time of day DAY/NIGHT/DUSK/DAWN
 * Action
- 
+
 
 ## Art Of story telling
 

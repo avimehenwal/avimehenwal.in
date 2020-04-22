@@ -3,7 +3,7 @@ title      : "C Language"
 date       : 2019-10-16T12:22:51Z
 publishdate: 2019-10-16T12:22:51Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -25,10 +25,10 @@ tags:
 `#define` is a **C preprocessor directive** used to define `macros`.
 
 ```
-#define MACRONAME (expression) 
+#define MACRONAME (expression)
 ```
 
-##  dereference/ indirection operator 
+##  dereference/ indirection operator
 
 For example, in C
 

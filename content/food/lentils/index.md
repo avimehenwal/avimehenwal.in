@@ -1,7 +1,7 @@
 ---
 categories:
 - foods
-comments: false
+comments   : true
 date: "2019-04-07T19:54:13+02:00"
 draft: false
 lastmod: "2019-04-07T19:54:13+02:00"

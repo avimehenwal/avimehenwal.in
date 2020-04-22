@@ -3,7 +3,7 @@ title      : "Node MCU - ESP8266"
 date       : 2019-09-13T22:20:27+02:00
 publishdate: 2019-09-13T22:20:27+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -11,7 +11,7 @@ series:
 categories:
 - iot
 tags:
-- 
+-
 ---
 
 ## NodeMCU - ESP8266
@@ -34,7 +34,7 @@ tags:
   * `D0` inboard
   * `D4` on ESP board
 * can have only 1 `main.cpp` file
-* 
+*
 
 
 Firmware
@@ -100,7 +100,7 @@ ls /sys/class/tty/ttyUSB*
 * [WiFi Manager](https://github.com/tzapu/WiFiManager)
   * when your ESP starts up, it sets it up in Station mode and tries to connect to a previously saved Access Point
   * if this is unsuccessful (or no previous network saved) it moves the ESP into Access Point mode and spins up a DNS and WebServer (default ip 192.168.4.1)
-  * 
+  *
 
 ## PIO Testing
 

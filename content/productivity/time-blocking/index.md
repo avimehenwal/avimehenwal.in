@@ -3,7 +3,7 @@ title      : "Time Blocking"
 date       : 2019-08-11T12:19:22+02:00
 publishdate: 2019-08-12T12:19:22+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

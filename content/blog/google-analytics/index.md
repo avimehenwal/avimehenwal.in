@@ -3,7 +3,7 @@ title      : "Webmaster Tools"
 date       : 2020-04-09T21:51:42Z
 publishdate: 2020-04-09T21:51:42Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

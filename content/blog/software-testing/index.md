@@ -3,7 +3,7 @@ title      : "Software Testing"
 date       : 2019-09-05T12:40:15+02:00
 publishdate: 2019-09-06T12:40:15+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -38,7 +38,7 @@ too costly to maintain
 ### Good test case
 
 > How can you make your ATC scalable for future?
-> How can you make tests more scalable than they already are? 
+> How can you make tests more scalable than they already are?
 
 * Avoid dependencies b/w tests
   * VAlids login, change password, then Login with new password
@@ -59,7 +59,7 @@ too costly to maintain
 ## Software Testers to look upto
 
 * Elisabeth Hendrickson
-* 
+*
 
 ## New Direction
 

@@ -3,7 +3,7 @@ title      : "X Windowing System"
 date       : 2019-08-24T10:35:41+02:00
 publishdate: 2019-08-25T10:35:41+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

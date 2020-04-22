@@ -3,7 +3,7 @@ title      : "Pandemic"
 date       : 2020-04-03T11:28:10Z
 publishdate: 2020-04-03T11:28:10Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

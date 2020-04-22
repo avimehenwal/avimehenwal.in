@@ -3,7 +3,7 @@ title      : "Penetration Distributions"
 date       : 2019-08-09T21:56:30+02:00
 publishdate: 2019-08-10T21:56:30+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -70,7 +70,7 @@ for example, is the application storing sensitive data that could be the target 
 ### Pen test management tools
 
 * https://github.com/salesforce/vulnreport
-* 
+*
 
 ## Pen Testing Phases
 
@@ -170,7 +170,7 @@ for example, is the application storing sensitive data that could be the target 
 * https://en.wikipedia.org/wiki/Program_synthesis
   * let magic and sciencce do the hard work.
   * Monte carlo tree search
-  * 
+  *
 * Stop `C` use `rust` its `memory-safe`, `type-safe`, can do stuff which java .net cannot do
 * Embrace Automation
 * SHODAN (Sentient Hyper-Optimized Data Access Network)
@@ -186,14 +186,14 @@ for example, is the application storing sensitive data that could be the target 
    2. Hybrid Encryption scheme
    3. Files encrypted by `AES` and that key is protected by public key cryptography
 3. https://www.makeuseof.com/tag/5-of-the-worlds-most-famous-hackers-what-happened-to-them/
-4.  
+4.
 
 ### Footnotes
 
 [^1]: https://en.wikipedia.org/wiki/LulzSec
 [^2]: [Picking Locks](https://www.youtube.com/watch?v=rnmcRTnTNC8)
 [^3]: [CH 751 most common key](https://www.amazon.com/Southco-CH751-Campers-Cabinets-Locks/dp/B001562UII)
-[^4]: https://en.wikipedia.org/wiki/Equation_Group 
+[^4]: https://en.wikipedia.org/wiki/Equation_Group
 [^5]: https://en.wikipedia.org/wiki/Lazarus_Group
 [^6]: https://www.shodan.io/
 [^7]: https://en.wikipedia.org/wiki/BlackEnergy

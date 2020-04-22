@@ -3,7 +3,7 @@ title      : "Serverless Functions"
 date       : 2020-04-13T22:47:13Z
 publishdate: 2020-04-13T22:47:13Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

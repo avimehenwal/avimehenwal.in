@@ -3,7 +3,7 @@ title      : "Instagram"
 date       : 2020-04-20T07:09:52Z
 publishdate: 2020-04-20T07:09:52Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

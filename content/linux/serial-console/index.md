@@ -3,7 +3,7 @@ title      : "Serial Console"
 date       : 2020-03-31T11:00:59Z
 publishdate: 2020-03-31T11:00:59Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

@@ -3,7 +3,7 @@ title      : "Audio Production"
 date       : 2019-09-02T13:21:08+02:00
 publishdate: 2019-09-03T13:21:08+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

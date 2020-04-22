@@ -3,7 +3,7 @@ title      : "System On Chip Board"
 date       : 2019-09-13T14:55:04+02:00
 publishdate: 2019-09-13T14:55:04+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -30,7 +30,7 @@ datasheets
     * CPU Sitara reference for Pin-Multiplexing
 * NodeMCU[^4] Lua based firmware
   * Documentation[^5]
-  
+
 ## Measurements Meteres
 
 * Signal generator[^6]

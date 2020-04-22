@@ -3,7 +3,7 @@ title      : "Internet Of Things"
 date       : 2019-08-07T20:15:51+02:00
 publishdate: 2019-08-08T20:15:51+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

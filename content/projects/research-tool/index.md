@@ -3,7 +3,7 @@ title      : "Research Tool"
 date       : 2020-03-20T13:56:31Z
 publishdate: 2020-03-20T13:56:31Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

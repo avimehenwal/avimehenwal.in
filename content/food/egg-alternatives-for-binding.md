@@ -5,7 +5,7 @@ categories:
 - facts
 - anatomy
 - resources
-comments: false
+comments   : true
 date: "2019-05-14T00:41:39+02:00"
 lastmod: "2019-05-14T00:41:39+02:00"
 tags:

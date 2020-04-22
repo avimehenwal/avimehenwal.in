@@ -3,7 +3,7 @@ categories:
 - foods
 - nutrition
 - facts
-comments: false
+comments   : true
 date: "2019-05-12T22:01:57+02:00"
 lastmod: "2019-05-12T22:01:57+02:00"
 tags:

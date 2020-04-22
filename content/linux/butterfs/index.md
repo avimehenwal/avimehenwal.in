@@ -3,7 +3,7 @@ title      : "btrfs"
 date       : 2020-02-20T10:33:38Z
 publishdate: 2020-02-20T10:33:38Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

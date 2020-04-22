@@ -2,7 +2,7 @@
 categories:
 - foods
 - nutrition
-comments: false
+comments   : true
 date: "2019-05-24T20:49:13+02:00"
 lastmod: "2019-05-24T20:49:13+02:00"
 tags:

@@ -3,7 +3,7 @@ title      : "Device Tree"
 date       : 2019-09-06T12:18:24+02:00
 publishdate: 2019-09-07T12:18:24+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

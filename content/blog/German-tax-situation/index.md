@@ -3,7 +3,7 @@ title      : "German Tax"
 date       : 2019-09-15T12:21:05+02:00
 publishdate: 2019-09-15T12:21:05+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -19,7 +19,7 @@ tags:
 - No tax until `9000` euros annual
 - Than varies from **14%** to **42%** at `54000` euros[^1]
 - Calculate online tax at[^2]
-- Tax classes from `1` - singles to `6` - more than 1 job 
+- Tax classes from `1` - singles to `6` - more than 1 job
 - Variables for Taxes
   - Children
   - Maritial status
@@ -37,7 +37,7 @@ tags:
       3. Solidarity Tax **5%**, Rebuilding east germany
    2. Social Tax **20.57%**
       1. Health **40%**
-         1. 50 / 50 % split between employer and employee 
+         1. 50 / 50 % split between employer and employee
       2. Retirement **45%**
       3. Jobless **7.5%**
       4. Care **7.5%**

@@ -2,7 +2,7 @@
 title      : "Linux Container"
 date       : 2019-08-04T16:03:06+02:00
 publishdate: 2019-08-05T16:03:06+02:00
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

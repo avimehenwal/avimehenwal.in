@@ -5,7 +5,7 @@ categories:
 - facts
 - anatomy
 - resources
-comments: false
+comments   : true
 date: "2019-05-30T18:48:17+02:00"
 lastmod: "2019-05-30T18:48:17+02:00"
 tags:
@@ -25,9 +25,9 @@ w3codecolor: true
 <a href="https://socratic.org/questions/how-does-the-sodium-potassium-pump-work">
 
 {{< figure
-img="Sodium-Potassium-Pump.jpg" 
-caption="Sodium potassium pump" 
-command="Resize" 
+img="Sodium-Potassium-Pump.jpg"
+caption="Sodium potassium pump"
+command="Resize"
 options="700x" >}}
 
 </a>

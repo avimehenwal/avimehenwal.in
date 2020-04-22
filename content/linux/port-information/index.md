@@ -3,7 +3,7 @@ title      : "Port Information"
 date       : 2019-09-10T13:42:06+02:00
 publishdate: 2019-09-10T13:42:06+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -64,8 +64,8 @@ ss --summary
 > What are local and foreign address in `netstat`?
 
 ```
-Proto Recv-Q Send-Q Local Address           Foreign Address         State      
-tcp        0      0 localhost:59352         0.0.0.0:*               LISTEN     
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 localhost:59352         0.0.0.0:*               LISTEN
 ```
 Local and Foreign address are linux `sockets` and state are socket states
 
@@ -87,8 +87,8 @@ for i in (seq 10)
     sleep 1
     curl --write-out '%{time_total} Germany\n' \
        --silent --output /dev/null \
-       http://ifconfig.co/country 
-end 
+       http://ifconfig.co/country
+end
 ```
 ### Footnotes
 

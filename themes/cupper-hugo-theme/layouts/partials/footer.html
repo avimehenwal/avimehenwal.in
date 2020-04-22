@@ -6,11 +6,13 @@
       <span aria-hidden="true"></span>
     </label>
   </div>
-  {{ partial "disqus.html" . }}
-  {{ if eq $.Site.Params.socialshare true }} {{ partial "socialshare.html" . }} {{ end }}
+  {{ if eq $.Site.Params.socialshare true }}
+  {{ partial "socialshare.html" . }}
+  {{ end }}
   {{ with .Site.Params.footer }}
   {{ . | markdownify }}
   {{ end }}
+  {{ partial "disqus.html" . }}
   <br>
   Last Built on : {{ now.Format "Mon Jan 2 at 15:04 hours CET 2006"}}
 </footer>

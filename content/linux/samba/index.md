@@ -3,7 +3,7 @@ title      : "Samba Server"
 date       : 2019-11-15T14:04:01Z
 publishdate: 2019-11-15T14:04:01Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

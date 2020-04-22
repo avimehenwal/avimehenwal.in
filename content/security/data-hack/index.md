@@ -3,7 +3,7 @@ title      : "Data Hacks"
 date       : 2019-09-28T14:26:18Z
 publishdate: 2019-09-28T14:26:18Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -100,7 +100,7 @@ Facebook
 * https://en.wikipedia.org/wiki/Guccifer_2.0
 * FBI directory Comey was fired by trump
 * 2016 Wikileaks deployed 87GB encrypted insurance file **dead man's switch**
-* 
+*
 
 pragmatic
 : dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations.

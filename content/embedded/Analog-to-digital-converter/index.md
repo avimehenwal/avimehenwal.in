@@ -3,7 +3,7 @@ title      : "ADC - Analog to digital converter"
 date       : 2019-09-27T15:32:21Z
 publishdate: 2019-09-27T15:32:21Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -48,7 +48,7 @@ Tension
 
 ### How to connect sensor to microcontroller?
 
-> Once you've confirmed the Linux kernel supports your sensor you need to use the device tree 
+> Once you've confirmed the Linux kernel supports your sensor you need to use the device tree
 > to configure and enable the sensor driver
 
 
@@ -83,7 +83,7 @@ Make LED spaceships, butterflys, christmas trees
 
 * `24-bit` analog-to-digital (A/D) converters
 * There are three methods to reset the ADS1255/6: the
-  * RESET input pin, 
+  * RESET input pin,
     * When using the RESET pin, take it low to force a reset
   * RESET command,
   * and a special SCLK reset pattern.

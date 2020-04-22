@@ -3,7 +3,7 @@ title      : "Networking"
 date       : 2019-09-14T16:35:23+02:00
 publishdate: 2019-09-14T16:35:23+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -25,15 +25,15 @@ netfilter[^1]
 
 {{< code numbered="true" >}}
 $ [[[nmcli]]] device status
-DEVICE   TYPE      STATE        CONNECTION           
-wlp5s0   wifi      connected    sinnvolle Verbindung 
-docker0  bridge    connected    docker0              
-enp4s0   ethernet  unavailable  --                   
+DEVICE   TYPE      STATE        CONNECTION
+wlp5s0   wifi      connected    sinnvolle Verbindung
+docker0  bridge    connected    docker0
+enp4s0   ethernet  unavailable  --
 lo       loopback  unmanaged    --
 
 > nmcli [[[radio]]] all
-WIFI-HW  WIFI     WWAN-HW  WWAN    
-enabled  enabled  enabled  enabled 
+WIFI-HW  WIFI     WWAN-HW  WWAN
+enabled  enabled  enabled  enabled
 
 > nmcli [[[device wifi list]]]
 > nmcli device wifi connect <SSID> password <PASSWORD>
@@ -118,7 +118,7 @@ networkctl status
 
 ### How do I add eth2 to my linux machine?
 
-On Linux machines, eth0 and eth1 correspond to real network ports. To add an eth2, you'll need to add another NIC, either by adding an internal PCI(e) network card, or by adding a USB network adapter. 
+On Linux machines, eth0 and eth1 correspond to real network ports. To add an eth2, you'll need to add another NIC, either by adding an internal PCI(e) network card, or by adding a USB network adapter.
 
 * [How do I create virtual ethernet devices in linux?](https://stackoverflow.com/questions/2082722/how-do-i-create-virtual-ethernet-devices-in-linux)
 * [TUN and TAP virtual network interfaces](https://en.wikipedia.org/wiki/TUN/TAP)
@@ -138,7 +138,7 @@ On Linux machines, eth0 and eth1 correspond to real network ports. To add an eth
    2. DHCPOFFER
    3. DHCPREQUEST
    4. DHCPACK
-9. 
+9.
 
 ```
 # Release and renew DHCP client

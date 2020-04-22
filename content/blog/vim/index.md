@@ -1,7 +1,7 @@
 ---
 title      : "Vim"
 date       : 2019-07-20T11:19:21+02:00
-comments: false
+comments   : true
 weight     : 5
 revision   : 0
 series:

@@ -3,7 +3,7 @@ title      : "GNU Octave"
 date       : 2019-10-20T12:41:41Z
 publishdate: 2019-10-20T12:41:41Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -25,7 +25,7 @@ tags:
 * Scientific Programming
   * Numerical Computation
   * Solves Linear and non linear problems
-* Written in `C`, `C++` and `fortran` 
+* Written in `C`, `C++` and `fortran`
   * Uses an interpreter to execute octave scripts
 
 ## What is PI?
@@ -54,7 +54,7 @@ $$ Diameter_{circle} = 2 * Radius $$
 * The `linspace()` function generates linearly spaced vectors.
 * `x = 1:0.1:10` from 1 to 10 in steps of 0.1
 * `hold on` prevent newer plot from erasing the older plot and redraw on top of it
-* 
+*
 
 ### Footnotes
 

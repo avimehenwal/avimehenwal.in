@@ -3,7 +3,7 @@ title      : "Embedded Companies"
 date       : 2020-04-02T09:46:04Z
 publishdate: 2020-04-02T09:46:04Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

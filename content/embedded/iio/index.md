@@ -3,7 +3,7 @@ title      : "Industrial IO"
 date       : 2019-09-19T10:30:49+02:00
 publishdate: 2019-09-19T10:30:49+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -73,13 +73,13 @@ adis16400
 for item in `ls`
 do
   value=`cat $item`
-  printf "%s\t%s\n" $item $value 
+  printf "%s\t%s\n" $item $value
 done
 
 # Read SPI statistics
 /sys/devices/platform/ocp/48030000.spi/spi_master/spi0/spi0.1/statistics
 
-cat /proc/interrupts 
+cat /proc/interrupts
 ```
 
 

@@ -3,7 +3,7 @@ title      : "Multimeter"
 date       : 2019-09-12T11:11:55+02:00
 publishdate: 2019-09-12T11:11:55+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

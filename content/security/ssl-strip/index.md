@@ -3,7 +3,7 @@ title      : "SSL Strip Attack"
 date       : 2019-09-19T19:07:54Z
 publishdate: 2019-09-19T19:07:54Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -55,7 +55,7 @@ tags:
 * Script Kiddies
 * Reverse Shells
   * `netcat`
-    * 
+    *
   * mostly detected by Anti viruses on fully updated systems
     * Try to code by yourself
 * `metasploit`
@@ -70,9 +70,9 @@ iptables/ip6tables
 Redirect all traffic to port 8080
 
 ```
-iptables -t nat -I PREROUTING --src 0/0 --dst 127.0.0.1 -p tcp --dport 80 -j REDIRECT --to-ports 8080   
+iptables -t nat -I PREROUTING --src 0/0 --dst 127.0.0.1 -p tcp --dport 80 -j REDIRECT --to-ports 8080
 
-iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-ports 8080   
+iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-ports 8080
 
 # verify
 iptables --table nat --list PREROUTING

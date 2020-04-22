@@ -3,7 +3,7 @@ title      : "Sole proprietorship"
 date       : 2019-09-15T13:06:42+02:00
 publishdate: 2019-09-15T13:06:42+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -33,7 +33,7 @@ How to register a company in India?[^2]
 
 1. [X] PAN Card (your)
 2. [X] SB/Current Bank Account
-   1. Current bank A/C 
+   1. Current bank A/C
 3. [ ] **GST NUmber** if turnover > **20L/annum**[^3]
    1. online business (selling through amazon, flipkart etc.), you are required to get a GST number. For registering under GST, you need the following documents –
       1. PAN card, Photo and Aadhar Card of the proprietor
@@ -140,7 +140,7 @@ $$
       * Internet
     * **L**iability - payable
     * **E**quity - owners
-      * 
+      *
     * **R**evenue
       * sales
       * service

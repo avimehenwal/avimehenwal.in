@@ -5,7 +5,7 @@ lastmod    : 2019-12-07T14:37:13Z
 publishdate: 2019-12-09T14:37:13Z
 type       :  "post"
 w3codecolor: true
-comments   : false
+comments   : true
 thumbnail  : https://www.bbcgoodfood.com/sites/default/files/editor_files/2017/11/plant-based-diet-guide-main-image-700-350.jpg
 series:
 - FoodBlog

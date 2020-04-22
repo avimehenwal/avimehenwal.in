@@ -3,7 +3,7 @@ title      : "Rendering"
 date       : 2019-09-04T14:11:47+02:00
 publishdate: 2019-09-05T14:11:47+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -54,7 +54,7 @@ Brainwashing
 : Brainwashing is said to reduce its subject's ability to think critically or independently
 * Techniques
 * Isolation
-* Monopolization of perception 
+* Monopolization of perception
 
 Gaslighting
 : brainwashing technique that makes victim lose all self confidence in themselves and question their own sanity
@@ -157,7 +157,7 @@ Keyframes
 
 FX
 
-1. Water 
+1. Water
 2. Smoke
 3. Fire
 
@@ -171,7 +171,7 @@ FX
 * Hollywood B-roll shot from avengers infinity war from yt
 * Tracking, chroma key, masking
 * Composition - new movie clip
-* <kbd>ctrl + shift + click</kbd> user viewer mode 
+* <kbd>ctrl + shift + click</kbd> user viewer mode
 * Make a keying screen, instead of color key to remove entire green screen
   * Generate as a gradient and use it as a keying color
 * Galton board design
@@ -189,7 +189,7 @@ FX
 ### 3D pipeline
 
 > modeling, rigging, animation, simulation, rendering, compositing and motion tracking, video editing and 2D animation pipeline.
- 
+
 * Viewport Navigation and object selection deselction
   * Perspective, zoom and camera
 * <kbd>ctrl + space</kbd> Maximise current window
@@ -237,7 +237,7 @@ FX
     * Keep an object on certain path during animation
   * Rigify - AddOn
   * Rig matching on X axis
-  * Align rig to scene origin and then scale  
+  * Align rig to scene origin and then scale
   * Advanced rigify rig wwith constraints
 * Inverse Kinematics
 * VErtex groups and weights

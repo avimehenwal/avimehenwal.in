@@ -3,7 +3,7 @@ title      : "CPU Vurnability"
 date       : 2019-09-27T17:35:02Z
 publishdate: 2019-09-27T17:35:02Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

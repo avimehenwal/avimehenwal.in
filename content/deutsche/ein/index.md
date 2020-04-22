@@ -1,7 +1,7 @@
 ---
 title      : das Vokabular
 date: 2019-07-28T09:28:46+02:00
-comments: false
+comments   : true
 weight     : 5
 revision   : 0
 series:

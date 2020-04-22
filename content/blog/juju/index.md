@@ -3,7 +3,7 @@ title      : "Juju"
 date       : 2019-08-06T17:11:48+02:00
 publishdate: 2019-08-07T17:11:48+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -155,7 +155,7 @@ juju switch avi-os
   * Algorithms
     * Round robin
     * Least connections
-  * 
+  *
 
 ### Footnotes
 

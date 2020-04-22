@@ -2,7 +2,7 @@
 title      : "IPCC Climate change report"
 date       : 2019-11-26T10:26:20Z
 publishdate: 2019-11-26T10:26:20Z
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

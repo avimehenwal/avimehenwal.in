@@ -3,7 +3,7 @@ title      : "Blockchain"
 date       : 2020-04-14T00:09:45Z
 publishdate: 2020-04-14T00:09:45Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

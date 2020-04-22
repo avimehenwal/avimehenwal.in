@@ -3,7 +3,7 @@ title      : "Web APIs"
 date       : 2019-08-17T15:02:13+02:00
 publishdate: 2019-08-18T15:02:13+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

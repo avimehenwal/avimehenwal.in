@@ -3,7 +3,7 @@ title      : "Data Types"
 date       : 2019-09-26T09:10:35Z
 publishdate: 2019-09-26T09:10:35Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

@@ -3,7 +3,7 @@ title      : "Robot"
 date       : 2019-12-05T19:43:28Z
 publishdate: 2019-12-05T19:43:28Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -72,7 +72,7 @@ incandescent
 4. Lights
 5. Benches
 6. Tool wall
-7. 
+7.
 
 ## Good google searches
 

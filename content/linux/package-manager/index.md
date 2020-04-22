@@ -3,7 +3,7 @@ title      : "Package Manager"
 date       : 2019-09-18T15:35:06Z
 publishdate: 2019-09-18T15:35:06Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -24,7 +24,7 @@ tags:
   * Add `debian` sources to `kali` in `/etc/apt/sources.list.d/`
     * Do not popullate `/etc/apt/sources.list`
 * List Keys addes to `APT`
-  * `apt-key list` 
+  * `apt-key list`
 
 
 ```

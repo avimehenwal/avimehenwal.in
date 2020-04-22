@@ -3,7 +3,7 @@ title      : "Open Stack"
 date       : 2019-09-24T18:08:37Z
 publishdate: 2019-09-24T18:08:37Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -31,7 +31,7 @@ Estimate almost an hour if everythign went all right
 
 1. https://github.com/openstack/openstack-ansible
 2. https://docs.openstack.org/project-deploy-guide/openstack-ansible/ocata/
-3. 
+3.
 
 ### Footnotes
 

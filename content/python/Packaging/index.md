@@ -3,7 +3,7 @@ title      : "Python Packaging"
 date       : 2019-09-16T11:14:40+02:00
 publishdate: 2019-09-16T11:14:40+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

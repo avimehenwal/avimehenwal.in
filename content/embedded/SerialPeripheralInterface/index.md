@@ -3,7 +3,7 @@ title      : "Serial Peripheral Interface"
 date       : 2019-09-13T11:22:27+02:00
 publishdate: 2019-09-13T11:22:27+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -23,7 +23,7 @@ tags:
   * 4 clock cycles to transfer 4 bit message
 * Range 1-20 MHz
 * The Raspberry Pi is equipped with one SPI bus that has **2 chip selects**.
-* **CPHASE=1** data is sample   d at trailing edge of clock 
+* **CPHASE=1** data is sample   d at trailing edge of clock
 <!-- more -->
 
 * We want to use 3 slaves with SPI0, but am335x supports only 2 CS signals.
@@ -51,7 +51,7 @@ drwxr-xr-x 21 root root  0 Oct 22 14:29 ..
 -r--r--r--  1 root root 18 Oct 22 14:42 name
 -r--r--r--  1 root root  4 Oct 22 14:30 phandle
 -r--r--r--  1 root root 40 Oct 22 14:29 pinctrl-single,pins
-root@beaglebone-yocto:/sys/firmware/devicetree/base/ocp/l4_wkup@44c00000/scm@210000/pinmux@800/spi0_pins_default# 
+root@beaglebone-yocto:/sys/firmware/devicetree/base/ocp/l4_wkup@44c00000/scm@210000/pinmux@800/spi0_pins_default#
 
 mount /dev/mmcblk1p1 /mnt
 find . -type f -exec head {} + | less
@@ -59,7 +59,7 @@ find . -type f -exec head {} + | less
 {{< /code >}}
 
 1. Binary file
-2. 
+2.
 
 ### Using debugfs
 

@@ -3,7 +3,7 @@ title      : "{{ replace .TranslationBaseName "-" " " | title }}"
 date       : {{ .Date }}
 publishdate: {{ .Date }}
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

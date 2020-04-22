@@ -3,7 +3,7 @@ title      : "GTD Getting Things Done"
 date       : 2019-08-15T15:55:58+02:00
 publishdate: 2019-08-16T15:55:58+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

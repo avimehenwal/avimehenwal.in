@@ -3,7 +3,7 @@ title      : "Arduino"
 date       : 2019-12-04T09:45:54Z
 publishdate: 2019-12-04T09:45:54Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
@@ -31,12 +31,12 @@ tags:
 * [Atmel AVR Instruction Set Architecture](https://en.wikipedia.org/wiki/Atmel_AVR_instruction_set)
 * [Atmel AVR Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
 * [USB power](https://en.wikipedia.org/wiki/USB#Power)
-* 
+*
 
 > Whats on the board?
 
 * Crystal Oscillator - clock cycles for chip
-* 
+*
 
 ## Microprocessor
 
@@ -65,7 +65,7 @@ It is found, for example, in simple appliances such as basic washing machines.
 
 * Example Projects[^1]
 * https://www.instructables.com/id/Arduino-Projects/
-* 
+*
 
 
 ### Footnotes

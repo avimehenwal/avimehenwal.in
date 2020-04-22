@@ -1,7 +1,7 @@
 ---
 categories:
 - resources
-comments: false
+comments   : true
 date: "2019-03-29T20:38:34+01:00"
 draft: false
 lastmod: "2019-03-29T20:38:34+01:00"

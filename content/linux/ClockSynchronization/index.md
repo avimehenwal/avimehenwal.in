@@ -3,7 +3,7 @@ title      : "Clock Synchronization"
 date       : 2020-01-21T09:54:43Z
 publishdate: 2020-01-21T09:54:43Z
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:

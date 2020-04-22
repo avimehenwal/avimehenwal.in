@@ -4,7 +4,7 @@ categories:
 - nutrition
 - facts
 - anatomy
-comments: false
+comments   : true
 date: "2019-05-30T18:14:09+02:00"
 lastmod: "2019-05-30T18:14:09+02:00"
 tags:
@@ -39,7 +39,7 @@ Insulin blocks any chance of burning fat.</br>
 3. Insulin converts sugar to **Cholestrol** and *triglycerides* (blood fat). Which increases tension in arteries and increases *Blood Pressure*
 4. retains sodium
 5. Drives proteins / amino acids into cells
-   
+
 ### Insulin Spike
 
 * is triggered by *Carbohydrates*
@@ -79,7 +79,7 @@ Eat only when you are hungry.
 
  Worst Food | GMO Content
 --------|-------
- Corn | 85% GMO 
+ Corn | 85% GMO
  Soy  | 93% GMO
 
 ### Why are they MOST dangerous foods?
@@ -107,7 +107,7 @@ Get healthy to loose WEIGHT.
    1. usually present in fast-foods
    2. can spike insulin level ~by 200%
 5. stress
-6. too frequent meals 
+6. too frequent meals
 
 {{< figure src="insulin-fat.png" title="Insulin is like a switch for Fat burning" >}}
 

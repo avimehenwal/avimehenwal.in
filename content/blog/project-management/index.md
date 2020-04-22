@@ -3,7 +3,7 @@ title      : "Project Management"
 date       : 2019-08-11T01:02:08+02:00
 publishdate: 2019-08-12T01:02:08+02:00
 draft      : false
-comments   : false
+comments   : true
 weight     : 5
 revision   : 0
 series:
