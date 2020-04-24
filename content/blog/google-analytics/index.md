@@ -81,6 +81,13 @@ Tools which can help
 
 ## Automate Interconnections between social media
 
+## SEO
+
+> stay away from doorway webites, original content that adds some value
+
+## Perfromance Reporting
+
+* https://web.dev/
 
 ### Footnotes
 

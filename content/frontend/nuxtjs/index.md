@@ -7,11 +7,14 @@ comments   : true
 weight     : 5
 revision   : 0
 series:
-- myLearning
+- Frontend
 categories:
-- frontend
 - development
+- web
 tags:
+- nuxt
+- javascript
+- framework
 ---
 
 > progressive framework based on Vue.js to create modern web applications. It is based on Vue.js official libraries (vue, vue-router and vuex) and powerful development tools (webpack, Babel and PostCSS).
@@ -106,6 +109,19 @@ axios.get([[[`http://someurl.com/${this.$route.params.id}`]]], config)
   * prefetch `js` before clicked
 * vuex store
   * return an anonymous function
+
+## NUXT Markdown Blog
+
+> Own your content and Platform
+
+* Medium has terrible Page Perfromance
+* Headless CMS - API driven CMSs
+  * Do you really need it? Use case?
+* Vue Components inside Markdown?, like hugo shortcodes
+  * `frontmatter-markdown-loader`
+* How to import markdown, webpack? Else not going to work
+  * import(`~/content/${app.}`)
+
 
 ### Footnotes
 

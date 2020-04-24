@@ -221,6 +221,14 @@ docker network ls
 docker network prune
 ```
 
+## Docker Maintenance
+
+```sh
+no space left on device
+```
+
+https://success.docker.com/article/error-message-no-space-left-on-device-in-default-machine
+
 
 ### Footnotes
 
