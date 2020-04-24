@@ -8,13 +8,13 @@ RUN apt install -y git
 ARG ASSET_HUGO_LOC
 # use the value to set the ENV var default
 ENV ASSET_HUGO_LOC $ASSET_HUGO_LOC
-RUN echo $ASSET_HUGO_LOC 
+RUN echo $ASSET_HUGO_LOC
 
 # set locale
 ENV LANG "en_US.UTF-8"
 ENV LANGUAGE "en_US.en"
 ENV LC_ALL "en_US.UTF-8"
-RUN locale-gen en_US && locale-gen en_US.UTF-8 && update-locale 
+# RUN locale-gen en_US && locale-gen en_US.UTF-8 && update-locale
 
 COPY ${ASSET_HUGO_LOC} /tmp/hugo.deb
 # ADD $ASSET_HUGO_LOC /tmp/hugo.deb
