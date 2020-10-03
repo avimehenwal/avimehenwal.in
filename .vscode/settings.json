@@ -2,5 +2,25 @@
     "restructuredtext.confPath": "/home/avi/mySoftwares/EXP/linux/Documentation/admin-guide",
     "emmet.triggerExpansionOnTab": true,
     "editor.snippetSuggestions": "top",
-    "editor.tabCompletion": "on"
+    "editor.tabCompletion": "on",
+    "conventionalCommits.scopes": [
+        "genesis",
+        "scaffold",
+        "core",
+        "cli",
+        "website",
+        "api",
+        "parser",
+        "package-manager",
+        "changelog",
+        "readme",
+        "component",
+        "lint",
+        "router",
+        "state-management",
+        "localization",
+        "release",
+        "vscode",
+        "food"
+    ]
 }

@@ -48,3 +48,20 @@ $$ soup(s) = vegetables + stock $$
 * Flour 3/4 cup
 * salt 1/2 tea spoon
 * Water 3/4 cup
+
+## Hot Pot
+
+* Noodeles, vermucili, rice
+* hot pot soupe base
+* Hot pot broth
+* Tofu is must, raddish
+* Sauces, spring onions, chopped garlic, soy sauce, sesemi oil, chilli garlic
+* Usually veggies in the last
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JIkc6XcWPqo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dT0MKcaQSSs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rLSdt-cuCUI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MFptcZb4YwM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

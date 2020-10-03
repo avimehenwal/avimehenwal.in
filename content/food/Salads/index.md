@@ -73,3 +73,58 @@ Only 2 health promoting  sweetners
 
 > High-fat food could cripple our artery functions for hours
 
+## Popular Salad dressings
+
+1. Ranch salad dressing #1 in USA
+   1. Greek yoghurt + dilli
+2. Simple Oil and Lemon dressing + Djon mustard
+3. Creamy tahini dressing
+4. Apple cider vinegar dressing
+5. Creamy basil dressing
+
+What is sour cream?
+:  Fermentation of cream by bacterial, **Lactic acid** is produced which causes some sour taste.
+
+## Equipments
+
+1. Salad spinner - or use centrifugal force with your arms
+
+## Combinations
+
+* Chives + Cucumber + raddish
+  * Use lime and salt to mellow in the heat of the raddish
+
+raddish
+: Member of [Brassicaceae](https://en.wikipedia.org/wiki/Brassicaceae)
+
+## Mayonnaise
+
+[Mayonnaise](https://en.wikipedia.org/wiki/Mayonnaise)
+
+**Emlusification** of fats and acid. (Mostly oil droplets in water). **Emulsifiers** are added to stabalize emulsification product.
+
+[What is Emulsion?](https://en.wikipedia.org/wiki/Emulsion)
+
+Emulsifier eamples.
+* Egg Yolk, lecithin
+
+Oil and water are immiscible (they do not mix). Examples
+
+* Milk
+* Mayonnaise
+* Ice creams
+* Piant
+
+![Emulsifier](emulsifier.png)
+![emulsion.png](emulsion.png)
+![Emulsifier](Emusification.png)
+
+Hydrophobic tail and hydrophillic head.
+
+![How soap works?](how-soap-works.webp)
+
+### How to make eggless Mayonnaise
+
+* Milk + oil + mustard + Pepper + acid (vinegar/lemon)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h333QY4ALGU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -65,3 +65,16 @@ Baking::
 3. Porridge
    1. oats + water/milk + salt in MW/boil
    2. topping - fruits/ dried plum [prunes](https://en.wikipedia.org/wiki/Prune)
+
+## What is Gluten?
+
+* Its not a charbohydrate, its a protein
+* Gluten is packed proteins for future generation of seeds
+
+## How to blanch Vegitable?
+
+* https://nchfp.uga.edu/how/freeze/blanching.html
+* https://nchfp.uga.edu/how/freeze/blanching.html#time
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SS3JcuFFmIM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
